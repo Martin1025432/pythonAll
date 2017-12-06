@@ -29,19 +29,26 @@ drawing = False #鼠标按下为真
 mode = True #如果为真，画矩形，按m切换为曲线
 ix,iy=-1,-1
 def findEdge(a,b):
-    global imag,moment,mc
+    global imag,moment,mc,contours,hierarchy,mg
 #    img = cv2.imread('test0.jpeg')
     imgray = cv2.cvtColor(crop_img,cv2.COLOR_BGR2GRAY)
     ret,thresh = cv2.threshold(imgray,a,b,0)
     image ,contours,hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-##绘制独立轮廓，如第四个轮廓
-    imag = cv2.drawContours(crop_img,contours,-1,(236,0,0),2)
+#计算轮廓的的矩
+    
     moment=[cv2.moments(contours[i])for i in range(len(contours))]
-#    mc=(moment[0]['m10']/moment[0]['m00'],moment[0]['m01']/moment[0]['m00'])
-    mc=[(moment[i]['m10']/moment[i]['m00'],moment[0]['m01']/moment[0]['m00'])for i in range(len(contours))]
-#    hu_moments =[cv2.HuMoments(contours[i])for i in range(len(contours))]
+#用面积筛选轮廓，找出大于100的轮廓索引值
+    mg=[i for i in range(len(moment)) if moment[i]['m00']>100 and moment[i]['m00']<20000]
+#画出筛选轮廓
+    for i in mg:
+        imag = cv2.drawContours(crop_img,contours,i,(236,0,0),2)
+
+#找出筛选轮廓中心点
+    mc=[(moment[i]['m10']/moment[i]['m00'],moment[0]['m01']/moment[0]['m00'])for i in mg]
+
+#画出中心点
     for i in range(0,len(mc)):        
-        cv2.circle(crop_img,(int(mc[i][0]),int(mc[i][1])),5,(0,0,255),-1)
+        cv2.circle(crop_img,(int(mc[i][0]),int(mc[i][1])),2,(0,0,255),-1)
     print(moment)
 def draw_circle(event,x,y,flags,param):
     global ix,iy,drawing,mode,x0,y0,x1,y1,img0,img,crop_img
@@ -54,24 +61,25 @@ def draw_circle(event,x,y,flags,param):
     elif event == cv2.EVENT_MOUSEMOVE:
         if drawing == True:
             if mode == True:
-                img = cv2.imread('test3.jpeg')
-                cv2.rectangle(img,(ix,iy),(x,y),(0,255,0),2)
+#                img = cv2.imread('test3.jpeg')
+#                cv2.rectangle(img,(ix,iy),(x,y),(0,255,0),2)
                 pass
-            else:
-                cv2.circle(img,(x,y),5,(0,0,255),-1)
+
     elif event == cv2.EVENT_LBUTTONUP:
         drawing = False
         if mode == True:
 #            cv2.rectangle(img,(ix,iy),(x,y),(0,255,0),-1)
             x1,y1=x,y
 #            cv2.rectangle(img,(x0,y0),(x1,y1),(0,0,255),2) 
-            crop_img = img[ y0:y1,x0:x1,]
+#            crop_img = img[ y0:y1,x0:x1]
+            crop_img = img[ y0:y1,x0:x1]
             cv2.imwrite("test0.jpeg", crop_img)
             print(x,y)
-        else:
-            cv2.circle(img,(x,y),5,(0,0,255),-1)
+
     elif event == cv2.EVENT_RBUTTONDOWN:
         img = cv2.imread('test3.jpeg')
+    
+         
         
         
 img = cv2.imread('test3.jpeg')
@@ -81,14 +89,16 @@ img = cv2.imread('test3.jpeg')
             
 #img = np.zeros((512,512,3),np.uint8)
 cv2.namedWindow('image')
-cv2.setMouseCallback('image',draw_circle)
-
+#cv2.setMouseCallback('image',draw_circle)
+crop_img = img[ 142:327,305:520]
 
 while(1):
     cv2.imshow('image',img)
+    cv2.imshow('imadge',crop_img)
     k = cv2.waitKey(1) & 0xFF
     if k == ord('q') :
         break
     if k == ord('a') :
-        findEdge(160,255)
+        
+        findEdge(160,100)
 cv2.destroyAllWindows()
