@@ -29,13 +29,20 @@ drawing = False #鼠标按下为真
 mode = True #如果为真，画矩形，按m切换为曲线
 ix,iy=-1,-1
 def findEdge(a,b):
-    global imag
+    global imag,moment,mc
 #    img = cv2.imread('test0.jpeg')
     imgray = cv2.cvtColor(crop_img,cv2.COLOR_BGR2GRAY)
     ret,thresh = cv2.threshold(imgray,a,b,0)
     image ,contours,hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 ##绘制独立轮廓，如第四个轮廓
     imag = cv2.drawContours(crop_img,contours,-1,(236,0,0),2)
+    moment=[cv2.moments(contours[i])for i in range(len(contours))]
+#    mc=(moment[0]['m10']/moment[0]['m00'],moment[0]['m01']/moment[0]['m00'])
+    mc=[(moment[i]['m10']/moment[i]['m00'],moment[0]['m01']/moment[0]['m00'])for i in range(len(contours))]
+#    hu_moments =[cv2.HuMoments(contours[i])for i in range(len(contours))]
+    for i in range(0,len(mc)):        
+        cv2.circle(crop_img,(int(mc[i][0]),int(mc[i][1])),5,(0,0,255),-1)
+    print(moment)
 def draw_circle(event,x,y,flags,param):
     global ix,iy,drawing,mode,x0,y0,x1,y1,img0,img,crop_img
 
