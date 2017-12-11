@@ -10,8 +10,6 @@ import numpy as np
 #cv2.namedWindow("img", cv2.WND_PROP_FULLSCREEN)
 #cv2.setWindowProperty("img", cv2.WND_PROP_FULLSCREEN, cv2.CV_WINDOW_FULLSCREEN)
 cap = cv2.VideoCapture(0)
-#cap.set(3,2592)   
-#cap.set(4,1944)  
 cap.set(3,2592)   
 cap.set(4,1944)  
 
@@ -28,7 +26,7 @@ while(1):
     
     if cv2.waitKey(1) & 0xFF == ord('q'):
         print (frame.shape)
-        cv2.imwrite("test3.jpeg", image)
+        cv2.imwrite("apple2.jpeg", image)
         break
     
     
