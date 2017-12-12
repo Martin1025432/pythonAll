@@ -39,7 +39,7 @@ cap.set(4,1944)
 
 
 def findEdge(a,b,dstImg,proImg):
-#    global imag,moment,mc,contours,hierarchy,mg,center,crop_img
+    global long,mg_long,contours
 #    img = cv2.imread('test0.jpeg')
     imgray = cv2.cvtColor(proImg,cv2.COLOR_BGR2GRAY)
     ret,thresh = cv2.threshold(imgray,a,b,0)
@@ -51,10 +51,15 @@ def findEdge(a,b,dstImg,proImg):
         try:
             moment=[cv2.moments(contours[i])for i in range(len(contours))]
 #用面积筛选轮廓，找出大于100的轮廓索引值
-            mg=[i for i in range(len(moment)) if moment[i]['m00']>100000 and moment[i]['m00']<120000]
+            mg=[i for i in range(len(moment)) if moment[i]['m00']>12000 and moment[i]['m00']<14000]
+#轮廓周长                
+            long = [cv2.arcLength(contours[i],True) for i in mg ]  
+            mg_long=[i for i in range(len(mg)) if long[i]>500 and long[i]<700]
 #画出筛选轮廓
-            for i in mg:
-                imag = cv2.drawContours(dstImg,contours,i,(236,0,0),5)
+            for i in mg_long:
+                imag = cv2.drawContours(dstImg,contours,i,(236,0,0),-1)
+                
+
 #画出最小外接圆                
 #            (x,y),radius = cv2.minEnclosingCircle(contours[mg[0]])
 #            center = (int(x),int(y))
@@ -73,7 +78,7 @@ def findEdge(a,b,dstImg,proImg):
 #            cv2.putText(img,centerText,(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)   
 #            print("虚拟中心:",center) 
 #输出文字结果             
-            modelCount="Finded model="+ str(len(mg))
+            modelCount="Finded model="+ str(len(mg_long))
             cv2.putText(dstImg,modelCount,(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
         except:
              print("no contours")       
@@ -141,14 +146,16 @@ while(1):
         crop_img = frame.copy() 
 #        cv2.imwrite("apple3.jpeg", crop_img)
         imgd=frame.copy() 
-        findEdge(160,255,imgd,crop_img)
+        findEdge(180,255,imgd,crop_img)
 #        cv2.line(imgd,(0,972), (2592,972), (0,0,255),2)
 #        cv2.line(imgd,(1296,0), (1296,1944), (0,0,255),2)
         while(1):
             cv2.imshow("image", imgd)
             cv2.waitKey(0)
             break
+    if k == ord('c'): 
 
+        cv2.imwrite("apple4.jpeg", crop_img)
     if k == ord('q'): 
         break
 cv2.destroyAllWindows()

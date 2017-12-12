@@ -17,11 +17,13 @@ CV_EVENT_MBUTTONDBLCLK 9         中间释放
 """
 import numpy as np
 import cv2
-
+import sys
+from PyQt5 import QtCore, QtWidgets, uic
+from PyQt5.QtGui import QPixmap,QImage
 drawing = False #鼠标按下为真
 mode = True #如果为真，画矩形，按m切换为曲线
 ix,iy=-1,-1
-
+"""
 def draw_circle(event,x,y,flags,param):
     global ix,iy,drawing,mode,x0,y0,x1,y1,img0,img
 
@@ -51,19 +53,22 @@ def draw_circle(event,x,y,flags,param):
             cv2.circle(img,(x,y),5,(0,0,255),-1)
     elif event == cv2.EVENT_RBUTTONDOWN:
         img = cv2.imread('test3.jpeg')
+"""
 img = cv2.imread('test3.jpeg')
-
+img=cv2.resize(src=img,dsize=None,fx=0.2,fy=0.2)
+img2=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+qimag=QImage(img2[:],img2.shape[1], img2.shape[0],img2.shape[1] * 3, QImage.Format_RGB888)
 #gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 #gray = np.float32(gray)
             
 #img = np.zeros((512,512,3),np.uint8)
-cv2.namedWindow('image')
-cv2.setMouseCallback('image',draw_circle)
+#cv2.namedWindow('image')
+#cv2.setMouseCallback('image',draw_circle)
 
-
-while(1):
-    cv2.imshow('image',img)
-    k = cv2.waitKey(1) & 0xFF
-    if k == ord('q') :
-        break
-cv2.destroyAllWindows()
+#
+#while(1):
+#    cv2.imshow('image',img)
+#    k = cv2.waitKey(1) & 0xFF
+#    if k == ord('q') :
+#        break
+#cv2.destroyAllWindows()
