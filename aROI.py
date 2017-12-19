@@ -55,9 +55,17 @@ def draw_circle(event,x,y,flags,param):
         img = cv2.imread('test3.jpeg')
 """
 img = cv2.imread('test3.jpeg')
-img=cv2.resize(src=img,dsize=None,fx=0.2,fy=0.2)
-img2=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-qimag=QImage(img2[:],img2.shape[1], img2.shape[0],img2.shape[1] * 3, QImage.Format_RGB888)
+imgray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+Canny( imgray, canny_output, 180,255, 3 )
+#ret,thresh = cv2.threshold(imgray,a,b,0)
+while(1):
+    cv2.imshow("img", canny_output)    
+    cv2.waitKey(0)
+    break
+#img=cv2.resize(src=img,dsize=None,fx=0.2,fy=0.2)
+#img2=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+#qimag=QImage(img2[:],img2.shape[1], img2.shape[0],img2.shape[1] * 3, QImage.Format_RGB888)
+
 #gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 #gray = np.float32(gray)
             

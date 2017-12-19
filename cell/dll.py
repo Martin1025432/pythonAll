@@ -4,17 +4,24 @@ Created on Tue Dec 12 23:40:58 2017
 
 @author: Administrator
 """
+from socket import socket, AF_INET , SOCK_STREAM,SOL_SOCKET,SO_SNDBUF
+import time 
+import win32api,win32con  
+import sqlite3
+import os, sys
+import time
 import numpy as np
 import cv2
+import threading
 
-def findEdge(a,b,dstImg,proImg):
-    global imag,moment,mc,contours,hierarchy,mg,center,crop_img,thresh,mg_long,rmg,x,y
+def findEdge(a,b,dstImg,proImg,minLong,maxLong,minS,MaxS):
+#    global imag,moment,mc,contours,hierarchy,mg,center,crop_img,thresh,mg_long,rmg,x,y
 #    img = cv2.imread('test0.jpeg')
     imgray = cv2.cvtColor(proImg,cv2.COLOR_BGR2GRAY)
     ret,thresh = cv2.threshold(imgray,a,b,0)
-    print("img trans done")
+    print("完成二值处理")
     image ,contours,hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-    print("contours finded:",len(contours))
+    print("找到轮廓数量:",len(contours))
 
 
     if len(contours)>0:
@@ -23,15 +30,15 @@ def findEdge(a,b,dstImg,proImg):
     #轮廓周长 ,long所有轮廓的周长               
             long = [cv2.arcLength(contours[i],True) for i in range(len(contours)) ]
     #轮廓周长 ，mg_long,满足周长条件的 “轮廓” lish索引值
-            mg_long=[i for i in range(len(long)) if long[i]>500 and long[i]<900]
-            print("long fined:",len(mg_long))
+            mg_long=[i for i in range(len(long)) if long[i]>minLong and long[i]<maxLong]
+            print("满足周长条件数量:",len(mg_long))
     #计算轮廓的的矩
             moment=[cv2.moments(contours[i])for i in mg_long]
     #用面积筛选轮廓，找出大于100的轮廓索引值，mg，满足面积的周长list中的索引值
-            mg=[i for i in range(len(moment)) if moment[i]['m00']>9000 and moment[i]['m00']<20000]
+            mg=[i for i in range(len(moment)) if moment[i]['m00']>minS and moment[i]['m00']<MaxS]
     #rmg,满足周长和面积的轮廓index
             rmg=[mg_long[i] for i in mg]
-            print("s finded:",len(mg))            
+            print("满足面积数量:",len(mg))            
 
 #画出筛选轮廓
             for i in rmg:
@@ -58,6 +65,7 @@ def findEdge(a,b,dstImg,proImg):
     else:
         print("I can't find the contours")
     return  center   
+
 def cam(number):
 
     try:
@@ -70,3 +78,57 @@ def cam(number):
         print("camer",number,"is fail")
     return frame
 
+def findEdgeCanny(a,b,dstImg,proImg):
+    pass
+
+global nData,pData,nSoc,pSoc 
+nData='ff'
+pData=''
+nSoc=socket(AF_INET, SOCK_STREAM)
+pSoc=socket(AF_INET, SOCK_STREAM)
+
+def server(serverAddr,nClientIP,pClientIP):
+    global nData,pData,nSoc,pSoc 
+    serverSoc = socket(AF_INET, SOCK_STREAM)
+    serverSoc.bind(serverAddr)
+    serverSoc.listen(5)
+    while True:
+    # 接受一个新连接:
+        sock, addr = serverSoc.accept()
+        if(addr[0]==nClientIP):
+    # 创建新线程来处理TCP连接:
+            print(sock)
+            nSoc=sock            
+            t = threading.Thread(target=tcplink, args=(sock, addr,nClientIP,pClientIP))
+            t.start()
+        if(addr[0]==pClientIP):
+    # 创建新线程来处理TCP连接:
+            print(addr)
+            pSoc=sock   
+            t = threading.Thread(target=tcplink, args=(sock, addr,nClientIP,pClientIP))
+            t.start()        
+
+def tcplink(sock, addr,nClientIP,pClientIP):
+    global nData,pData,nSoc,pSoc 
+    while True:
+        try:
+            data = sock.recv(1024)
+            if(data!=''):
+                if(addr[0]==nClientIP):
+                   nData=data
+                   print(nData)
+                if(addr[0]==pClientIP):
+                   nData=data                 
+                
+            if data == 'exit' or not data:
+                break
+        except:
+            print('error')
+    sock.close()
+    print ('Connection from closed.')
+    
+
+     
+    
+    
+    
