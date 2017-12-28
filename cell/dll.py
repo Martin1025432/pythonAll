@@ -82,8 +82,8 @@ def findEdgeCanny(a,b,dstImg,proImg):
     pass
 
 global nData,pData,nSoc,pSoc 
-nData='ff'
-pData=''
+nData='none'
+pData='none'
 nSoc=socket(AF_INET, SOCK_STREAM)
 pSoc=socket(AF_INET, SOCK_STREAM)
 
@@ -98,15 +98,19 @@ def server(serverAddr,nClientIP,pClientIP):
         if(addr[0]==nClientIP):
     # 创建新线程来处理TCP连接:
             print(sock)
+            nData='conned'
             nSoc=sock            
             t = threading.Thread(target=tcplink, args=(sock, addr,nClientIP,pClientIP))
             t.start()
+            print('nclien'+nData)
         if(addr[0]==pClientIP):
     # 创建新线程来处理TCP连接:
             print(addr)
+            pData='conned'
             pSoc=sock   
             t = threading.Thread(target=tcplink, args=(sock, addr,nClientIP,pClientIP))
-            t.start()        
+            t.start()  
+            print('pclien'+pData)
 
 def tcplink(sock, addr,nClientIP,pClientIP):
     global nData,pData,nSoc,pSoc 
