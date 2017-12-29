@@ -23,7 +23,9 @@ toolValues=[tableTool.row_values(i) for i in  range(0,toolRows)]
 indexValue=[toolValues[i][0] for i in  range(1,toolRows)]
 
 dataValues=[tableData.row_values(i) for i in  range(0,dataRows)]
+
 #bValue   数据库客户型号
+
 bValue=[dataValues[i][1] for i in  range(1,dataRows)]
 #cValue   未税价
 cValue=[dataValues[i][2] for i in  range(1,dataRows)]
@@ -34,31 +36,41 @@ hValue=[dataValues[i][7] for i in  range(1,dataRows)]
 price=[]
 brand=[]
 day=[]
-
+mode=[]
 flag=0
+modeTemp=''
+
 for k in range(0,len(indexValue)):
     flag=0
+    modeTemp=''
+    dstIndex=0
     for i in range(0,len(bValue)):
-        if bValue[i] in str(indexValue[k]):
-            brand.append(dValue[i])
-            price.append(cValue[i])
-            day.append(hValue[i])
-            flag=1
-            break
+        if str(bValue[i]) in str(indexValue[k]):
+            if len(bValue[i])>len(modeTemp):
+                modeTemp=bValue[i]
+                dstIndex=i
+                flag=1
+                print(i)
+    if flag==1:
+        mode.append(bValue[dstIndex])
+        brand.append(dValue[dstIndex])
+        price.append(cValue[dstIndex])
+        day.append(hValue[dstIndex])        
     if flag==0:
+        mode.append('无法找到数据')
         brand.append('无法找到数据')
         price.append('无法找到数据')
         day.append('无法找到数据')
           
 w = Workbook()
-
 ws = w.add_sheet('报价输出')
 tableTool.row_values(0)[0]
+
 for i in range(0,len(tableTool.row_values(0))):
     ws.write(0, i, tableTool.row_values(0)[i])
     
 for i in range(0,len(indexValue)):
-    ws.write(i+1, 0, indexValue[i])
+    ws.write(i+1, 0, mode[i])
     
 for i in range(0,len(indexValue)):
     ws.write(i+1, 1, price[i])
