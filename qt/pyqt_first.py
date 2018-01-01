@@ -11,10 +11,25 @@ import dll
 import numpy as np
 #import time
 #from PyQt5 import *
-qtCreatorFile = "window.ui" # Enter file here.导入文件
 
+
+#子窗口
+qtCreatorFile = "visionPara.ui" # Enter file here.导入文件
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)#给两个变量赋值
+class Vison(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
+#    close_signal = pyqtSignal()
+    def __init__(self):
+        global  cursor,paraName, paraData ,conn                              #初始化
+        QtWidgets.QMainWindow.__init__(self)
+        Ui_MainWindow.__init__(self)        
+        self.setupUi(self)    
+    def handle_click(self):
+#        if not self.isVisible():
+        self.show()    
 
+
+qtCreatorFile = "window.ui" # Enter file here.导入文件
+Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)#给两个变量赋值
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
     def __init__(self):
         global  cursor,paraName, paraData ,conn                              #初始化
@@ -209,7 +224,9 @@ if __name__ == "__main__":
 #    cap.set(3,2592)   
 #    cap.set(4,1944)      
     app = QtWidgets.QApplication(sys.argv)
-    window = MyApp()
-    window.show()
+    mainWindow = MyApp()
+    visionWindow=Vison()
+    mainWindow.bVisionPara.clicked.connect(visionWindow.handle_click)
+    mainWindow.show()
     print('wait')
     sys.exit(app.exec_())
