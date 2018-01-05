@@ -13,19 +13,7 @@ import numpy as np
 #from PyQt5 import *
 
 
-#子窗口
-qtCreatorFile = "visionPara.ui" # Enter file here.导入文件
-Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)#给两个变量赋值
-class Vison(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
-#    close_signal = pyqtSignal()
-    def __init__(self):
-        global  cursor,paraName, paraData ,conn                              #初始化
-        QtWidgets.QMainWindow.__init__(self)
-        Ui_MainWindow.__init__(self)        
-        self.setupUi(self)    
-    def handle_click(self):
-#        if not self.isVisible():
-        self.show()    
+    
 
 
 qtCreatorFile = "window.ui" # Enter file here.导入文件
@@ -39,7 +27,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         self.bDataReset.clicked.connect(self.bDataResetClick)
         self.bDataSave.clicked.connect(self.bDataSaveClick)
         self.bRun.clicked.connect(self.bRunClick)
-        self.bPsheetTrig.clicked.connect(self.bPsheetTrigClick)
+        
         self.bPplateTrig.clicked.connect(self.bPplateTrigClick)
         self.bNsheetTrig.clicked.connect(self.bNsheetTrigClick)
         self.bNplateTrig.clicked.connect(self.bNplateTrigClick)
@@ -219,6 +207,24 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         pass
     def bNplateTrigClick(self):
         pass
+#子窗口
+qtCreatorFile = "visionPara.ui" # Enter file here.导入文件
+Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)#给两个变量赋值
+class Vison(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
+#    close_signal = pyqtSignal()
+    def __init__(self):
+        global  cursor,paraName, paraData ,conn                              #初始化
+        QtWidgets.QMainWindow.__init__(self)
+        Ui_MainWindow.__init__(self)        
+        self.setupUi(self)
+#        self.bPsheetTrig.clicked.connect(MyApp.bPsheetTrigClick)
+    def handle_click(self):
+#        if not self.isVisible():
+        self.show()    
+def windowConn():    
+    mainWindow.bVisionPara.clicked.connect(visionWindow.handle_click)
+    visionWindow.bPsheetTrig.clicked.connect(mainWindow.bPsheetTrigClick)    
+    
 if __name__ == "__main__":
 #    cap = cv2.VideoCapture(0)
 #    cap.set(3,2592)   
@@ -226,7 +232,6 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     mainWindow = MyApp()
     visionWindow=Vison()
-    mainWindow.bVisionPara.clicked.connect(visionWindow.handle_click)
+    windowConn()
     mainWindow.show()
-    print('wait')
     sys.exit(app.exec_())
