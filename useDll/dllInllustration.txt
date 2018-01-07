@@ -1,0 +1,4 @@
+//
+extern "C" _declspec(dllexport) unsigned int capIni( );
+extern "C" __declspec(dllexport)  char* outputStr(unsigned int num);
+extern "C" __declspec(dllexport)  unsigned int capBmp(  unsigned long int  num);

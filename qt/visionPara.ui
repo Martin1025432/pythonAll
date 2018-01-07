@@ -55,7 +55,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit">
+      <widget class="QTextEdit" name="pSheetT1">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -78,7 +78,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_2">
+      <widget class="QTextEdit" name="pSheetT2">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -114,7 +114,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_3">
+      <widget class="QTextEdit" name="pSheetCmin">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -137,7 +137,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_4">
+      <widget class="QTextEdit" name="pSheetCmax">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -173,7 +173,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_5">
+      <widget class="QTextEdit" name="pSheetSmin">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -196,7 +196,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_6">
+      <widget class="QTextEdit" name="pSheetSmax">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -250,7 +250,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_13">
+      <widget class="QTextEdit" name="pPlateT1">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -273,7 +273,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_14">
+      <widget class="QTextEdit" name="pPlateT2">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -309,7 +309,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_15">
+      <widget class="QTextEdit" name="pPlateCmin">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -332,7 +332,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_16">
+      <widget class="QTextEdit" name="pPlateCmax">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -368,7 +368,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_17">
+      <widget class="QTextEdit" name="pPlateSmin">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -391,7 +391,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_18">
+      <widget class="QTextEdit" name="pPlateSmax">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -445,7 +445,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_19">
+      <widget class="QTextEdit" name="nSheetT1">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -468,7 +468,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_20">
+      <widget class="QTextEdit" name="nSheetT2">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -504,7 +504,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_21">
+      <widget class="QTextEdit" name="nSheetCmin">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -527,7 +527,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_22">
+      <widget class="QTextEdit" name="nSheetCmax">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -563,7 +563,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_23">
+      <widget class="QTextEdit" name="nSheetSmin">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -586,7 +586,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_24">
+      <widget class="QTextEdit" name="nSheetSmax">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -640,7 +640,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_25">
+      <widget class="QTextEdit" name="nPlateT1">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -663,7 +663,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_26">
+      <widget class="QTextEdit" name="nPlateT2">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -699,7 +699,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_27">
+      <widget class="QTextEdit" name="nPlateCmin">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -722,7 +722,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_28">
+      <widget class="QTextEdit" name="nPlateCmax">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -758,7 +758,7 @@
         <string>最小值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_29">
+      <widget class="QTextEdit" name="nPlateSmin">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -781,7 +781,7 @@
         <string>最大值</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_30">
+      <widget class="QTextEdit" name="nPlateSmax">
        <property name="geometry">
         <rect>
          <x>50</x>

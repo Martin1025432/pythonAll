@@ -5,8 +5,10 @@ from PyQt5.QtGui import QPixmap,QImage
 import time
 import sqlite3
 import pandas
+import collections  
 import cv2
 import dll
+from ctypes import *  
 #import cv2
 import numpy as np
 #import time
@@ -20,7 +22,7 @@ qtCreatorFile = "window.ui" # Enter file here.导入文件
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)#给两个变量赋值
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
     def __init__(self):
-        global  cursor,paraName, paraData ,conn                              #初始化
+        global  cursor, p ,conn ,dictPara,basler,sn                      #初始化
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)        
         self.setupUi(self)
@@ -33,68 +35,55 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         self.bNplateTrig.clicked.connect(self.bNplateTrigClick)
         conn = sqlite3.connect("cm08.db")
         cursor = conn.cursor()
-        paraName=["tPsheetTotal","tPsheetGood","tPsheetGoodRate","tPsheetBad","tPsheetBadRate","tPsheetFail",
-                  "tPplateTotal","tPplateGood","tPplateGoodRate","tPplateBad","tPplateBadRate","tPplateFail",
-                   "tNsheetTotal","tNsheetGood","tNsheetGoodRate","tNsheetBad","tNsheetBadRate","tNsheetFail",
-                   "tNplateTotal","tNplateGood","tNplateGoodRate","tNplateBad","tNplateBadRate","tNplateFail","tTime"]
-        paraData=[self.tPsheetTotal.toPlainText(),
-                  self.tPsheetGood.toPlainText(),
-                  self.tPsheetGoodRate.toPlainText(),
-                  self.tPsheetBad.toPlainText(),
-                  self.tPsheetBadRate.toPlainText(),
-                  self.tPsheetFail.toPlainText(),
-                  self.tPplateTotal.toPlainText(),
-                  self.tPplateGood.toPlainText(),
-                  self.tPplateGoodRate.toPlainText(),
-                  self.tPplateBad.toPlainText(),
-                  self.tPplateBadRate.toPlainText(),
-                  self.tPplateFail.toPlainText(),
-                  self.tNsheetTotal.toPlainText(),
-                  self.tNsheetGood.toPlainText(),
-                  self.tNsheetGoodRate.toPlainText(),
-                  self.tNsheetBad.toPlainText(),
-                  self.tNsheetBadRate.toPlainText(),
-                  self.tNsheetFail.toPlainText(),
-                  self.tNplateTotal.toPlainText(),
-                  self.tNplateGood.toPlainText(),
-                  self.tNplateGoodRate.toPlainText(),
-                  self.tNplateBad.toPlainText(),
-                  self.tNplateBadRate.toPlainText(),
-                  self.tNplateFail.toPlainText(),
-                  self.tTime.toPlainText(),]
-        paraDataSet=[]
+        cursor.execute('select * from para'  )
+
+        value = cursor.fetchall()   
+        dictPara={}
+        for i in range(len(value)):
+            dictPara[value[i][0]]=str(value[i][1])
+#        print(dictPara)
         
-        for i in range(len(paraName)):
-            cursor.execute('select * from para where name=?', (paraName[i],) )  
-#        cursor.execute('select * from para ') 
-            value = cursor.fetchall()                    
-            paraDataSet.append(str(value[0][1]))
-        print(paraDataSet)
-        self.tPsheetTotal.setText(paraDataSet[0])
-        self.tPsheetGood.setText(paraDataSet[1])
-        self.tPsheetGoodRate.setText(paraDataSet[2])
-        self.tPsheetBad.setText(paraDataSet[3])
-        self.tPsheetBadRate.setText(paraDataSet[4])
-        self.tPsheetFail.setText(paraDataSet[5])
-        self.tPplateTotal.setText(paraDataSet[6])
-        self.tPplateGood.setText(paraDataSet[7])
-        self.tPplateGoodRate.setText(paraDataSet[8])
-        self.tPplateBad.setText(paraDataSet[9])
-        self.tPplateBadRate.setText(paraDataSet[10])
-        self.tPplateFail.setText(paraDataSet[11])
-        self.tNsheetTotal.setText(paraDataSet[12])
-        self.tNsheetGood.setText(paraDataSet[13])
-        self.tNsheetGoodRate.setText(paraDataSet[14])
-        self.tNsheetBad.setText(paraDataSet[15])
-        self.tNsheetBadRate.setText(paraDataSet[16])
-        self.tNsheetFail.setText(paraDataSet[17])
-        self.tNplateTotal.setText(paraDataSet[18])
-        self.tNplateGood.setText(paraDataSet[19])
-        self.tNplateGoodRate.setText(paraDataSet[20])
-        self.tNplateBad.setText(paraDataSet[21])
-        self.tNplateBadRate.setText(paraDataSet[22])
-        self.tNplateFail.setText(paraDataSet[23])
-        self.tTime.setText(paraDataSet[24])
+        self.tPsheetTotal.setText(dictPara['tPsheetTotal'])
+        self.tPsheetGood.setText(dictPara['tPsheetGood'])
+        self.tPsheetGoodRate.setText(dictPara['tPsheetGoodRate'])
+        self.tPsheetBad.setText(dictPara['tPsheetBad'])
+        self.tPsheetBadRate.setText(dictPara['tPsheetBadRate'])
+        self.tPsheetFail.setText(dictPara['tPsheetFail'])
+        self.tPplateTotal.setText(dictPara['tPplateTotal'])
+        self.tPplateGood.setText(dictPara['tPplateGood'])
+        self.tPplateGoodRate.setText(dictPara['tPplateGoodRate'])
+        self.tPplateBad.setText(dictPara['tPplateBad'])
+        self.tPplateBadRate.setText(dictPara['tPplateBadRate'])
+        self.tPplateFail.setText(dictPara['tPplateFail'])
+        self.tNsheetTotal.setText(dictPara['tNsheetTotal'])
+        self.tNsheetGood.setText(dictPara['tNsheetGood'])
+        self.tNsheetGoodRate.setText(dictPara['tNsheetGoodRate'])
+        self.tNsheetBad.setText(dictPara['tNsheetBad'])
+        self.tNsheetBadRate.setText(dictPara['tNsheetBadRate'])
+        self.tNsheetFail.setText(dictPara['tNsheetFail'])
+        self.tNplateTotal.setText(dictPara['tNplateTotal'])
+        self.tNplateGood.setText(dictPara['tNplateGood'])
+        self.tNplateGoodRate.setText(dictPara['tNplateGoodRate'])
+        self.tNplateBad.setText(dictPara['tNplateBad'])
+        self.tNplateBadRate.setText(dictPara['tNplateBadRate'])
+        self.tNplateFail.setText(dictPara['tNplateFail'])
+        self.tTime.setText(dictPara['tTime'])
+        self.tPsheetSn.setText(dictPara['tPsheetSn'])
+        self.tNsheetSn.setText(dictPara['tNsheetSn'])
+        self.tPplateSn.setText(dictPara['tPplateSn'])
+        self.tNplateSn.setText(dictPara['tNplateSn'])
+        #初始化相机
+        sn=[]
+        basler=CDLL('vision.dll')
+        basler.capIni()
+        for i in range(0,4):  
+            sizebuffer=basler.outputStr(i)
+            print(c_char_p(sizebuffer).value)
+            recStr=str(c_char_p(sizebuffer).value)[2:-1]
+            sn.append(recStr)
+
+
+
                   
 
     def bDataResetClick(self): 
@@ -130,83 +119,80 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         self.tNplateFail.setText('0')
 
     def bDataSaveClick(self): 
-        global paraName, conn,cursor
-        paraData=[self.tPsheetTotal.toPlainText(),
-                  self.tPsheetGood.toPlainText(),
-                  self.tPsheetGoodRate.toPlainText(),
-                  self.tPsheetBad.toPlainText(),
-                  self.tPsheetBadRate.toPlainText(),
-                  self.tPsheetFail.toPlainText(),
-                  self.tPplateTotal.toPlainText(),
-                  self.tPplateGood.toPlainText(),
-                  self.tPplateGoodRate.toPlainText(),
-                  self.tPplateBad.toPlainText(),
-                  self.tPplateBadRate.toPlainText(),
-                  self.tPplateFail.toPlainText(),
-                  self.tNsheetTotal.toPlainText(),
-                  self.tNsheetGood.toPlainText(),
-                  self.tNsheetGoodRate.toPlainText(),
-                  self.tNsheetBad.toPlainText(),
-                  self.tNsheetBadRate.toPlainText(),
-                  self.tNsheetFail.toPlainText(),
-                  self.tNplateTotal.toPlainText(),
-                  self.tNplateGood.toPlainText(),
-                  self.tNplateGoodRate.toPlainText(),
-                  self.tNplateBad.toPlainText(),
-                  self.tNplateBadRate.toPlainText(),
-                  self.tNplateFail.toPlainText(),
-                  self.tTime.toPlainText(),]
-        print(paraName,paraData)
+        global paraName, conn,cursor,dictPara
 
-        
-        for i in range(len(paraName)):            
-            cursor.execute("update para set data=? where name = ?",(paraData[i],paraName[i],))        
+        dictPara['tPsheetTotal']=self.tPsheetTotal.toPlainText()
+        dictPara['tPsheetGood']=self.tPsheetGood.toPlainText()
+        dictPara['tPsheetGoodRate']=self.tPsheetGoodRate.toPlainText()
+        dictPara['tPsheetBad']=self.tPsheetBad.toPlainText()
+        dictPara['tPsheetBadRate']=self.tPsheetBadRate.toPlainText()
+        dictPara['tPsheetFail']=self.tPsheetFail.toPlainText()
+        dictPara['tPplateTotal']=self.tPplateTotal.toPlainText()
+        dictPara['tPplateGood']=self.tPplateGood.toPlainText()
+        dictPara['tPplateGoodRate']=self.tPplateGoodRate.toPlainText()        
+        dictPara['tPplateBad']=self.tPplateBad.toPlainText()        
+        dictPara['tPplateBadRate']=self.tPplateBadRate.toPlainText()
+        dictPara['tPplateFail']=self.tPplateFail.toPlainText()
+        dictPara['tNsheetTotal']=self.tNsheetTotal.toPlainText()
+        dictPara['tNsheetGood']=self.tNsheetGood.toPlainText()
+        dictPara['tNsheetGoodRate']=self.tNsheetGoodRate.toPlainText()
+        dictPara['tNsheetBad']=self.tNsheetBad.toPlainText()
+        dictPara['tNsheetBadRate']=self.tNsheetBadRate.toPlainText()
+        dictPara['tNsheetFail']=self.tNsheetFail.toPlainText()
+        dictPara['tNplateTotal']=self.tNplateTotal.toPlainText()
+        dictPara['tNplateGood']=self.tNplateGood.toPlainText()
+        dictPara['tNplateGoodRate']=self.tNplateGoodRate.toPlainText()
+        dictPara['tNplateBad']=self.tNplateBad.toPlainText()
+        dictPara['tNplateBadRate']=self.tNplateBadRate.toPlainText()
+        dictPara['tNplateFail']=self.tNplateFail.toPlainText()
+        dictPara['tTime']=self.tTime.toPlainText()
+        dictPara['tPsheetSn']=self.tPsheetSn.toPlainText()
+        dictPara['tNsheetSn']=self.tNsheetSn.toPlainText()
+        dictPara['tPplateSn']=self.tPplateSn.toPlainText()                 
+        dictPara['tNplateSn']=self.tNplateSn.toPlainText() 
+       # print(dictPara)
+        for key in dictPara:
+            cursor.execute("update para set data=? where name = ?",(dictPara[key],key,))        
         conn.commit()
+        
     def bRunClick(self): 
-        img1=cv2.imread('apple1.jpeg')
-#        img1Processed=img1.copy()
-#        dll.findEdge(180,255,img1,img1Processed,10,3000,10,500000)
-#        img1Resize=cv2.resize(src=img1,dsize=None,fx=0.2,fy=0.2)
-        img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
-        qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
-        self.lCamSheetP.setPixmap(QPixmap(QPixmap.fromImage(qimag1))) 
+        global basler,dictPara,basler,sn
         
-        img2=cv2.imread('apple2.jpeg')
-#        img1Resize=cv2.resize(src=img1,dsize=None,fx=0.2,fy=0.2)
-        img2Rgb=cv2.cvtColor(img2,cv2.COLOR_BGR2RGB)
-        qimag2=QImage(img2Rgb[:],img2Rgb.shape[1], img2Rgb.shape[0],img2Rgb.shape[1] * 3, QImage.Format_RGB888)
-        self.lCamPlateP.setPixmap(QPixmap(QPixmap.fromImage(qimag2))) 
-        
-        img3=cv2.imread('apple3.jpeg')
-#        img1Resize=cv2.resize(src=img1,dsize=None,fx=0.2,fy=0.2)
-        img3Rgb=cv2.cvtColor(img3,cv2.COLOR_BGR2RGB)
-        qimag3=QImage(img3Rgb[:],img3Rgb.shape[1], img3Rgb.shape[0],img3Rgb.shape[1] * 3, QImage.Format_RGB888)
-        self.lCamSheetN.setPixmap(QPixmap(QPixmap.fromImage(qimag3)))  
-
-        img4=cv2.imread('apple4.jpeg')
-#        img1Resize=cv2.resize(src=img1,dsize=None,fx=0.2,fy=0.2)
-        img4Rgb=cv2.cvtColor(img4,cv2.COLOR_BGR2RGB)
-        qimag4=QImage(img4Rgb[:],img4Rgb.shape[1], img4Rgb.shape[0],img4Rgb.shape[1] * 3, QImage.Format_RGB888)
-        self.lCamPlateN.setPixmap(QPixmap(QPixmap.fromImage(qimag4)))           
+         
         
     def bPsheetTrigClick(self):
-        img1=cv2.imread('apple1.jpeg')
-        img1Processed=img1.copy()
-        dll.findEdge(180,255,img1,img1Processed,10,3000,10,500000)
+        global basler,sn,dictPara
+        basler.capBmp(sn.index(dictPara['tPsheetSn']))
+        img1=cv2.imread('bmpForProcess.bmp')
+#        img1Processed=img1.copy()
+#        dll.findEdge(180,255,img1,img1Processed,10,3000,10,500000)
         img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
         qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
         self.lCamSheetP.setPixmap(QPixmap(QPixmap.fromImage(qimag1))) 
     def bPplateTrigClick(self):
-        img2=cv2.imread('apple2.jpeg')
-        img2Processed=img2.copy()
-        dll.findEdge(180,255,img2,img2Processed,10,3000,10,500000)
+        global basler,sn,dictPara
+        basler.capBmp(sn.index(dictPara['tPplateSn']))
+        img2=cv2.imread('bmpForProcess.bmp')        
+#        dll.findEdge(180,255,img2,img2Processed,10,3000,10,500000)
         img2Rgb=cv2.cvtColor(img2,cv2.COLOR_BGR2RGB)
         qimag2=QImage(img2Rgb[:],img2Rgb.shape[1], img2Rgb.shape[0],img2Rgb.shape[1] * 3, QImage.Format_RGB888)
         self.lCamPlateP.setPixmap(QPixmap(QPixmap.fromImage(qimag2))) 
     def bNsheetTrigClick(self):
-        pass
+        global basler,sn,dictPara
+        basler.capBmp(sn.index(dictPara['tNsheetSn']))
+        img3=cv2.imread('bmpForProcess.bmp')        
+#        dll.findEdge(180,255,img2,img2Processed,10,3000,10,500000)
+        img3Rgb=cv2.cvtColor(img3,cv2.COLOR_BGR2RGB)
+        qimag3=QImage(img3Rgb[:],img3Rgb.shape[1], img3Rgb.shape[0],img3Rgb.shape[1] * 3, QImage.Format_RGB888)
+        self.lCamSheetN.setPixmap(QPixmap(QPixmap.fromImage(qimag3))) 
     def bNplateTrigClick(self):
-        pass
+        global basler,sn,dictPara
+        basler.capBmp(sn.index(dictPara['tNplateSn']))
+        img4=cv2.imread('bmpForProcess.bmp')        
+#        dll.findEdge(180,255,img2,img2Processed,10,3000,10,500000)
+        img4Rgb=cv2.cvtColor(img4,cv2.COLOR_BGR2RGB)
+        qimag4=QImage(img4Rgb[:],img4Rgb.shape[1], img4Rgb.shape[0],img4Rgb.shape[1] * 3, QImage.Format_RGB888)
+        self.lCamPlateN.setPixmap(QPixmap(QPixmap.fromImage(qimag4))) 
 #子窗口
 qtCreatorFile = "visionPara.ui" # Enter file here.导入文件
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)#给两个变量赋值
@@ -217,6 +203,13 @@ class Vison(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)        
         self.setupUi(self)
+        
+        cursor.execute('select * from paraVision'  )
+        value = cursor.fetchall()   
+        dictParaVision={}
+        for i in range(len(value)):
+            dictParaVision[value[i][0]]=str(value[i][1])
+        print(dictParaVision)
 #        self.bPsheetTrig.clicked.connect(MyApp.bPsheetTrigClick)
     def handle_click(self):
 #        if not self.isVisible():
