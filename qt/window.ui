@@ -975,59 +975,7 @@
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="bPsheetTrig">
-      <property name="geometry">
-       <rect>
-        <x>450</x>
-        <y>290</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>相机触发</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="bPplateTrig">
-      <property name="geometry">
-       <rect>
-        <x>930</x>
-        <y>290</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>相机触发</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="bNsheetTrig">
-      <property name="geometry">
-       <rect>
-        <x>450</x>
-        <y>600</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>相机触发</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="bNplateTrig">
-      <property name="geometry">
-       <rect>
-        <x>930</x>
-        <y>600</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>相机触发</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="info">
       <property name="geometry">
        <rect>
         <x>420</x>
@@ -1040,69 +988,17 @@
        <string>系统信息显示</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="bDataReset_10">
-      <property name="geometry">
-       <rect>
-        <x>690</x>
-        <y>290</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>实时</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="bDataReset_11">
-      <property name="geometry">
-       <rect>
-        <x>1190</x>
-        <y>290</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>实时</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="bDataReset_12">
-      <property name="geometry">
-       <rect>
-        <x>700</x>
-        <y>600</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>实时</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="bDataReset_13">
-      <property name="geometry">
-       <rect>
-        <x>1190</x>
-        <y>600</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>实时</string>
-      </property>
-     </widget>
     </widget>
     <widget class="QWidget" name="tCamPara">
      <attribute name="title">
-      <string>相机设定</string>
+      <string>系统设置</string>
      </attribute>
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>20</y>
-        <width>681</width>
+        <width>711</width>
         <height>101</height>
        </rect>
       </property>
@@ -1237,6 +1133,339 @@
        <property name="text">
         <string>保存数据</string>
        </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>711</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>机器通讯设定</string>
+       </attribute>
+       <widget class="QTextEdit" name="tTCPport">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>80</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="tPip">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>30</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>40</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>负极机器人IP</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_47">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>90</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>本机服务器端口</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="tNip">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>30</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_48">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>本机IP</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="tIP">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>80</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>正极机器人IP</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bSnSave_2">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>80</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>保存数据</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bTCPini">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>30</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>开户服务器</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>通讯测试</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>321</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>正极</string>
+        </property>
+        <widget class="QTextEdit" name="tPsent">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_55">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>接收</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bPclear">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>110</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>清空</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="tPrec">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>201</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bPsent">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>发送</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>10</y>
+          <width>321</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>负极</string>
+        </property>
+        <widget class="QTextEdit" name="tNsent">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_56">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>接收</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bNclear">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>110</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>清空</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="tNrec">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>201</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bNsent">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>发送</string>
+         </property>
+        </widget>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -1709,6 +1938,38 @@
     <hint type="destinationlabel">
      <x>77</x>
      <y>661</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bSnSave_2</sender>
+   <signal>clicked()</signal>
+   <receiver>bDataSave</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>77</x>
+     <y>661</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bTCPini</sender>
+   <signal>clicked()</signal>
+   <receiver>bTCPini</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>286</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>629</x>
+     <y>286</y>
     </hint>
    </hints>
   </connection>

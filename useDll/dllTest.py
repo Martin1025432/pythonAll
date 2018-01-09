@@ -14,15 +14,17 @@ sn=[]
 basler=CDLL('vision.dll')
 basler.capIni()
 #获取相机序列号
-#for i in range(0,4):  
-#    sizebuffer=basler.outputStr(i)
-#    print(c_char_p(sizebuffer).value)
-#    recStr=str(c_char_p(sizebuffer).value)[2:-1]
-#    sn.append(recStr)
-#for i in range(5):
-#    print(datetime.datetime.now())
-#    basler.capBmp(sn.index(cam1))
-
+for i in range(0,4):  
+    sizebuffer=basler.outputStr(i)
+    print(c_char_p(sizebuffer).value)
+    recStr=str(c_char_p(sizebuffer).value)[2:-1]
+    sn.append(recStr)
+for i in range(5):
+    print(datetime.datetime.now())
+    basler.capBmp(sn.index(cam1))
+    print(datetime.datetime.now())
+    basler.capBmp(sn.index(cam2))
+    print(datetime.datetime.now())
 #while(1):
 #    cv2.imshow("img", img)    
 #    cv2.waitKey(0)

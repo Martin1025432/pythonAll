@@ -102,18 +102,24 @@ def server(serverAddr,nClientIP,pClientIP):
             nSoc=sock            
             t = threading.Thread(target=tcplink, args=(sock, addr,nClientIP,pClientIP))
             t.start()
-            print('nclien'+nData)
+            print('nclien',nData)
         if(addr[0]==pClientIP):
     # 创建新线程来处理TCP连接:
             print(addr)
             pData='conned'
             pSoc=sock   
-            t = threading.Thread(target=tcplink, args=(sock, addr,nClientIP,pClientIP))
-            t.start()  
-            print('pclien'+pData)
+            try:
+                
+                t = threading.Thread(target=tcplink, args=(sock, addr,nClientIP,pClientIP))
+                t.start()
+                print('pclien',pData)
+            except:
+                print('error')
+                
 
 def tcplink(sock, addr,nClientIP,pClientIP):
     global nData,pData,nSoc,pSoc 
+    print("rec success")
     while True:
         try:
             data = sock.recv(1024)
@@ -122,7 +128,8 @@ def tcplink(sock, addr,nClientIP,pClientIP):
                    nData=data
                    print(nData)
                 if(addr[0]==pClientIP):
-                   nData=data                 
+                   pData=data 
+                   print(pData)
                 
             if data == 'exit' or not data:
                 break

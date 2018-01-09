@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -211,13 +211,36 @@
       <property name="geometry">
        <rect>
         <x>180</x>
-        <y>170</y>
+        <y>160</y>
         <width>75</width>
         <height>31</height>
        </rect>
       </property>
       <property name="text">
        <string>相机触发</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bSaveData">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>210</y>
+        <width>75</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>保存参数</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="pSheetInfo">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>120</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
       </property>
      </widget>
     </widget>
@@ -402,17 +425,30 @@
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="bPplateTrig">
       <property name="geometry">
        <rect>
         <x>180</x>
-        <y>170</y>
+        <y>160</y>
         <width>75</width>
         <height>31</height>
        </rect>
       </property>
       <property name="text">
        <string>相机触发</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bSaveData_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>210</y>
+        <width>75</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>保存参数</string>
       </property>
      </widget>
     </widget>
@@ -597,17 +633,30 @@
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="bNsheetTrig">
       <property name="geometry">
        <rect>
         <x>180</x>
-        <y>170</y>
+        <y>160</y>
         <width>75</width>
         <height>31</height>
        </rect>
       </property>
       <property name="text">
        <string>相机触发</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bSaveData_3">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>210</y>
+        <width>75</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>保存参数</string>
       </property>
      </widget>
     </widget>
@@ -792,17 +841,30 @@
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="bNplateTrig">
       <property name="geometry">
        <rect>
         <x>180</x>
-        <y>170</y>
+        <y>160</y>
         <width>75</width>
         <height>31</height>
        </rect>
       </property>
       <property name="text">
        <string>相机触发</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bSaveData_4">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>210</y>
+        <width>75</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>保存参数</string>
       </property>
      </widget>
     </widget>
@@ -820,5 +882,54 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>bSaveData_2</sender>
+   <signal>clicked()</signal>
+   <receiver>bSaveData</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>279</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bSaveData_3</sender>
+   <signal>clicked()</signal>
+   <receiver>bSaveData</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>279</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bSaveData_4</sender>
+   <signal>clicked()</signal>
+   <receiver>bSaveData</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>279</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
