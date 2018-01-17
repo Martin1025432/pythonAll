@@ -11,6 +11,7 @@ import collections
 import cv2
 import dll
 from ctypes import * 
+from cSharpDll import * 
 import threading
 from socket import socket, AF_INET , SOCK_STREAM,SOL_SOCKET,SO_SNDBUF
 #import cv2
@@ -40,13 +41,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
                
         conn = sqlite3.connect("cm08.db")
         cursor = conn.cursor()
-        cursor.execute('select * from para'  )
-
-        value = cursor.fetchall()  
-        print(value)
-        dictPara={}
-        for i in range(len(value)):
-            dictPara[value[i][0]]=str(value[i][1])
+        self.sqlUpdate()
+#        cursor.execute('select * from para'  )
+#
+#        value = cursor.fetchall()  
+#        print(value)
+#        dictPara={}
+#        for i in range(len(value)):
+#            dictPara[value[i][0]]=str(value[i][1])
 #        print(dictPara)
         
         self.tPsheetTotal.setText(dictPara['tPsheetTotal'])
@@ -96,7 +98,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         except:
             self.info.setText("相机打开失败")
     global     nData    
-
+    def sqlUpdate(self):
+        global  cursor, p ,conn ,dictPara,basler,sn 
+        cursor.execute('select * from para'  )
+        value = cursor.fetchall()  
+        print(value)
+        dictPara={}
+        for i in range(len(value)):
+            dictPara[value[i][0]]=str(value[i][1])
     def outText(self):
         global nData,pData,nSoc,pSoc,cent 
         
@@ -111,6 +120,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         pData=b''
     def server(self,serverAddr,nClientIP,pClientIP):
         global nData,pData,nSoc,pSoc 
+        mulLock = threading.Lock()  
         serverSoc = socket(AF_INET, SOCK_STREAM)
         serverSoc.bind(serverAddr)
         serverSoc.listen(5)
@@ -137,7 +147,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
                 except:
                     print('error')
     def tcplink(self,sock, addr,nClientIP,pClientIP):
-        global nData,pData,nSoc,pSoc 
+        global nData,pData,nSoc,pSoc,centPsheet, centNsheet,centPplate, centNplate
         while True:
             try:
                 data = sock.recv(1024)
@@ -145,9 +155,43 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
                     if(addr[0]==nClientIP):
                         nData=data
                         print(nData)
+                        self.tNrec.setText(str(nData))
+                        if(nData==b'TRGS'):
+
+                            self.bNsheetTrigClick()
+                            try:
+                                nSoc.send(bytes(str(centNsheet),'utf8'))
+                            except:
+                                print("erro find")    
+                            nData=b''
+                        if(nData==b'TRGP'):
+
+                            self.bNplateTrigClick()
+                            try:
+                                nSoc.send(bytes(str(centNplate),'utf8'))
+                            except:
+                                print("erro find")    
+                            nData=b''                                                                                                                             
                     if(addr[0]==pClientIP):
                         pData=data 
-                        print(pData)                                
+                        print(pData)
+                        self.tPrec.setText(str(pData))
+                        if(pData==b'TRGS'):
+
+                            self.bPsheetTrigClick()
+                            try:
+                                pSoc.send(bytes(str(centPsheet),'utf8'))
+                            except:
+                                print("erro find")    
+                            pData=b''
+                        if(pData==b'TRGP'):
+
+                            self.bPplateTrigClick()
+                            try:
+                                pSoc.send(bytes(str(centPplate),'utf8'))
+                            except:
+                                print("erro find")    
+                            pData=b''                                  
                 if data == 'exit' or not data:
                     break
             except:
@@ -254,58 +298,91 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
 
                  
     def bPsheetTrigClick(self):
-        global basler,sn,dictPara,dictParaVision,cent       
-        print("basler ")
+        global basler,sn,dictPara,dictParaVision,centPsheet       
+        print("P sheet camer trig ")
+        print(datetime.datetime.now())
         basler.capBmp(sn.index(dictPara['tPsheetSn']))
+        print(datetime.datetime.now())
         img1=cv2.imread('bmpForProcess.bmp')
+        print(datetime.datetime.now())
         img1Processed=img1.copy()                        
         try:
+            print(datetime.datetime.now())
             cent=dll.findEdge(int(dictParaVision['pSheetT1']),int(dictParaVision['pSheetT2']),img1,img1Processed,int(dictParaVision['pSheetCmin']),int(dictParaVision['pSheetCmax']),int(dictParaVision['pSheetSmin']),int(dictParaVision['pSheetSmax']))
             img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
             qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
             self.lCamSheetP.setPixmap(QPixmap(QPixmap.fromImage(qimag1)))
-#            self.lCamSheetP.setText('OK')
+            print(datetime.datetime.now())
+
         except:
             self.lCamSheetP.setText('error')
     def bPplateTrigClick(self):
-        global basler,sn,dictPara,dictParaVision
+        global basler,sn,dictPara,dictParaVision,centPplate
+        print("P plate camer trig ")
+        s1=time.time()
+        basler.capBmp(sn.index(dictPara['tPplateSn']))
         try:
-            basler.capBmp(sn.index(dictPara['tPplateSn']))
+            #basler.capBmp(sn.index(dictPara['tPplateSn']))
+            e1=time.time()
+            capTime="Cap time:"+str(round((e1-s1),2))
+            
+            
             img1=cv2.imread('bmpForProcess.bmp')        
         
             img1Processed=img1.copy()
-            dll.findEdge(int(dictParaVision['bPsheetT1']),int(dictParaVision['bPsheetT2']),img1,img1Processed,int(dictParaVision['pSheetCmin']),int(dictParaVision['pSheetCmax']),int(dictParaVision['pSheetSmin']),int(dictParaVision['pSheetSmax']))
+            centPplate=dll.findEdge(int(dictParaVision['pPlateT1']),int(dictParaVision['pPlateT2']),img1,img1Processed,int(dictParaVision['pPlateCmin']),int(dictParaVision['pPlateCmax']),int(dictParaVision['pPlateSmin']),int(dictParaVision['pPlateSmax']))
+            e2=time.time()
+            processTime="Process time:"+str(round((e2-e1),2))
+
+            cv2.putText(img1,capTime,(10,400),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,processTime,(10,500),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
             img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
             qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
             self.lCamPlateP.setPixmap(QPixmap(QPixmap.fromImage(qimag1))) 
-            self.lCamSheetP.setText('OK')
+            
         except:
-            self.lCamSheetP.setText('error')
+            self.lCamPlateP.setText('error')
     def bNsheetTrigClick(self):
-        global basler,sn,dictPara,dictParaVision
+        global basler,sn,dictPara,dictParaVision,centNsheet
+        print("N sheet camer trig ")
+        s1=time.time()
+      #  basler.capBmp(sn.index(dictPara['tNsheetSn']))
         try:
-            basler.capBmp(sn.index(dictPara['tNsheetSn']))
+            #basler.capBmp(sn.index(dictPara['tPplateSn']))
+            e1=time.time()
+            capTime="Cap time:"+str(round((e1-s1),2))
+            
+            
             img1=cv2.imread('bmpForProcess.bmp')        
         
             img1Processed=img1.copy()
-            dll.findEdge(int(dictParaVision['bPsheetT1']),int(dictParaVision['bPsheetT2']),img1,img1Processed,int(dictParaVision['pSheetCmin']),int(dictParaVision['pSheetCmax']),int(dictParaVision['pSheetSmin']),int(dictParaVision['pSheetSmax']))
+            dll.drawCircle(img1)
+#            centNsheet=dll.findEdge(int(dictParaVision['nSheetT1']),int(dictParaVision['nSheetT2']),img1,img1Processed,int(dictParaVision['nSheetCmin']),int(dictParaVision['nSheetCmax']),int(dictParaVision['nSheetSmin']),int(dictParaVision['nSheetSmax']))
+            e2=time.time()
+            processTime="Process time:"+str(round((e2-e1),2))
+
+            cv2.putText(img1,capTime,(10,400),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,processTime,(10,500),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
             img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
             qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
             self.lCamSheetN.setPixmap(QPixmap(QPixmap.fromImage(qimag1))) 
+            
         except:
-            pass
+            self.lCamPlateP.setText('error')
     def bNplateTrigClick(self):
-        global basler,sn,dictPara,dictParaVision
+        global basler,sn,dictPara,dictParaVision,centNplate
+        print("N plate camer trig ")
         try:
-            basler.capBmp(sn.index(dictPara['tNplateSn']))
+#            basler.capBmp(sn.index(dictPara['tNplateSn']))
             img1=cv2.imread('bmpForProcess.bmp')              
             img1Processed=img1.copy()
-            dll.findEdge(int(dictParaVision['bPsheetT1']),int(dictParaVision['bPsheetT2']),img1,img1Processed,int(dictParaVision['pSheetCmin']),int(dictParaVision['pSheetCmax']),int(dictParaVision['pSheetSmin']),int(dictParaVision['pSheetSmax']))
+            dll.drawCircle(img1)
+#            centNplate=dll.findEdge(int(dictParaVision['bPsheetT1']),int(dictParaVision['bPsheetT2']),img1,img1Processed,int(dictParaVision['pSheetCmin']),int(dictParaVision['pSheetCmax']),int(dictParaVision['pSheetSmin']),int(dictParaVision['pSheetSmax']))
             img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
             qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
             self.lCamPlateN.setPixmap(QPixmap(QPixmap.fromImage(qimag1))) 
         except:
-            pass
+            self.lCamPlateN.setText('error')
                  
     def bPsentClick(self):
         global basler,dictPara,pData,pSoc
@@ -315,6 +392,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
     def bNsentClick(self):
         global basler,dictPara,nData,nSoc
         nSoc.send(bytes(self.tNsent.toPlainText(),'utf8'))
+        
 
 
 class MyThread(QThread):
@@ -327,7 +405,7 @@ class MyThread(QThread):
     def setVal(self,val):
         self.times = int(val)
         # 执行线程的run方法
-        self.start()        
+#        self.start()        
     def run(self):
         while self.times > 0 and self.identity:
             # 发射信号
@@ -347,12 +425,7 @@ class Vison(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         Ui_MainWindow.__init__(self)        
         self.setupUi(self)
         self.bSaveData.clicked.connect(self.bSaveDataClick)
-        cursor.execute('select * from paraVision'  )
-        value = cursor.fetchall()   
-        dictParaVision={}
-        for i in range(len(value)):
-            dictParaVision[value[i][0]]=str(value[i][1])
-        print(dictParaVision)
+        self.sqlUpdate()
         
         self.pSheetT1.setText(dictParaVision['pSheetT1'])
         self.pSheetT2.setText(dictParaVision['pSheetT2'])
@@ -380,7 +453,15 @@ class Vison(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         self.nPlateCmin.setText(dictParaVision['nPlateCmin'])
         self.nPlateCmax.setText(dictParaVision['nPlateCmax'])
         self.nPlateSmin.setText(dictParaVision['nPlateSmin'])        
-        self.nPlateSmax.setText(dictParaVision['nPlateSmax'])         
+        self.nPlateSmax.setText(dictParaVision['nPlateSmax'])   
+    def sqlUpdate(self):
+        global  cursor,paraName, paraData ,conn,dictParaVision 
+        cursor.execute('select * from paraVision'  )
+        value = cursor.fetchall()   
+        dictParaVision={}
+        for i in range(len(value)):
+            dictParaVision[value[i][0]]=str(value[i][1])
+        print(dictParaVision)
     def bSaveDataClick(self):  
         global dictParaVision
         dictParaVision['pSheetT1']=self.pSheetT1.toPlainText()

@@ -13,6 +13,17 @@ import time
 import numpy as np
 import cv2
 import threading
+from cSharpDll import *
+
+
+def drawCircle(img):
+    a=tool.find()
+    x=a[0]
+    y=a[1]
+    r=a[2]
+    imgray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+    cv2.circle(img,(int(x),int(y)),int(r),(0,255,0),10)
+
 
 def findEdge(a,b,dstImg,proImg,minLong,maxLong,minS,MaxS):
 #    global imag,moment,mc,contours,hierarchy,mg,center,crop_img,thresh,mg_long,rmg,x,y
@@ -84,7 +95,6 @@ def cam(number):
 
 def findEdgeCanny(a,b,dstImg,proImg):
     pass
-
 global nData,pData,nSoc,pSoc 
 nData='none'
 pData='none'
