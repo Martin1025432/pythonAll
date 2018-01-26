@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cognex.VisionPro3D.Display.Controls</name>
+    </assembly>
+    <members>
+        <member name="T:Cognex.VisionPro3D.Display.Controls.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Display.Controls.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Display.Controls.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Cognex.VisionPro3D.Implementation.Internal.Cog3DModel">
+            <summary>
+            3D model class. Internal use only.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Implementation.Internal.Cog3DModel._resolution">
+            <summary>
+            Gets or sets the rendering resolution. If AutoResolution is false,
+            this value will determine the rendering resolution.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Implementation.Internal.Cog3DModel._boundingBox">
+            <summary>
+            Gets the enclosing box of the model
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Implementation.Internal.Cog3DModel._brush">
+            <summary>
+            Gets or sets the color of the model.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Implementation.Internal.Cog3DModel._renderMissingPixels">
+            <summary>
+            Wheter true or false, the missing pixels will be rendered
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Implementation.Internal.Cog3DModel.GetContent">
+            <summary>
+            Returns the content of the model
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Implementation.Internal.Cog3DModel.Update">
+            <summary>
+            Update (re-render) model
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Implementation.Internal.Cog3DModel.YDirection">
+            <summary>
+            Returns the Y direction. Internal use only.
+            </summary>
+        </member>
+        <member name="T:Cognex.VisionPro3D.Cog3DDisplayHost">
+            <summary>
+            This class is a host for the WPF implementation of the <see cref="T:Cognex.VisionPro3D.Cog3DDisplay"/>
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplayHost.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplayHost.#ctor">
+            <summary>
+            Creates a new Instance of the <see cref="T:Cognex.VisionPro3D.Cog3DDisplayHost"/>.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplayHost.HostedDisplay">
+            <summary>
+            Gets the underlying <see cref="T:Cognex.VisionPro3D.Cog3DDisplay"/> WPF control.
+            </summary>
+        </member>
+        <member name="T:Cognex.VisionPro3D.Cog3DDisplay">
+            <summary>
+            A 3D Display Control for rendering 3D Range Images
+            </summary>
+            <summary>
+            Cog3DDisplay
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.#ctor">
+            <summary>
+            Creates an instance of the <see cref="T:Cognex.VisionPro3D.Cog3DDisplay"/> class
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.MouseCoordinatesVisibleProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.MouseCoordinatesVisible"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.StatusBarVisibleProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.StatusBarVisible"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.BrushProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.Brush"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.BrushChangedEvent">
+            <summary>
+            The brush changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnBrushChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Raises the brush changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnBrushChanged(System.Windows.RoutedPropertyChangedEventArgs{System.Windows.Media.Brush})">
+            <summary>
+            Raises the brush changed event.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.ImageProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.Image"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.ImageChangedEvent">
+            <summary>
+            The image changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnImageChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Raises the image changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnImageChanged(System.Windows.RoutedPropertyChangedEventArgs{Cognex.VisionPro.ICogImage})">
+            <summary>
+            Raises the image changed event.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.MouseModeProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.MouseMode"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.MouseModeChangedEvent">
+            <summary>
+            The mouse mode changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnMouseModeChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Raises the mouse mode changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnMouseModeChanged(System.Windows.RoutedPropertyChangedEventArgs{Cognex.VisionPro3D.Cog3DDisplayMouseModeConstants})">
+            <summary>
+            Raises the moude mode changed event.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.MousePositionProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.MousePosition"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.MousePositionChangedEvent">
+            <summary>
+            The mouse position changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnMousePositionChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Raises the mouse position changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnMousePositionChanged(System.Windows.RoutedPropertyChangedEventArgs{Cognex.VisionPro3D.Cog3DVect3})">
+            <summary>
+            Raises the mouse position changed event.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.RenderNonVisiblePixelsProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.RenderNonVisiblePixels"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.RenderNonVisiblePixelsChangedEvent">
+            <summary>
+            The render non visible pixels changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnRenderNonVisiblePixelsChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Raises the render non visible pixels changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnRenderNonVisiblePixelsChanged(System.Windows.RoutedPropertyChangedEventArgs{System.Boolean})">
+            <summary>
+            Raises the render non visible pixels changed event.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.RotateAroundMouseDownProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.RotateAroundMouseDown"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.RotateAroundMouseDownChangedEvent">
+            <summary>
+            The rotate around mouse down changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnRotateAroundMouseDownChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Raises the rotate around mouse down changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnRotateAroundMouseDownChanged(System.Windows.RoutedPropertyChangedEventArgs{System.Boolean})">
+            <summary>
+            Raises the rotate around mouse down changed event.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.SamplingRateProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.SamplingRate"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.SamplingRateChangedEvent">
+            <summary>
+            The sampling rate changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnSamplingRateChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Raises the sampling rate changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnSamplingRateChanged(System.Windows.RoutedPropertyChangedEventArgs{System.Int32})">
+            <summary>
+            Raises the sampling rate changed event.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.ZoomAroundMouseDownProperty">
+            <summary>
+            Identifies the <see cref="P:Cognex.VisionPro3D.Cog3DDisplay.ZoomAroundMouseDown"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Cognex.VisionPro3D.Cog3DDisplay.ZoomAroundMouseDownChangedEvent">
+            <summary>
+            The zoom around mouse down changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnZoomAroundMouseDownChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Raises the zoom around mouse down changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.OnZoomAroundMouseDownChanged(System.Windows.RoutedPropertyChangedEventArgs{System.Boolean})">
+            <summary>
+            Raises the zoom around mouse down changed event.
+            </summary>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.Fit(System.Boolean)">
+            <summary>
+            Zooms to the extents of the sceen.
+            </summary>
+            <param name="resetView">A value indicating whether to reset the view to the initial state.</param>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.RenderScene">
+            <summary>
+            Renders the content of the display to a bitmap with the actual resolution.
+            </summary>
+            <returns>The rendered content.</returns>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.RenderScene(System.Int32,System.Int32)">
+            <summary>
+            Renders the content of the display to a bitmap with the given resolution.
+            </summary>
+            <param name="width">The given width.</param>
+            <param name="height">The given height.</param>
+            <returns>The rendered content.</returns>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.SetView(Cognex.VisionPro3D.Cog3DVect3,Cognex.VisionPro3D.Cog3DVect3,Cognex.VisionPro3D.Cog3DVect3)">
+            <summary>
+            Change the viewport's position and direction in the 3-D space.
+            </summary>
+            <param name="newPosition">New position of the viewport.</param>
+            <param name="newDirection">New looking direction of the viewport.</param>
+            <param name="upDirection">New up direction of the viewport.</param>
+        </member>
+        <member name="M:Cognex.VisionPro3D.Cog3DDisplay.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.MouseCoordinatesVisible">
+            <summary>
+            Gets or sets whether the coordinates of the object under the mouse cursor are visible on the Display
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.StatusBarVisible">
+            <summary>
+            Gets or sets whether the coordinates of the object under the mouse cursor are visible on the Statusbar
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.Brush">
+            <summary>
+            Gets or sets the brush to be applied as a material to the 3-D model. 
+            </summary>
+        </member>
+        <member name="E:Cognex.VisionPro3D.Cog3DDisplay.BrushChanged">
+            <summary>
+            Occurs when the brush changed.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.Image">
+            <summary>
+            Gets or sets the image currently in the display.
+            </summary> 
+            <exception cref="T:Cognex.VisionPro3D.Cog3DImageRenderException">Thrown when the image cannot be rendered.</exception>
+        </member>
+        <member name="E:Cognex.VisionPro3D.Cog3DDisplay.ImageChanged">
+            <summary>
+            Occurs when the image changed.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.MouseMode">
+            <summary>
+            Gets or sets the behavior of the display control in response to mouse input.
+            </summary>
+        </member>
+        <member name="E:Cognex.VisionPro3D.Cog3DDisplay.MouseModeChanged">
+            <summary>
+            Occurs when the mouse mode changed.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.MousePosition">
+            <summary>
+            Gets the actual mouse position in the 3-D space.
+            </summary>
+        </member>
+        <member name="E:Cognex.VisionPro3D.Cog3DDisplay.MousePositionChanged">
+            <summary>
+            Occurs when the mouse position changed.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.RenderNonVisiblePixels">
+            <summary>
+            Gets or sets a value indicating whether to render not visible pixels.
+            </summary>
+        </member>
+        <member name="E:Cognex.VisionPro3D.Cog3DDisplay.RenderNonVisiblePixelsChanged">
+            <summary>
+            Occurs when the render non visible pixels property changed.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.RotateAroundMouseDown">
+            <summary>
+            Gets or sets a value indicating whether to rotate around mouse down point.
+            </summary>
+        </member>
+        <member name="E:Cognex.VisionPro3D.Cog3DDisplay.RotateAroundMouseDownChanged">
+            <summary>
+            Occurs when the rotate around mouse down property changed.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.SamplingRate">
+            <summary>
+            Gets or sets the sampling rate of the model. The higher this value is, the lower the rendering quality will be.
+            For auto-sampling, use 0.
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when the given value is smaller than 0.
+            </exception>
+        </member>
+        <member name="E:Cognex.VisionPro3D.Cog3DDisplay.SamplingRateChanged">
+            <summary>
+            Occurs when the sampling rate changed.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.ZoomAroundMouseDown">
+            <summary>
+            Gets or sets a value indicating whether to zoom around mouse down point.
+            </summary>
+        </member>
+        <member name="E:Cognex.VisionPro3D.Cog3DDisplay.ZoomAroundMouseDownChanged">
+            <summary>
+            Occurs when the zoom around mouse down property changed.
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.CamraPosition">
+            <summary>
+            Returns the current camera position
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.LookDirection">
+            <summary>
+            Returns the camera's look direction 
+            </summary>
+        </member>
+        <member name="P:Cognex.VisionPro3D.Cog3DDisplay.UpDirection">
+            <summary>
+            Returns the vector which represents the upward direction for the camera.
+            </summary>
+        </member>
+    </members>
+</doc>

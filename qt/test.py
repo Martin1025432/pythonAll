@@ -3,7 +3,28 @@
 Created on Sun Jan  7 15:32:50 2018
 
 @author: Administrator
-"""
-from cSharpDll import *
+#"""
+#
+import os, sys
 
-a=tool.find()
+# Open a file
+fd = os.open( "test.txt", os.O_RDWR|os.O_APPEND )
+
+# Write one string
+
+line = "this is test\n" 
+# string needs to be converted byte object
+b = str.encode(line)
+os.write(fd, b)
+
+# Close opened file
+os.close( fd)
+
+print ("Closed the file successfully!!")
+        
+
+
+
+
+
+

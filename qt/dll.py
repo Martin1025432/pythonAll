@@ -13,17 +13,35 @@ import time
 import numpy as np
 import cv2
 import threading
-from cSharpDll import *
+from visionpro import *
 
 
-def drawCircle(img):
-    a=tool.find()
+def figure(img,toolNum):
+    if toolNum==1:
+        a=tool.find(1,1)
+    if toolNum==2:
+        a=tool.find(2,1)   
+    if toolNum==3:
+        a=tool.find(3,1)   
+    if toolNum==4:
+        a=tool.find(4,1) 
     x=a[0]
     y=a[1]
     r=a[2]
+    x0=a[3]
+    y0=a[4]
+    x1=a[5]
+    y1=a[6]    
+    angle=a[7]    
+    print(x,y,r)
+    print(a[0],a[1],a[2],a[3],a[4],a[5],a[6],a[7])
     imgray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-    cv2.circle(img,(int(x),int(y)),int(r),(0,255,0),10)
-
+    if(r>0):
+        cv2.circle(img,(int(x),int(y)),int(r),(0,255,0),6)
+    if(x0!=0):
+       cv2.line(img, (int(a[3]), int(a[4])), (int(a[5]), int(a[6])), (0,255,0),6)
+      
+    return int(x),int(y),angle
 
 def findEdge(a,b,dstImg,proImg,minLong,maxLong,minS,MaxS):
 #    global imag,moment,mc,contours,hierarchy,mg,center,crop_img,thresh,mg_long,rmg,x,y
@@ -145,7 +163,14 @@ def tcplink(sock, addr,nClientIP,pClientIP):
     sock.close()
     print ('Connection from closed.')
     
-
+if __name__ == "__main__":
+    img=cv2.imread("bmpForProcess0.bmp")
+    cv2.namedWindow("image",cv2.WINDOW_NORMAL)
+    figure(img,2)
+    while(1):
+        cv2.imshow("image", img)
+        cv2.waitKey(0)
+        break
      
     
     

@@ -3,7 +3,7 @@ import sys
 from PyQt5 import QtCore, QtWidgets, uic
 from PyQt5.QtGui import QPixmap,QImage
 from PyQt5.QtCore import QThread ,  pyqtSignal
-
+from PyQt5.QtWidgets import QFileDialog 
 import time
 import sqlite3
 import pandas
@@ -11,19 +11,22 @@ import collections
 import cv2
 import dll
 from ctypes import * 
-from cSharpDll import * 
+import visionpro
 import threading
 from socket import socket, AF_INET , SOCK_STREAM,SOL_SOCKET,SO_SNDBUF
 #import cv2
 import numpy as np
+import win32api,win32con  
+import os, sys
 #import time
 #from PyQt5 import *
 import datetime
+import time
 qtCreatorFile = "window.ui" # Enter file here.导入文件
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)#给两个变量赋值
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
     def __init__(self):
-        global  cursor, p ,conn ,dictPara,basler,sn                      #初始化
+        global  cursor, p ,conn ,dictPara,basler,sn ,fd                     #初始化
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)        
         self.setupUi(self)
@@ -33,12 +36,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         self.bTCPini.clicked.connect(self.bTCPiniClick)
         self.bPsent.clicked.connect(self.bPsentClick)
         self.bNsent.clicked.connect(self.bNsentClick)
+        self.bSelectDoc.clicked.connect(self.bSelectDocClick)
+        self.rInline.toggled.connect(self.offLineMod) 
         self.thread = MyThread()
         self.thread.setIdentity("thread1")
         self.thread.sinOut.connect(self.outText)
         self.thread.setVal(100)        
-        
-               
+        visionpro.visionproLoad()
+#        fd = os.open( "debug.txt", os.O_RDWR|os.O_APPEND )      
         conn = sqlite3.connect("cm08.db")
         cursor = conn.cursor()
         self.sqlUpdate()
@@ -85,6 +90,23 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         self.tNip.setText(dictPara['tNip'])
         self.tTCPport.setText(dictPara['tTCPport'])
         self.tIP.setText(dictPara['tIP'])
+        #视觉判定     
+        self.tPsheetStandX.setText(dictPara['tPsheetStandX'])
+        self.tPsheetStandY.setText(dictPara['tPsheetStandY'])
+        self.tPsheetBadValue.setText(dictPara['tPsheetBadValue'])
+        
+        self.tPplateStandX.setText(dictPara['tPplateStandX'])
+        self.tPplateStandY.setText(dictPara['tPplateStandY'])
+        self.tPplateBadValue.setText(dictPara['tPplateBadValue'])
+        
+        self.tNsheetStandX.setText(dictPara['tNsheetStandX'])
+        self.tNsheetStandY.setText(dictPara['tNsheetStandY'])
+        self.tNsheetBadValue.setText(dictPara['tNsheetBadValue'])
+        
+        self.tNplateStandX.setText(dictPara['tNplateStandX'])
+        self.tNplateStandY.setText(dictPara['tNplateStandY'])
+        self.tNplateBadValue.setText(dictPara['tNplateBadValue'])   
+        self.tNGpath.setText(dictPara['tNGpath'])   
         #初始化相机
         sn=[]
         basler=CDLL('vision.dll')
@@ -96,8 +118,42 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
                 recStr=str(c_char_p(sizebuffer).value)[2:-1]
                 sn.append(recStr)
         except:
-            self.info.setText("相机打开失败")
-    global     nData    
+            self.tDebug.setText("相机打开失败")
+            self.outDebug("相机打开失败")
+    global     nData 
+    
+    
+    def outDebug(self,text):
+        global fd
+        fd = os.open( "debug.txt", os.O_RDWR|os.O_APPEND|os.O_CREAT )
+        # Write one string
+        line = "[ "+time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))+" ]"+text+"\n" 
+        # string needs to be converted byte object
+        b = str.encode(line)
+        os.write(fd, b)
+        # Close opened file
+        os.close( fd)
+
+    
+    def bSelectDocClick(self):  
+        directory1 = QFileDialog.getExistingDirectory(self,  "选取文件夹",  "D:/") #起始路径  
+        self.tNGpath.setText(directory1) 
+        self.outDebug("修改NG文件夹:"+directory1)
+#        print(directory1)
+#        img1=cv2.imread("arrayBmp0.bmp")
+#        cv2.imwrite(directory1+"/arrayBmp3.bmp",img1) 
+    
+    def offLineMod(self):
+        global mod
+        
+        if self.rInline.isChecked(): 
+            mod=0
+            
+        else:
+            mod=1
+        self.outDebug("mod:"+str(mod))
+        print("修改mod:",mod)
+        
     def sqlUpdate(self):
         global  cursor, p ,conn ,dictPara,basler,sn 
         cursor.execute('select * from para'  )
@@ -121,15 +177,20 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
     def server(self,serverAddr,nClientIP,pClientIP):
         global nData,pData,nSoc,pSoc 
         mulLock = threading.Lock()  
-        serverSoc = socket(AF_INET, SOCK_STREAM)
-        serverSoc.bind(serverAddr)
-        serverSoc.listen(5)
+        try:
+            serverSoc = socket(AF_INET, SOCK_STREAM)
+            serverSoc.bind(serverAddr)
+            serverSoc.listen(5)
+            self.outDebug("开启服务器成功")
+        except Exception as e:
+            self.outDebug("开启服务器失败"+str(e))
         while True:
     # 接受一个新连接:
             sock, addr = serverSoc.accept()
             if(addr[0]==nClientIP):
     # 创建新线程来处理TCP连接:
                 print(sock)
+                self.outDebug("负极客端连接成功:"+str(sock))
                 nData='conned'
                 nSoc=sock            
                 t = threading.Thread(target=self.tcplink, args=(sock, addr,nClientIP,pClientIP))
@@ -138,6 +199,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
             if(addr[0]==pClientIP):
     # 创建新线程来处理TCP连接:
                 print(addr)
+                self.outDebug("正极客端连接成功:"+str(sock))
                 pData='conned'
                 pSoc=sock   
                 try:                
@@ -155,40 +217,42 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
                     if(addr[0]==nClientIP):
                         nData=data
                         print(nData)
+                        self.outDebug("收收负极机器人信息:"+str(nData))
                         self.tNrec.setText(str(nData))
                         if(nData==b'TRGS'):
 
-                            self.bNsheetTrigClick()
+                            centN=self.bNsheetTrigClick()
                             try:
-                                nSoc.send(bytes(str(centNsheet),'utf8'))
+                                nSoc.send(bytes(str(centN),'utf8'))
                             except:
                                 print("erro find")    
                             nData=b''
                         if(nData==b'TRGP'):
 
-                            self.bNplateTrigClick()
+                            centN=self.bNplateTrigClick()
                             try:
-                                nSoc.send(bytes(str(centNplate),'utf8'))
+                                nSoc.send(bytes(str(centN),'utf8'))
                             except:
                                 print("erro find")    
                             nData=b''                                                                                                                             
                     if(addr[0]==pClientIP):
                         pData=data 
                         print(pData)
+                        self.outDebug("收到正极机器人信息:"+str(pData))
                         self.tPrec.setText(str(pData))
                         if(pData==b'TRGS'):
 
-                            self.bPsheetTrigClick()
+                            centP=self.bPsheetTrigClick()
                             try:
-                                pSoc.send(bytes(str(centPsheet),'utf8'))
+                                pSoc.send(bytes(str(centP),'utf8'))
                             except:
                                 print("erro find")    
                             pData=b''
                         if(pData==b'TRGP'):
 
-                            self.bPplateTrigClick()
+                            centP=self.bPplateTrigClick()
                             try:
-                                pSoc.send(bytes(str(centPplate),'utf8'))
+                                pSoc.send(bytes(str(centP),'utf8'))
                             except:
                                 print("erro find")    
                             pData=b''                                  
@@ -236,7 +300,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         self.tNplateBad.setText('0')
         self.tNplateBadRate.setText('0')
         self.tNplateFail.setText('0')
-
+        self.outDebug("统计信息重置")
     def bDataSaveClick(self): 
         global paraName, conn,cursor,dictPara
         dictPara['tPsheetTotal']=self.tPsheetTotal.toPlainText()
@@ -275,13 +339,32 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         dictPara['tTCPport']=self.tTCPport.toPlainText()
         dictPara['tIP']=self.tIP.toPlainText()
         
+        dictPara['tPsheetStandX']=self.tPsheetStandX.toPlainText()
+        dictPara['tPsheetStandY']=self.tPsheetStandY.toPlainText()
+        dictPara['tPsheetBadValue']=self.tPsheetBadValue.toPlainText()
+        
+        dictPara['tPplateStandX']=self.tPplateStandX.toPlainText()
+        dictPara['tPplateStandY']=self.tPplateStandY.toPlainText()
+        dictPara['tPplateBadValue']=self.tPplateBadValue.toPlainText()
+        
+        dictPara['tNsheetStandX']=self.tNsheetStandX.toPlainText()
+        dictPara['tNsheetStandY']=self.tNsheetStandY.toPlainText()
+        dictPara['tNsheetBadValue']=self.tNsheetBadValue.toPlainText()
+        
+        dictPara['tNplateStandX']=self.tNplateStandX.toPlainText()
+        dictPara['tNplateStandY']=self.tNplateStandY.toPlainText()
+        dictPara['tNplateBadValue']=self.tNplateBadValue.toPlainText()  
+        dictPara['tNGpath']=self.tNGpath.toPlainText()  
        # print(dictPara)
         for key in dictPara:
             cursor.execute("update para set data=? where name = ?",(dictPara[key],key,))        
         conn.commit()
+        self.outDebug("系统参数保存")
+        b=win32api.MessageBox(0, "保存成功", "参数保存",win32con.MB_OK)
         
     def bRunClick(self): 
         global basler,dictPara,basler,sn,basler,dictPara,pData,pData
+        self.outDebug("启动运行")
         self.bTCPiniClick()
 #        while(1):
 #            time.sleep(1)
@@ -294,96 +377,431 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
 #            except:
 #                pass
 
+    global snDic 
+    snDic={0:"bmpForProcess0.bmp",1:"bmpForProcess1.bmp",2:"bmpForProcess2.bmp",3:"bmpForProcess3.bmp"}
+    
 
 
-                 
+    def toPixImg(self,img1):
+        img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
+        qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
+        pixImg=QPixmap(QPixmap.fromImage(qimag1))
+        return pixImg
+             
     def bPsheetTrigClick(self):
-        global basler,sn,dictPara,dictParaVision,centPsheet       
+        global basler,sn,dictPara,dictParaVision,snDic ,mod       
         print("P sheet camer trig ")
-        print(datetime.datetime.now())
-        basler.capBmp(sn.index(dictPara['tPsheetSn']))
-        print(datetime.datetime.now())
-        img1=cv2.imread('bmpForProcess.bmp')
-        print(datetime.datetime.now())
-        img1Processed=img1.copy()                        
-        try:
-            print(datetime.datetime.now())
-            cent=dll.findEdge(int(dictParaVision['pSheetT1']),int(dictParaVision['pSheetT2']),img1,img1Processed,int(dictParaVision['pSheetCmin']),int(dictParaVision['pSheetCmax']),int(dictParaVision['pSheetSmin']),int(dictParaVision['pSheetSmax']))
-            img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
-            qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
-            self.lCamSheetP.setPixmap(QPixmap(QPixmap.fromImage(qimag1)))
-            print(datetime.datetime.now())
+        self.outDebug("正极过渡片视觉程序启动")
+        s1=time.time()
+        if mod==1:            
+            basler.capBmp(sn.index(dictPara['tPsheetSn']))           
+            img1=cv2.imread(snDic[sn.index(dictPara['tPsheetSn'])])
+            imgray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
+            cv2.imwrite("arrayBmp0.bmp",imgray)            
+        if mod==0:
+            img1=cv2.imread("arrayBmp0.bmp")
+            imgray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
+        e1=time.time()
+        capTime="Cap time:"+str(round((e1-s1),2))                 
+        #调用visionpro处理,visionpro.py
+        score,circle,line=visionpro.find("pSheet")           
+        print(score,circle,line)
+        e2=time.time()
+        processTime="Process time:"+str(round((e2-e1),2))
+        circleDefine=(abs(circle[0][0]-int(dictPara["tPsheetStandX"]))>int(dictPara["tPsheetBadValue"]))|(abs(circle[0][1]-int(dictPara["tPsheetStandY"]))>int(dictPara["tPsheetBadValue"]))        
+        docName="/1/"+time.strftime('%Y-%m-%d %H_%M_%S',time.localtime(time.time()))
+        if score["result"]==1 :
+            self.outDebug("正极过渡片搜索成功")
+            #circle[0]是圆心坐标,circle[1]是半径
+            cv2.circle(img1,circle[0],circle[1],(255,0,255),8)
+            #line[0]是直线起点,line[1]是直线终点,line[2]是角度
+            cv2.line(img1, line[0], line[1], (255,0,255),10)
+            
+            cv2.putText(img1,"circle:"+str(circle[0]),(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,capTime,(10,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,processTime,(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            #保存在NG文件夹的3号文件夹
+            
+            #score["result"]==0,找到但是不满足设置条件的
+          
+            if circleDefine:
+                self.outDebug("正极过渡片不满足设置要求")
+                cv2.rectangle(img1,(10,10),(2582,1934),(0,0,255),10)
+                if self.rSize.isChecked(): 
+                    res=imgray
+                    docType=".bmp"
+                else:
+                    res=cv2.resize(imgray,(518,389),interpolation=cv2.INTER_CUBIC)
+                    docType=".jpg"
+                cv2.imwrite(dictPara['tNGpath']+docName+docType,res)
+                
+                cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+                if self.rSize.isChecked(): 
+                    res=img1
+                else:
+                    res=cv2.resize(img1,(518,389),interpolation=cv2.INTER_CUBIC)
+                cv2.imwrite(dictPara['tNGpath']+docName+"R"+docType,res)                
+                circle[0]=(0,0)
+#           """ OK状态    找到且满足设置要求,返回给机器人                       
+            else:
+                #找到且满足设置要求,返回给机器人
+               cv2.rectangle(img1,(10,10),(2582,1934),(55,255,155),10)
+               cv2.putText(img1,"OK",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(55,255,155),10)
+               
+               
+        #score["result"]==0,分类处理                     
+        else:
+            cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+            cv2.rectangle(img1,(10,10),(2582,1934),(0,0,255),10)
+            if score["PMA"]==0:
+                cv2.putText(img1,"Align:0",(20,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("模型匹配失败")
+            else:
+                cv2.putText(img1,"Align:1",(10,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("模型匹配成功")
+            if score["circle"]==1:
+                cv2.putText(img1,"circle:"+str(circle[0]),(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                cv2.circle(img1,circle[0],circle[1],(0,255,0),8)
+                self.outDebug("找到圆")
+            else:
+                cv2.putText(img1,"circle:0",(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("找不到圆")
+            if score["line"]==1:
+                cv2.putText(img1,"line angle:"+str(line[2]),(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                cv2.line(img1, line[0], line[1], (0,255,0),10)
+                self.outDebug("找到线")
+            else:
+                cv2.putText(img1,"line:0",(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("找不到线") 
+                       
+            if self.rSize.isChecked(): 
+                res=imgray
+                docType=".bmp"
+            else:
+                res=cv2.resize(imgray,(518,389),interpolation=cv2.INTER_CUBIC)
+                docType=".jpg"
+            cv2.imwrite(dictPara['tNGpath']+docName+docType,res)
+                
+            cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+            if self.rSize.isChecked(): 
+                res=img1
+            else:
+                res=cv2.resize(img1,(518,389),interpolation=cv2.INTER_CUBIC)
+            cv2.imwrite(dictPara['tNGpath']+docName+"R"+docType,res)   
+            circle[0]=(0,0)
+        self.lCamSheetP.setPixmap(self.toPixImg(img1))
+        return circle[0]
 
-        except:
-            self.lCamSheetP.setText('error')
+            
     def bPplateTrigClick(self):
-        global basler,sn,dictPara,dictParaVision,centPplate
+        global basler,sn,dictPara,dictParaVision,centPplate ,snDic ,mod       
         print("P plate camer trig ")
+        self.outDebug("正极盖板视觉程序启动")
         s1=time.time()
-        basler.capBmp(sn.index(dictPara['tPplateSn']))
-        try:
-            #basler.capBmp(sn.index(dictPara['tPplateSn']))
-            e1=time.time()
-            capTime="Cap time:"+str(round((e1-s1),2))
+        if mod==1:            
+            basler.capBmp(sn.index(dictPara['tPplateSn']))           
+            img1=cv2.imread(snDic[sn.index(dictPara['tPplateSn'])])
+            imgray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
+            cv2.imwrite("arrayBmp1.bmp",imgray)            
+        if mod==0:
+            img1=cv2.imread("arrayBmp1.bmp")
+            imgray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
+        e1=time.time()
+        capTime="Cap time:"+str(round((e1-s1),2))                 
+        #调用visionpro处理,visionpro.py
+        score,circle,line=visionpro.find("pPlate")           
+        print(score,circle,line)
+        e2=time.time()
+        processTime="Process time:"+str(round((e2-e1),2))
+        circleDefine=(abs(circle[0][0]-int(dictPara["tPplateStandX"]))>int(dictPara["tPplateBadValue"]))|(abs(circle[0][1]-int(dictPara["tPplateStandY"]))>int(dictPara["tPplateBadValue"]))        
+        docName="/2/"+time.strftime('%Y-%m-%d %H_%M_%S',time.localtime(time.time()))
+        if score["result"]==1 :
+            self.outDebug("正极盖板搜索成功")
+            #circle[0]是圆心坐标,circle[1]是半径
+            cv2.circle(img1,circle[0],circle[1],(255,0,255),8)
+            #line[0]是直线起点,line[1]是直线终点,line[2]是角度
+            cv2.line(img1, line[0], line[1], (255,0,255),10)
             
+            cv2.putText(img1,"circle:"+str(circle[0]),(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,capTime,(10,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,processTime,(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            #保存在NG文件夹的2号文件夹
             
-            img1=cv2.imread('bmpForProcess.bmp')        
-        
-            img1Processed=img1.copy()
-            centPplate=dll.findEdge(int(dictParaVision['pPlateT1']),int(dictParaVision['pPlateT2']),img1,img1Processed,int(dictParaVision['pPlateCmin']),int(dictParaVision['pPlateCmax']),int(dictParaVision['pPlateSmin']),int(dictParaVision['pPlateSmax']))
-            e2=time.time()
-            processTime="Process time:"+str(round((e2-e1),2))
-
-            cv2.putText(img1,capTime,(10,400),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
-            cv2.putText(img1,processTime,(10,500),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
-            img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
-            qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
-            self.lCamPlateP.setPixmap(QPixmap(QPixmap.fromImage(qimag1))) 
-            
-        except:
-            self.lCamPlateP.setText('error')
+            #score["result"]==0,找到但是不满足设置条件的
+            if circleDefine:
+                self.outDebug("正极盖板不满足设置要求")
+                cv2.rectangle(img1,(10,10),(2582,1934),(0,0,255),10)
+                if self.rSize.isChecked(): 
+                    res=imgray
+                    docType=".bmp"
+                else:
+                    res=cv2.resize(imgray,(518,389),interpolation=cv2.INTER_CUBIC)
+                    docType=".jpg"
+                cv2.imwrite(dictPara['tNGpath']+docName+docType,res)
+                
+                cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+                if self.rSize.isChecked(): 
+                    res=img1
+                else:
+                    res=cv2.resize(img1,(518,389),interpolation=cv2.INTER_CUBIC)
+                cv2.imwrite(dictPara['tNGpath']+docName+"R"+docType,res)                
+                circle[0]=(0,0)
+#           """ OK状态    找到且满足设置要求,返回给机器人                       
+            else:
+                #找到且满足设置要求,返回给机器人
+               cv2.rectangle(img1,(10,10),(2582,1934),(55,255,155),10)
+               cv2.putText(img1,"OK",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(55,255,155),10)
+              
+               
+        #score["result"]==0,分类处理                     
+        else:
+            cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+            cv2.rectangle(img1,(10,10),(2582,1934),(0,0,255),10)
+            if score["PMA"]==0:
+                cv2.putText(img1,"Align:0",(20,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("模型匹配失败")
+            else:
+                cv2.putText(img1,"Align:1",(10,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("模型匹配成功")
+            if score["circle"]==1:
+                cv2.putText(img1,"circle:"+str(circle[0]),(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                cv2.circle(img1,circle[0],circle[1],(0,255,0),8)
+                self.outDebug("找到圆")
+            else:
+                cv2.putText(img1,"circle:0",(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("找不到圆")
+            if score["line"]==1:
+                cv2.putText(img1,"line angle:"+str(line[2]),(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                cv2.line(img1, line[0], line[1], (0,255,0),10)
+                self.outDebug("找到线")
+            else:
+                cv2.putText(img1,"line:0",(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("找不到线") 
+                       
+            if self.rSize.isChecked(): 
+                res=imgray
+                docType=".bmp"
+            else:
+                res=cv2.resize(imgray,(518,389),interpolation=cv2.INTER_CUBIC)
+                docType=".jpg"
+            cv2.imwrite(dictPara['tNGpath']+docName+docType,res)
+                
+            cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+            if self.rSize.isChecked(): 
+                res=img1
+            else:
+                res=cv2.resize(img1,(518,389),interpolation=cv2.INTER_CUBIC)
+            cv2.imwrite(dictPara['tNGpath']+docName+"R"+docType,res)   
+            circle[0]=(0,0)
+        self.lCamPlateP.setPixmap(self.toPixImg(img1))        
+        return circle[0]
     def bNsheetTrigClick(self):
-        global basler,sn,dictPara,dictParaVision,centNsheet
-        print("N sheet camer trig ")
+        global basler,sn,dictPara,dictParaVision ,snDic ,mod       
+        print("P sheet camer trig ")
+        self.outDebug("负极过渡片视觉程序启动")
         s1=time.time()
-      #  basler.capBmp(sn.index(dictPara['tNsheetSn']))
-        try:
-            #basler.capBmp(sn.index(dictPara['tPplateSn']))
-            e1=time.time()
-            capTime="Cap time:"+str(round((e1-s1),2))
+        if mod==1:            
+            basler.capBmp(sn.index(dictPara['tNsheetSn']))           
+            img1=cv2.imread(snDic[sn.index(dictPara['tNsheetSn'])])
+            imgray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
+            cv2.imwrite("arrayBmp2.bmp",imgray)            
+        if mod==0:
+            img1=cv2.imread("arrayBmp2.bmp")
+            imgray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
+        e1=time.time()
+        capTime="Cap time:"+str(round((e1-s1),2))                 
+        #调用visionpro处理,visionpro.py
+        score,circle,line=visionpro.find("nSheet")           
+        print(score,circle,line)
+        e2=time.time()
+        processTime="Process time:"+str(round((e2-e1),2))
+        circleDefine=(abs(circle[0][0]-int(dictPara["tNsheetStandX"]))>int(dictPara["tNsheetBadValue"]))|(abs(circle[0][1]-int(dictPara["tNsheetStandY"]))>int(dictPara["tNsheetBadValue"]))        
+        docName="/3/"+time.strftime('%Y-%m-%d %H_%M_%S',time.localtime(time.time()))
+        if score["result"]==1 :
+            self.outDebug("负极过渡片搜索成功")
+            #circle[0]是圆心坐标,circle[1]是半径
+            cv2.circle(img1,circle[0],circle[1],(255,0,255),8)
+            #line[0]是直线起点,line[1]是直线终点,line[2]是角度
+            cv2.line(img1, line[0], line[1], (255,0,255),10)
             
+            cv2.putText(img1,"circle:"+str(circle[0]),(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,capTime,(10,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,processTime,(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            #保存在NG文件夹的3号文件夹
             
-            img1=cv2.imread('bmpForProcess.bmp')        
-        
-            img1Processed=img1.copy()
-            dll.drawCircle(img1)
-#            centNsheet=dll.findEdge(int(dictParaVision['nSheetT1']),int(dictParaVision['nSheetT2']),img1,img1Processed,int(dictParaVision['nSheetCmin']),int(dictParaVision['nSheetCmax']),int(dictParaVision['nSheetSmin']),int(dictParaVision['nSheetSmax']))
-            e2=time.time()
-            processTime="Process time:"+str(round((e2-e1),2))
-
-            cv2.putText(img1,capTime,(10,400),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
-            cv2.putText(img1,processTime,(10,500),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
-            img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
-            qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
-            self.lCamSheetN.setPixmap(QPixmap(QPixmap.fromImage(qimag1))) 
-            
-        except:
-            self.lCamPlateP.setText('error')
+            #score["result"]==0,找到但是不满足设置条件的
+            if circleDefine:
+                self.outDebug("负极过渡片不满足设置要求")
+                cv2.rectangle(img1,(10,10),(2582,1934),(0,0,255),10)
+                if self.rSize.isChecked(): 
+                    res=imgray
+                    docType=".bmp"
+                else:
+                    res=cv2.resize(imgray,(518,389),interpolation=cv2.INTER_CUBIC)
+                    docType=".jpg"
+                cv2.imwrite(dictPara['tNGpath']+docName+docType,res)
+                
+                cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+                if self.rSize.isChecked(): 
+                    res=img1
+                else:
+                    res=cv2.resize(img1,(518,389),interpolation=cv2.INTER_CUBIC)
+                cv2.imwrite(dictPara['tNGpath']+docName+"R"+docType,res)                
+                circle[0]=(0,0)
+#           """ OK状态    找到且满足设置要求,返回给机器人                       
+            else:
+                #找到且满足设置要求,返回给机器人
+               cv2.rectangle(img1,(10,10),(2582,1934),(55,255,155),10)
+               cv2.putText(img1,"OK",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(55,255,155),10)
+               
+               
+        #score["result"]==0,分类处理                     
+        else:
+            cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+            cv2.rectangle(img1,(10,10),(2582,1934),(0,0,255),10)
+            if score["PMA"]==0:
+                cv2.putText(img1,"Align:0",(20,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("模型匹配失败")
+            else:
+                cv2.putText(img1,"Align:1",(10,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("模型匹配成功")
+            if score["circle"]==1:
+                cv2.putText(img1,"circle:"+str(circle[0]),(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                cv2.circle(img1,circle[0],circle[1],(0,255,0),8)
+                self.outDebug("找到圆")
+            else:
+                cv2.putText(img1,"circle:0",(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("找不到圆")
+            if score["line"]==1:
+                cv2.putText(img1,"line angle:"+str(line[2]),(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                cv2.line(img1, line[0], line[1], (0,255,0),10)
+                self.outDebug("找到线")
+            else:
+                cv2.putText(img1,"line:0",(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("找不到线") 
+                       
+            if self.rSize.isChecked(): 
+                res=imgray
+                docType=".bmp"
+            else:
+                res=cv2.resize(imgray,(518,389),interpolation=cv2.INTER_CUBIC)
+                docType=".jpg"
+            cv2.imwrite(dictPara['tNGpath']+docName+docType,res)
+                
+            cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+            if self.rSize.isChecked(): 
+                res=img1
+            else:
+                res=cv2.resize(img1,(518,389),interpolation=cv2.INTER_CUBIC)
+            cv2.imwrite(dictPara['tNGpath']+docName+"R"+docType,res)   
+            circle[0]=(0,0)
+        self.lCamSheetN.setPixmap(self.toPixImg(img1))
+        return circle[0]
+    
     def bNplateTrigClick(self):
-        global basler,sn,dictPara,dictParaVision,centNplate
+        global basler,sn,dictPara,dictParaVision,centNplate ,snDic ,mod       
         print("N plate camer trig ")
-        try:
-#            basler.capBmp(sn.index(dictPara['tNplateSn']))
-            img1=cv2.imread('bmpForProcess.bmp')              
-            img1Processed=img1.copy()
-            dll.drawCircle(img1)
-#            centNplate=dll.findEdge(int(dictParaVision['bPsheetT1']),int(dictParaVision['bPsheetT2']),img1,img1Processed,int(dictParaVision['pSheetCmin']),int(dictParaVision['pSheetCmax']),int(dictParaVision['pSheetSmin']),int(dictParaVision['pSheetSmax']))
-            img1Rgb=cv2.cvtColor(img1,cv2.COLOR_BGR2RGB)
-            qimag1=QImage(img1Rgb[:],img1Rgb.shape[1], img1Rgb.shape[0],img1Rgb.shape[1] * 3, QImage.Format_RGB888)
-            self.lCamPlateN.setPixmap(QPixmap(QPixmap.fromImage(qimag1))) 
-        except:
-            self.lCamPlateN.setText('error')
-                 
+        self.outDebug("负极盖板视觉程序启动")
+        s1=time.time()
+        if mod==1:            
+            basler.capBmp(sn.index(dictPara['tNplateSn']))           
+            img1=cv2.imread(snDic[sn.index(dictPara['tNplateSn'])])
+            imgray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
+            cv2.imwrite("arrayBmp3.bmp",imgray)            
+        if mod==0:
+            img1=cv2.imread("arrayBmp3.bmp")
+            imgray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
+        e1=time.time()
+        capTime="Cap time:"+str(round((e1-s1),2))                 
+        #调用visionpro处理,visionpro.py
+        score,circle,line=visionpro.find("nPlate")           
+        print(score,circle,line)
+        e2=time.time()
+        processTime="Process time:"+str(round((e2-e1),2))
+        circleDefine=(abs(circle[0][0]-int(dictPara["tPplateStandX"]))>int(dictPara["tPplateBadValue"]))|(abs(circle[0][1]-int(dictPara["tPplateStandY"]))>int(dictPara["tPplateBadValue"]))        
+        #保存在NG文件夹的2号文件夹
+        docName="/4/"+time.strftime('%Y-%m-%d %H_%M_%S',time.localtime(time.time()))        
+        if score["result"]==1 :
+            self.outDebug("负极盖板搜索成功")
+            #circle[0]是圆心坐标,circle[1]是半径
+            cv2.circle(img1,circle[0],circle[1],(255,0,255),8)
+            #line[0]是直线起点,line[1]是直线终点,line[2]是角度
+            cv2.line(img1, line[0], line[1], (255,0,255),10)
+            
+            cv2.putText(img1,"circle:"+str(circle[0]),(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,capTime,(10,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+            cv2.putText(img1,processTime,(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+
+            #score["result"]==0,找到但是不满足设置条件的
+            if circleDefine:
+                self.outDebug("正极盖板不满足设置要求")
+                cv2.rectangle(img1,(10,10),(2582,1934),(0,0,255),10)
+                if self.rSize.isChecked(): 
+                    res=imgray
+                    docType=".bmp"
+                else:
+                    res=cv2.resize(imgray,(518,389),interpolation=cv2.INTER_CUBIC)
+                    docType=".jpg"
+                cv2.imwrite(dictPara['tNGpath']+docName+docType,res)
+                
+                cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+                if self.rSize.isChecked(): 
+                    res=img1
+                else:
+                    res=cv2.resize(img1,(518,389),interpolation=cv2.INTER_CUBIC)
+                cv2.imwrite(dictPara['tNGpath']+docName+"R"+docType,res)                
+                circle[0]=(0,0)
+#           """ OK状态    找到且满足设置要求,返回给机器人                       
+            else:
+                #找到且满足设置要求,返回给机器人
+               cv2.rectangle(img1,(10,10),(2582,1934),(55,255,155),10)
+               cv2.putText(img1,"OK",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(55,255,155),10)
+
+               
+        #score["result"]==0,分类处理                     
+        else:
+            cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+            cv2.rectangle(img1,(10,10),(2582,1934),(0,0,255),10)
+            if score["PMA"]==0:
+                cv2.putText(img1,"Align:0",(20,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("模型匹配失败")
+            else:
+                cv2.putText(img1,"Align:1",(10,200),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("模型匹配成功")
+            if score["circle"]==1:
+                cv2.putText(img1,"circle:"+str(circle[0]),(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                cv2.circle(img1,circle[0],circle[1],(0,255,0),8)
+                self.outDebug("找到圆")
+            else:
+                cv2.putText(img1,"circle:0",(10,100),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("找不到圆")
+            if score["line"]==1:
+                cv2.putText(img1,"line angle:"+str(line[2]),(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                cv2.line(img1, line[0], line[1], (0,255,0),10)
+                self.outDebug("找到线")
+            else:
+                cv2.putText(img1,"line:0",(10,300),cv2.FONT_HERSHEY_COMPLEX,3,(0,0,255),5)
+                self.outDebug("找不到线") 
+                       
+            if self.rSize.isChecked(): 
+                res=imgray
+                docType=".bmp"
+            else:
+                res=cv2.resize(imgray,(518,389),interpolation=cv2.INTER_CUBIC)
+                docType=".jpg"
+            cv2.imwrite(dictPara['tNGpath']+docName+docType,res)
+                
+            cv2.putText(img1,"NG",(1200,300),cv2.FONT_HERSHEY_COMPLEX,10,(0,0,255),10)
+            if self.rSize.isChecked(): 
+                res=img1
+            else:
+                res=cv2.resize(img1,(518,389),interpolation=cv2.INTER_CUBIC)
+            cv2.imwrite(dictPara['tNGpath']+docName+"R"+docType,res)   
+            circle[0]=(0,0)
+        self.lCamPlateN.setPixmap(self.toPixImg(img1))     
+        return circle[0]    
+     
+        
     def bPsentClick(self):
         global basler,dictPara,pData,pSoc
         pSoc.send(bytes(self.tPsent.toPlainText(),'utf8'))
@@ -495,7 +913,7 @@ class Vison(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         for key in dictParaVision:
             cursor.execute("update paraVision set data=? where name = ?",(dictParaVision[key],key,))        
         conn.commit()        
-        
+        self.outDebug("保存系统参数")
     def handle_click(self):
 #        if not self.isVisible():
         self.show()    

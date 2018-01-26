@@ -43,7 +43,7 @@
       <property name="geometry">
        <rect>
         <x>890</x>
-        <y>30</y>
+        <y>50</y>
         <width>400</width>
         <height>261</height>
        </rect>
@@ -71,7 +71,7 @@
       <property name="geometry">
        <rect>
         <x>890</x>
-        <y>340</y>
+        <y>330</y>
         <width>400</width>
         <height>261</height>
        </rect>
@@ -99,7 +99,7 @@
       <property name="geometry">
        <rect>
         <x>420</x>
-        <y>340</y>
+        <y>330</y>
         <width>400</width>
         <height>261</height>
        </rect>
@@ -127,7 +127,7 @@
       <property name="geometry">
        <rect>
         <x>420</x>
-        <y>30</y>
+        <y>50</y>
         <width>400</width>
         <height>261</height>
        </rect>
@@ -974,18 +974,44 @@
         <string>视觉参数</string>
        </property>
       </widget>
+      <widget class="QRadioButton" name="rInline">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>530</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>离线</string>
+       </property>
+      </widget>
      </widget>
-     <widget class="QLabel" name="info">
+     <widget class="QTextEdit" name="tDebug">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>600</y>
+        <width>801</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
         <x>420</x>
-        <y>0</y>
-        <width>861</width>
-        <height>20</height>
+        <y>610</y>
+        <width>54</width>
+        <height>12</height>
        </rect>
       </property>
       <property name="text">
-       <string>系统信息显示</string>
+       <string>调试信息</string>
       </property>
      </widget>
     </widget>
@@ -1498,7 +1524,7 @@
         <string>标准圆心坐标：X坐标：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit">
+      <widget class="QTextEdit" name="tPsheetStandX">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -1521,7 +1547,7 @@
         <string>Y坐标：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_2">
+      <widget class="QTextEdit" name="tPsheetStandY">
        <property name="geometry">
         <rect>
          <x>340</x>
@@ -1544,7 +1570,7 @@
         <string>最大偏移像索：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_3">
+      <widget class="QTextEdit" name="tPsheetBadValue">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -1580,7 +1606,7 @@
         <string>标准圆心坐标：X坐标：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_4">
+      <widget class="QTextEdit" name="tPplateStandX">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -1603,7 +1629,7 @@
         <string>Y坐标：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_5">
+      <widget class="QTextEdit" name="tPplateStandY">
        <property name="geometry">
         <rect>
          <x>340</x>
@@ -1626,7 +1652,7 @@
         <string>最大偏移像索：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_6">
+      <widget class="QTextEdit" name="tPplateBadValue">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -1662,7 +1688,7 @@
         <string>标准圆心坐标：X坐标：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_7">
+      <widget class="QTextEdit" name="tNsheetStandX">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -1685,7 +1711,7 @@
         <string>Y坐标：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_8">
+      <widget class="QTextEdit" name="tNsheetStandY">
        <property name="geometry">
         <rect>
          <x>340</x>
@@ -1708,7 +1734,7 @@
         <string>最大偏移像索：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_9">
+      <widget class="QTextEdit" name="tNsheetBadValue">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -1744,7 +1770,7 @@
         <string>标准圆心坐标：X坐标：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_10">
+      <widget class="QTextEdit" name="tNplateStandX">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -1767,7 +1793,7 @@
         <string>Y坐标：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_11">
+      <widget class="QTextEdit" name="tNplateStandY">
        <property name="geometry">
         <rect>
          <x>340</x>
@@ -1790,7 +1816,7 @@
         <string>最大偏移像索：</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_12">
+      <widget class="QTextEdit" name="tNplateBadValue">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -1807,7 +1833,7 @@
         <x>10</x>
         <y>360</y>
         <width>491</width>
-        <height>71</height>
+        <height>101</height>
        </rect>
       </property>
       <property name="title">
@@ -1826,7 +1852,7 @@
         <string>不良图片路径设置</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_13">
+      <widget class="QTextEdit" name="tNGpath">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -1836,7 +1862,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="bSelectDoc">
        <property name="geometry">
         <rect>
          <x>410</x>
@@ -1849,8 +1875,21 @@
         <string>浏览</string>
        </property>
       </widget>
+      <widget class="QRadioButton" name="rSize">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>原图</string>
+       </property>
+      </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="bsave3">
       <property name="geometry">
        <rect>
         <x>580</x>
@@ -1861,19 +1900,6 @@
       </property>
       <property name="text">
        <string>保存</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="geometry">
-       <rect>
-        <x>740</x>
-        <y>390</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>取消</string>
       </property>
      </widget>
     </widget>
@@ -1970,6 +1996,22 @@
     <hint type="destinationlabel">
      <x>629</x>
      <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bsave3</sender>
+   <signal>clicked()</signal>
+   <receiver>bDataSave</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>77</x>
+     <y>661</y>
     </hint>
    </hints>
   </connection>

@@ -14,8 +14,7 @@ import clr
 clr.FindAssembly('find.dll')  # 加载c#dll文件
 clr.AddReference('find')
 from find import *
-a=tool.find()
-print(a)
+
 
 
 

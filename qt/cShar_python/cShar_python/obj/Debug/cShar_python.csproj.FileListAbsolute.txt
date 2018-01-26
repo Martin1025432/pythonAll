@@ -1,0 +1,9 @@
+d:\用户目录\我的文档\visual studio 2012\Projects\cShar_python\cShar_python\bin\Debug\cShar_python.exe.config
+d:\用户目录\我的文档\visual studio 2012\Projects\cShar_python\cShar_python\bin\Debug\cShar_python.exe
+d:\用户目录\我的文档\visual studio 2012\Projects\cShar_python\cShar_python\bin\Debug\cShar_python.pdb
+d:\用户目录\我的文档\visual studio 2012\Projects\cShar_python\cShar_python\obj\Debug\cShar_python.csprojResolveAssemblyReference.cache
+d:\用户目录\我的文档\visual studio 2012\Projects\cShar_python\cShar_python\obj\Debug\cShar_python.exe
+d:\用户目录\我的文档\visual studio 2012\Projects\cShar_python\cShar_python\obj\Debug\cShar_python.pdb
+C:\Users\Administrator\pythonAll\qt\cShar_python\cShar_python\bin\Debug\cShar_python.exe.config
+C:\Users\Administrator\pythonAll\qt\cShar_python\cShar_python\obj\Debug\cShar_python.exe
+C:\Users\Administrator\pythonAll\qt\cShar_python\cShar_python\obj\Debug\cShar_python.pdb
