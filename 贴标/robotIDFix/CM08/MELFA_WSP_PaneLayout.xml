@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DockingPaneLayouts CompactMode="1">
+	<WorkspacePaneLayout>
+		<Summary Panes="19" TopContainer="9" Client="13"/>
+		<Pane-1 Type="0" DockingCX="200" DockingCY="120" Title="工作区\n\n" ID="22000" DockingHolder="12" LastHolder="12"/>
+		<Pane-2 Type="0" DockingCX="200" DockingCY="120" Title="属性\n\n" ID="22001" DockingHolder="15" LastHolder="15"/>
+		<Pane-3 Type="0" DockingCX="200" DockingCY="120" Title="输出\n\n" ID="22002" DockingHolder="18" LastHolder="18"/>
+		<Pane-4 Type="0" DockingCX="200" DockingCY="120" Title="检索\n\n" ID="22003" DockingHolder="19" LastHolder="19"/>
+		<Pane-5 Type="0" DockingCX="200" DockingCY="120" Title="布局树\n\n" ID="22004" DockingHolder="16" LastHolder="16"/>
+		<Pane-6 Type="0" DockingCX="200" DockingCY="120" Title="抓手编辑树\n\n" ID="22005" DockingHolder="16" LastHolder="16"/>
+		<Pane-7 Type="0" DockingCX="200" DockingCY="120" Title="机器人部件编辑树\n\n" ID="22007" DockingHolder="16" LastHolder="16"/>
+		<Pane-8 Type="0" DockingCX="200" DockingCY="120" Title="MELFA-Works\n\n" ID="22006" DockingHolder="12" LastHolder="12"/>
+		<Pane-9 Type="2" Horiz="1" Panes="1" Pane-1="10"/>
+		<Pane-10 Type="2" Panes="2" Pane-1="11" Pane-2="17"/>
+		<Pane-11 Type="2" DockingCY="470" Horiz="1" Panes="3" Pane-1="12" Pane-2="13" Pane-3="14"/>
+		<Pane-12 Type="1" DockingCX="293" DockingCY="120" Panes="1" Selected="1" Pane-1="1"/>
+		<Pane-13 Type="4" DockingCX="923"/>
+		<Pane-14 Type="2" DockingCX="208" DockingCY="120" Panes="2" Pane-1="15" Pane-2="16"/>
+		<Pane-15 Type="1" DockingCX="200" DockingCY="120" Panes="1" Selected="2" Pane-1="2"/>
+		<Pane-16 Type="1" DockingCX="200" DockingCY="120" Panes="0"/>
+		<Pane-17 Type="2" DockingCX="200" DockingCY="120" Horiz="1" Panes="2" Pane-1="18" Pane-2="19"/>
+		<Pane-18 Type="1" DockingCX="200" DockingCY="120" Panes="1" Selected="3" Pane-1="3"/>
+		<Pane-19 Type="1" DockingCX="200" DockingCY="120" Panes="0"/>
+	</WorkspacePaneLayout>
+</DockingPaneLayouts>

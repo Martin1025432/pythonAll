@@ -28,6 +28,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         Ui_MainWindow.__init__(self)        
         self.setupUi(self)
         self.bSelectDoc.clicked.connect(self.bSelectDocClick)
+        self.rInline.setChecked(1)
     def bSelectDocClick(self):
   
         directory1 = QFileDialog.getExistingDirectory(self,  

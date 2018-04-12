@@ -1,0 +1,1952 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "GoSdkNet"
+    </assembly>
+    <members>
+        <member name="P:Lmi3d.GoSdk.Tools.GoExtToolDataOutput.DataType">
+            <summary>The measurement value offset.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Tools.GoExtToolDataOutput.Enabled">
+            <summary>Enables or disables output.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Tools.GoExtToolDataOutput.Name">
+            <summary>The measurement name.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Tools.GoExtToolDataOutput.Id">
+            <summary>The tool data output ID.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Tools.GoExtToolDataOutput.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoExtTool class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Tools.GoExtToolDataOutput">
+            <summary>Represents a tool data output.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoHealthMsg.Find(System.Int32,System.UInt32)">
+            <summary>Finds the health indicator with the matching ID. Throws KStatus.ErrorNotFound if not found.</summary>
+            <remarks>Throws KStatus.ErrorNotFound if not found.</remarks>
+            <param name="id">Indicator index.</param>
+            <param name="instance">Indicator instance.</param>
+            <returns>Indicator for the given identifier.</returns>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoHealthMsg.Data">
+            <summary>Gets a pointer to the indicator data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoHealthMsg.Get(System.Int64)">
+            <summary>Gets the message at the specified index.</summary>
+            <param name="index">Indicator index.</param>
+            <returns>Indicator at given index.</returns>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoHealthMsg.Count">
+            <summary>Count of health indicators in this message.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoHealthMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoHealthMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoHealthMsg.#ctor">
+            <summary>Initializes a new instance of the GoHealthMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoHealthMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoHealthMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoHealthMsg">
+            <summary>Represents a sensor health message.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoIndicator.value">
+            <summary>Indicator value.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoIndicator.instance">
+            <summary>Indicator instance number.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoIndicator.id">
+            <summary>Indicator ID (e.g. GoHealthIndicatorId::CpuUsed).</summary>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoIndicator">
+            <summary>Represents health indicator.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MeasurementOverflowCount">
+            <summary>Number of values which exceed the numerical limit of an output protocol's measurement value field.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MeasurementInvalidCount">
+            <summary>Number of invalid values.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MeasurementStdDev">
+            <summary>Measurement value standard deviation.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MeasurementAverage">
+            <summary>Average measurement value.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MeasurementMax">
+            <summary>Maximum measurement value.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MeasurementMin">
+            <summary>Minimum measurement value.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MeasurementFail">
+            <summary>Number of fail decisions.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MeasurementPass">
+            <summary>Number of pass decisions.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.Measurement">
+            <summary>Measurement value.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.EncoderZIndexPulseDrops">
+            <summary>Encoder z-index pulse drops</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.AnchorInvalidCount">
+            <summary>Number of frames with anchor invalid.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.RangeInvalidCount">
+            <summary>Current number of frames with invalid range data.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.RangeValidCount">
+            <summary>Current number of frames with valid range data.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.EthernetDrops">
+            <summary>Current number of Ethernet output drops.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.SerialDrops">
+            <summary>Current number of serial output drops.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.DigitalDrops">
+            <summary>Current number of digital output drops.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.AnalogDrops">
+            <summary>Current number of analog output drops.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.OutputDrops">
+            <summary>Current number of output drops. Sum of all output drops.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.TriggerDrops">
+            <summary>Current number of trigger drops.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.ProcessingDrops">
+            <summary>Current number of processing drops.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.ProcessingLatencyMax">
+            <summary>Maximum reported processing latency.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.ProcessingLatencyLast">
+            <summary>Last reported processing latency value (in uS).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.DigitalOutputLowCount">
+            <summary>The number scans with no digital output pulse.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.DigitalOutputHighCount">
+            <summary>The number scans with high digital output pulses.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.PlaybackCount">
+            <summary>Indicates the number of frames present in the current replay.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.PlaybackPosition">
+            <summary>Indicates the current replay playback index.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.ScanCount">
+            <summary>The number of scanned profiles or surfaces.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MaxSpotCount">
+            <summary>Maximum number of spots that can be found</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.SpotCount">
+            <summary>Number of found spots in the last profile</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MaxSpeed">
+            <summary>Maximum speed (Hz).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.Speed">
+            <summary>Current speed (Hz).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.State">
+            <summary>Current system state.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.CameraSearchCount">
+            <summary>Number of search states.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.DigitalInputs">
+            <summary>Current digital input status (one bit per input).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.NetOutLinkStatus">
+            <summary>The Ethernet output's current network link status.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.NetOutCapacity">
+            <summary>Total available outbound network throughput (bytes/s).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.NetOutRate">
+            <summary>Current outbound network throughput (bytes/second).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.NetOutUsed">
+            <summary>Current outbound network count (bytes).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.SyncSource">
+            <summary>Sensor synchronization source. (1 - Master, 2 - Device/::Gocator)</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.CpuUsed">
+            <summary>CPU usage (percentage of maximum).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.StorageCapacity">
+            <summary>Total amount of non-volatile storage available (bytes).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.StorageUsed">
+            <summary>Amount of non-volatile storage used (bytes).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MemoryCapacity">
+            <summary>Total amount of memory available (bytes).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.MemoryUsed">
+            <summary>Amount of memory currently used (bytes).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.OverheatDuration">
+            <summary>Indicates how long the sensor has been overheating if it is overheating.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.Overheat">
+            <summary>Indicates whether the sensor is overheating.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.LaserOverheatDuration">
+            <summary>Indicates how long the laser has been overheating if it is overheating. (DEPRECATED)</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.LaserOverheat">
+            <summary>Indicates whether the laser is overheating. (DEPRECATED)</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.LaserTemperature">
+            <summary>Laser temperature (degrees Celsius).  Available only on 3B-class devices.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.ProjectorTemperature">
+            <summary>Projector temperature (degrees Celsius).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.Temperature">
+            <summary>Internal temperature (degrees Celsius).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.Uptime">
+            <summary>Time elapsed since boot-up or reset (seconds).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.FireSyncVersion">
+            <summary>FireSync version.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.FirmwareVersion">
+            <summary>Firmware application version.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.EncoderFrequency">
+            <summary>Current system encoder frequency (ticks/s).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoHealthIndicatorId.EncoderValue">
+            <summary>Current system encoder tick.</summary>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoHealthIndicatorId">
+            <summary>Lists all data message types.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoTracheidMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoTracheidMsg.Get(System.Int64,System.Int64)">
+            <summary>Gets the ellipse at the specified index.</summary>
+            <param name="tracheidIndex">Tracheid index.</param>
+            <param name="ellipseIndex">Ellipse index.</param>
+            <returns>Ellipse at given index.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoTracheidMsg.Set(System.Int64,System.Int64,Lmi3d.GoSdk.Messages.GoTracheidEllipse)">
+            <summary>Sets the ellipse at the specified index.</summary>
+            <param name="tracheidIndex">Tracheid index.</param>
+            <param name="ellipseIndex">Ellipse index.</param>
+            <param name="ellipse">Ellipse object.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoTracheidMsg.CameraIndex">
+            <summary>The camera index.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoTracheidMsg.Width">
+            <summary>Gets the count of ellipses in each tracheid array.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoTracheidMsg.Count">
+            <summary>Gets the count of tracheid arrays in this message.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoTracheidMsg.Source">
+            <summary>The tracheid source.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoTracheidMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoTracheidMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoTracheidMsg.#ctor">
+            <summary>Initializes a new instance of the GoTracheidMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoTracheidMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoTracheidMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoTracheidMsg">
+            <summary>Represents a message containing a tracheid result.</summary>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoTracheidEllipse">
+            <summary>Represents a tracheid ellipse.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEventMsg.EventType">
+            <summary>The event type.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoEventMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoEventMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoEventMsg.#ctor">
+            <summary>Initializes a new instance of the GoEventMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoEventMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoEventMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoEventMsg">
+            <summary>Represents a message containing an event.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.WidthDecision">
+            <summary>The bounding box match width decision.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.WidthValue">
+            <summary>The bounding box match width value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.LengthDecision">
+            <summary>The bounding box match length decision.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.LengthValue">
+            <summary>The bounding box match length value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.ZAngle">
+            <summary>The bounding box match Z angle.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.YOffset">
+            <summary>The bounding box match Y offset.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.XOffset">
+            <summary>The bounding box match X offset.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.Decision">
+            <summary>The bounding box match decision.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoBoundingBoxMatchMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.#ctor">
+            <summary>Initializes a new instance of the GoBoundingBoxMatchMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoBoundingBoxMatchMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoBoundingBoxMatchMsg">
+            <summary>Represents a message containing bounding box based part matching results.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.MajorDecision">
+            <summary>The ellipse match major decision.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.MajorValue">
+            <summary>The ellipse match major value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.MinorDecision">
+            <summary>The ellipse match minor decision.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.MinorValue">
+            <summary>The ellipse match minor value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.ZAngle">
+            <summary>The ellipse match Z angle.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.YOffset">
+            <summary>The ellipse match Y offset.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.XOffset">
+            <summary>The ellipse match X offset.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.Decision">
+            <summary>The ellipse match decision.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoEllipseMatchMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.#ctor">
+            <summary>Initializes a new instance of the GoEllipseMatchMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoEllipseMatchMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoEllipseMatchMsg">
+            <summary>Represents a message containing ellipse based part matching results.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg.QualityDecision">
+            <summary>The edge match quality decision.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg.QualityValue">
+            <summary>The edge match quality value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg.ZAngle">
+            <summary>The edge match Z angle.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg.YOffset">
+            <summary>The edge match Y offset.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg.XOffset">
+            <summary>The edge match X offset.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg.Decision">
+            <summary>The edge match decision.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoEdgeMatchMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg.#ctor">
+            <summary>Initializes a new instance of the GoEdgeMatchMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoEdgeMatchMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoEdgeMatchMsg">
+            <summary>Represents a message containing edge based part matching results.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoExposureCalMsg.Exposure">
+            <summary>The calibrated exposure.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoExposureCalMsg.Status">
+            <summary>The exposure calibration result.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoExposureCalMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoExposureCalMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoExposureCalMsg.#ctor">
+            <summary>Initializes a new instance of the GoExposureCalMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoExposureCalMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoExposureCalMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoExposureCalMsg">
+            <summary>Represents a message containing exposure calibration results.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoAlignMsg.Status">
+            <summary>The alignment result.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoAlignMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoAlignMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoAlignMsg.#ctor">
+            <summary>Initializes a new instance of the GoAlignMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoAlignMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoAlignMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoAlignMsg">
+            <summary>Represents a message containing an alignment result.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoMeasurementMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoMeasurementMsg.Get(System.Int64)">
+            <summary>Gets the value at the specified index.</summary>
+            <param name="index">Section intensity index.</param>
+            <returns>Section value at given indices.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoMeasurementMsg.Set(System.Int64,Lmi3d.GoSdk.Messages.GoMeasurementData)">
+            <summary>Sets the value at the specified index.</summary>
+            <param name="index">Section intensity index.</param>
+            <param name="value">Section intensity value.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoMeasurementMsg.Count">
+            <summary>Count of measurements in this message.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoMeasurementMsg.Id">
+            <summary>The measurement identifier.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoMeasurementMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoMeasurementMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoMeasurementMsg.#ctor">
+            <summary>Initializes a new instance of the GoMeasurementMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoMeasurementMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoMeasurementMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoMeasurementMsg">
+            <summary>Represents a message containing a set of GoMeasurementData.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoMeasurementData.DecisionCode">
+            <summary>Measurement decision code - relevant only when the value represents a failure.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoMeasurementData.Decision">
+            <summary>Measurement decision value.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoMeasurementData.Value">
+            <summary>Measurement value.</summary>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoMeasurementData">
+            <summary>Represents a measurement result.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.Exposure">
+            <summary>Gets the exposure.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.Get(System.Int64)">
+            <summary>Gets the value at the specified index.</summary>
+            <param name="index">Section intensity index.</param>
+            <returns>Section value at given indices.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.Set(System.Int64,System.Byte)">
+            <summary>Sets the value at the specified index.</summary>
+            <param name="index">Section intensity index.</param>
+            <param name="value">Section intensity value.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.XOffset">
+            <summary>Gets the x-offset, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.AnglePose">
+            <summary>Gets the pose angle, in microdegrees.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.YPose">
+            <summary>Gets the y-pose, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.XPose">
+            <summary>Gets the x-pose, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.XResolution">
+            <summary>Gets the x-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.Width">
+            <summary>Gets the count of points in each section array.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.Count">
+            <summary>Gets the count of section arrays in this message.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.Source">
+            <summary>Gets the section source.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.Id">
+            <summary>Gets the section ID.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoSectionIntensityMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.#ctor">
+            <summary>Initializes a new instance of the GoSectionIntensityMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoSectionIntensityMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoSectionIntensityMsg">
+            <summary>Represents a data message containing a set of section arrays.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.Exposure">
+            <summary>Gets the exposure.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionMsg.Get(System.Int64)">
+            <summary>Gets the value at the specified index.</summary>
+            <param name="index">Section index.</param>
+            <returns>Section value at given indices.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionMsg.Set(System.Int64,System.Int16)">
+            <summary>Sets the value at the specified index.</summary>
+            <param name="index">Section index.</param>
+            <param name="value">Section value.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.ZOffset">
+            <summary>Gets the z-offset, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.XOffset">
+            <summary>Gets the x-offset, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.AnglePose">
+            <summary>Gets the pose angle, in microdegrees.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.YPose">
+            <summary>Gets the y-pose, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.XPose">
+            <summary>Gets the x-pose, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.ZResolution">
+            <summary>Gets the z-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.XResolution">
+            <summary>Gets the x-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.Width">
+            <summary>Gets the count of points in each section array.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.Count">
+            <summary>Gets the count of section arrays in this message.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.Source">
+            <summary>Gets the section source.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSectionMsg.Id">
+            <summary>Gets the section ID.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoSectionMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionMsg.#ctor">
+            <summary>Initializes a new instance of the GoSectionMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSectionMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoSectionMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoSectionMsg">
+            <summary>Represents a data message containing a set of section arrays.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.Exposure">
+            <summary>Gets the exposure in uS.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.Get(System.Int64,System.Int64)">
+            <summary>Gets the value at the specified index.</summary>
+            <param name="rowIndex">Profile index.</param>
+            <param name="colIndex">Point index.</param>
+            <returns>Point value at given indices.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.Set(System.Int64,System.Int64,System.Byte)">
+            <summary>Sets the value at the specified index.</summary>
+            <param name="rowIndex">Profile index.</param>
+            <param name="colIndex">Point index.</param>
+            <param name="value">Point value.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.RowAt(System.Int64)">
+            <summary>Gets a pointer to a surface row.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.YOffset">
+            <summary>Gets the profile y-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.XOffset">
+            <summary>Gets the profile x-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.YResolution">
+            <summary>Gets the profile y-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.XResolution">
+            <summary>Gets the profile x-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.Width">
+            <summary>Gets the width of the surface (column count).</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.Length">
+            <summary>Gets the length of the surface (row count).</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.Source">
+            <summary>Gets the profile source.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoSurfaceIntensityMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.#ctor">
+            <summary>Initializes a new instance of the GoSurfaceIntensityMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoSurfaceIntensityMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoSurfaceIntensityMsg">
+            <summary>Represents a data message containing a surface intensity array.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.Exposure">
+            <summary>Gets the exposure in uS.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceMsg.Get(System.Int64,System.Int64)">
+            <summary>Gets the value at the specified index.</summary>
+            <param name="rowIndex">Profile index.</param>
+            <param name="colIndex">Point index.</param>
+            <returns>Point value at given indices.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceMsg.Set(System.Int64,System.Int64,System.Int16)">
+            <summary>Sets the value at the specified index.</summary>
+            <param name="rowIndex">Profile index.</param>
+            <param name="colIndex">Point index.</param>
+            <param name="value">Point value.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceMsg.RowAt(System.Int32)">
+            <summary>Gets a pointer to a surface row.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.StreamStepId">
+            <summary>Gets the id of the stream data.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.StreamStep">
+            <summary>Gets the stream step of the stream data source.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.ZOffset">
+            <summary>Gets the profile z-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.YOffset">
+            <summary>Gets the profile y-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.XOffset">
+            <summary>Gets the profile x-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.ZResolution">
+            <summary>Gets the profile z-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.YResolution">
+            <summary>Gets the profile y-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.XResolution">
+            <summary>Gets the profile x-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.Width">
+            <summary>Gets the width of the surface (column count).</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.Length">
+            <summary>Gets the length of the surface (row count).</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoSurfaceMsg.Source">
+            <summary>Gets the profile source.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoSurfaceMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceMsg.#ctor">
+            <summary>Initializes a new instance of the GoSurfaceMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoSurfaceMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoSurfaceMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoSurfaceMsg">
+            <summary>Represents a data message containing a surface array.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.CameraIndex">
+            <summary>Gets the source camera index.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.Exposure">
+            <summary>Gets the exposure.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.Get(System.Int64,System.Int64)">
+            <summary>Gets the value at the specified index.</summary>
+            <param name="profileIndex">Profile index.</param>
+            <param name="pointIndex">Point index.</param>
+            <returns>Point value at given indices.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.Set(System.Int64,System.Int64,System.Byte)">
+            <summary>Sets the value at the specified index.</summary>
+            <param name="profileIndex">Profile index.</param>
+            <param name="pointIndex">Point index.</param>
+            <param name="value">Point value.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.XOffset">
+            <summary>Gets the profile x-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.XResolution">
+            <summary>Gets the profile x-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.Width">
+            <summary>Gets the count of intensity values in each profile intensity array.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.Count">
+            <summary>Gets the count of profile intensity arrays in this message.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.Source">
+            <summary>Gets the profile source.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoProfileIntensityMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.#ctor">
+            <summary>Initializes a new instance of the GoProfileIntensityMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoProfileIntensityMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoProfileIntensityMsg">
+            <summary>Represents a data message containing a set of profile intensity arrays.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.Exposure">
+            <summary>Gets the exposure in uS.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.Get(System.Int64)">
+            <summary>Gets the point at the specified index.</summary>
+            <param name="pointIndex">Point index.</param>
+            <returns>Point value at given index.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.Set(System.Int64,System.Int16)">
+            <summary>Sets the point at the specified index.</summary>
+            <param name="pointIndex">Point index.</param>
+            <param name="value">Point value.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.Get(System.Int64,System.Int64)">
+            <summary>Gets the value at the specified index for the specified frame.</summary>
+            <param name="profileIndex">Profile index.</param>
+            <param name="pointIndex">Point index.</param>
+            <returns>Point value at given indices.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.Set(System.Int64,System.Int64,System.Int16)">
+            <summary>Sets the value at the specified index for the specified frame.</summary>
+            <param name="profileIndex">Profile index.</param>
+            <param name="pointIndex">Point index.</param>
+            <param name="value">Point value.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.StreamStepId">
+            <summary>Gets the id of the stream data.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.StreamStep">
+            <summary>Gets the stream step of the stream data source.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.ZOffset">
+            <summary>Gets the profile z-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.XOffset">
+            <summary>Gets the profile x-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.ZResolution">
+            <summary>Gets the profile z-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.XResolution">
+            <summary>Gets the profile x-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.Width">
+            <summary>Gets the count of ranges in each profile array.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.Source">
+            <summary>Gets the profile source.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.Count">
+            <summary>Gets the count of profile arrays in this message.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoResampledProfileMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.#ctor">
+            <summary>Initializes a new instance of the GoResampledProfileMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoResampledProfileMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoResampledProfileMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoResampledProfileMsg">
+            <summary>Represents a data message containing a set of re-sampled profile arrays.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileMsg.CameraIndex">
+            <summary>Gets the source camera index.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileMsg.Exposure">
+            <summary>Gets the exposure in uS.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileMsg.Get(System.Int64)">
+            <summary>Gets the point at the specified index.</summary>
+            <param name="pointIndex">Point index.</param>
+            <returns>Point at given indices.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileMsg.Set(System.Int64,Lmi3d.Zen.Data.KPoint16s)">
+            <summary>Sets the point at the specified index.</summary>
+            <param name="pointIndex">Point index.</param>
+            <param name="point">Point object.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileMsg.Get(System.Int64,System.Int64)">
+            <summary>Gets the point at the specified index for a specified frame.</summary>
+            <param name="profileIndex">Profile index.</param>
+            <param name="pointIndex">Point index.</param>
+            <returns>Point at given indices.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileMsg.Set(System.Int64,System.Int64,Lmi3d.Zen.Data.KPoint16s)">
+            <summary>Sets the point at the specified index for a specified frame.</summary>
+            <param name="profileIndex">Profile index.</param>
+            <param name="pointIndex">Point index.</param>
+            <param name="point">Point object.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileMsg.ZOffset">
+            <summary>Gets the profile z-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileMsg.XOffset">
+            <summary>Gets the profile x-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileMsg.ZResolution">
+            <summary>Gets the profile z-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileMsg.XResolution">
+            <summary>Gets the profile x-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileMsg.Width">
+            <summary>Gets the count of ranges in each profile array.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoProfileMsg.Count">
+            <summary>Gets the count of profile arrays in this message.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoProfileMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileMsg.#ctor">
+            <summary>Initializes a new instance of the GoProfileMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoProfileMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoProfileMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoProfileMsg">
+            <summary>Represents a data message containing a set of profile arrays.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg.Exposure">
+            <summary>Gets the exposure.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg.Get(System.Int64)">
+            <summary>Gets the range intensity at the specified index.</summary>
+            <param name="index">Range intensity index.</param>
+            <returns>Range intensity at given index.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg.Set(System.Int64,System.Byte)">
+            <summary>Sets the range intensity value at the specified index.</summary>
+            <param name="index">Range intensity index.</param>
+            <param name="value">Range intensity value.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg.Count">
+            <summary>Returns the count of range intensity data in this message.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg.Source">
+            <summary>The range intensity source.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="M:GoRangeIntensityMsg_Construct(System.Void**,System.Void*)" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg.#ctor">
+            <summary>Initializes a new instance of the GoRangeIntensityMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoRangeIntensityMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoRangeIntensityMsg">
+            <summary>Represents a data message containing a set of range intensity data.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeMsg.Exposure">
+            <summary>Gets the exposure.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeMsg.Data">
+            <summary>Gets a pointer to the internal data buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeMsg.Get(System.Int64)">
+            <summary>Gets the range value at the specified index.</summary>
+            <param name="index">Range index.</param>
+            <returns>Range value at given index.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeMsg.Set(System.Int64,System.Int16)">
+            <summary>Sets the range value at the specified index.</summary>
+            <param name="index">Range index.</param>
+            <param name="value">Range value.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeMsg.ZOffset">
+            <summary>Gets the range z-offset, in micrometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeMsg.ZResolution">
+            <summary>Gets the range z-resolution, in nanometers.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeMsg.Count">
+            <summary>Returns the count of range data in this message.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoRangeMsg.Source">
+            <summary>The range source.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoRangeMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeMsg.#ctor">
+            <summary>Initializes a new instance of the GoRangeMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoRangeMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoRangeMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoRangeMsg">
+            <summary>Represents a data message containing a set of range data.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.IsFlippedY">
+            <summary>Indicates whether the video message data requires vertical flipping to match up with profile data.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.IsFlippedX">
+            <summary>Indicates whether the video message data requires horizontal flipping to match up with profile data.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.Exposure">
+            <summary>Gets the exposure in uS.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.ExposureIndex">
+            <summary>Gets the exposure index.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoVideoMsg.RowAt(System.Int32)">
+            <summary>Gets a pointer to a row within the image.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoVideoMsg.Set``1(System.Int64,System.Int64,``0)">
+            <summary>Sets the value of a pixel.</summary>
+            <typeparam name="T">Type of item to be modified.</typeparam>
+            <param name="x">Column index.</param>
+            <param name="y">Row index.</param>
+            <param name="pixel">Pixel value to be copied into the image.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoVideoMsg.Get``1(System.Int32,System.Int32)">
+            <summary>Gets the specified pixel value.</summary>
+            <typeparam name="T">Type of item to be accessed.</typeparam>
+            <param name="x">Column index.</param>
+            <param name="y">Row index.</param>
+            <returns>Pixel value.</returns>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.Cfa">
+            <summary>Gets the image color filter array.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.PixelFormat">
+            <summary>Gets the pixel format descriptor.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.PixelSize">
+            <summary>Gets the image pixel size, in bytes.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.PixelType">
+            <summary>Gets the data type used to represent an image pixel.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.Height">
+            <summary>Gets the image height, in pixels.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.Width">
+            <summary>Gets the image width, in pixels.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.CameraIndex">
+            <summary>Gets the camera index that the video data originates from.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoVideoMsg.Source">
+            <summary>The video source.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoVideoMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoVideoMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoVideoMsg.#ctor">
+            <summary>Initializes a new instance of the GoVideoMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoVideoMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoVideoMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoVideoMsg">
+            <summary>Represents a data message containing a video image.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoStampMsg.Data">
+            <summary>Gets a pointer to the internal data buffer buffer.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoStampMsg.Get(System.Int64)">
+            <summary>Gets the stamp at the specified index.</summary>
+            <param name="index">Stamp index.</param>
+            <returns>Stamp at index.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoStampMsg.Set(System.Int64,Lmi3d.GoSdk.Messages.GoStamp)">
+            <summary>Sets the stamp at the specified index.</summary>
+            <param name="index">Stamp index.</param>
+            <param name="stamp">Stamp object.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoStampMsg.Count">
+            <summary>Returns the number of stamps contained in this message.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoStampMsg.Source">
+            <summary>The stamp source.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoStampMsg.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoStampMsg" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoStampMsg.#ctor">
+            <summary>Initializes a new instance of the GoStampMsg class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoStampMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoStampMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoStampMsg">
+            <summary>Represents a message containing a set of acquisition stamps.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.Messages.GoDataMsg.MessageType">
+            <summary>The message type for a data channel message given in a GoDataSet.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoDataMsg.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoDataMsg class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.Messages.GoDataMsg.#ctor">
+            <summary>Default GoDataMsg constructor.</summary>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoDataMsg">
+            <summary>Represents a base message sourced from the data channel.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoStamp.Reserved64u">
+            <summary>Reserved.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoStamp.Reserved32u">
+            <summary>Reserved.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoStamp.Id">
+            <summary>Source device ID.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoStamp.Status">
+            <summary>Bit mask containing frame information.</summary>
+            <remarks>
+- Bit 0: Represents sensor digital input state.
+- Bit 4: Represents master digital input state.
+- Bits 8 and 9: Represents inter-frame digital pulse trigger (master digital input if a master is connected,
+  otherwise sensor digital input). Value is cleared after each frame and saturates at 3.
+</remarks>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoStamp.EncoderAtZ">
+            <summary>Encoder value latched at z-index mark (encoder ticks).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoStamp.Encoder">
+            <summary>Capture position (encoder ticks).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoStamp.Timestamp">
+            <summary>Capture time (approximates nanoseconds; actual time = timestamp / 1.024).</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.Messages.GoStamp.FrameIndex">
+            <summary>Frame index (counts up from zero).</summary>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.GoStamp">
+            <summary>Represents an acquisition stamp.</summary>
+        </member>
+        <member name="T:Lmi3d.GoSdk.Messages.NamespaceDoc">
+            <summary>FireSync distributed control namespace.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoUtils.FuzzyEquivalence(System.Double,System.Double,System.Byte)">
+            <summary>Returns the result of a floating point number equivalence, based on a given degree of precision.</summary>
+            <param name="first">k64f object.</param>
+            <param name="second">k64f object.</param>
+            <param name="decimalPrecision">k8u object.</param>
+            <returns>Returns true if the numbers are equivalent within the given precision; false otherwise.</returns>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoUtils">
+            <summary>Contains various helper functions. </summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoTracheid.SetCameraThreshold(System.UInt32,System.Int32)">
+            <summary>Sets the camera threshold.</summary>
+            <param name="cameraIndex">Camera index (0 or 1).</param>
+            <param name="threshold">Threshold value.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoTracheid.GetCameraThresholdAt(System.UInt32)">
+            <summary>Gets the camera threshold.</summary>
+            <param name="cameraIndex">Camera index (0 or 1).</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoTracheid.ExposureEnabled">
+            <summary>The exposure enabled flag.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoTracheid.Exposure">
+            <summary>The exposure (microseconds).</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoTracheid.Used">
+            <summary>Determines whether tracheid is used.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoTracheid.#ctor(Lmi3d.GoSdk.GoSensor,Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoTracheid" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoTracheid.#ctor(Lmi3d.GoSdk.GoSensor)">
+            <summary>Initializes a new instance of the GoTracheid class.</summary>
+            <param name="sensor">A GoSensor instance.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoTracheid.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoTracheid class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoTracheid">
+            <summary>Represents a sensor transformation.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.StartDiscovery">
+            <summary>Start running the Gocator Discovery Protocol to find/discover sensors.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.SetAllDiscoveryInterface(System.Boolean)">
+            <summary>Set all interfaces to either allow or not allow the Gocator Discovery Protocol to use.</summary>
+            <param name="enable">Set to true: allow protocol to use the interface(s). Set to false: to not allow the protocol to use the interface(s).</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.SetOneDiscoveryInterface(Lmi3d.Zen.Io.KIpAddress,System.Boolean)">
+            <summary>Set one interface to either allow or not allow the Gocator Discovery Protocol to use.</summary>
+            <param name="address">IP address of the interface over which the Gocator Discovery Protocol is allowed or not allowed to use.</param>
+            <param name="enable">Set to true: allow protocol to use this interface. Set to false: to not allow the protocol to use this interface.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.UpdateMultiplexPeriod(System.Double)">
+            <summary>Automatically update the multiplexing single period configuration for all sensors contained in all defined multiplex banks.</summary>
+            <param name="period">The exposure period to set among all multiplexed sensors. A value of 0.0 will result in automatic period determination.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoSystem.MaxMinimumMultiplexPeriod">
+            <summary>The maximum value of all multiplexed sensor's minimum multiplexing periods.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.UpdateMultiplexDelay">
+            <summary>Automatically update the multiplexing single delay configuration for all sensors contained in all defined multiplex banks.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.UpdateAllMultiplexParameters(System.Double)">
+            <summary>Automatically update the single multiplexing delay and period configuration for all sensors contained in all defined multiplex banks.</summary>
+            <param name="period">The exposure period to set among all multiplexed sensors. A value of 0.0 will result in automatic period determination.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.MaxBankExposureDuration(Lmi3d.GoSdk.GoMultiplexBank)">
+            <summary>Gets the maximum sensor exposure duration in the given multiplex bank.</summary>
+            <param name="bank">The multiplex bank to check.</param>
+            <returns>The maximum sensor exposure duration contained in the multiplexing bank.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.ClearMultiplexBanks">
+            <summary>Removes all multiplex banks.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.RemoveMultiplexBank(System.Int64)">
+            <summary>Removes a multiplex bank at the given index.</summary>
+            <param name="index">The index of the multiplex bank to remove.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.AddMultiplexBank">
+            <summary>Gets a multiplex bank corresponding to the given index.</summary>
+            <returns>A multiplex bank.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.GetMultiplexBank(System.Int64)">
+            <summary>Gets a multiplex bank corresponding to the given index.</summary>
+            <param name="index">The index of the multiplex bank to retrieve.</param>
+            <returns>The multiplex bank at the given index or null if an invalid index is given.</returns>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoSystem.MultiplexBankCount">
+            <summary>The current number of defined multiplex banks.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.Encoder">
+            <summary>Gets the current encoder value from the sensor network.</summary>
+            <returns>Encoder value.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.Timestamp">
+            <summary>Gets the current time stamp from the sensor network.</summary>
+            <returns>Timestamp value.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.FindSensorByIpAddress(Lmi3d.Zen.Io.KIpAddress)">
+            <summary>Gets the sensor object with the specified IP address.</summary>
+            <remarks>
+Throws KStatus.ErrorNotFound if not found.
+</remarks>
+            <param name="address">Sensor IP address.</param>
+            <returns>Sensor instance.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.FindSensorById(System.UInt32)">
+            <summary>Gets the sensor object with the specified device id (serial number).</summary>
+            <remarks>
+Throws KStatus.ErrorNotFound if not found.
+</remarks>
+            <param name="id">Device identifier.</param>
+            <returns>Sensor instance.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.GetSensor(System.Int64)">
+            <summary>Gets the sensor object at the specified index.</summary>
+            <param name="index">Sensor index.</param>
+            <returns>Sensor instance.</returns>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoSystem.SensorCount">
+            <summary>Gets the number of nodes in the system.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.GetExtendedDiscoveryInfo(System.UInt32)">
+            <summary>Gets the Discovery channel information for the given device ID (if the device is present and the command is supported)</summary>
+            <param name="deviceId">The ID of the device with which to retrieve Discovery channel information.</param>
+            <returns>The sensor's constructed discovery information.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.Cancel">
+            <summary>Aborts ongoing sensor communication.</summary>
+            <remarks>
+This method asynchronously aborts ongoing communication; the next time that any
+I/O operation blocks for an extended period of time, it will be terminated. This method
+is thread-safe.
+
+In order to resume communication, call Refresh or Connect.
+</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.Reset(System.Boolean)">
+            <summary>Reboots all connected sensors.</summary>
+            <param name="wait">true to wait for reboot complete; false to return immediately.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.Stop">
+            <summary>Stops all connected sensors.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.StartExposureAutoSet">
+            <summary>Performs exposure auto set for sensors in the ready state.</summary>
+            <remarks>
+NOTE: This operation will result in sensor starts for the duration of the
+exposure AutoSet. A successful operation status does NOT modify the configuration.
+You must retrieve the resulting exposure values and set it for the appropriate
+exposure setting. This involves enabling the data connection prior to running
+exposure auto set and then receiving an exposure auto set message, which
+you can then use to query the status and access the resulting value.
+</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.StartAlignment">
+            <summary>Performs alignment for sensors in the ready state.</summary>
+            <remarks>
+NOTE: This operation will result in sensor starts for the duration of the
+alignment. It can be canceled via GoSystem_Stop. This function's operation
+status does not correspond to the actual alignment result. In order to
+retrieve the alignment result, you must enable the data channel before calling
+this function, receive an alignment data message and then check its status.
+</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.ScheduledStart(System.Int64)">
+            <summary>Starts all sensors that are currently in the ready state at a scheduled value.</summary>
+            <param name="value">The value at which to start the sensor. It is in uS when time triggered and ticks when encoder triggered.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.Start">
+            <summary>Starts all sensors that are currently in the ready state.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.ClearHealth">
+            <summary>Clears any buffered health messages.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.ReceiveHealth(System.Int64)">
+            <summary>Receives a set of sensor health messages.</summary>
+            <remarks>
+Sensor health messages can be received synchronously using this function or asynchronously by
+registering a callback with the SetHealthHandler function.
+</remarks>
+            <param name="timeout">Duration to wait for messages, in microseconds.</param>
+            <returns>Data Set.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.SetHealthHandler(Lmi3d.GoSdk.GoSystem.DataFx)">
+            <summary>Sets a callback function that can be used to receive sensor health messages asynchronously.</summary>
+            <remarks>
+Sensor health messages can be received synchronously using the ReceiveHealth function
+or asynchronously by registering a callback function. If a callback function is registered,
+a background thread will be created to perform notifications.
+
+To unregister a previously-registered health handler, call this function using null in place
+of the callback function argument.
+</remarks>
+            <param name="handler">Health callback function (or null to unregister).</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.ReceiveData(System.Int64)">
+            <summary>Receives a set of sensor data messages.</summary>
+            <remarks>
+Sensor data messages can be received synchronously using this function or asynchronously by
+registering a callback with the SetDataHandler function.
+
+NOTE: Data received with this function must be destroyed after use,
+      otherwise a memory leak will result.
+</remarks>
+            <param name="timeout">Duration to wait for messages, in microseconds.</param>
+            <returns>Data Set.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.ClearData">
+            <summary>Clears any buffered data messages.</summary>
+            <remarks>
+When stopping and then restarting a system, it may be desirable to ensure that no messages from
+the previous session remain in any buffers. The ClearData function closes any open data
+channels, destroys any received messages, and then reopens data channels.
+</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.EnableData(System.Boolean)">
+            <summary>Establishes data connections to all connected sensors currently in the ready or running states.</summary>
+            <remarks>
+Data connections are not automatically established when sensor control connection are established.
+Use this function (or GoSensor_EnableData) to enable/disable data connections.
+</remarks>
+            <param name="enable">true to enable data connections; false to disable.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoSystem.DataCapacity">
+            <summary>Sets the maximum amount of memory that can be used to buffer received data messages.</summary>
+            <remarks>
+Received data messages are enqueued until they are accepted by the caller. This function
+determines the maximum size, in bytes, of enqueued messages. The default maximum size is 50 MB.
+</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.SetDataHandler(Lmi3d.GoSdk.GoSystem.DataFx)">
+            <summary>Sets a callback function that can be used to receive sensor data messages asynchronously.</summary>
+            <remarks>
+Sensor data messages can be received synchronously using the ReceiveData function
+or asynchronously by registering a callback function.  If a callback function is registered,
+a background thread will be created to perform notifications.
+
+To unregister a previously-registered data handler, call this function using null in place
+of the callback function argument.
+</remarks>
+            <param name="handler">Data callback function (or null to unregister).</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoSystem.DataFx">
+            <summary>Delegate for a GoSystem data/health handler.</summary>
+            <remarks>
+NOTE: Data received with this delegate must be destroyed after use, 
+      otherwise a memory leak will result.
+</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.SdkVersion">
+            <summary>Reports the sensor firmware version that was built alongside this library.</summary>
+            <remarks>
+A sensor SDK version number has a major component and a minor component.
+If the major version implemented by this library is the same as the major
+version implemented by a sensor device, then communication can proceed.  Otherwise,
+the sensor should be upgraded or a version of this library matching the sensor
+should be obtained.
+
+When it comes to the matter of mismatched SDK and firmware versions, so long
+as the protocol versions match up, they should be compatible.
+</remarks>
+            <returns>Firmware version that was built alongside this library.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.ProtocolVersion">
+            <summary>Reports the Sensor Protocol version implemented by this library.</summary>
+            <remarks>
+A Sensor Protocol version number has a major component and a minor component.
+If the major version implemented by this library is the same as the major
+version implemented by a sensor device, then communication can proceed.  Otherwise,
+the sensor should be upgraded or a newer version of this library should be obtained.
+Sensors with incompatible major versions will be reported as being in the
+incompatible state upon connection.
+
+If major versions match, but the minor version implemented by this library
+is lower than the minor version implemented by the sensor, then some sensor features
+will not be accessible through this library.
+
+If major versions match, but the minor version implemented by this library
+is higher than the minor version implemented by the sensor, then some features
+exposed by this library may be unimplemented by the sensor.
+
+This method is thread-safe.
+</remarks>
+            <returns>Protocol version implemented by this library.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.Refresh">
+            <summary>Updates client state to reflect any changes that have occurred in the sensor network.</summary>
+            <remarks>
+Sensors can undergo autonomous state changes that require client state to be refreshed
+(e.g. sensor goes offline). The Refresh function resynchronizes client state
+with the current state of the sensor network.
+
+Calling this function may destroy or modify local sensor objects. The HasChanges
+function can be used prior to calling Refresh, to determine whether a refresh is
+needed.
+</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.HasChanges">
+            <summary>Reports whether the system has changes that require a refresh.</summary>
+            <remarks>
+Sensors can undergo autonomous state changes that require client state to be refreshed
+(e.g. sensor goes offline). The HasChanges function can be used to determine
+if such changes have occurred.
+
+The HasChanges function does not perform communication, and consequently, will not
+require the caller to block for a long duration. If changes are detected, the Refresh
+function can be called to resolve the changes.
+
+This method is thread-safe.
+</remarks>
+            <returns>true if the system has changes.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.Disconnect">
+            <summary>Terminates control connections to all sensors.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.Connect">
+            <summary>Establishes control connections to all sensors.</summary>
+            <remarks>
+A control connection is required before calling any sensor function except GoSensor_State,
+GoSensor_Address, or GoSensor_SetAddress.
+</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.#ctor(System.Boolean,Lmi3d.Zen.KAlloc)">
+            <summary>Initializes a new instance of the GoSystem class without enabling automatic gocator discovery.</summary>
+            <remarks>
+During construction, a GoSystem object uses Gocator Discovery Protocol to locate sensors.
+The list of detected sensors can be accessed using the SensorCount and GetSensor
+functions.
+</remarks>
+            <param name="enableAutoDiscovery">Enable or disable automatic discovery of gocators using the Gocator Discovery Protocol</param>
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoSystem" />
+            <remarks>
+During construction, a GoSystem object uses Sensor Discovery Protocol to locate sensors.
+The list of detected sensors can be accessed using the SensorCount and GetSensor
+functions.
+</remarks>
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.#ctor(System.Boolean)">
+            <summary>Initializes a new instance of the GoSystem class without enabling automatic gocator discovery.</summary>
+            <remarks>
+During construction, a GoSystem object uses Gocator Discovery Protocol to locate sensors.
+The list of detected sensors can be accessed using the SensorCount and GetSensor
+functions.
+</remarks>
+            <param name="enableAutoDiscovery">Enable or disable automatic discovery of gocators using the Gocator Discovery Protocol</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.#ctor">
+            <summary>Initializes a new instance of the GoSystem class with default discovery providers.</summary>
+            <remarks>
+During construction, a GoSystem object uses Sensor Discovery Protocol to locate sensors.
+The list of detected sensors can be accessed using the SensorCount and GetSensor
+functions.
+</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSystem.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoSystem class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoSystem">
+            <summary>Represents a system of Gocator devices.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoReplay.RecordingFilter">
+            <summary>The recording filter for the replay.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoReplay.#ctor(Lmi3d.GoSdk.GoSensor,Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoAccelerator" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoReplay.#ctor(Lmi3d.GoSdk.GoSensor)">
+            <summary>Initializes a new instance of the GoReplay class.</summary>
+            <param name="sensor">A GoSensor instance.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoReplay.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoReplay class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoReplay">
+            <summary>Represents a replay instance.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoRecordingFilter.Measurement">
+            <summary>The Measurement condition.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoRecordingFilter.AnyData">
+            <summary>The Any Data condition.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoRecordingFilter.AnyMeasurement">
+            <summary>The Any Measurement condition.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoRecordingFilter.ConditionCombineType">
+            <summary>The condition combine type.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoRecordingFilter.#ctor(Lmi3d.GoSdk.GoSensor,Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoAccelerator" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoRecordingFilter.#ctor(Lmi3d.GoSdk.GoSensor)">
+            <summary>Initializes a new instance of the GoRecordingFilter class.</summary>
+            <param name="sensor">A GoSensor instance.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoRecordingFilter.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoRecordingFilter class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoRecordingFilter">
+            <summary>Represents a recording filter instance.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoMultiplexBank.Id">
+            <summary>The ID of the given multiplexing bank.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMultiplexBank.HasSensor(System.UInt32)">
+            <summary>Adds a sensor to the given multiplexing bank.</summary>
+            <param name="id">The sensor ID to search for.</param>
+            <returns>true if the sensor is in the multiplexing bank, false otherwise.</returns>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMultiplexBank.GetSensor(System.Int64)">
+            <summary>Gets a sensor handle from the given index.</summary>
+            <param name="index">Multiplexing bank index from which to obtain a sensor handle.</param>
+            <returns>A section.</returns>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoMultiplexBank.SensorCount">
+            <summary>The count corresponding to the number of sensors in the multiplexing bank.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMultiplexBank.RemoveSensor(System.UInt32)">
+            <summary>Adds a sensor to the given multiplexing bank.</summary>
+            <param name="id">The ID of the sensor in the bank to the remove.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMultiplexBank.AddSensor(Lmi3d.GoSdk.GoSensor)">
+            <summary>Adds a sensor to the given multiplexing bank.</summary>
+            <param name="sensor">A connected handle to the sensor to add.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMultiplexBank.#ctor(System.UInt32,Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoMultiplexBank" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMultiplexBank.#ctor(System.UInt32)">
+            <summary>Initializes a new instance of the GoMultiplexBank class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMultiplexBank.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoMultiplexBank class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoMultiplexBank">
+            <summary>Represents a bank of related sensors to be used in multiplexing.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoMaterial.MaterialTypeSystemValue">
+            <summary>The material acquisition type to be used by the system.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoMaterial.MaterialType">
+            <summary>The material acquisition type.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMaterial.#ctor(Lmi3d.GoSdk.GoSensor,Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoAdvanced" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMaterial.#ctor(Lmi3d.GoSdk.GoSensor)">
+            <summary>Initializes a new instance of the GoAdvanced class.</summary>
+            <param name="sensor">A GoSensor instance.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoMaterial.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoAdvanced class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoMaterial">
+            <summary>Represents configurable material acquisition settings.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SurfacePhaseFilter">
+            <summary>The Surface Phase Filter type.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SurfaceEncoding">
+            <summary>The Surface Encoding type.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SensitivityCompensationEnabledSystemValue">
+            <summary>The system's sensitivity compensation value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsSensitivityCompensationEnabledUsed">
+            <summary>A boolean representing whether the user defined sensitivity compensation is used by the system.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SensitivityCompensationEnabled">
+            <summary>Enables or disables senstivity compensation.</summary>
+            <remarks>NOTE: This is only applicable to 2300 B series sensors.</remarks>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.GammaTypeSystemValue">
+            <summary>The system's gamma type value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsGammaTypeUsed">
+            <summary>A boolean representing whether the user defined gamma type is used by the system.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.GammaType">
+            <summary>The gamma type.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.DynamicThresholdSystemValue">
+            <summary>The dynamic threshold system value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsDynamicThresholdUsed">
+            <summary>A boolean representing whether the user defined dynamic threshold value is used.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.DynamicThresholdLimitMax">
+            <summary>The dynamic threshold maximum value limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.DynamicThresholdLimitMin">
+            <summary>The dynamic threshold minimum value limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.DynamicThreshold">
+            <summary>The dynamic threshold.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.DynamicSensitivitySystemValue">
+            <summary>The dynamic sensitivity system value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsDynamicSensitivityUsed">
+            <summary>A boolean representing whether the user defined dynamic sensitivity value is used.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.DynamicSensitivityLimitMax">
+            <summary>The dynamic sensitivity maximum value limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.DynamicSensitivityLimitMin">
+            <summary>The dynamic sensitivity minimum value limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.DynamicSensitivity">
+            <summary>The dynamic sensitivity.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.CameraGainDigitalSystemValue">
+            <summary>The digital camera gain system value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsCameraGainDigitalUsed">
+            <summary>A boolean value representing whether the user defined digital camera gain is used.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.CameraGainDigitalLimitMax">
+            <summary>The digital camera gain maximum value limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.CameraGainDigitalLimitMin">
+            <summary>The digital camera gain minimum value limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.CameraGainDigital">
+            <summary>The user defined digital camera gain value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.CameraGainAnalogSystemValue">
+            <summary>The analog camera gain system value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsCameraGainAnalogUsed">
+            <summary>A boolean value representing whether the user defined analog camera gain is used.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.CameraGainAnalogLimitMax">
+            <summary>The analog camera gain maximum value limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.CameraGainAnalogLimitMin">
+            <summary>The analog camera gain minimum value limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.CameraGainAnalog">
+            <summary>The user defined analog camera gain value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotContinunitySearchWindowY">
+            <summary>The search window size in the Y direction used in continuity sortinging spot detection.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotContinunitySearchWindowX">
+            <summary>The search window size in the X direction used in continuity sortinging spot detection.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotContinunityMinimumSegmentSize">
+            <summary>The minimum segment size used in continuity sorting spot detection.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotSelectionTypeSystemValue">
+            <summary>The system spot selection type.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsSpotSelectionTypeUsed">
+            <summary>A boolean relating to whether the user defined spot selection type will be used by the system.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotSelectionType">
+            <summary>The spot selection type.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAdvanced.GetSpotSelectionTypeOption(System.Int64)">
+            <summary>Returns the spot selection type option at the given index.</summary>
+            <param name="index">The option list index to access.</param>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotSelectionTypeOptionCount">
+            <summary>The number of spot selection type options.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotWidthMaxSystemValue">
+            <summary>The maximum spot width system value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsSpotWidthMaxUsed">
+            <summary>A boolean relating to whether the user defined spot width max value will be used by the system.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotWidthMaxLimitMax">
+            <summary>The maximum spot width maximum limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotWidthMaxLimitMin">
+            <summary>The maximum spot width minimum limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotWidthMax">
+            <summary>The maximum spot width.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotThresholdSystemValue">
+            <summary>The system spot threshold value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsSpotThresholdUsed">
+            <summary>A boolean value representing whether the user specified spot threshold value is used.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotThresholdLimitMax">
+            <summary>The maximum spot threshold limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotThresholdLimitMin">
+            <summary>The minimum spot threshold limit.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.SpotThreshold">
+            <summary>The spot threshold.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.AdvancedTypeSystemValue">
+            <summary>The advanced acquisition type to be used by the system.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.IsTypeUsed">
+            <summary>A boolean relating to whether the user defined advanced acquisition type value will be used by the system.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAdvanced.AdvancedType">
+            <summary>The advanced acquisition type.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAdvanced.#ctor(Lmi3d.GoSdk.GoSensor,Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoAdvanced" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAdvanced.#ctor(Lmi3d.GoSdk.GoSensor)">
+            <summary>Initializes a new instance of the GoAdvanced class.</summary>
+            <param name="sensor">A GoSensor instance.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAdvanced.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoAdvanced class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoAdvanced">
+            <summary>Represents configurable advanced acquisition settings.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.MultiplexSingleExposureDuration">
+            <summary>A value representing the multiplexing exposure duration in a single device sensor configuration.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.MultiplexSinglePeriodMin">
+            <summary>A value representing the minimum multiplexing period in a single device sensor configuration.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.MultiplexSinglePeriod">
+            <summary>A value representing the multiplexing period in a single device sensor configuration.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.MultiplexSingleDelay">
+            <summary>A value representing the multiplexing delay in a single device sensor configuration.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.MultiplexSingleEnabled">
+            <summary>A boolean value representing whether or not multiplexing is enabled in a single device configuration.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.MultiplexBuddyEnabled">
+            <summary>A boolean value representing whether or not multiplexing is enabled in a buddied configuration.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.YSpacingCount">
+            <summary>The layout specific Y spacing count value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.XSpacingCount">
+            <summary>The layout specific X spacing count value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.TransformedDataRegionHeight">
+            <summary>The transformed data region height value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.TransformedDataRegionLength">
+            <summary>The transformed data region length value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.TransformedDataRegionWidth">
+            <summary>The transformed data region width value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.TransformedDataRegionZ">
+            <summary>The transformed data region Z-component value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.TransformedDataRegionY">
+            <summary>The transformed data region Y-component value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.TransformedDataRegionX">
+            <summary>The transformed data region X-component value.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoLayout.Orientation">
+            <summary>The sensor configuration orientation used when buddied.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoLayout.#ctor(Lmi3d.GoSdk.GoSensor,Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoLayout" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoLayout.#ctor(Lmi3d.GoSdk.GoSensor)">
+            <summary>Initializes a new instance of the GoLayout class.</summary>
+            <param name="sensor">A GoSensor instance.</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoLayout.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoLayout class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoLayout">
+            <summary>Represents a layout related sensor configuration.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAlgorithm.Demosaic(Lmi3d.Zen.Data.KImage,Lmi3d.GoSdk.GoDemosaicStyle,Lmi3d.Zen.KAlloc)">
+            <summary>Performs a demosaic operation on a bayer encoded image.</summary>
+            <param name="input">Bayer Encoded KImage</param>
+            <param name="style">GoDemosaicStyle</param>
+            <param name="allocator">Allocator</param>
+            <returns>Decoded (Color) KImage</returns>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoAlgorithm">
+            <summary>Contains various Algorithmic helper functions. </summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAccelerator.PublicDataPort">
+            <summary>The public data port.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAccelerator.PrivateDataPort">
+            <summary>The private data port.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAccelerator.WebPort">
+            <summary>The web server port.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAccelerator.UpgradePort">
+            <summary>The upgrade port.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAccelerator.HealthPort">
+            <summary>The health port.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAccelerator.ControlPort">
+            <summary>The control port.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAccelerator.Address">
+            <summary>The IP address.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAccelerator.SetAcceleratorUpdateHandler(Lmi3d.GoSdk.GoAccelerator.UpdateFx)">
+            <summary>Registers a callback function that can be used to receive accelerator connection status messages.</summary>
+            <remarks>Various locks may be held by the internal thread that invokes the callback; accordingly, the handler function
+should avoid blocking the thread.</remarks>
+            <param name="handler">Accelerator Update handler function</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoAccelerator.UpdateFx">
+            <summary>Delegate for a GoAccelerator connectin status update handler.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAccelerator.Stop">
+            <summary>Stops the accelerator service.</summary>
+            <remarks>Note that all attached GoSensor instances should be detached before stopping the accelerator.</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAccelerator.Detach(Lmi3d.GoSdk.GoSensor)">
+            <summary>Detaches a sensor from the accelerator.</summary>
+            <remarks>Note that subsequent operations on the GoSensor instance will no longer be routed through the accelerator.</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAccelerator.Attach(Lmi3d.GoSdk.GoSensor)">
+            <summary>Attaches the accelerator to a sensor.</summary>
+            <remarks>Note that subsequent operations on the GoSensor instance will be routed through the accelerator.</remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAccelerator.Start">
+            <summary>Starts the accelerator service.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAccelerator.IsAttached(Lmi3d.GoSdk.GoSensor)">
+            <summary>Reports whether or not the specified sensor is attached to this accelerator.</summary>
+            <returns>true if attached, false otherwise</returns>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoAccelerator.IsRunning">
+            <summary>Reports whether or not the accelerator has been started.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAccelerator.#ctor(Lmi3d.Zen.KAlloc)">
+            <inheritdoc cref="D:GoAccelerator" />
+            <param name="allocator">Memory allocator</param>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAccelerator.#ctor">
+            <summary>Initializes a new instance of the GoAccelerator class.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoAccelerator.#ctor(System.IntPtr)">
+            <summary>Initializes a new instance of the GoAccelerator class with the specified Zen object handle.</summary>
+            <param name="handle">Zen object handle.</param>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoAccelerator">
+            <summary>Represents an accelerator instance.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.GoSdkLib.m_zenLib">
+            <summary>Reference to dependent assembly manager.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.GoSdkLib.m_instance">
+            <summary>Singleton instance.</summary>
+        </member>
+        <member name="F:Lmi3d.GoSdk.GoSdkLib.m_lock">
+            <summary>Lock object to provide thread-safe access.</summary>
+        </member>
+        <member name="P:Lmi3d.GoSdk.GoSdkLib.Instance">
+            <summary>Gets a reference to the GoSdkLib singleton instance.</summary>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSdkLib.Dispose">
+            <summary>Disposes the GoSdkLib assembly manager.</summary>
+            <remarks>
+                <para>This method decrements the GoSdkLib reference count. If the reference count reaches zero, the 
+GoSdkLib instance will be disposed.</para>
+                <para>This method is thread safe.</para>
+            </remarks>
+        </member>
+        <member name="M:Lmi3d.GoSdk.GoSdkLib.Construct">
+            <summary>Constructs the GoSdkLib assembly manager.</summary>
+            <remarks>
+                <para>If an instance of the GoSdkLib assembly manager does not currently exist, the Construct method 
+will create a new instance and return it. If an instance of the GoSdkLib assembly manager already exists, 
+the Construct method will increment its reference count and return the existing instance.</para>
+                <para>The GoSdkLib instance returned by this method should be disposed when no longer needed.</para>
+                <para>This method is thread safe.</para>
+            </remarks>
+        </member>
+        <member name="T:Lmi3d.GoSdk.GoSdkLib">
+            <summary>Assembly manager for the SensorApi API native type assembly (kSxLib).</summary>
+        </member>
+    </members>
+</doc>

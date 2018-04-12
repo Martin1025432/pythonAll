@@ -1,0 +1,7 @@
+RH-6CH6020-DNARC parameter system V1.0;
+RLNG=Ud,2;
+MEINSD=Ul,-2246947;
+MEORGNO=Md,-1,-1,-1,-1,-1,-1,-1,-1;
+FSIFUREV=Mx,0x0,0x0;
+FSIFVER=Us,"";
+ARCH2S=Uf,10,10,30,30;
