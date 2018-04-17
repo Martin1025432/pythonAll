@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OperatingInformation>
+	<PowerOnTime>792</PowerOnTime>
+	<ServoOnTime>
+		<MechaNo>1</MechaNo>
+		<ServoTime>453</ServoTime>
+		<MechaNum>1</MechaNum>
+	</ServoOnTime>
+	<OperationTime>161</OperationTime>
+	<BatteryRemainingTime>
+		<BatteryTime>11876</BatteryTime>
+		<PowerTime>397</PowerTime>
+	</BatteryRemainingTime>
+</OperatingInformation>

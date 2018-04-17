@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1600</width>
+    <width>1920</width>
     <height>1080</height>
    </rect>
   </property>
@@ -103,8 +103,8 @@
     <rect>
      <x>30</x>
      <y>120</y>
-     <width>311</width>
-     <height>511</height>
+     <width>291</width>
+     <height>691</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -163,10 +163,10 @@
   <widget class="QTableWidget" name="tDetail1">
    <property name="geometry">
     <rect>
-     <x>370</x>
+     <x>440</x>
      <y>120</y>
-     <width>251</width>
-     <height>511</height>
+     <width>281</width>
+     <height>601</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -182,7 +182,7 @@
     <number>1</number>
    </property>
    <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>100</number>
+    <number>170</number>
    </attribute>
    <attribute name="horizontalHeaderMinimumSectionSize">
     <number>25</number>
@@ -307,10 +307,10 @@
   <widget class="QTableWidget" name="tDetail2">
    <property name="geometry">
     <rect>
-     <x>660</x>
-     <y>110</y>
+     <x>720</x>
+     <y>120</y>
      <width>281</width>
-     <height>511</height>
+     <height>601</height>
     </rect>
    </property>
    <property name="minimumSize">
@@ -320,13 +320,13 @@
     </size>
    </property>
    <property name="rowCount">
-    <number>18</number>
+    <number>19</number>
    </property>
    <property name="columnCount">
     <number>1</number>
    </property>
    <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>100</number>
+    <number>170</number>
    </attribute>
    <attribute name="horizontalHeaderMinimumSectionSize">
     <number>25</number>
@@ -394,6 +394,11 @@
    </row>
    <row>
     <property name="text">
+     <string>周期时间</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
      <string>位置重复精度</string>
     </property>
    </row>
@@ -451,9 +456,9 @@
   <widget class="QTableWidget" name="tDetail3">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>650</y>
-     <width>581</width>
+     <x>440</x>
+     <y>730</y>
+     <width>561</width>
      <height>181</height>
     </rect>
    </property>
@@ -464,7 +469,7 @@
     </size>
    </property>
    <property name="rowCount">
-    <number>4</number>
+    <number>5</number>
    </property>
    <property name="columnCount">
     <number>1</number>
@@ -498,6 +503,11 @@
    </attribute>
    <row>
     <property name="text">
+     <string/>
+    </property>
+   </row>
+   <row>
+    <property name="text">
      <string>工具配线</string>
     </property>
    </row>
@@ -522,386 +532,6 @@
     </property>
    </column>
   </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>1100</x>
-     <y>115</y>
-     <width>91</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>惯量计算</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBox_3">
-   <property name="geometry">
-    <rect>
-     <x>1190</x>
-     <y>160</y>
-     <width>69</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>方形</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>圆形</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QComboBox" name="comboBox_4">
-   <property name="geometry">
-    <rect>
-     <x>1410</x>
-     <y>160</y>
-     <width>69</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>方形</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>圆形</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>1100</x>
-     <y>160</y>
-     <width>100</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>抓手形状</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>1300</x>
-     <y>160</y>
-     <width>100</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>工件形状</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="bCalc">
-   <property name="geometry">
-    <rect>
-     <x>1120</x>
-     <y>560</y>
-     <width>101</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>计算惯量</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_9">
-   <property name="geometry">
-    <rect>
-     <x>1140</x>
-     <y>200</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>重量</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_10">
-   <property name="geometry">
-    <rect>
-     <x>1140</x>
-     <y>230</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>长</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_11">
-   <property name="geometry">
-    <rect>
-     <x>1140</x>
-     <y>260</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>宽</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>1140</x>
-     <y>290</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>半径</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>1300</x>
-     <y>230</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>长</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>1300</x>
-     <y>290</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>半径</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_15">
-   <property name="geometry">
-    <rect>
-     <x>1300</x>
-     <y>260</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>宽</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_16">
-   <property name="geometry">
-    <rect>
-     <x>1300</x>
-     <y>200</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>重量</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>1170</x>
-     <y>200</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
-   <property name="geometry">
-    <rect>
-     <x>1170</x>
-     <y>230</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
-   <property name="geometry">
-    <rect>
-     <x>1170</x>
-     <y>260</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_5">
-   <property name="geometry">
-    <rect>
-     <x>1170</x>
-     <y>290</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_6">
-   <property name="geometry">
-    <rect>
-     <x>1330</x>
-     <y>200</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_7">
-   <property name="geometry">
-    <rect>
-     <x>1330</x>
-     <y>230</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_8">
-   <property name="geometry">
-    <rect>
-     <x>1330</x>
-     <y>260</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_9">
-   <property name="geometry">
-    <rect>
-     <x>1330</x>
-     <y>290</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_17">
-   <property name="geometry">
-    <rect>
-     <x>1230</x>
-     <y>200</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>KG</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_18">
-   <property name="geometry">
-    <rect>
-     <x>1230</x>
-     <y>230</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>M</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_19">
-   <property name="geometry">
-    <rect>
-     <x>1230</x>
-     <y>260</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>M</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_20">
-   <property name="geometry">
-    <rect>
-     <x>1230</x>
-     <y>290</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>M</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_21">
-   <property name="geometry">
-    <rect>
-     <x>1390</x>
-     <y>230</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>M</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_22">
-   <property name="geometry">
-    <rect>
-     <x>1390</x>
-     <y>200</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>KG</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_23">
-   <property name="geometry">
-    <rect>
-     <x>1390</x>
-     <y>260</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>M</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_24">
-   <property name="geometry">
-    <rect>
-     <x>1390</x>
-     <y>290</y>
-     <width>51</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>M</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_25">
    <property name="geometry">
     <rect>
@@ -918,17 +548,23 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>1280</x>
-     <y>350</y>
-     <width>281</width>
-     <height>261</height>
+     <x>1250</x>
+     <y>110</y>
+     <width>561</width>
+     <height>381</height>
     </rect>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../微信图片_20180412172601.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QTextEdit" name="tLoad">
@@ -951,18 +587,493 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="bUpdate">
+  <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>950</x>
-     <y>110</y>
-     <width>101</width>
-     <height>41</height>
+     <x>1260</x>
+     <y>530</y>
+     <width>541</width>
+     <height>341</height>
     </rect>
    </property>
-   <property name="text">
-    <string>刷新</string>
+   <property name="title">
+    <string>惯量计算</string>
    </property>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>惯量计算结果</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tL2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>230</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>200</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>半径</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tR10">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>200</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tI">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>270</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>31</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>L1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>140</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mm</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tL1">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>230</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>140</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mm</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tA1">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>140</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>200</y>
+      <width>31</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>半径</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>21</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>长</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>170</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>宽</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bCalc">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>220</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>计算惯量</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>110</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>重量</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>230</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>230</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mm</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tR11">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>200</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tB1">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>170</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>抓手形状</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tA">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>140</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tM1">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>110</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="tRectangle">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>70</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>方形</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>圆形</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>70</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>工件形状</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>170</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>200</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mm</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tB">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>170</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>110</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>KG</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>140</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>长</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="tRectangle1">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>70</y>
+      <width>69</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>方形</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>圆形</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>200</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>230</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>L2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>170</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>110</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>KG</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>170</y>
+      <width>21</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>宽</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="tM">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>110</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>31</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>重量</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bCalc2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>270</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>加入筛选</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

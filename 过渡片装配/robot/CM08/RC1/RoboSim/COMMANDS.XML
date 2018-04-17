@@ -1,0 +1,4292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<COMMAND><TEMPLATE><RSV_NAME>C_Com</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>C_Com(&lt;捠怣夞慄斣崋&gt;) = &quot;ETH:&lt;僒乕僶懁IP傾僪儗僗&gt;&quot;</FORMAT>
+<FORMAT>C_Com(&lt;捠怣夞慄斣崋&gt;) = &quot;ETH:&lt;僒乕僶懁IP傾僪儗僗&gt;, &lt;億乕僩斣崋&gt;&quot;</FORMAT>
+<SAMPLE>C_Com = &quot;ETH:192.168.0.10&quot;</SAMPLE>
+<SAMPLE>C_Com = &quot;ETH:192.168.0.10,10010&quot;</SAMPLE>
+<COMMENT>俷倫倕値柦椷偱僆乕僾儞偡傞夞慄偺僷儔儊乕僞傪愝掕偟傑偡丅</COMMENT>
+<COMMENT>捠怣愭傪偄傠偄傠曄偊傞応崌偵巊梡偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_Date</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_Date</FORMAT>
+<SAMPLE>C1$=C_Date</SAMPLE>
+<COMMENT>尰嵼偺擔晅傪丄擭乛寧乛擔偺宍幃偱曉偟傑偡丅</COMMENT>
+<COMMENT>椺偊偽丄C1$偼&quot;2007/04/01&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_Maker</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_Maker</FORMAT>
+<SAMPLE>C1$=C_Maker</SAMPLE>
+<COMMENT>儘儃僢僩僐儞僩儘乕儔偺儊乕僇懁偺忣曬傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_Mecha</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_Mecha</FORMAT>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_Mecha(&lt;僗儘僢僩斣崋&gt;)</FORMAT>
+<SAMPLE>C1$=C_Mecha</SAMPLE>
+<SAMPLE>C1$=C_Mecha(1)</SAMPLE>
+<COMMENT>惂屼尃傪庢摼偟偰偄傞儊僇柤傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NvS1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_NvS1(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NvS1(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪暥帤楍僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NvS2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_NvS2(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NvS2(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪暥帤楍僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NvS3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_NvS3(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NvS3(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪暥帤楍僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NvS4</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_NvS4(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NvS4(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪暥帤楍僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NvS5</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_NvS5(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NvS5(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪暥帤楍僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NvS6</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_NvS6(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NvS6(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪暥帤楍僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NvS7</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_NvS7(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NvS7(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪暥帤楍僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NvS8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_NvS8(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NvS8(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪暥帤楍僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_Prg</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_Prg</FORMAT>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_Prg乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>C1$=C_Prg</SAMPLE>
+<SAMPLE>C1$=C_Prg(1)</SAMPLE>
+<COMMENT>慖戰偝傟偰偄傞僾儘僌儔儉斣崋乮柤慜乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_Time</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_Time</FORMAT>
+<SAMPLE>C1$=C_Time</SAMPLE>
+<COMMENT>尰嵼偺帪娫傪丄帪乛暘乛昩偺宍幃偱曉偟傑偡乮24帪娫昞婰乯丅</COMMENT>
+<COMMENT>椺偊偽丄C1$偼&quot;13/01/30&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_User</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = C_User</FORMAT>
+<SAMPLE>C1$=C_User</SAMPLE>
+<COMMENT>僷儔儊乕僞&quot;USERMSG&quot;偵愝掕偝傟偰偄傞僨乕僞傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_Curr</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_Curr</FORMAT>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_Curr乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>J1=J_Curr</SAMPLE>
+<SAMPLE>J1=J_Curr(1)</SAMPLE>
+<COMMENT>尰嵼埵抲偺娭愡宆偺僨乕僞傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_ColMxl</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_ColMxl</FORMAT>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_ColMxl乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=J_ColMxl.J1+10</SAMPLE>
+<SAMPLE>M1=J_ColMxl(1).J1+10</SAMPLE>
+<COMMENT>徴撍専抦婡擻桳岠拞偺悇掕僩儖僋偲幚僩儖僋偺嵎偺嵟戝抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_ECurr</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;娭愡宆曄悢&gt;=J_ECurr</FORMAT>
+<FORMAT>&lt;娭愡宆曄悢&gt;=J_ECurr乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>JA=J_ECurr</SAMPLE>
+<SAMPLE>JA=J_ECurr(1)</SAMPLE>
+<COMMENT>尰嵼偺僄儞僐乕僟僷儖僗抣乮扨埵丗僷儖僗乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_Fbc</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_Fbc</FORMAT>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_Fbc乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>J1=J_Fbc</SAMPLE>
+<SAMPLE>J1=J_Fbc(1)</SAMPLE>
+<COMMENT>僄儞僐乕僟偺僼傿乕僪僶僢僋傛傝惗惉偝傟偨娭愡宆偺尰嵼埵抲傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_AmpFbc</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_AmpFbc</FORMAT>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_AmpFbc乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>J1=J_AmpFbc</SAMPLE>
+<SAMPLE>J1=J_AmpFbc(1)</SAMPLE>
+<COMMENT>奺幉偺尰嵼偺揹棳僼傿乕僪僶僢僋抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_Origin</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_Origin</FORMAT>
+<FORMAT>&lt;娭愡宆曄悢&gt; = J_Origin乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>J1=J_Origin</SAMPLE>
+<SAMPLE>J1=J_Origin(1)</SAMPLE>
+<COMMENT>尨揰愝掕偟偨偲偒偺娭愡僨乕僞傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Acl</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Acl</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Acl乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Acl</SAMPLE>
+<SAMPLE>M1_M_ACL(1)</SAMPLE>
+<COMMENT>尰嵼偺壛懍帪娫斾棪傪曉偟傑偡丅乮亾乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_DAcl</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_DAcl</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_DAcl乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_DAcl</SAMPLE>
+<SAMPLE>M1=M_DAcl(2)</SAMPLE>
+<COMMENT>尰嵼偺尭懍帪娫斾棪傪曉偟傑偡乮亾乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ClientC</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_ClientC</FORMAT>
+<SAMPLE>M1=M_ClientC</SAMPLE>
+<COMMENT>僋儔僀傾儞僩偺愙懕悢傪曉偟傑偡</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ClientR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_ClientR</FORMAT>
+<SAMPLE>M1=M_ClientR</SAMPLE>
+<COMMENT>愙懕拞偺僋儔僀傾儞僩偐傜偺庴怣忬懺傪曉偡</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_ClientIP</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = C_ClientIP(&lt;1-4&gt;)</FORMAT>
+<SAMPLE>C1$=C_ClientIP(1)</SAMPLE>
+<COMMENT>僋儔僀傾儞僩斣崋n偺IP傾僪儗僗傪曉偡</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsCod0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_FsCod0 = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_FsCod0乮&lt;儊僇斣崋&gt;乯 = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsCod0</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsCod0乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M_FsCod0=M1</SAMPLE>
+<SAMPLE>M_FsCod0(1)=0</SAMPLE>
+<SAMPLE>M1=M_FsCod0</SAMPLE>
+<SAMPLE>M1=M_FsCod0(1)</SAMPLE>
+<COMMENT>椡妎惂屼偺嵗昗宯傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>椡妎惂屼偺嵗昗宯傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsCod1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_FsCod1 = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_FsCod1乮&lt;儊僇斣崋&gt;乯 = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsCod1</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsCod1乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M_FsCod1=M1</SAMPLE>
+<SAMPLE>M_FsCod1(1)=0</SAMPLE>
+<SAMPLE>M1=M_FsCod1</SAMPLE>
+<SAMPLE>M1=M_FsCod1(1)</SAMPLE>
+<COMMENT>椡妎惂屼偺嵗昗宯傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>椡妎惂屼偺嵗昗宯傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsCSts</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsCSts</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsCSts乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_FsCSts</SAMPLE>
+<SAMPLE>M1=M_FsCSts(1)</SAMPLE>
+<COMMENT>椡妎惂屼偺桳岠/柍岠忬懺傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsLmtS</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsLmtS</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsLmtS乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_FsLmtS</SAMPLE>
+<SAMPLE>M1=M_FsLmtS(1)</SAMPLE>
+<COMMENT>尰嵼丄椡専抦愝掕抣傪挻偊偰偄傞偐偳偆偐傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsTAlg</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_FsTAlg(&lt;傾儖僑儕僘儉斣崋&gt;, &lt;僷儔儊乕僞斣崋&gt;) = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsTAlg(&lt;傾儖僑儕僘儉斣崋&gt;, &lt;僷儔儊乕僞斣崋&gt;)</FORMAT>
+<SAMPLE>M_FsTAlg(53,3)=50.0</SAMPLE>
+<SAMPLE>M1=M_FsTAlg(53,2)</SAMPLE>
+<COMMENT>専嵏傾儖僑儕僘儉偱巊梡偡傞僷儔儊乕僞傪愝掕偟傑偡丅</COMMENT>
+<COMMENT>尰嵼丄専嵏傾儖僑儕僘儉偱巊梡偟偰偄傞僷儔儊乕僞偺抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsTest</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsTest(&lt;傾儖僑儕僘儉斣崋&gt;, &lt;僨乕僞斣崋&gt;)</FORMAT>
+<SAMPLE>M1=M_FsTest(53,1)</SAMPLE>
+<COMMENT>椡妎専嵏婡擻偺幚峴寢壥傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsRsltF</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsRsltF</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsRsltF(&lt;儊僇斣崋&gt;)</FORMAT>
+<SAMPLE>M10 = M_FsRsltF</SAMPLE>
+<SAMPLE>M10 = M_FsRsltF(1)</SAMPLE>
+<COMMENT>椡妎僙儞僒偐傜摼傜傟傞崌惉椡傪曉偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsRsltM</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsRsltM</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsRsltM(&lt;儊僇斣崋&gt;)</FORMAT>
+<SAMPLE>M10 = M_FsRsltM</SAMPLE>
+<SAMPLE>M10 = M_FsRsltM(1)</SAMPLE>
+<COMMENT>椡妎僙儞僒偐傜摼傜傟傞崌惉儌乕儊儞僩傪曉偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsMass0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_FsMass0 = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_FsMass0(&lt;儊僇斣崋&gt;) = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsMass0</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsMass0(&lt;儊僇斣崋&gt;)</FORMAT>
+<SAMPLE>M_FsMass0 = M10</SAMPLE>
+<SAMPLE>M_FsMass0(1) = 1.0</SAMPLE>
+<SAMPLE>M100 = M_FsMass0</SAMPLE>
+<SAMPLE>M100 = M_FsMass0(1)</SAMPLE>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僴儞僪幙検傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僴儞僪幙検傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FsMass1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_FsMass1 = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_FsMass1(&lt;儊僇斣崋&gt;) = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsMass1</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_FsMass1(&lt;儊僇斣崋&gt;)</FORMAT>
+<SAMPLE>M_FsMass1 = M10</SAMPLE>
+<SAMPLE>M_FsMass1(1) = 1.0</SAMPLE>
+<SAMPLE>M100 = M_FsMass1</SAMPLE>
+<SAMPLE>M100 = M_FsMass1(1)</SAMPLE>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僴儞僪幙検傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僴儞僪幙検傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Gps</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Gps</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Gps(&lt;娔帇斣崋&gt;)</FORMAT>
+<SAMPLE>Def Gps 1, 851, ON, 1</SAMPLE>
+<SAMPLE>GpsChk On,1</SAMPLE>
+<SAMPLE>Mov P1</SAMPLE>
+<SAMPLE>GpsChk Off,1</SAMPLE>
+<SAMPLE>M1 = M_Gps(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄僙儞僒偑斀墳偟偨夞悢傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Map1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Map1(&lt;抜悢&gt;)</FORMAT>
+<SAMPLE>Def Map 1, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,1</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,1</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map1(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄巜掕偝傟偨抜悢偺儚乕僋偺桳柍傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Map2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Map2(&lt;抜悢&gt;)</FORMAT>
+<SAMPLE>Def Map 2, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,2</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,2</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map2(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄巜掕偝傟偨抜悢偺儚乕僋偺桳柍傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Map3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Map3(&lt;抜悢&gt;)</FORMAT>
+<SAMPLE>Def Map 3, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,3</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,3</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map3(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄巜掕偝傟偨抜悢偺儚乕僋偺桳柍傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Map4</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Map4(&lt;抜悢&gt;)</FORMAT>
+<SAMPLE>Def Map 4, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,4</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,4</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map4(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄巜掕偝傟偨抜悢偺儚乕僋偺桳柍傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Map5</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Map5(&lt;抜悢&gt;)</FORMAT>
+<SAMPLE>Def Map 5, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,5</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,5</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map5(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄巜掕偝傟偨抜悢偺儚乕僋偺桳柍傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Map6</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Map6(&lt;抜悢&gt;)</FORMAT>
+<SAMPLE>Def Map 6, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,6</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,6</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map6(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄巜掕偝傟偨抜悢偺儚乕僋偺桳柍傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Map7</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Map7(&lt;抜悢&gt;)</FORMAT>
+<SAMPLE>Def Map 7, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,7</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,7</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map7(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄巜掕偝傟偨抜悢偺儚乕僋偺桳柍傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Map8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Map8(&lt;抜悢&gt;)</FORMAT>
+<SAMPLE>Def Map 8, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,8</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,8</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map8(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄巜掕偝傟偨抜悢偺儚乕僋偺桳柍傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_MoTrg</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_MoTrg乮&lt;僩儕僈乕斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_MoTrg(1)</SAMPLE>
+<SAMPLE>If M_MoTrg(2)=1 Then Goto *TRGON</SAMPLE>
+<COMMENT>巜掕偟偨Mo僩儕僈乕偺尰嵼偺忬懺傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NAcl</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NAcl</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NAcl乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_NAcl</SAMPLE>
+<SAMPLE>M1=M_NAcl(3)</SAMPLE>
+<COMMENT>壛懍帪娫偺弶婜抣傪曉偟傑偡乮100亾乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NDAcl</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NDAcl</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NDAcl乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_NDAcl</SAMPLE>
+<SAMPLE>M1=M_NDAcl(4)</SAMPLE>
+<COMMENT>尭懍帪娫偺弶婜抣傪曉偟傑偡丅乮100亾乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_AclSts</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_AclSts</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_AclSts乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_AclSts</SAMPLE>
+<SAMPLE>M1=M_AclSts(5)</SAMPLE>
+<COMMENT>尰嵼偺壛尭懍忬懺傪曉偟傑偡丅</COMMENT>
+<COMMENT>乮尰嵼偺壛尭懍忬懺 0=掆巭拞 1=壛懍拞 2=掕懍拞 3=尭懍拞乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_BrkCq</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_BrkCq</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_BrkCq乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>If M_BrkCq=1 Then Hlt</SAMPLE>
+<SAMPLE>If M_BrkCq(1)=1 Then Hlt</SAMPLE>
+<COMMENT>嵟屻偵幚峴偟偨 BREAK 僐儅儞僪傪娷傫偩峴偺幚峴傪峴偭偨寢壥傪曉偟傑偡丅</COMMENT>
+<COMMENT>(1:Break偟偨/0:Break偟側偐偭偨)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_BsNo</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_BsNo</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_BsNo乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_BsNo</SAMPLE>
+<COMMENT>尰嵼偺儀乕僗嵗昗斣崋傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_BTime</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_BTime</FORMAT>
+<SAMPLE>M1=M_BTime</SAMPLE>
+<COMMENT>僶僢僥儕巆梕検帪娫乮扨埵丗帪娫乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_CavSts</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>Def Act 1, M_CavSts &gt; 0 GoTo *LCAV, S</FORMAT>
+<FORMAT>Def Act 1, M_CavSts乮&lt;儊僇斣崋&gt;乯 &gt; 0 GoTo *LCAV, S</FORMAT>
+<FORMAT>M_CavSts乮&lt;儊僇斣崋&gt;乯 = &lt;悢抣曄悢&gt;</FORMAT>
+<SAMPLE>Def Act 1, M_CavSts &gt; 0 GoTo *LCAV, S</SAMPLE>
+<SAMPLE>M_CavSts = 0</SAMPLE>
+<COMMENT>姳徛夞旔偺忬懺(0:枹専弌/1乣3:専弌拞)傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_CmpDst</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_CmpDst</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_CmpDst乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_CmpDst</SAMPLE>
+<SAMPLE>M1=M_CmpDst(1)</SAMPLE>
+<COMMENT>僐儞僾儔僀傾儞僗婡擻傪幚峴偟偰偄傞偲偒偺巜椷抣偲幚嵺偺儘儃僢僩偺偢傟検乮噊乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_CmpLmt</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>Def Act 1, M_CmpLmt = 1 GoTo *LMT</FORMAT>
+<FORMAT>Def Act 1, M_CmpLmt乮&lt;儊僇斣崋&gt;乯= 1 GoTo *LMT</FORMAT>
+<SAMPLE>Def Act 1, M_CmpLmt = 1 GoTo *LMT</SAMPLE>
+<SAMPLE>Def Act 1, M_CmpLmt(1) = 1 GoTo *LMT</SAMPLE>
+<COMMENT>僐儞僾儔僀傾儞僗婡擻傪幚峴偟偰偄傞偲偒偺巜椷抣偑奺庬儕儈僢僩傪挻偊傛偆偲偟偰偄傞偐偳偆偐傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ColSts</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>Def Act 1, M_ColSts = 1 GoTo *LCOL, S</FORMAT>
+<FORMAT>Def Act 1, M_ColSts乮&lt;儊僇斣崋&gt;乯 = 1 GoTo *LCOL, S</FORMAT>
+<SAMPLE>Def Act 1, M_ColSts = 1 GoTo *HOME, S</SAMPLE>
+<SAMPLE>Def Act 1, M_ColSts(1) = 1 GoTo *HOME, S</SAMPLE>
+<COMMENT>徴撍専抦偺忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Cstp</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Cstp</FORMAT>
+<SAMPLE>M1=M_Cstp</SAMPLE>
+<COMMENT>僾儘僌儔儉偑僒僀僋儖掆巭拞偐偳偆偐偺忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Cys</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Cys</FORMAT>
+<SAMPLE>M1=M_Cys</SAMPLE>
+<COMMENT>僾儘僌儔儉偑僒僀僋儖塣揮拞偐偺忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_DIn</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Din乮&lt;儗僕僗僞擖椡斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_DIn(6000)</SAMPLE>
+<SAMPLE>If M_DIn(6000)=100 Then</SAMPLE>
+<SAMPLE>EndIf</SAMPLE>
+<COMMENT>CC-Link乮僆僾僔儑儞乯偺擖椡儗僕僗僞偺抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_DIn32</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢(挿惛搙惍悢)&gt; = M_Din32乮&lt;儗僕僗僞擖椡斣崋&gt;乯</FORMAT>
+<SAMPLE>M1&amp;=M_DIn32(6000)</SAMPLE>
+<SAMPLE>If M_DIn32(6000)=&amp;H12345678 Then</SAMPLE>
+<SAMPLE>EndIf</SAMPLE>
+<COMMENT>CC-Link乮僆僾僔儑儞乯偺擖椡儗僕僗僞偐傜32bit僨乕僞傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_DOut</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_DOut乮&lt;儗僕僗僞弌椡斣崋&gt;乯= &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_DOut乮&lt;儗僕僗僞弌椡斣崋&gt;乯</FORMAT>
+<SAMPLE>M_DOut(6000)=100</SAMPLE>
+<SAMPLE>If M_DOut(6000)=100 Then</SAMPLE>
+<SAMPLE>EndIf</SAMPLE>
+<COMMENT>CC-Link乮僆僾僔儑儞乯偺弌椡儗僕僗僞傊偺彂偒崬傒傑偨偼嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_DOut32</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_DOut32乮&lt;儗僕僗僞弌椡斣崋&gt;乯= &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>&lt;悢抣曄悢(挿惛搙惍悢)&gt; = M_DOut32乮&lt;儗僕僗僞弌椡斣崋&gt;乯</FORMAT>
+<SAMPLE>M_DOut32(6000)=&amp;H12345678</SAMPLE>
+<SAMPLE>If M_DOut32(6000) = &amp;H12345678 Then</SAMPLE>
+<SAMPLE>EndIf</SAMPLE>
+<COMMENT>CC-Link乮僆僾僔儑儞乯偺弌椡儗僕僗僞偐傜32bit僨乕僞傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>CC-Link乮僆僾僔儑儞乯偺弌椡儗僕僗僞傊32bit僨乕僞傪彂偒崬傒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Enc</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Enc</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Enc(&lt;僄儞僐乕僟斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_Enc</SAMPLE>
+<SAMPLE>M1 = M_Enc(1)</SAMPLE>
+<COMMENT>巜掕偟偨僄儞僐乕僟斣崋偺奜晹僄儞僐乕僟抣傪彂偒崬傒傑偨偼嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHPos1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHPos1(&lt;億僀儞僩斣崋&gt;)</FORMAT>
+<FORMAT>M_EHPos1(&lt;億僀儞僩斣崋&gt;) = &lt;悢抣僨乕僞&gt;</FORMAT>
+<SAMPLE>M1 = M_EHPos1(1)</SAMPLE>
+<SAMPLE>M_EHPos1(1) = 5.0</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪1偺億僀儞僩僨乕僞傪嶲徠丄愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHPos2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHPos2(&lt;億僀儞僩斣崋&gt;)</FORMAT>
+<FORMAT>M_EHPos2(&lt;億僀儞僩斣崋&gt;) = &lt;悢抣僨乕僞&gt;</FORMAT>
+<SAMPLE>M2 = M_EHPos2(1)</SAMPLE>
+<SAMPLE>M_EHPos2(1) = 5.0</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪2偺億僀儞僩僨乕僞傪嶲徠丄愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHPos3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHPos3(&lt;億僀儞僩斣崋&gt;)</FORMAT>
+<FORMAT>M_EHPos3(&lt;億僀儞僩斣崋&gt;) = &lt;悢抣僨乕僞&gt;</FORMAT>
+<SAMPLE>M3 = M_EHPos3(1)</SAMPLE>
+<SAMPLE>M_EHPos3(1) = 5.0</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪3偺億僀儞僩僨乕僞傪嶲徠丄愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHCur</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHCur</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHCur(&lt;僴儞僪斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHCur</SAMPLE>
+<SAMPLE>M1 = M_EHCur(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺尰嵼埵抲傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHBusy</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHBusy</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHBusy(&lt;僴儞僪斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHBusy</SAMPLE>
+<SAMPLE>M1 = M_EHBusy(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺摦嶌忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHInPs</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHInPs</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHInPs(&lt;僴儞僪斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHInPs</SAMPLE>
+<SAMPLE>M1 = M_EHInPs(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺栚昗埵抲摓払忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHHold</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHHold</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHHold(&lt;僴儞僪斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHHold</SAMPLE>
+<SAMPLE>M1 = M_EHHold(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺攃帩忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHZone</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHZone</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHZone(&lt;僴儞僪斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHZone</SAMPLE>
+<SAMPLE>M1 = M_EHZone(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺巜掕椞堟撪掆巭忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHOrg</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHOrg</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHOrg(&lt;僴儞僪斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHOrg</SAMPLE>
+<SAMPLE>M1 = M_EHOrg(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺尨揰暅婣忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHOPos</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHOPos</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHOPos(&lt;僴儞僪斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHOPos</SAMPLE>
+<SAMPLE>M1 = M_EHOPos(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺堏摦姰椆億僀儞僩斣崋傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHTMd1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHTMd1(&lt;僥乕僽儖斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHTMd1(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪1偺僥乕僽儖僨乕僞偺摦嶌儌乕僪傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHTMd2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHTMd2(&lt;僥乕僽儖斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHTMd2(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪2偺僥乕僽儖僨乕僞偺摦嶌儌乕僪傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EHTMd3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EHTMd3(&lt;僥乕僽儖斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EHTMd3(1)</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪3偺僥乕僽儖僨乕僞偺摦嶌儌乕僪傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EncL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncL(&lt;榑棟僄儞僐乕僟斣崋&gt;)</FORMAT>
+<FORMAT>M_EncL(&lt;榑棟僄儞僐乕僟斣崋&gt;) = &lt;掕悢&gt;</FORMAT>
+<SAMPLE>M1 = M_EncL(1)</SAMPLE>
+<SAMPLE>M_EncL(1) = 0</SAMPLE>
+<COMMENT>巜掕偟偨僄儞僐乕僟斣崋偺TREN怣崋擖椡帪偺僄儞僐乕僟抣傪彂偒崬傒傑偨偼嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EncMax</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncMax</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncMax(&lt;僄儞僐乕僟斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EncMax</SAMPLE>
+<SAMPLE>M1 = M_EncMax(1)</SAMPLE>
+<COMMENT>巜掕偟偨僄儞僐乕僟斣崋偺奜晹僄儞僐乕僟嵟戝抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EncMin</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncMin</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncMin(&lt;僄儞僐乕僟斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EncMin</SAMPLE>
+<SAMPLE>M1 = M_EncMin(1)</SAMPLE>
+<COMMENT>巜掕偟偨僄儞僐乕僟斣崋偺奜晹僄儞僐乕僟嵟彫抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EncSpd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncSpd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncSpd(&lt;僄儞僐乕僟斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_EncSpd</SAMPLE>
+<SAMPLE>M1 = M_EncSpd(1)</SAMPLE>
+<COMMENT>巜掕偟偨僄儞僐乕僟斣崋偺奜晹僄儞僐乕僟懍搙傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Err</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Err</FORMAT>
+<SAMPLE>If M_Err=0 Then *LABEL</SAMPLE>
+<COMMENT>僄儔乕偑敪惗拞偐偳偆偐傪曉偟傑偡丅</COMMENT>
+<COMMENT>乮1丗僄儔乕敪惗拞丄0丗僄儔乕側偟乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ErrLvl</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_ErrLvl</FORMAT>
+<SAMPLE>M1=M_ErrLvl</SAMPLE>
+<SAMPLE>If M_ErrLvl=1 Then *LABEL</SAMPLE>
+<COMMENT>敪惗偟偰偄傞僄儔乕偺儗儀儖傪曉偟傑偡丅</COMMENT>
+<COMMENT>乮Caution/Low/High1/High2 = 侾乛俀乛俁乛係乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ErrNo</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_ErrNo</FORMAT>
+<SAMPLE>M1=M_ErrNo</SAMPLE>
+<SAMPLE>If M_ErrNo=0 Then *LABEL</SAMPLE>
+<COMMENT>敪惗偟偰偄傞僄儔乕斣崋傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ESpd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_ESpd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_ESpd(&lt;僗儘僢僩斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_ESpd</SAMPLE>
+<SAMPLE>M2 = M_ESpd(2)</SAMPLE>
+<COMMENT>Ex-T惂屼/Ex-T僗僾儔僀儞曗娫帪偺Ex-T嵗昗捠夁懍搙傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Exp</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Exp</FORMAT>
+<SAMPLE>M1=M_Exp</SAMPLE>
+<COMMENT>帺慠懳悢偺掙乮2.718281828459045乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Fbd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Fbd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Fbd乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>Def Act 1, M_Fbd &gt; 10 GOTO *SUB1, S</SAMPLE>
+<SAMPLE>Def Act 1, M_Fbd(1) &gt; 10 GOTO *SUB1, S</SAMPLE>
+<COMMENT>巜椷埵抲偲僼傿乕僪僶僢僋埵抲偺嵎傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_G</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_G</FORMAT>
+<SAMPLE>M1 = M_G</SAMPLE>
+<COMMENT>廳椡掕悢乮9.80665乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Hnd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Hnd(&lt;僴儞僪斣崋&gt;)</FORMAT>
+<FORMAT>M_Hnd乮&lt;僴儞僪斣崋&gt;乯= &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1=M_Hnd(1)</SAMPLE>
+<SAMPLE>M_Hnd(1)=0</SAMPLE>
+<COMMENT>WthIf偵偍偄偰丄僴儞僪奐暵巜帵偑偱偒傑偡</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_HndCq</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_HndCq乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=M_HndCq(1)</SAMPLE>
+<COMMENT>僴儞僪僠僃僢僋擖椡怣崋(1乣8)偺抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_In</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_In乮&lt;擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_In(0)</SAMPLE>
+<SAMPLE>If M_In(0)=M_On Then *LABEL</SAMPLE>
+<COMMENT>價僢僩怣崋昞尰偱擖椡怣崋偺抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Inb</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Inb乮&lt;擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Inb(3) AND &amp;H7</SAMPLE>
+<COMMENT>僶僀僩扨埵乮8價僢僩暘乯昞尰偱擖椡怣崋偺抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Inw</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Inw乮&lt;擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Inw(5) And &amp;H3FF</SAMPLE>
+<COMMENT>儚乕僪扨埵乮16價僢僩暘乯昞尰偱擖椡怣崋偺抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_In8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_In8乮&lt;擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_In8(3) AND &amp;H7</SAMPLE>
+<COMMENT>僶僀僩扨埵乮8價僢僩暘乯昞尰偱擖椡怣崋偺抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_In16</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_In16乮&lt;擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_In16(5) And &amp;H3FF</SAMPLE>
+<COMMENT>儚乕僪扨埵乮16價僢僩暘乯昞尰偱擖椡怣崋偺抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_In32</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_In32乮&lt;擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_In32(5) And &amp;H7FFFFF</SAMPLE>
+<COMMENT>僟僽儖儚乕僪扨埵乮32價僢僩暘乯昞尰偱擖椡怣崋偺抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_JOvrd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_JOvrd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_JOvrd乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_JOvrd</SAMPLE>
+<SAMPLE>M1=M_JOvrd(1)</SAMPLE>
+<COMMENT>娭愡曗娫梡偺僆乕僶乕儔僀僪 JOvrd柦椷偱巜掕偝傟偨抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NJOvrd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NJOvrd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NJOvrd乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_NJOvrd</SAMPLE>
+<SAMPLE>M1=M_NJOvrd(1)</SAMPLE>
+<COMMENT>娭愡曗娫梡偺僆乕僶乕儔僀僪偺弶婜抣乮100亾乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_OPovrd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_OPovrd</FORMAT>
+<SAMPLE>M1=M_OPovrd</SAMPLE>
+<COMMENT>憖嶌僷僱儖偺僆乕僶乕儔僀僪抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Ovrd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Ovrd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Ovrd乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Ovrd</SAMPLE>
+<SAMPLE>M1=M_Ovrd(1)</SAMPLE>
+<COMMENT>尰嵼偺僆乕僶乕儔僀僪抣丄Ovrd柦椷偱巜掕偝傟偨抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NOvrd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NOvrd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NOvrd乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_NOvrd</SAMPLE>
+<SAMPLE>M1=M_NOvrd(1)</SAMPLE>
+<COMMENT>僆乕僶乕儔僀僪偺弶婜抣乮100亾乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_LdFact</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_LdFact乮&lt;幉斣崋&gt;乯</FORMAT>
+<SAMPLE>IF M_LdFact(2)&gt;90 THEN</SAMPLE>
+<COMMENT>奺娭愡幉扨埵偺晧壸棪傪嶲徠偱偒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_LdFMax</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_LdFMax乮&lt;幉斣崋&gt;乯</FORMAT>
+<SAMPLE>IF M_LdFMax(2) &gt; 90 THEN</SAMPLE>
+<COMMENT>巜掕偟偨幉偺嵟戝晧壸棪傪嶲徠偱偒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Line</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Line</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Line乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Line</SAMPLE>
+<SAMPLE>M1=M_Line(2)</SAMPLE>
+<COMMENT>尰嵼幚峴偟偰偄傞峴斣崋傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Mode</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Mode</FORMAT>
+<SAMPLE>M1=M_Mode</SAMPLE>
+<COMMENT>憖嶌僷僱儖偺僉乕僗僀僢僠偺儌乕僪傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvNum</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvNum</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvNum(&lt;價僕儑儞僙儞僒斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvNum</SAMPLE>
+<SAMPLE>M1 = M_NvNum(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑専弌偟偨儚乕僋偺屄悢傪昞偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvOpen</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvOpen</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvOpen(&lt;價僕儑儞僙儞僒斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvOpen</SAMPLE>
+<SAMPLE>M1 = M_NvOpen(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒梡偺夞慄愙懕忬懺傪昞偟傑偡丅</COMMENT>
+<COMMENT>0丗夞慄愙懕拞(儘僌僆儞枹)</COMMENT>
+<COMMENT>1丗儘僌僆儞姰</COMMENT>
+<COMMENT>-1丗枹愙懕</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvS1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvS1(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvS1(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvS2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvS2(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvS2(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvS3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvS3(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvS3(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvS4</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvS4(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvS4(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvS5</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvS5(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvS5(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvS6</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvS6(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvS6(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvS7</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvS7(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvS7(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NvS8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NvS8(&lt;峴斣崋&gt;,&lt;楍斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_NvS8(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_On</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_On</FORMAT>
+<SAMPLE>M1=M_On</SAMPLE>
+<COMMENT>忢偵1乮M_On乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Off</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Off</FORMAT>
+<SAMPLE>M2=M_Off</SAMPLE>
+<COMMENT>忢偵0乮M_Off乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Open</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Open</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Open乮&lt;僼傽僀儖斣崋&gt;乯</FORMAT>
+<SAMPLE>If M_Open&lt;&gt;1 Then GoTo *SUB1</SAMPLE>
+<SAMPLE>If M_Open(1)&lt;&gt;1 Then GoTo *SUB1</SAMPLE>
+<COMMENT>巜掕偝傟偨僼傽僀儖傑偨偼捠怣夞慄偺僆乕僾儞忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Out</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_Out乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_Out乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt; Dly &lt;帪娫&gt;</FORMAT>
+<SAMPLE>M_Out(2)=1</SAMPLE>
+<SAMPLE>M_Out(2)=1 DLY 5</SAMPLE>
+<COMMENT>奜晹弌椡怣崋傊偺彂偒崬傒丄傑偨偼嶲徠偟傑偡丅</COMMENT>
+<COMMENT>M_Out丗弌椡怣崋偺價僢僩</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Outb</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_Outb乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_Outb乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt; Dly &lt;帪娫&gt;</FORMAT>
+<SAMPLE>M_Outb(2)=&amp;HFF</SAMPLE>
+<SAMPLE>M_Outb(2)=&amp;HFF DLY 5</SAMPLE>
+<COMMENT>奜晹弌椡怣崋傊偺彂偒崬傒丄傑偨偼嶲徠偟傑偡丅</COMMENT>
+<COMMENT>M_Outb丗弌椡怣崋偺僶僀僩乮8價僢僩暘乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Outw</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_Outw乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_Outw乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt; Dly &lt;帪娫&gt;</FORMAT>
+<SAMPLE>M_Outw(2)=&amp;HFFFF</SAMPLE>
+<SAMPLE>M_Outw(2)=&amp;HFFFF DLY 5</SAMPLE>
+<COMMENT>奜晹弌椡怣崋傊偺彂偒崬傒丄傑偨偼嶲徠偟傑偡丅</COMMENT>
+<COMMENT>M_Outw丗弌椡怣崋偺儚乕僪乮16價僢僩暘乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Out8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_Out8乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_Out8乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt; Dly &lt;帪娫&gt;</FORMAT>
+<SAMPLE>M_Out8(2)=&amp;HFF</SAMPLE>
+<SAMPLE>M_Out8(2)=&amp;HFF DLY 5</SAMPLE>
+<COMMENT>奜晹弌椡怣崋傊偺彂偒崬傒丄傑偨偼嶲徠偟傑偡丅</COMMENT>
+<COMMENT>M_Out8丗弌椡怣崋偺僶僀僩乮8價僢僩暘乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Out16</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_Out16乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_Out16乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt; Dly &lt;帪娫&gt;</FORMAT>
+<SAMPLE>M_Out16(2)=&amp;HFFFF</SAMPLE>
+<SAMPLE>M_Out16(2)=&amp;HFFFF DLY 5</SAMPLE>
+<COMMENT>奜晹弌椡怣崋傊偺彂偒崬傒丄傑偨偼嶲徠偟傑偡丅</COMMENT>
+<COMMENT>M_Out16丗弌椡怣崋偺儚乕僪乮16價僢僩暘乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Out32</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_Out32乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_Out32乮&lt;弌椡怣崋斣崋&gt;乯= &lt;悢抣曄悢&gt; Dly &lt;帪娫&gt;</FORMAT>
+<SAMPLE>M_Out32(2)=&amp;HFFFFFFFF</SAMPLE>
+<SAMPLE>M_Out32(2)=&amp;HFFFFFFFF DLY 5</SAMPLE>
+<COMMENT>奜晹弌椡怣崋傊偺彂偒崬傒丄傑偨偼嶲徠偟傑偡丅</COMMENT>
+<COMMENT>M_Out32丗弌椡怣崋偺僟僽儖儚乕僪乮32價僢僩暘乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_PbNum</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_PbNum</FORMAT>
+<SAMPLE>M1=M_PbNum</SAMPLE>
+<COMMENT>尰嵼摦嶌拞偺嬊斣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_PbFnum</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_PbFnum</FORMAT>
+<SAMPLE>M1=M_PbFnum</SAMPLE>
+<COMMENT>僼儔僢僔儏俼俷俵偵曐懚偝傟偰偄傞嬊斣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_PI</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_PI</FORMAT>
+<SAMPLE>M1=M_PI</SAMPLE>
+<COMMENT>墌廃棪乮3.14159265358979乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Psa</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Psa</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Psa乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Psa</SAMPLE>
+<SAMPLE>M1=M_Psa(2)</SAMPLE>
+<COMMENT>巜掕偟偨僞僗僋僗儘僢僩偑僾儘僌儔儉慖戰壜擻偐傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Ratio</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Ratio</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Ratio乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>Mov P1 WthIf M_Ratio&gt;80, M_Out(1)=1</SAMPLE>
+<SAMPLE>Mov P1 WthIf M_Ratio(2)&gt;80, M_Out(1)=1</SAMPLE>
+<COMMENT>儘儃僢僩偑堏摦拞偺栚揑埵抲傊偺摓払棪乮0 乣 100亾乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_RCInfo</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_RCInfo乮&lt;忣曬ID斣崋&gt;,&lt;梫慺斣崋&gt;</FORMAT>
+<SAMPLE>MENCTmpJ1=M_RCInfo(1,1)</SAMPLE>
+<SAMPLE>MENCTmpJ1Max=M_RCInfo(2,1)</SAMPLE>
+<SAMPLE>MRCTmp=M_RCInfo(3,1)</SAMPLE>
+<COMMENT>儘儃僢僩僐儞僩儘乕儔偺奺庬忣曬傪撉傒弌偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_RDst</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_RDst</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_RDst乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>Mov P1 WthIf M_RDst&lt;10, M_Out(10)=1</SAMPLE>
+<SAMPLE>Mov P1 WthIf M_RDst(2)&lt;10, M_Out(10)=1</SAMPLE>
+<COMMENT>儘儃僢僩偑堏摦拞偺栚揑埵抲傑偱偺巆嫍棧乮噊乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Run</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Run</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Run乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Run</SAMPLE>
+<SAMPLE>M1=M_Run(2)</SAMPLE>
+<COMMENT>巜掕偟偨僞僗僋僗儘僢僩偺僾儘僌儔儉偑幚峴拞偐偺忣曬傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SetAdl</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_SetAdl乮&lt;幉斣崋&gt;乯=&lt;悢抣曄悢&gt;</FORMAT>
+<SAMPLE>M_SetAdl(2)=70</SAMPLE>
+<COMMENT>嵟揔壛尭懍惂屼偑桳岠乮Oadl On乯偺嵺偵丄巜掕幉偺壛尭懍帪娫妱崌傪愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SfMode</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_SfMode</FORMAT>
+<SAMPLE>M1=M_SfMode</SAMPLE>
+<SAMPLE>M_Outb(100)=M_SfMode</SAMPLE>
+<COMMENT>婡擻埨慡偺娔帇儌乕僪偺忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SimLdf</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_SimLdf乮&lt;幉斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_SimLdf(2)</SAMPLE>
+<COMMENT>晧壸棪僔儈儏儗乕僔儑儞偺嶼弌寢壥傪曉偟傑偡丅乮扨埵丗亾乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SimSet</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_SimSet = &lt;悢抣曄悢&gt;</FORMAT>
+<SAMPLE>M_SimSet=1</SAMPLE>
+<SAMPLE>M_SimSet=0</SAMPLE>
+<COMMENT>晧壸棪僔儈儏儗乕僔儑儞偺奐巒/廔椆傪愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SkipCq</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_SkipCq</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_SkipCq乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>If M_SkipCq=1 Then GoTo *SUB1</SAMPLE>
+<SAMPLE>If M_SkipCq(2)=1 Then GoTo *SUB1</SAMPLE>
+<COMMENT>嵟屻偵幚峴偟偨Skip僐儅儞僪傪娷傫偩峴偺幚峴傪峴偭偨寢壥傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Spd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Spd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Spd乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Spd</SAMPLE>
+<SAMPLE>M1=M_Spd(2)</SAMPLE>
+<COMMENT>捈慄曗娫丄娭愡曗娫帪偺尰嵼愝掕偝傟偰偄傞懍搙傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NSpd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_NSpd</FORMAT>
+<SAMPLE>M1=M_NSpd</SAMPLE>
+<COMMENT>捈慄曗娫丄娭愡曗娫帪偺懍搙偺弶婜抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_RSpd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_RSpd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_RSpd乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_RSpd</SAMPLE>
+<SAMPLE>M1=M_RSpd(2)</SAMPLE>
+<COMMENT>捈慄曗娫丄娭愡曗娫帪偺尰嵼偺巜椷懍搙傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SplPno</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_SplPno</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_SplPno乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_SplPno</SAMPLE>
+<SAMPLE>M1=M_SplPno(1)</SAMPLE>
+<COMMENT>僗僾儔僀儞曗娫偺宱楬揰偺拞偱丄嵟傕怴偟偄捠夁嵪傒宱楬揰偺斣崋傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SplVar</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_SplVar</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_SplVar乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<FORMAT>M_SplVar = &lt;惍悢&gt;</FORMAT>
+<FORMAT>M_SplVar乮&lt;儊僇斣崋&gt;乯 = &lt;惍悢&gt;</FORMAT>
+<FORMAT>M_SplVar = &lt;悢抣曄悢&gt;</FORMAT>
+<FORMAT>M_SplVar乮&lt;儊僇斣崋&gt;乯 = &lt;悢抣曄悢&gt;</FORMAT>
+<SAMPLE>M1=M_SplVar</SAMPLE>
+<SAMPLE>M1=M_SplVar(1)</SAMPLE>
+<SAMPLE>M_SplVar=0</SAMPLE>
+<SAMPLE>M_SplVar(1)=0</SAMPLE>
+<SAMPLE>M_SplVar=M2</SAMPLE>
+<SAMPLE>M_SplVar(1)=M2</SAMPLE>
+<COMMENT>僗僾儔僀儞僼傽僀儖偺宱楬揰偵愝掕偝傟偰偄傞嵟怴偺悢抣傪曉偟傑偡丅</COMMENT>
+<COMMENT>偙偺忬懺曄悢偺抣傪巜掕偝傟偨惍悢抣偵曄峏偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Svo</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Svo</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Svo乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Svo</SAMPLE>
+<SAMPLE>M1=M_Svo(1)</SAMPLE>
+<COMMENT>尰嵼偺僒乕儃揹尮偺忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Timer</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Timer(&lt;悢幃&gt;)</FORMAT>
+<SAMPLE>M1=M_Timer(1)</SAMPLE>
+<COMMENT>儈儕昩扨埵偱帪娫傪僇僂儞僩偟偰偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Tool</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Tool</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Tool乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<FORMAT>M_Tool = &lt;悢幃&gt;</FORMAT>
+<FORMAT>M_Tool乮&lt;儊僇斣崋&gt;乯=&lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1=M_Tool</SAMPLE>
+<SAMPLE>M1=M_Tool(1)</SAMPLE>
+<SAMPLE>M_Tool=2</SAMPLE>
+<SAMPLE>M_Tool(1)=2</SAMPLE>
+<COMMENT>巜掕偟偨斣崋偺僣乕儖僨乕僞乮俵俤倃俿俴 1 乣 4乯傪尰偺僣乕儖僨乕僞偲偟偰巊梡偡傞偲嫟偵丄僷儔儊乕僞俵俤倃俿俴偵愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Trbfct</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Trbfct</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Trbfct(&lt;僶僢僼傽斣崋&gt;)</FORMAT>
+<SAMPLE>If M_Trbfct &gt; 0 Then Goto *TRACK</SAMPLE>
+<SAMPLE>If M_Trbfct(1) &gt; 0 Then Goto *TRACK</SAMPLE>
+<COMMENT>巜掕偟偨僩儔僢僉儞僌僶僢僼傽偵奿擺偝傟偨僨乕僞悢傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkCq</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkCq</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkCq(&lt;儊僇斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_TrkCq</SAMPLE>
+<SAMPLE>M1 = M_TrkCq(1)</SAMPLE>
+<COMMENT>巜掕偟偨儊僇偺僩儔僢僉儞僌摦嶌忬懺傪曉偟傑偡丅</COMMENT>
+<COMMENT>侾丗僩儔僢僉儞僌摦嶌拞</COMMENT>
+<COMMENT>侽丗僩儔僢僉儞僌摦嶌拞偱側偄</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkBuf</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkBuf</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkBuf(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_TrkBuf = &lt;悢幃&gt;</FORMAT>
+<FORMAT>M_TrkBuf(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_TrkBuf</SAMPLE>
+<SAMPLE>M1 = M_TrkBuf(1)</SAMPLE>
+<SAMPLE>M_TrkBuf = 2</SAMPLE>
+<SAMPLE>M_TrkBuf(1) = 2</SAMPLE>
+<COMMENT>僨乕僞傪撉傒弌偡僩儔僢僉儞僌僶僢僼傽斣崋傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkStart</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkStart</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkStart(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_TrkStart = &lt;悢幃&gt;</FORMAT>
+<FORMAT>M_TrkStart(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_TrkStart</SAMPLE>
+<SAMPLE>M1 = M_TrkStart(1)</SAMPLE>
+<SAMPLE>M_TrkStart = +200</SAMPLE>
+<SAMPLE>M_TrkStart(1) = +200</SAMPLE>
+<COMMENT>儚乕儖僪嵗昗宯偵偍偗傞婎弨揰(僆乕儖僛儘偺埵抲)偐傜丄儚乕僋乮懳徾暔乯傪僩儔僢僉儞僌偡傞偙偲偑偱偒傞奐巒懁偺埵抲傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkEnd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkEnd</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkEnd(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_TrkEnd = &lt;悢幃&gt;</FORMAT>
+<FORMAT>M_TrkEnd(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_TrkEnd</SAMPLE>
+<SAMPLE>M1 = M_TrkEnd(1)</SAMPLE>
+<SAMPLE>M_TrkEnd = -200</SAMPLE>
+<SAMPLE>M_TrkEnd(1) = -200</SAMPLE>
+<COMMENT>儚乕儖僪嵗昗宯偵偍偗傞婎弨揰(僆乕儖僛儘偺埵抲)偐傜丄儚乕僋乮懳徾暔乯傪僩儔僢僉儞僌偡傞偙偲偑偱偒傞廔椆懁偺埵抲傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkStop</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkStop</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkStop(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_TrkStop = &lt;悢幃&gt;</FORMAT>
+<FORMAT>M_TrkStop(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_TrkStop</SAMPLE>
+<SAMPLE>M1 = M_TrkStop(1)</SAMPLE>
+<SAMPLE>M_TrkStop = -300</SAMPLE>
+<SAMPLE>M_TrkStop(1) = -300</SAMPLE>
+<COMMENT>儚乕儖僪嵗昗宯偵偍偗傞婎弨揰(僆乕儖僛儘偺埵抲)偐傜丄儚乕僋乮懳徾暔乯傪僩儔僢僉儞僌偡傞偺傪嫮惂廔椆偡傞埵抲傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkTime</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkTime</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkTime(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_TrkTime = &lt;悢幃&gt;</FORMAT>
+<FORMAT>M_TrkTime(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_TrkTime</SAMPLE>
+<SAMPLE>M1 = M_TrkTime(1)</SAMPLE>
+<SAMPLE>M_TrkTime = +60</SAMPLE>
+<SAMPLE>M_TrkTime(1) = +60</SAMPLE>
+<COMMENT>儚乕僋偑僩儔僢僉儞僌壜擻椞堟偵擖傞偺傪懸偮嵺偺僞僀儉傾僂僩帪娫傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkChk</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkChk</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkChk(&lt;忦審斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_TrkChk</SAMPLE>
+<SAMPLE>M1 = M_TrkChk(1)</SAMPLE>
+<COMMENT>TrkChk僐儅儞僪偺幚峴寢壥偑奿擺偝傟傑偡丅</COMMENT>
+<COMMENT>0丗僶僢僼傽偵儚乕僋柍偟</COMMENT>
+<COMMENT>1丗奩摉儚乕僋偑捠傝夁偓偨</COMMENT>
+<COMMENT>2丗奩摉儚乕僋偑岦偐偭偰偒偰偄傞</COMMENT>
+<COMMENT>3丗奩摉儚乕僋傪僩儔僢僉儞僌壜擻</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkEnc</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkEnc</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkEnc(&lt;忦審斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_TrkEnc</SAMPLE>
+<SAMPLE>M1 = M_TrkEnc(1)</SAMPLE>
+<COMMENT>僩儔僢僉儞僌僶僢僼傽偐傜庢傝弌偝傟偨儚乕僋忣曬偺僄儞僐乕僟抣偑奿擺偝傟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkKind</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkKind</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkKind(&lt;忦審斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_TrkKind</SAMPLE>
+<SAMPLE>M1 = M_TrkKind(1)</SAMPLE>
+<COMMENT>僩儔僢僉儞僌僶僢僼傽偐傜庢傝弌偝傟偨儚乕僋忣曬偺昳庬斣崋偑奿擺偝傟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkEncNo</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkEncNo</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkEncNo(&lt;忦審斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_TrkEncNo</SAMPLE>
+<SAMPLE>M1 = M_TrkEncNo(1)</SAMPLE>
+<COMMENT>僩儔僢僉儞僌僶僢僼傽偐傜庢傝弌偝傟偨儚乕僋忣曬偺僄儞僐乕僟斣崋偑奿擺偝傟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EncSensor</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncSensor(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_EncSensor(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_EncSensor(1)</SAMPLE>
+<SAMPLE>M_EncSensor(1) = +1234</SAMPLE>
+<COMMENT>僙儞僒偑儚乕僋偵斀墳偡傞埵抲偵偍偗傞僄儞僐乕僟抣傪愝掕丄偍傛傃嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EncStart</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncStart(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_EncStart(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_EncStart(1)</SAMPLE>
+<SAMPLE>M_EncStart(1) = +2345</SAMPLE>
+<COMMENT>僩儔僢僉儞僌奐巒壜擻僄儕傾偺奐巒埵抲偵偍偗傞僄儞僐乕僟抣傪愝掕丄偍傛傃嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EncEnd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncEnd(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_EncEnd(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_EncEnd(1)</SAMPLE>
+<SAMPLE>M_EncEnd(1) = +3456</SAMPLE>
+<COMMENT>僩儔僢僉儞僌奐巒壜擻僄儕傾偺廔椆埵抲偵偍偗傞僄儞僐乕僟抣傪愝掕丄偍傛傃嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EncStop</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_EncStop(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_EncStop(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_EncStop(1)</SAMPLE>
+<SAMPLE>M_EncStop(1) = +4567</SAMPLE>
+<COMMENT>僩儔僢僉儞僌傪嫮惂揑偵廔椆偡傞埵抲偵偍偗傞僄儞僐乕僟抣傪愝掕丄偍傛傃嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkArcEnc</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkArcEnc(&lt;忦審斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_TrkArcEnc(1)</SAMPLE>
+<COMMENT>僙儞僒偑儚乕僋偵斀墳偟偰偐傜椵愊偝傟偨僄儞僐乕僟抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TrkType</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_TrkType(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>M_TrkType(&lt;忦審斣崋&gt;) = &lt;悢幃&gt;</FORMAT>
+<SAMPLE>M1 = M_TrkType(1)</SAMPLE>
+<SAMPLE>M_TrkType(1) = +1</SAMPLE>
+<COMMENT>僩儔僢僉儞僌婡擻偺僞僀僾傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Uar</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Uar</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Uar乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Uar</SAMPLE>
+<SAMPLE>M1=M_Uar(1)</SAMPLE>
+<COMMENT>儐乕僓掕媊椞堟偵擖偭偰偄傞偐傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Uar32</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Uar32</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Uar32乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>Def Long ML1</SAMPLE>
+<SAMPLE>ML1&amp;=M_Uar32</SAMPLE>
+<SAMPLE>ML1&amp;=M_Uar32(1)</SAMPLE>
+<COMMENT>儐乕僓掕媊椞堟偵擖偭偰偄傞偐傪曉偟傑偡丅</COMMENT>
+<COMMENT>價僢僩侽 乣 31 偑椞堟侾 乣 32 偵懳墳偟丄偦傟偧傟偺價僢僩偑壓婰偺忣曬傪昞帵偟傑偡丅</COMMENT>
+<COMMENT>侾 丗 儐乕僓掕媊椞堟撪</COMMENT>
+<COMMENT>侽 丗 儐乕僓掕媊椞堟奜</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_UDevW</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_UDevW乮&lt;愭摢擖弌椡斣崋&gt;, &lt;嫟桳儊儌儕傾僪儗僗&gt;乯</FORMAT>
+<FORMAT>M_UDevW乮&lt;愭摢擖弌椡斣崋&gt;, &lt;嫟桳儊儌儕傾僪儗僗&gt;乯=&lt;悢抣&gt;</FORMAT>
+<SAMPLE>M1%=&amp;H3E1</SAMPLE>
+<SAMPLE>M_UDevW(M1%,11024)=&amp;H1</SAMPLE>
+<SAMPLE>M2&amp;=M_UDevW(M1%,11024) And &amp;H7</SAMPLE>
+<COMMENT>僨乕僞(儚乕僪扨埵)傪嫟桳儊儌儕偵彂偒崬傒傑偡丅</COMMENT>
+<COMMENT>嫟桳儊儌儕偐傜丄僨乕僞(儚乕僪扨埵)傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_UDevD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_UDevD乮&lt;愭摢擖弌椡斣崋&gt;, &lt;嫟桳儊儌儕傾僪儗僗&gt;乯</FORMAT>
+<FORMAT>M_UDevD乮&lt;愭摢擖弌椡斣崋&gt;, &lt;嫟桳儊儌儕傾僪儗僗&gt;乯=&lt;悢抣&gt;</FORMAT>
+<SAMPLE>M1%=&amp;H3E1</SAMPLE>
+<SAMPLE>M_UDevD(M1%,11024)=&amp;HF0F0F0F0</SAMPLE>
+<SAMPLE>M2&amp;=M_UDevD(M1%,11024) And &amp;HFFFFF</SAMPLE>
+<COMMENT>僨乕僞(僟僽儖儚乕僪扨埵)傪嫟桳儊儌儕偵彂偒崬傒傑偡丅</COMMENT>
+<COMMENT>嫟桳儊儌儕偐傜丄僨乕僞(僟僽儖儚乕僪扨埵)傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_V3Dat1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_V3Dat1(&lt;奿擺愭斣崋&gt;,&lt;僨乕僞斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_V3Dat1(1,1)</SAMPLE>
+<COMMENT>MELFA-3D Vision偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_V3Dat2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_V3Dat2(&lt;奿擺愭斣崋&gt;,&lt;僨乕僞斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_V3Dat2(1,1)</SAMPLE>
+<COMMENT>MELFA-3D Vision偑擣幆偟偨僨乕僞傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_V3Err</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_V3Err</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_V3Err(&lt;奿擺愭斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_V3Err</SAMPLE>
+<SAMPLE>M1 = M_V3Err(1)</SAMPLE>
+<COMMENT>MELFA-3D Vision偐傜曉怣偝傟偨曉抣傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_V3Num</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_V3Num</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_V3Num(&lt;奿擺愭斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_V3Num</SAMPLE>
+<SAMPLE>M1 = M_V3Num(1)</SAMPLE>
+<COMMENT>MELFA-3D Vision偑専弌偟偨儚乕僋偺屄悢傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_V3Rslt</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_V3Rslt</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_V3Rslt(&lt;奿擺愭斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = M_V3Rslt</SAMPLE>
+<SAMPLE>M1 = M_V3Rslt(1)</SAMPLE>
+<COMMENT>MELFA-3D Vision偑彂偒崬傫偩擣幆寢壥傪悢抣僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Wai</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Wai</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Wai乮&lt;僗儘僢僩斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Wai</SAMPLE>
+<SAMPLE>M1=M_Wai(1)</SAMPLE>
+<COMMENT>巜掕偟偨僞僗僋僗儘僢僩偺僾儘僌儔儉偺懸婡忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Wupov</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Wupov</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Wupov乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Wupov</SAMPLE>
+<SAMPLE>M1=M_Wupov(1)</SAMPLE>
+<COMMENT>抔婥塣揮忬懺偺偲偒摦嶌懍搙傪壓偘傞偨傔偵巜椷懍搙偵妡偗傞僆乕僶乕儔僀僪乮抔婡塣揮僆乕僶乕儔僀僪丄扨埵丗亾乯偺抣傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Wuprt</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Wuprt</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Wuprt乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Wuprt</SAMPLE>
+<SAMPLE>M1=M_Wuprt(1)</SAMPLE>
+<COMMENT>抔婥塣揮忬懺傪夝彍偡傞偨傔偵懳徧幉偑摦嶌偟側偗傟偽側傜側偄帪娫乮昩乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_Wupst</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Wupst</FORMAT>
+<FORMAT>&lt;悢抣曄悢&gt; = M_Wupst乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>M1=M_Wupst</SAMPLE>
+<SAMPLE>M1=M_Wupst(1)</SAMPLE>
+<COMMENT>抔婥塣揮忬懺偑夝彍偝傟偨屻丄嵞傃抔婡塣揮忬懺偲側傞傑偱偺帪娫乮昩乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_XDev</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_XDev乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M1%=M_XDev(&amp;H100)</SAMPLE>
+<COMMENT>僔乕働儞僒偺擖椡怣崋偺抣(價僢僩扨埵)傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_XDevB</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_XDevB乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M1%=M_XDevB(&amp;H100) And &amp;H7</SAMPLE>
+<COMMENT>僔乕働儞僒偺擖椡怣崋偺抣(僶僀僩扨埵)傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_XDevW</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_XDevW乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M1%=M_XDevW(&amp;H100) And &amp;H7FF</SAMPLE>
+<COMMENT>僔乕働儞僒偺擖椡怣崋偺抣(儚乕僪扨埵)傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_XDevD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_XDevD乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯</FORMAT>
+<SAMPLE>M11&amp;=M_XDevD(&amp;H100) And &amp;HFFFFF</SAMPLE>
+<COMMENT>僔乕働儞僒偺擖椡怣崋偺抣(僟僽儖儚乕僪扨埵)傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_YDev</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_YDev乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯</FORMAT>
+<FORMAT>M_YDev乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯=&lt;悢抣&gt;</FORMAT>
+<SAMPLE>M1%=M_YDev(&amp;H100)</SAMPLE>
+<SAMPLE>M_YDev(&amp;H100)=&amp;H1</SAMPLE>
+<COMMENT>僔乕働儞僒偺弌椡怣崋偺抣(價僢僩扨埵)傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>僔乕働儞僒偺弌椡怣崋傊抣(價僢僩扨埵)傪彂偒崬傒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_YDevB</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_YDevB乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯</FORMAT>
+<FORMAT>M_YDevB乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯=&lt;悢抣&gt;</FORMAT>
+<SAMPLE>M1%=M_YDevB(&amp;H100)</SAMPLE>
+<SAMPLE>M_YDevB(&amp;H100)=&amp;H1F</SAMPLE>
+<COMMENT>僔乕働儞僒偺弌椡怣崋偺抣(僶僀僩扨埵)傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>僔乕働儞僒偺弌椡怣崋傊抣(僶僀僩扨埵)傪彂偒崬傒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_YDevW</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_YDevW乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯</FORMAT>
+<FORMAT>M_YDevW乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯=&lt;悢抣&gt;</FORMAT>
+<SAMPLE>M1%=M_YDevW(&amp;H100)</SAMPLE>
+<SAMPLE>M_YDevW(&amp;H100)=&amp;H1234</SAMPLE>
+<COMMENT>僔乕働儞僒偺弌椡怣崋偺抣(儚乕僪扨埵)傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>僔乕働儞僒偺弌椡怣崋傊抣(儚乕僪扨埵)傪彂偒崬傒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_YDevD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_YDevD乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯</FORMAT>
+<FORMAT>M_YDevD乮&lt;僔乕働儞僒擖椡怣崋斣崋&gt;乯=&lt;悢抣&gt;</FORMAT>
+<SAMPLE>M1%=M_YDevD(&amp;H100)</SAMPLE>
+<SAMPLE>M_YDevD(&amp;H100)=&amp;H12345678</SAMPLE>
+<COMMENT>僔乕働儞僒偺弌椡怣崋偺抣(僟僽儖儚乕僪扨埵)傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>僔乕働儞僒偺弌椡怣崋傊抣(僟僽儖儚乕僪扨埵)傪彂偒崬傒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Base</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Base</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Base乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P1=P_Base</SAMPLE>
+<SAMPLE>P1=P_Base(1)</SAMPLE>
+<COMMENT>儀乕僗曄姺僨乕僞偵娭偡傞忣曬傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NBase</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NBase</FORMAT>
+<SAMPLE>BASE P_NBase</SAMPLE>
+<COMMENT>儀乕僗曄姺僨乕僞偵娭偡傞忣曬傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_CavDir</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_CavDir</FORMAT>
+<SAMPLE>PESC=P_CavDir*(-2)</SAMPLE>
+<SAMPLE>PESC=P_CavDir(1)*(-2)</SAMPLE>
+<COMMENT>姳徛夞旔専弌偟偨偲偒偺儘儃僢僩偺摦嶌曽岦傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_ColDir</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_ColDir</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_ColDir乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>PESC=P_ColDir*(-2)</SAMPLE>
+<SAMPLE>PESC=P_ColDir(1)*(-2)</SAMPLE>
+<COMMENT>徴撍専抦偟偨偲偒偺儘儃僢僩偺摦嶌曽岦傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_CordR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_CordR</FORMAT>
+<SAMPLE>P100=P_CordR</SAMPLE>
+<COMMENT>嫟捠嵗昗偐傜偺儘儃僢僩埵抲傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Curr</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Curr</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Curr乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P100=P_Curr</SAMPLE>
+<SAMPLE>P100=P_Curr(1)</SAMPLE>
+<COMMENT>尰嵼埵抲乮X, Y, Z, A, B, C, L1, L2乯乮FL1, FL2乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_CurrR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_CurrR</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_CurrR乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P100=P_CurrR</SAMPLE>
+<SAMPLE>P100=P_CurrR(1)</SAMPLE>
+<COMMENT>嫟捠嵗昗偐傜偺尰嵼埵抲乮X, Y, Z, A, B, C, L1, L2乯乮FL1, FL2乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_CvSpd</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_CvSpd</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_CvSpd(&lt;僄儞僐乕僟斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = P_CvSpd.Y</SAMPLE>
+<SAMPLE>M1 = P_CvSpd(1).Y</SAMPLE>
+<COMMENT>巜掕偟偨僄儞僐乕僟斣崋偺僐儞儀傾懍搙傪儘儃僢僩嵗昗曽岦偵昞尰偟偰曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_EncDlt</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_EncDlt</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_EncDlt(&lt;僄儞僐乕僟斣崋&gt;)</FORMAT>
+<SAMPLE>M1=P_EncDlt.Y * MENCSUB</SAMPLE>
+<SAMPLE>M1=P_EncDlt(1).Y * MENCSUB</SAMPLE>
+<COMMENT>僄儞僐乕僟侾僷儖僗偁偨傝偺儘儃僢僩僴儞僪偺堏摦検傪愝掕偟傑偡丅</COMMENT>
+<COMMENT>僄儞僐乕僟侾僷儖僗偁偨傝偺儘儃僢僩僴儞僪偺堏摦検傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_ECord</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_ECord</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_ECord乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P1 = P_ECord</SAMPLE>
+<SAMPLE>P2 = P_ECord(2)</SAMPLE>
+<COMMENT>Ex-T惂屼/Ex-T僗僾儔僀儞曗娫帪偺Ex-T嵗昗宯尨揰僨乕僞傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Fbc</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Fbc</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Fbc乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P1=P_Fbc</SAMPLE>
+<SAMPLE>P1=P_Fbc(1)</SAMPLE>
+<COMMENT>僒乕儃偐傜偺僼傿乕僪僶僢僋抣傪尦偵偟偨尰嵼埵抲乮X, Y, Z, A, B, C, L1, L2乯乮FL1, FL2乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsCurD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsCurD</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsCurD乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P100=P_FsCurD</SAMPLE>
+<SAMPLE>P100=P_FsCurD(1)</SAMPLE>
+<COMMENT>尰嵼偺椡妎僙儞僒僨乕僞傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsCurP</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsCurP</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsCurP乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P100=P_FsCurP</SAMPLE>
+<SAMPLE>P100=P_FsCurP(1)</SAMPLE>
+<COMMENT>椡妎惂屼偵傛傝曗惓偝傟偨埵抲巜椷傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsDmp0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsDmp0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsDmp0乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsDmp0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsDmp0乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsDmp0=P10</SAMPLE>
+<SAMPLE>P_FsDmp0(1)=(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsDmp0</SAMPLE>
+<SAMPLE>P100=P_FsDmp0(1)</SAMPLE>
+<COMMENT>奺幉偺僟儞僺儞僌學悢傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>奺幉偺僟儞僺儞僌學悢傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsDmp1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsDmp1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsDmp1乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsDmp1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsDmp1乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsDmp1=P10</SAMPLE>
+<SAMPLE>P_FsDmp1(1)=(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsDmp1</SAMPLE>
+<SAMPLE>P100=P_FsDmp1(1)</SAMPLE>
+<COMMENT>奺幉偺僟儞僺儞僌學悢傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>奺幉偺僟儞僺儞僌學悢傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsFCd0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsFCd0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsFCd0乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsFCd0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsFCd0乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsFCd0=P10</SAMPLE>
+<SAMPLE>P_FsFCd0(1)=(0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsFCd0</SAMPLE>
+<SAMPLE>P100=P_FsFCd0(1)</SAMPLE>
+<COMMENT>椡惂屼偺椡巜椷抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>椡惂屼偺椡巜椷抣傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>儕儈僢僩晅僗僥傿僼僱僗惂屼偺儕儈僢僩抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>儕儈僢僩晅僗僥傿僼僱僗惂屼偺儕儈僢僩抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsFCd1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsFCd1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsFCd1乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsFCd1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsFCd1乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsFCd1=P10</SAMPLE>
+<SAMPLE>P_FsFCd1(1)=(0.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsFCd1</SAMPLE>
+<SAMPLE>P100=P_FsFCd1(1)</SAMPLE>
+<COMMENT>椡惂屼偺椡巜椷抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>椡惂屼偺椡巜椷抣傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>儕儈僢僩晅僗僥傿僼僱僗惂屼偺儕儈僢僩抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>儕儈僢僩晅僗僥傿僼僱僗惂屼偺儕儈僢僩抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsFLm0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsFLm0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsFLm0乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsFLm0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsFLm0乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsFLm0=P10</SAMPLE>
+<SAMPLE>P_FsFLm0(1)=(10.0, 10.0, 10.0, 3.0, 3.0, 3.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsFLm0</SAMPLE>
+<SAMPLE>P100=P_FsFLm0(1)</SAMPLE>
+<COMMENT>椡妎僙儞僒偺椡専抦愝掕抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>椡妎僙儞僒偺椡専抦愝掕抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsFLm1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsFLm1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsFLm1乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsFLm1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsFLm1乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsFLm1=P10</SAMPLE>
+<SAMPLE>P_FsFLm1(1)=(10.0, 10.0, 10.0, 3.0, 3.0, 3.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsFLm1</SAMPLE>
+<SAMPLE>P100=P_FsFLm1(1)</SAMPLE>
+<COMMENT>椡妎僙儞僒偺椡専抦愝掕抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>椡妎僙儞僒偺椡専抦愝掕抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsMod0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsMod0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsMod0乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsMod0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsMod0乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsMod0=P10</SAMPLE>
+<SAMPLE>P_FsMod0(1)=(0, 0, 2, 0, 0, 0, 0, 0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsMod0</SAMPLE>
+<SAMPLE>P100=P_FsMod0(1)</SAMPLE>
+<COMMENT>奺幉偺椡妎惂屼儌乕僪傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>奺幉偺椡妎惂屼儌乕僪傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsMod1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsMod1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsMod1乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsMod1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsMod1乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsMod1=P10</SAMPLE>
+<SAMPLE>P_FsMod1(1)=(0, 0, 2, 0, 0, 0, 0, 0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsMod1</SAMPLE>
+<SAMPLE>P100=P_FsMod1(1)</SAMPLE>
+<COMMENT>奺幉偺椡妎惂屼儌乕僪傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>奺幉偺椡妎惂屼儌乕僪傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsGn0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsGn0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsGn0乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsGn0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsGn0乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsGn0=P10</SAMPLE>
+<SAMPLE>P_FsGn0(1)=(10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsGn0</SAMPLE>
+<SAMPLE>P100=P_FsGn0(1)</SAMPLE>
+<COMMENT>奺幉偺椡妎惂屼僎僀儞傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>奺幉偺椡妎惂屼僎僀儞傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsGn1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsGn1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsGn1乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsGn1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsGn1乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsGn1=P10</SAMPLE>
+<SAMPLE>P_FsGn1(1)=(10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsGn1</SAMPLE>
+<SAMPLE>P100=P_FsGn1(1)</SAMPLE>
+<COMMENT>奺幉偺椡妎惂屼僎僀儞傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>奺幉偺椡妎惂屼僎僀儞傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsLmtD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsLmtD</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsLmtD乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<FORMAT>P_FsLmtD = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsLmtD乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<SAMPLE>P100=P_FsLmtD</SAMPLE>
+<SAMPLE>P100=P_FsLmtD(1)</SAMPLE>
+<SAMPLE>P_FsLmtD=P10</SAMPLE>
+<SAMPLE>P_FsLmtD(1)=P10</SAMPLE>
+<COMMENT>椡専抦愝掕抣傪挻偊偨偲偒偺椡妎僙儞僒僨乕僞傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>椡専抦愝掕抣傪挻偊偨偲偒偺椡妎僙儞僒僨乕僞傪儕僙僢僩偟傑偡丅P_FsLmtP偲P_FsLmtX傕摨帪偵儕僙僢僩偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsLmtP</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsLmtP</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsLmtP乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<FORMAT>P_FsLmtP = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsLmtP乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<SAMPLE>P100=P_FsLmtP</SAMPLE>
+<SAMPLE>P100=P_FsLmtP(1)</SAMPLE>
+<SAMPLE>P_FsLmtP=P10</SAMPLE>
+<SAMPLE>P_FsLmtP(1)=P10</SAMPLE>
+<COMMENT>椡専抦愝掕抣傪挻偊偨偲偒偺僼傿乕僪僶僢僋埵抲傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>椡専抦愝掕抣傪挻偊偨偲偒偺僼傿乕僪僶僢僋埵抲儕僙僢僩偟傑偡丅P_FsLmtD偲P_FsLmtX傕摨帪偵儕僙僢僩偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsLmtR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsLmtR</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsLmtR乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P100=P_FsLmtR</SAMPLE>
+<SAMPLE>P100=P_FsLmtR(1)</SAMPLE>
+<COMMENT>椡専抦愝掕抣偵懳偡傞尰嵼偺椡妎僙儞僒僨乕僞偺忬懺傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsLmtX</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsLmtX</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsLmtX乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<FORMAT>P_FsLmtX = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsLmtX乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<SAMPLE>P100=P_FsLmtX</SAMPLE>
+<SAMPLE>P100=P_FsLmtX(1)</SAMPLE>
+<SAMPLE>P_FsLmtX=P10</SAMPLE>
+<SAMPLE>P_FsLmtX(1)=P10</SAMPLE>
+<COMMENT>椡専抦愝掕抣傪挻偊偨幉傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>椡専抦愝掕抣傪挻偊偨幉傪儕僙僢僩偟傑偡丅P_FsLmtP偲P_FsLmtD傕摨帪偵儕僙僢僩偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsMaxD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsMaxD</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsMaxD乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<FORMAT>P_FsMaxD = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsMaxD乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<SAMPLE>P100=P_FsMaxD</SAMPLE>
+<SAMPLE>P100=P_FsMaxD(1)</SAMPLE>
+<SAMPLE>P_FsMaxD=P10</SAMPLE>
+<SAMPLE>P_FsMaxD(1)=P10</SAMPLE>
+<COMMENT>椡妎僙儞僒僨乕僞偺嵟戝抣傪嶲徠偟傑偡丅</COMMENT>
+<COMMENT>椡妎僙儞僒僨乕僞偺嵟戝抣傪儕僙僢僩偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsSpd0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsSpd0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsSpd0乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsSpd0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsSpd0乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsSpd0=P10</SAMPLE>
+<SAMPLE>P_FsSpd0(1)=(0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsSpd0</SAMPLE>
+<SAMPLE>P100=P_FsSpd0(1)</SAMPLE>
+<COMMENT>懍搙桪愭儌乕僪偺懍搙巜椷抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>懍搙桪愭儌乕僪偺懍搙巜椷抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsSpd1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsSpd1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsSpd1乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsSpd1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsSpd1乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsSpd1=P10</SAMPLE>
+<SAMPLE>P_FsSpd1(1)=(0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsSpd1</SAMPLE>
+<SAMPLE>P100=P_FsSpd1(1)</SAMPLE>
+<COMMENT>懍搙桪愭儌乕僪偺懍搙巜椷抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>懍搙桪愭儌乕僪偺懍搙巜椷抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsStf0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsStf0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsStf0乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsStf0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsStf0乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsStf0=P10</SAMPLE>
+<SAMPLE>P_FsStf0(1)=(0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsStf0</SAMPLE>
+<SAMPLE>P100=P_FsStf0(1)</SAMPLE>
+<COMMENT>奺幉偺僗僥傿僼僱僗學悢傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>奺幉偺僗僥傿僼僱僗學悢傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsStf1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsStf1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsStf1乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsStf1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsStf1乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsStf1=P10</SAMPLE>
+<SAMPLE>P_FsStf1(1)=(0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsStf1</SAMPLE>
+<SAMPLE>P100=P_FsStf1(1)</SAMPLE>
+<COMMENT>奺幉偺僗僥傿僼僱僗學悢傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>奺幉偺僗僥傿僼僱僗學悢傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsSwF0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsSwF0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsSwF0乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsSwF0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsSwF0乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsSwF0=P10</SAMPLE>
+<SAMPLE>P_FsSwF0(1)=(0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsSwF0</SAMPLE>
+<SAMPLE>P100=P_FsSwF0(1)</SAMPLE>
+<COMMENT>桪愭儌乕僪偺愗傝懼偊敾掕抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>桪愭儌乕僪偺愗傝懼偊敾掕抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsSwF1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsSwF1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsSwF1乮&lt;儊僇斣崋&gt;乯 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsSwF1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsSwF1乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P_FsSwF1=P10</SAMPLE>
+<SAMPLE>P_FsSwF1(1)=(0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0)(0, 0)</SAMPLE>
+<SAMPLE>P100=P_FsSwF1</SAMPLE>
+<SAMPLE>P100=P_FsSwF1(1)</SAMPLE>
+<COMMENT>桪愭儌乕僪偺愗傝懼偊敾掕抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>桪愭儌乕僪偺愗傝懼偊敾掕抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsBias0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsBias0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsBias0(&lt;儊僇斣崋&gt;) = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsBias0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsBias0(&lt;儊僇斣崋&gt;)</FORMAT>
+<SAMPLE>P_FsBias0 = P10</SAMPLE>
+<SAMPLE>P_FsBias0(1) = (10.0, 5.0, 30.0, 0.4, 0.1, 0.9) (0, 0)</SAMPLE>
+<SAMPLE>P100 = P_FsBias0</SAMPLE>
+<SAMPLE>P100 = P_FsBias0(1)</SAMPLE>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僶僀傾僗抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僶僀傾僗抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsBias1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsBias1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsBias1(&lt;儊僇斣崋&gt;) = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsBias1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsBias1(&lt;儊僇斣崋&gt;)</FORMAT>
+<SAMPLE>P_FsBias1 = P10</SAMPLE>
+<SAMPLE>P_FsBias1(1) = (10.0, 5.0, 30.0, 0.4, 0.1, 0.9) (0, 0)</SAMPLE>
+<SAMPLE>P100 = P_FsBias1</SAMPLE>
+<SAMPLE>P100 = P_FsBias1(1)</SAMPLE>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僶僀傾僗抣傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僶僀傾僗抣傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsGrPos0</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsGrPos0 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsGrPos0(&lt;儊僇斣崋&gt;) = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsGrPos0</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsGrPos0(&lt;儊僇斣崋&gt;)</FORMAT>
+<SAMPLE>P_FsGrPos0 = P10</SAMPLE>
+<SAMPLE>P_FsGrPos0(1) = (0.0, 0.0, 0.5, 0.0, 0.0, 0.0) (0, 0)</SAMPLE>
+<SAMPLE>P100 = P_FsGrPos0</SAMPLE>
+<SAMPLE>P100 = P_FsGrPos0(1)</SAMPLE>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僴儞僪廳怱埵抲傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僴儞僪廳怱埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FsGrPos1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>P_FsGrPos1 = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_FsGrPos1(&lt;儊僇斣崋&gt;) = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsGrPos1</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_FsGrPos1(&lt;儊僇斣崋&gt;)</FORMAT>
+<SAMPLE>P_FsGrPos1 = P10</SAMPLE>
+<SAMPLE>P_FsGrPos1(1) = (0.0, 0.0, 0.5, 0.0, 0.0, 0.0) (0, 0)</SAMPLE>
+<SAMPLE>P100 = P_FsGrPos1</SAMPLE>
+<SAMPLE>P100 = P_FsGrPos1(1)</SAMPLE>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僴儞僪廳怱埵抲傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>廳椡僆僼僙僢僩僉儍儞僙儖偱巊梡偡傞僴儞僪廳怱埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Gps1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Gps1(&lt;埵抲斣崋&gt;)</FORMAT>
+<SAMPLE>Def Gps 1, 851, ON, 1</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,1</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,1</SAMPLE>
+<SAMPLE>P1 = P_Gps1(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄僙儞僒偵斀墳偟偨埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Gps2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = P_Gps2(&lt;埵抲斣崋&gt;)</FORMAT>
+<SAMPLE>Def Gps 2, 851, ON, 1</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,2</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,2</SAMPLE>
+<SAMPLE>P1 = P_Gps2(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄僙儞僒偵斀墳偟偨埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Gps3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = P_Gps3(&lt;埵抲斣崋&gt;)</FORMAT>
+<SAMPLE>Def Gps 3, 851, ON, 1</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,3</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,3</SAMPLE>
+<SAMPLE>P1 = P_Gps3(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄僙儞僒偵斀墳偟偨埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Gps4</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = P_Gps4(&lt;埵抲斣崋&gt;)</FORMAT>
+<SAMPLE>Def Gps 4, 851, ON, 1</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,4</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,4</SAMPLE>
+<SAMPLE>P1 = P_Gps4(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄僙儞僒偵斀墳偟偨埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Gps5</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = P_Gps5(&lt;埵抲斣崋&gt;)</FORMAT>
+<SAMPLE>Def Gps 5, 851, ON, 1</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,5</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,5</SAMPLE>
+<SAMPLE>P1 = P_Gps5(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄僙儞僒偵斀墳偟偨埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Gps6</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = P_Gps6(&lt;埵抲斣崋&gt;)</FORMAT>
+<SAMPLE>Def Gps 6, 851, ON, 1</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,6</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,6</SAMPLE>
+<SAMPLE>P1 = P_Gps6(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄僙儞僒偵斀墳偟偨埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Gps7</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = P_Gps7(&lt;埵抲斣崋&gt;)</FORMAT>
+<SAMPLE>Def Gps 7, 851, ON, 1</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,7</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,7</SAMPLE>
+<SAMPLE>P1 = P_Gps7(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄僙儞僒偵斀墳偟偨埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Gps8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = P_Gps8(&lt;埵抲斣崋&gt;)</FORMAT>
+<SAMPLE>Def Gps 8, 851, ON, 1</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,8</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,8</SAMPLE>
+<SAMPLE>P1 = P_Gps8(1)</SAMPLE>
+<COMMENT>GPS婡擻偵偍偄偰丄僙儞僒偵斀墳偟偨埵抲傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NvS1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NvS1(&lt;峴斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_NvS1(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪埵抲僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NvS2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NvS2(&lt;峴斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_NvS2(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪埵抲僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NvS3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NvS3(&lt;峴斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_NvS3(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪埵抲僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NvS4</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NvS4(&lt;峴斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_NvS4(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪埵抲僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NvS5</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NvS5(&lt;峴斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_NvS5(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪埵抲僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NvS6</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NvS6(&lt;峴斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_NvS6(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪埵抲僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NvS7</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NvS7(&lt;峴斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_NvS7(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪埵抲僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NvS8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NvS8(&lt;峴斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_NvS8(1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨僨乕僞傪埵抲僨乕僞宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Safe</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Safe</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Safe乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P1=P_Safe</SAMPLE>
+<SAMPLE>P1=P_Safe(1)</SAMPLE>
+<COMMENT>懸旔揰埵抲乮僷儔儊乕僞 JSAFE 偺捈岎埵抲乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Tool</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Tool</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Tool乮&lt;儊僇斣崋&gt;乯</FORMAT>
+<SAMPLE>P1=P_Tool</SAMPLE>
+<SAMPLE>P1=P_Tool(1)</SAMPLE>
+<COMMENT>尰嵼愝掕偝傟偰偄傞僣乕儖曄姺僨乕僞傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NTool</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_NTool</FORMAT>
+<SAMPLE>P2=P_NTool</SAMPLE>
+<COMMENT>弶婜抣乮0, 0, 0, 0, 0, 0, 0, 0乯乮0, 0乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_TrkBase</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkBase</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkBase(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>P_TrkBase = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_TrkBase(&lt;忦審斣崋&gt;) = &lt;埵抲曄悢&gt;</FORMAT>
+<SAMPLE>P1 = P_TrkBase</SAMPLE>
+<SAMPLE>P1 = P_TrkBase(1)</SAMPLE>
+<SAMPLE>P_TrkBase = P1</SAMPLE>
+<SAMPLE>P_TrkBase(1) = P1</SAMPLE>
+<COMMENT>僩儔僢僉儞僌摦嶌帪偺儚乕僋偺嵗昗宯偵偍偗傞尨揰傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_TrkWork</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkWork</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkWork(&lt;忦審斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_TrkWork</SAMPLE>
+<SAMPLE>P1 = P_TrkWork(1)</SAMPLE>
+<COMMENT>僩儔僢僉儞僌僶僢僼傽偐傜庢傝弌偝傟偨儚乕僋忣曬偺儚乕僋埵抲偑奿擺偝傟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_TrkTarget</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkTarget</FORMAT>
+<SAMPLE>P1=P_TrkTarget</SAMPLE>
+<COMMENT>尰嵼偺儚乕僋偺埵抲偑奿擺偝傟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_TrkPAcl</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkPAcl</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkPAcl(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>P_TrkPAcl = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_TrkPAcl(&lt;忦審斣崋&gt;) = &lt;埵抲曄悢&gt;</FORMAT>
+<SAMPLE>P1=P_TrkPAcl</SAMPLE>
+<SAMPLE>P1=P_TrkPAcl(1)</SAMPLE>
+<SAMPLE>P_TrkPAcl=(+0.2,+0.2,+0.2,+1.0,+1.0,+1.0,+1.0,+1.0)</SAMPLE>
+<SAMPLE>P_TrkPAcl(1)=(+0.2,+0.2,+0.2,+1.0,+1.0,+1.0,+1.0,+1.0)</SAMPLE>
+<COMMENT>僐儞儀傾偺壛懍搙偵懳偡傞學悢傪曄峏偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_TrkPDcl</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkPDcl</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkPDcl(&lt;忦審斣崋&gt;)</FORMAT>
+<FORMAT>P_TrkPDcl = &lt;埵抲曄悢&gt;</FORMAT>
+<FORMAT>P_TrkPDcl(&lt;忦審斣崋&gt;) = &lt;埵抲曄悢&gt;</FORMAT>
+<SAMPLE>P1=P_TrkPDcl</SAMPLE>
+<SAMPLE>P1=P_TrkPDcl(1)</SAMPLE>
+<SAMPLE>P_TrkPDcl=(+0.2,+0.2,+0.2,+1.0,+1.0,+1.0,+1.0,+1.0)</SAMPLE>
+<SAMPLE>P_TrkPDcl(1)=(+0.2,+0.2,+0.2,+1.0,+1.0,+1.0,+1.0,+1.0)</SAMPLE>
+<COMMENT>僐儞儀傾偺尭懍搙偵懳偡傞學悢傪曄峏偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_TrkSensor</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_TrkSensor(&lt;忦審斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_TrkSensor(1)</SAMPLE>
+<COMMENT>僙儞僒偑斀墳偟偨帪偺儚乕僋偺埵抲傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_UDev</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_UDev乮&lt;愭摢擖弌椡斣崋&gt;, &lt;嫟桳儊儌儕傾僪儗僗&gt;乯</FORMAT>
+<FORMAT>P_UDev乮&lt;愭摢擖弌椡斣崋&gt;, &lt;嫟桳儊儌儕傾僪儗僗&gt;乯=&lt;埵抲曄悢&gt;</FORMAT>
+<SAMPLE>M1%=&amp;H3E1</SAMPLE>
+<SAMPLE>P_UDev(M1%,11024)=P1</SAMPLE>
+<SAMPLE>P2=P_UDev(M1%,11024)</SAMPLE>
+<COMMENT>埵抲僨乕僞傪嫟桳儊儌儕偵彂偒崬傒傑偡丅</COMMENT>
+<COMMENT>嫟桳儊儌儕偐傜丄埵抲僨乕僞傪嶲徠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_V3Pos</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = P_V3Pos(&lt;奿擺愭斣崋&gt;,&lt;僨乕僞斣崋&gt;)</FORMAT>
+<SAMPLE>P1 = P_V3Pos(1,1)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨埵抲僨乕僞傪埵抲宍幃偱曐懚偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_Zero</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_Zero</FORMAT>
+<SAMPLE>P1=P_Zero</SAMPLE>
+<COMMENT>忢偵乮0, 0, 0, 0, 0, 0, 0, 0乯乮0, 0乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_WkCord</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = P_WkCord乮&lt;儚乕僋嵗昗斣崋&gt;乯</FORMAT>
+<FORMAT>P_WkCord乮&lt;儚乕僋嵗昗斣崋&gt;乯= &lt;儚乕僋嵗昗僨乕僞&gt;</FORMAT>
+<SAMPLE>P1=P_WkCord(1)</SAMPLE>
+<SAMPLE>P_WkCord(2)=P2</SAMPLE>
+<COMMENT>儚乕僋嵗昗乮WK1CORD乣WK8CORD乯偺嶲徠丄愝掕傪偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SlpPreStp</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = M_SlpPreStp</FORMAT>
+<SAMPLE>M1=M_SlpPreStp</SAMPLE>
+<SAMPLE>M_Outb(100)=M_SlpPreStp</SAMPLE>
+<COMMENT>尰嵼偺SLP帠慜掆巭忬懺傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Abs</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Abs乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Abs(-100)</SAMPLE>
+<COMMENT>梌偊傜傟偨抣偺愨懳抣傪曉偟傑偡丅僒儞僾儖偺応崌丄M1偑&quot;+100&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ACos</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = ACos乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>MRad=ACos(0.6)</SAMPLE>
+<COMMENT>巜掕偟偨&lt;悢幃&gt;偺媡梋尫抣乮傾乕僋僐僒僀儞乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Align</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = Align乮&lt;埵抲&gt;乯</FORMAT>
+<SAMPLE>P2=Align(P1)</SAMPLE>
+<COMMENT>埵抲偺巔惃幉乮俙,俛丆俠幉乯傪嵟傕嬤偄捈岎巔惃乮0, 亇90, 亇180乯偵曄姺偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Asc</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Asc乮&lt;暥帤楍幃&gt;乯</FORMAT>
+<SAMPLE>M1=Asc(&quot;A&quot;)</SAMPLE>
+<COMMENT>暥帤楍幃偺嵟弶偺暥帤偺僉儍儔僋僞乕僐乕僪偺抣傪曉偟傑偡丅僒儞僾儖偺応崌丄M1偑&quot;&amp;H41&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ASin</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = ASin乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>MRad=ASin(-0.4)</SAMPLE>
+<COMMENT>巜掕偟偨&lt;悢幃&gt;偺媡惓尫抣乮傾乕僋僒僀儞乯傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Atn</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Atn乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Atn(100/100)</SAMPLE>
+<COMMENT>媡惓愙乮傾乕僋僞儞僕僃儞僩乯傪寁嶼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Atn2</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Atn2乮&lt;悢幃侾&gt;, &lt;悢幃俀&gt;乯</FORMAT>
+<SAMPLE>M1=Atn2(-100, 100)</SAMPLE>
+<COMMENT>媡惓愙乮傾乕僋僞儞僕僃儞僩乯傪寁嶼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Bin$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Bin$乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Bin$(&amp;B11111111)</SAMPLE>
+<SAMPLE>C1$=Bin$(&amp;HFF)</SAMPLE>
+<COMMENT>悢抣傪2恑悢暥帤楍偵曄姺偟傑偡丅僒儞僾儖偺応崌丄C1$偑&quot;11111111&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CalArc</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢係&gt; = CalArc乮&lt;埵抲侾&gt;, &lt;埵抲俀&gt;, &lt;埵抲俁&gt;, &lt;悢抣曄悢侾&gt;, &lt;悢抣曄悢俀&gt;, &lt;悢抣曄悢俁&gt;, &lt;埵抲曄悢侾&gt;乯</FORMAT>
+<SAMPLE>M1=CalArc(P1, P2, P3, M10, M20, M30, P10)</SAMPLE>
+<COMMENT>巜掕偝傟偨俁揰偱峔惉偝傟傞墌屖偺忣曬傪庢摼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Chr$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Chr$乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Chr$(&amp;H41)</SAMPLE>
+<COMMENT>巜掕偟偨悢幃偺抣偺僉儍儔僋僞乕僐乕僪傪帩偮暥帤傪曉偟傑偡丅僒儞僾儖偺応崌丄C1$偑&quot;A&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CInt</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = CInt乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=CInt(1.5)</SAMPLE>
+<COMMENT>悢幃偺彫悢晹傪巐幪屲擖偟丄惍悢偵曄姺偟傑偡丅僒儞僾儖偺応崌丄M1偑&quot;2&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CkSum</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = CkSum乮&lt;暥帤楍&gt;, &lt;悢幃侾&gt;, &lt;悢幃俀&gt;乯</FORMAT>
+<SAMPLE>M1=CkSum(&quot;ABCDEFG&quot;, 1, 3)</SAMPLE>
+<COMMENT>暥帤楍偺僠僃僢僋僒儉傪寁嶼偟傑偡丅僒儞僾儖偺応崌丄M1偑&quot;&amp;HC6&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Cos</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Cos乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Cos(RAD(60))</SAMPLE>
+<COMMENT>梋尫乮僐僒僀儞乯傪梌偊傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Cvi</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt;=Cvi乮&lt;暥帤楍幃&gt;乯</FORMAT>
+<SAMPLE>M1=Cvi(&quot;10ABC&quot;)</SAMPLE>
+<COMMENT>暥帤楍幃偺嵟弶偺俀暥帤偺偦傟偧傟偺暥帤僐乕僪傪悢抣偲傒側偟惍悢偵曄姺偟傑偡丅</COMMENT>
+<COMMENT>僒儞僾儖偺応崌丄M1偑&quot;&amp;H3031&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Cvs</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Cvs乮&lt;暥帤楍幃&gt;乯</FORMAT>
+<SAMPLE>M1=Cvs(&quot;FFFF&quot;)</SAMPLE>
+<COMMENT>暥帤楍幃偺嵟弶偺係暥帤偺偦傟偧傟偺暥帤僐乕僪傪悢抣偲傒側偟扨惛搙幚悢偵曄姺偟傑偡丅</COMMENT>
+<COMMENT>僒儞僾儖偺応崌丄M1偑&quot;12689.6&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Cvd</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Cvd乮&lt;暥帤楍幃&gt;乯</FORMAT>
+<SAMPLE>M1=Cvd(&quot;FFFFFFFF&quot;)</SAMPLE>
+<COMMENT>暥帤楍幃偺嵟弶偺俉暥帤偺偦傟偧傟偺暥帤僐乕僪傪悢抣偲傒側偟攞惛搙幚悢偵曄姺偟傑偡丅</COMMENT>
+<COMMENT>僒儞僾儖偺応崌丄M1偑&quot;+3.52954E+30&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Deg</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Deg乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>If Deg(P1.C) &lt; 171 OR Deg(P1.C) &gt; -150 Then *LABEL</SAMPLE>
+<COMMENT>妏搙扨埵傪儔僕傾儞乮rad乯偐傜搙乮deg乯偵曄姺偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Dist</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Dist乮&lt;埵抲侾&gt;, &lt;埵抲俀&gt;乯</FORMAT>
+<SAMPLE>M1=Dist(P1,P2)</SAMPLE>
+<COMMENT>俀揰娫乮埵抲曄悢乯偺嫍棧傪媮傔傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Dot</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Dot乮&lt;埵抲1&gt;, &lt;埵抲2&gt;, &lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>MDot=Dot(PTeach, PCatch, 1)</SAMPLE>
+<SAMPLE>MDot=Dot(PTeach, PCatch)</SAMPLE>
+<COMMENT>巜掕偟偨&lt;埵抲1&gt;偲&lt;埵抲2&gt;偺撪愊寢壥傪曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Exp</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Exp乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Exp(2)</SAMPLE>
+<COMMENT>巜悢娭悢乮e傪掙偲偡傞悢幃偺傋偒忔乯傪寁嶼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Fix</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Fix乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Fix(5.5)</SAMPLE>
+<COMMENT>悢幃偺惍悢晹傪曉偟傑偡丅僒儞僾儖偺応崌丄M1偑&quot;5&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Fram</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢係&gt; = Fram乮&lt;埵抲侾&gt;, &lt;埵抲俀&gt;, &lt;埵抲俁&gt;乯</FORMAT>
+<SAMPLE>P10=Fram(P1, P2, P3)</SAMPLE>
+<COMMENT>俁偮偺埵抲僨乕僞偱巜掕偝傟偨嵗昗宯乮柺乯傪帵偡埵抲僨乕僞傪寁嶼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Hex$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Hex$乮&lt;悢幃&gt;乯</FORMAT>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Hex$乮&lt;悢幃&gt;, &lt;弌椡暥帤悢&gt;乯</FORMAT>
+<SAMPLE>C1$=Hex$(&amp;H41FF)</SAMPLE>
+<SAMPLE>C2$=Hex$(&amp;H41FF, 2)</SAMPLE>
+<COMMENT>悢幃偺抣乮-32768 乣 32767乯傪16恑暥帤楍偵曄姺偡傞丅僒儞僾儖偺応崌丄C1$偑&quot;41FF&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Int</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Int乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Int(3.3)</SAMPLE>
+<COMMENT>悢幃偺抣傪挻偊側偄嵟戝偺惍悢傪曉偡丅僒儞僾儖偺応崌丄M1偑&quot;3&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Inv</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = Inv乮&lt;埵抲曄悢&gt;乯</FORMAT>
+<SAMPLE>P1=Inv(P2)</SAMPLE>
+<COMMENT>埵抲曄悢偺媡峴楍偺埵抲僨乕僞傪媮傔傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>JtoP</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = JtoP乮&lt;娭愡曄悢&gt;乯</FORMAT>
+<SAMPLE>P1=JtoP(J1)</SAMPLE>
+<COMMENT>梌偊傜傟偨娭愡僨乕僞傪埵抲僨乕僞偵曄姺偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Left$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Left$乮&lt;暥帤楍&gt;, &lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Left$(&quot;ABC&quot;, 2)</SAMPLE>
+<COMMENT>暥帤楍偺嵍抂偐傜丄巜掕偟偨挿偝偺暥帤楍傪庢傝弌偟傑偡丅僒儞僾儖偺応崌丄C1$偑&quot;AB&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Len</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Len乮&lt;暥帤楍&gt;乯</FORMAT>
+<SAMPLE>M1=Len(&quot;ABCDEFG&quot;)</SAMPLE>
+<COMMENT>暥帤楍偺挿偝傪曉偟傑偡丅僒儞僾儖偺応崌丄M1偑&quot;7&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Ln</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Ln乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Ln(2)</SAMPLE>
+<COMMENT>帺慠懳悢傪梌偊傑偡丅乮掙偼e偱偡丅乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Log</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Log乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Log(2)</SAMPLE>
+<COMMENT>忢梡懳悢傪梌偊傑偡丅乮掙偼10偱偡丅乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Max</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Max乮&lt;悢幃侾&gt;, &lt;悢幃俀&gt;,乧乯</FORMAT>
+<SAMPLE>M1=Max(2, 1, 3, 4, 10, 100)</SAMPLE>
+<COMMENT>嵟戝抣傪媮傔傑偡丅僒儞僾儖偺応崌丄M1偑&quot;100&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mid$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Mid$乮&lt;暥帤楍&gt;, &lt;悢幃俀&gt;, &lt;悢幃俁&gt;乯</FORMAT>
+<SAMPLE>C1$=Mid$(&quot;ABCDEFG&quot;, 3, 2)</SAMPLE>
+<COMMENT>暥帤楍偺巜掕偟偨埵抲偐傜巜掕偝傟偨挿偝偺暥帤楍傪曉偟傑偡丅僒儞僾儖偺応崌丄C1$偑&quot;CD&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Min</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Min乮&lt;悢幃侾&gt;, &lt;悢幃俀&gt;,乧乯</FORMAT>
+<SAMPLE>M1=Min(2, 1, 3, 4, 10, 100)</SAMPLE>
+<COMMENT>嵟彫抣傪媮傔傑偡丅僒儞僾儖偺応崌丄M1偑&quot;1&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mirror$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Mirror$乮&lt;暥帤楍幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Mirror$(&quot;BJ&quot;)</SAMPLE>
+<COMMENT>暥帤楍偺奺僉儍儔僋僞乕僐乕僪傪2恑悢偱昞偟偨價僢僩楍傪斀揮偟僉儍儔僋僞乕僐乕僪壔偟偨暥帤楍傪媮傔傑偡丅</COMMENT>
+<COMMENT>僒儞僾儖偺応崌丄C1$偑&quot;RB&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mki$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Mki$乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Mki$(20299)</SAMPLE>
+<COMMENT>悢幃乮惍悢乯偺抣傪2僶僀僩偺暥帤楍偵曄姺偟傑偡丅僒儞僾儖偺応崌丄C1$偑&quot;OK&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mks$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Mks$乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Mks$(100.1)</SAMPLE>
+<COMMENT>悢幃乮扨惛搙幚悢乯偺抣傪4僶僀僩偺暥帤楍偵曄姺偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mkd$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Mkd$乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Mkd$(10000.1)</SAMPLE>
+<COMMENT>悢幃乮攞惛搙幚悢乯偺抣傪8僶僀僩偺暥帤楍偵曄姺偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PosCq</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = PosCq乮&lt;埵抲曄悢&gt;乯</FORMAT>
+<SAMPLE>M1=PosCq(P1)</SAMPLE>
+<COMMENT>梌偊傜傟偨埵抲偑摦嶌斖埻撪偵擖偭偰偄傞偐偳偆偐傪挷傋傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PosMid</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = PosMid乮&lt;埵抲曄悢侾&gt;, &lt;埵抲曄悢俀&gt;, &lt;悢幃侾&gt;, &lt;悢幃俀&gt;乯</FORMAT>
+<SAMPLE>P1=PosMid(P2, P3, 0, 0)</SAMPLE>
+<COMMENT>梌偊傜傟偨2揰娫傪捈慄曗娫偟偨応崌偺拞揰埵抲僨乕僞傪媮傔傑偡丅&lt;悢幃侾&gt;偲&lt;悢幃俀&gt;偵偼丄TYPE偺堷悢偲摨偠抣偑擖傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PtoJ</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;娭愡曄悢&gt; = PtoJ乮&lt;埵抲曄悢&gt;乯</FORMAT>
+<SAMPLE>J1=PtoJ(P1)</SAMPLE>
+<COMMENT>梌偊傜傟偨埵抲僨乕僞傪娭愡僨乕僞偵曄姺偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PVSCal</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = PVSCal乮&lt;僉儍儕僽儗乕僔儑儞斣崋&gt;,&lt;V/S夋憸嵗昗X&gt;,&lt;V/S夋憸嵗昗Y&gt;,&lt;V/S夋憸嵗昗兤&gt;乯</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = PVSCal乮&lt;僉儍儕僽儗乕僔儑儞斣崋&gt;,&lt;V/S夋憸嵗昗X&gt;,&lt;V/S夋憸嵗昗Y&gt;,&lt;V/S夋憸嵗昗兤&gt;,&lt;婎弨埵抲曄悢&gt;乯</FORMAT>
+<SAMPLE>P1=PVSCal(1,MX,MY,MC)</SAMPLE>
+<SAMPLE>P1=PVSCal(1,MX,MY,MC,PV)</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒夋憸嵗昗偐傜儘儃僢僩偺儚乕儖僪嵗昗偵曄姺偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Rad</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Rad乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>P1.C=Rad(90)</SAMPLE>
+<COMMENT>妏搙扨埵 搙乮deg乯傪儔僕傾儞乮rad乯偵曄姺偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Rdfl1</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Rdfl1乮&lt;埵抲曄悢&gt;, &lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Rdfl1(P1,1)</SAMPLE>
+<COMMENT>巜掕偟偨埵抲偺峔憿僼儔僌傪暥帤僨乕僞&quot;俼&quot;乛&quot;俴&quot;, &quot;俙&quot;乛&quot;俛&quot;, &quot;俶&quot;乛&quot;俥&quot;偱曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Rdfl2</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Rdfl2乮&lt;埵抲曄悢&gt;, &lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Rdfl2(P1, 6)</SAMPLE>
+<COMMENT>巜掕偟偨娭愡幉偺懡夞揮忣曬傪悢抣偱曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Rnd</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Rnd乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>MRND=Rnd(0)</SAMPLE>
+<COMMENT>棎悢傪敪惗偝偣傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Right$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Right$乮&lt;暥帤楍&gt;, &lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Right$(&quot;ABCDEFG&quot;, 3)</SAMPLE>
+<COMMENT>暥帤楍偺塃抂偐傜巜掕偝傟偨挿偝偺暥帤楍傪庢傝弌偟傑偡丅僒儞僾儖偺応崌丄C1$偑&quot;EFG&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Setfl1</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = Setfl1乮&lt;埵抲曄悢&gt;, &lt;暥帤楍&gt;乯</FORMAT>
+<SAMPLE>P2=Setfl1(P1, &quot;LBF&quot;)</SAMPLE>
+<COMMENT>巜掕偟偨埵抲偺峔憿僼儔僌傪暥帤乮&quot;RAN&quot;側偳乯偵傛偭偰曄峏偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Setfl2</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = Setfl2乮&lt;埵抲曄悢&gt;, &lt;悢幃侾&gt;, &lt;悢幃俀&gt;乯</FORMAT>
+<SAMPLE>P2=Setfl2(P1,6,1)</SAMPLE>
+<COMMENT>巜掕偟偨埵抲偺懡夞揮僨乕僞傪曄峏偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SetJnt</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;娭愡曄悢&gt; = SetJnt乮&lt;俰侾幉&gt;乯</FORMAT>
+<FORMAT>&lt;娭愡曄悢&gt; = SetJnt乮&lt;俰侾幉&gt;, &lt;俰俀幉&gt;乯</FORMAT>
+<FORMAT>&lt;娭愡曄悢&gt; = SetJnt乮&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;乯</FORMAT>
+<FORMAT>&lt;娭愡曄悢&gt; = SetJnt乮&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;, &lt;俰係幉&gt;乯</FORMAT>
+<FORMAT>&lt;娭愡曄悢&gt; = SetJnt乮&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;, &lt;俰係幉&gt;, &lt;俰俆幉&gt;乯</FORMAT>
+<FORMAT>&lt;娭愡曄悢&gt; = SetJnt乮&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;, &lt;俰係幉&gt;, &lt;俰俆幉&gt;, &lt;俰俇幉&gt;乯</FORMAT>
+<FORMAT>&lt;娭愡曄悢&gt; = SetJnt乮&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;, &lt;俰係幉&gt;, &lt;俰俆幉&gt;, &lt;俰俇幉&gt;, &lt;俰俈幉&gt;乯</FORMAT>
+<FORMAT>&lt;娭愡曄悢&gt; = SetJnt乮&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;, &lt;俰係幉&gt;, &lt;俰俆幉&gt;, &lt;俰俇幉&gt;, &lt;俰俈幉&gt;, &lt;俰俉幉&gt;乯</FORMAT>
+<SAMPLE>J2=SetJnt(M0)</SAMPLE>
+<SAMPLE>J2=SetJnt(M0, M10)</SAMPLE>
+<SAMPLE>J2=SetJnt(M0, M10, M20)</SAMPLE>
+<SAMPLE>J2=SetJnt(M0, M10, M20, M30)</SAMPLE>
+<SAMPLE>J2=SetJnt(M0, M10, M20, M30, M40)</SAMPLE>
+<SAMPLE>J2=SetJnt(M0, M10, M20, M30, M40, M50)</SAMPLE>
+<SAMPLE>J2=SetJnt(M0, M10, M20, M30, M40, M50, M60)</SAMPLE>
+<SAMPLE>J2=SetJnt(M0, M10, M20, M30, M40, M50, M60, M70)</SAMPLE>
+<COMMENT>娭愡曄悢傊抣傪僙僢僩偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SetPos</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = SetPos乮&lt;倃幉&gt;乯</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = SetPos乮&lt;倃幉&gt;, &lt;倄幉&gt;乯</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = SetPos乮&lt;倃幉&gt;, &lt;倄幉&gt;, &lt;倅幉&gt;乯</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = SetPos乮&lt;倃幉&gt;, &lt;倄幉&gt;, &lt;倅幉&gt;, &lt;俙幉&gt;乯</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = SetPos乮&lt;倃幉&gt;, &lt;倄幉&gt;, &lt;倅幉&gt;, &lt;俙幉&gt;, &lt;俛幉&gt;乯</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = SetPos乮&lt;倃幉&gt;, &lt;倄幉&gt;, &lt;倅幉&gt;, &lt;俙幉&gt;, &lt;俛幉&gt;, &lt;俠幉&gt;乯</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = SetPos乮&lt;倃幉&gt;, &lt;倄幉&gt;, &lt;倅幉&gt;, &lt;俙幉&gt;, &lt;俛幉&gt;, &lt;俠幉&gt;, &lt;俴侾幉&gt;乯</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = SetPos乮&lt;倃幉&gt;, &lt;倄幉&gt;, &lt;倅幉&gt;, &lt;俙幉&gt;, &lt;俛幉&gt;, &lt;俠幉&gt;, &lt;俴侾幉&gt;, &lt;俴俀幉&gt;乯</FORMAT>
+<SAMPLE>P2=SetPos(P1.X)</SAMPLE>
+<SAMPLE>P2=SetPos(P1.X, P1.Y)</SAMPLE>
+<SAMPLE>P2=SetPos(P1.X, P1.Y, P1.Z)</SAMPLE>
+<SAMPLE>P2=SetPos(P1.X, P1.Y, P1.Z, M10)</SAMPLE>
+<SAMPLE>P2=SetPos(P1.X, P1.Y, P1.Z, M10, M20)</SAMPLE>
+<SAMPLE>P2=SetPos(P1.X, P1.Y, P1.Z, M10, M20, M30)</SAMPLE>
+<SAMPLE>P2=SetPos(P1.X, P1.Y, P1.Z, M10, M20, M30, 1)</SAMPLE>
+<SAMPLE>P2=SetPos(P1.X, P1.Y, P1.Z, M10, M20, M30, 1, 2)</SAMPLE>
+<COMMENT>埵抲曄悢傊抣傪僙僢僩偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Sgn</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Sgn乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M2=Sgn(-12)</SAMPLE>
+<COMMENT>悢幃偺晞崋傪挷傋傑偡丅僒儞僾儖偺応崌丄M2偑&quot;-1&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Sin</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Sin乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Sin(RAD(60))</SAMPLE>
+<COMMENT>惓尫乮僒僀儞乯傪寁嶼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SplPos</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = SplPos(&lt;僗僾儔僀儞斣崋&gt;, &lt;宱楬揰斣崋&gt;)</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = SplPos(&lt;僗僾儔僀儞斣崋&gt;, &lt;宱楬揰斣崋&gt;, &lt;僼儗乕儉曄姺&gt;)</FORMAT>
+<SAMPLE>P1 = SplPos(1,5)</SAMPLE>
+<SAMPLE>P2 = SplPos(1,5,1)</SAMPLE>
+<COMMENT>僗僾儔僀儞斣崋偱巜掕偟偨僗僾儔僀儞僼傽僀儖偵搊榐偝傟偰偄傞宱楬揰斣崋偵懳墳偟偨宱楬揰偺僨乕僞傪庢摼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SplSpd</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = SplSpd(&lt;僗僾儔僀儞斣崋&gt;)</FORMAT>
+<SAMPLE>M1 = SplSpd(1)</SAMPLE>
+<COMMENT>僗僾儔僀儞斣崋偱巜掕偟偨僗僾儔僀儞僼傽僀儖偵搊榐偝傟偰偄傞忣曬偵婎偯偒丄僗僾儔僀儞曗娫柦椷偵偰僄儔乕偲側傜偢偵巜掕壜擻側嵟戝懍搙[mm/s]傪媮傔傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SplECord</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = SplECord(&lt;僗僾儔僀儞斣崋&gt;)</FORMAT>
+<FORMAT>&lt;埵抲曄悢&gt; = SplECord(&lt;僗僾儔僀儞斣崋&gt;, &lt;僼儗乕儉曄姺&gt;)</FORMAT>
+<SAMPLE>P1 = SplECord(1)</SAMPLE>
+<SAMPLE>P2 = SplECord(1,1)</SAMPLE>
+<COMMENT>僗僾儔僀儞斣崋偱巜掕偟偨僗僾儔僀儞僼傽僀儖偵搊榐偝傟偰偄傞Ex-T 嵗昗宯尨揰僨乕僞傪庢摼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Sqr</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Sqr乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Sqr(2)</SAMPLE>
+<COMMENT>悢幃偺暯曽崻傪寁嶼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>StrLwr</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = StrLwr乮&lt;暥帤楍&gt;乯</FORMAT>
+<SAMPLE>C1$=StrLwr(&quot;ABC&quot;)</SAMPLE>
+<COMMENT>暥帤楍傪彫暥帤偵曄姺偟傑偡丅僒儞僾儖偺応崌丄C1$偑&quot;abc&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>StrUpr</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = StrUpr乮&lt;暥帤楍&gt;乯</FORMAT>
+<SAMPLE>C1$=StrUpr(&quot;abc&quot;)</SAMPLE>
+<COMMENT>暥帤楍傪戝暥帤偵曄姺偟傑偡丅僒儞僾儖偺応崌丄C1$偑&quot;ABC&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Strpos</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Strpos乮&lt;暥帤楍侾&gt;, &lt;暥帤楍俀&gt;乯</FORMAT>
+<SAMPLE>M1=Strpos(&quot;ABCDEFG&quot;, &quot;DEF&quot;)</SAMPLE>
+<COMMENT>暥帤楍撪偐傜巜掕偟偨暥帤楍傪専嶕偟傑偡丅僒儞僾儖偺応崌丄M1偑&quot;4&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Str$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;暥帤楍曄悢&gt; = Str$乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>C1$=Str$(123)</SAMPLE>
+<COMMENT>悢幃偺抣傪10恑暥帤楍偵曄姺偟傑偡丅僒儞僾儖偺応崌丄C1$偑&quot;123&quot;偲側傝傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Tan</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Tan乮&lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Tan(RAD(60))</SAMPLE>
+<COMMENT>惓愙乮僞儞僕僃儞僩乯傪寁嶼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrPos</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;埵抲曄悢&gt; = TrPos(&lt;埵抲曄悢&gt;)</FORMAT>
+<SAMPLE>P1=TrPos(P2)</SAMPLE>
+<COMMENT>巜掕偟偨埵抲傪丄僩儔僢僉儞僌拞偺儚乕儖僪嵗昗宯偵曄姺偟偨埵抲傪庢摼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrWcur</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = TrWcur(&lt;僄儞僐乕僟斣崋&gt;, &lt;埵抲曄悢&gt;, &lt;僄儞僐乕僟抣&gt;乯</FORMAT>
+<SAMPLE>P1=TrWcur(MENCNO%,PBPOS,MENC#)</SAMPLE>
+<COMMENT>巜掕偟偨僄儞僐乕僟斣崋偑巜掕偟偨僄儞僐乕僟抣偺偲偒偵巜掕偟偨埵抲偱偁偭偨儚乕僋偑丄尰嵼偳偺埵抲偱偁傞偐傪媮傔偰曉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Val</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Val乮&lt;暥帤楍幃&gt;乯</FORMAT>
+<SAMPLE>M1=Val(&quot;15&quot;)</SAMPLE>
+<COMMENT>暥帤楍偺抣傪悢抣偵曄姺偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Zone</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Zone乮&lt;埵抲侾&gt;, &lt;埵抲俀&gt;, &lt;埵抲俁&gt;乯</FORMAT>
+<SAMPLE>M1=Zone(P1, P2, P3)</SAMPLE>
+<COMMENT>巜掕偟偨埵抲偑巜掕椞堟撪乮俀揰偱巜掕偝傟傞捈曽懱乯偵擖偭偰偄傞偐傪僠僃僢僋偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Zone2</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Zone2乮&lt;埵抲侾&gt;, &lt;埵抲俀&gt;, &lt;埵抲俁&gt;, &lt;悢幃&gt;乯</FORMAT>
+<SAMPLE>M1=Zone2(P1, P2, P3, 50)</SAMPLE>
+<COMMENT>巜掕偟偨埵抲偑巜掕椞堟撪乮俀揰偱峔惉偝傟傞墌摏懱乯偵擖偭偰偄傞偐偳偆偐傪僠僃僢僋偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Zone3</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;悢抣曄悢&gt; = Zone3乮&lt;埵抲侾&gt;, &lt;埵抲俀&gt;, &lt;埵抲俁&gt;, &lt;埵抲係&gt;, &lt;悢幃倂&gt;, &lt;悢幃俫&gt;, &lt;悢幃俴&gt;乯</FORMAT>
+<SAMPLE>M1=Zone3(P1, P2, P3, P4, 100, 100, 50)</SAMPLE>
+<COMMENT>巜掕偟偨埵抲偑巜掕椞堟撪乮3 揰偱峔惉偝傟傞暯柺傪婎偵偟偨捈曽懱乯偵擖偭偰偄傞偐偳偆偐傪僠僃僢僋偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Accel</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Accel仩</FORMAT>
+<FORMAT>Accel仩&lt;壛懍搙妱崌乮亾乯&gt;</FORMAT>
+<FORMAT>Accel仩&lt;壛懍搙妱崌乮亾乯&gt;, &lt;尭懍搙妱崌乮亾乯&gt;</FORMAT>
+<FORMAT>Accel仩&lt;壛懍搙妱崌乮亾乯&gt;, &lt;尭懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷忋徃帪壛懍搙妱崌乮亾乯&gt;</FORMAT>
+<FORMAT>Accel仩&lt;壛懍搙妱崌乮亾乯&gt;, &lt;尭懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷忋徃帪壛懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷忋徃帪尭懍搙妱崌乮亾乯&gt;</FORMAT>
+<FORMAT>Accel仩&lt;壛懍搙妱崌乮亾乯&gt;, &lt;尭懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷忋徃帪壛懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷忋徃帪尭懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷壓崀帪壛懍搙妱崌乮亾乯&gt;</FORMAT>
+<FORMAT>Accel仩&lt;壛懍搙妱崌乮亾乯&gt;, &lt;尭懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷忋徃帪壛懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷忋徃帪尭懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷壓崀帪壛懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷壓崀帪尭懍搙妱崌乮亾乯&gt;</FORMAT>
+<FORMAT>Accel仩&lt;壛懍搙妱崌乮亾乯&gt;, &lt;尭懍搙妱崌乮亾乯&gt;, , , &lt;Mva柦椷壓崀帪壛懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷壓崀帪尭懍搙妱崌乮亾乯&gt;</FORMAT>
+<FORMAT>Accel仩, , &lt;Mva柦椷忋徃帪壛懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷忋徃帪尭懍搙妱崌乮亾乯&gt;</FORMAT>
+<FORMAT>Accel仩, , &lt;Mva柦椷忋徃帪壛懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷忋徃帪尭懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷壓崀帪壛懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷壓崀帪尭懍搙妱崌乮亾乯&gt;</FORMAT>
+<FORMAT>Accel仩,,,,&lt;Mva柦椷壓崀帪壛懍搙妱崌乮亾乯&gt;, &lt;Mva柦椷壓崀帪尭懍搙妱崌乮亾乯&gt;</FORMAT>
+<SAMPLE>Accel</SAMPLE>
+<SAMPLE>Accel 50</SAMPLE>
+<SAMPLE>Accel 50, 100</SAMPLE>
+<SAMPLE>Accel 100, 100, 20</SAMPLE>
+<SAMPLE>Accel 100, 100, 20, 20</SAMPLE>
+<SAMPLE>Accel 100, 100, 100, 100, 20</SAMPLE>
+<SAMPLE>Accel 100, 100, 100, 100, 20, 20</SAMPLE>
+<SAMPLE>Accel 50, 50, , , 20, 20</SAMPLE>
+<SAMPLE>Accel , , 50, 50</SAMPLE>
+<SAMPLE>Accel , , 50, 50, 20, 20</SAMPLE>
+<SAMPLE>Accel , , , , 20, 20</SAMPLE>
+<COMMENT>儘儃僢僩偺壛懍搙偍傛傃尭懍搙傪妱崌乮亾乯偱巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Act</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Act仩&lt;桪愭斣崋&gt;=&lt;1/0&gt;</FORMAT>
+<SAMPLE>Act 1=1</SAMPLE>
+<COMMENT>妱傝崬傒偺嫋壜乛嬛巭傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Base</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Base仩&lt;儀乕僗曄姺僨乕僞&gt;</FORMAT>
+<FORMAT>Base仩&lt;儀乕僗嵗昗斣崋&gt;</FORMAT>
+<SAMPLE>Base (50, 100, 0, 0, 0, 90)</SAMPLE>
+<SAMPLE>Base 1</SAMPLE>
+<COMMENT>儀乕僗曄姺僨乕僞傕偟偔偼儀乕僗嵗昗斣崋傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>BrkLock</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>BrkLock仩&lt;堷悢&gt;</FORMAT>
+<SAMPLE>BrkLock &amp;B111111</SAMPLE>
+<SAMPLE>BrkLock 0</SAMPLE>
+<SAMPLE>BrkLock M1</SAMPLE>
+<COMMENT>僽儗乕僉傪儘僢僋偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CallP</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>CallP仩&lt;僾儘僌儔儉柤&gt;</FORMAT>
+<FORMAT>CallP仩&lt;僾儘僌儔儉柤&gt;, &lt;堷悢&gt;</FORMAT>
+<FORMAT>CallP仩&lt;僾儘僌儔儉柤&gt;, &lt;堷悢&gt;, &lt;堷悢&gt;乧</FORMAT>
+<SAMPLE>CallP &quot;10&quot;</SAMPLE>
+<SAMPLE>CallP &quot;10&quot;, M1</SAMPLE>
+<SAMPLE>CallP &quot;10&quot;, M1, P1</SAMPLE>
+<COMMENT>巜掕偟偨僾儘僌儔儉傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CavChk Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>CavChk仩On</FORMAT>
+<FORMAT>CavChk仩On, &lt;儘儃僢僩斣崋&gt;</FORMAT>
+<FORMAT>CavChk仩On, 0, NOErr</FORMAT>
+<FORMAT>CavChk仩Off</FORMAT>
+<FORMAT>CavChk仩Off, &lt;儘儃僢僩斣崋&gt;</FORMAT>
+<SAMPLE>CavChk Off</SAMPLE>
+<SAMPLE>CavChk Off, 2</SAMPLE>
+<COMMENT>姳徛夞旔婡擻傪桳岠偵偟丄NOERR偱僄儔乕旕敪惗儌乕僪傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CavChk On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>CavChk仩On</FORMAT>
+<FORMAT>CavChk仩On, &lt;儘儃僢僩斣崋&gt;</FORMAT>
+<FORMAT>CavChk仩On, 0, NOErr</FORMAT>
+<FORMAT>CavChk仩Off</FORMAT>
+<FORMAT>CavChk仩Off, &lt;儘儃僢僩斣崋&gt;</FORMAT>
+<SAMPLE>CavChk On</SAMPLE>
+<SAMPLE>CavChk On, 1</SAMPLE>
+<SAMPLE>CavChk On, 0, NOErr</SAMPLE>
+<COMMENT>姳徛夞旔婡擻傪桳岠偵偟丄NOERR偱僄儔乕旕敪惗儌乕僪傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ChrSrch</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>ChrSrch仩&lt;暥帤楍攝楍曄悢&gt;, &lt;暥帤楍&gt;, &lt;専嶕寢壥奿擺愭&gt;</FORMAT>
+<SAMPLE>ChrSrch C1$(1), &quot;ROBOT&quot;, M1</SAMPLE>
+<COMMENT>暥帤攝楍偺拞偐傜暥帤楍傪専嶕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Close</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Close仩</FORMAT>
+<FORMAT>Close仩#&lt;僼傽僀儖斣崋&gt;</FORMAT>
+<FORMAT>Close仩#&lt;僼傽僀儖斣崋&gt;, #&lt;僼傽僀儖斣崋&gt;乧</FORMAT>
+<SAMPLE>Close</SAMPLE>
+<SAMPLE>Close #1</SAMPLE>
+<SAMPLE>Close #1, #2</SAMPLE>
+<COMMENT>巜掕偟偨僼傽僀儖斣崋偺僼傽僀儖傪暵偠傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Clr</RSV_NAME>
+<CATEGORY>2</CATEGORY>
+<FORMAT>Clr仩&lt;僞僀僾&gt;</FORMAT>
+<SAMPLE>Clr 0</SAMPLE>
+<SAMPLE>Clr 1</SAMPLE>
+<SAMPLE>Clr 2</SAMPLE>
+<SAMPLE>Clr 3</SAMPLE>
+<COMMENT>斈梡弌椡怣崋乛僾儘僌儔儉撪儘乕僇儖曄悢乛僾儘僌儔儉娫僌儘乕僶儖曄悢傪僋儕傾偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Cmp Jnt</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Cmp仩Jnt, &lt;幉巜掕&gt;</FORMAT>
+<SAMPLE>Cmp Jnt, &amp;B11</SAMPLE>
+<COMMENT>娭愡嵗昗宯偱儘儃僢僩傪廮傜偐偔偡傞幉傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Cmp Pos</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Cmp仩Pos, &lt;幉巜掕&gt;</FORMAT>
+<SAMPLE>Cmp Pos, &amp;B011011</SAMPLE>
+<COMMENT>捈岎嵗昗宯偱偱儘儃僢僩傪廮傜偐偔偡傞幉傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Cmp Tool</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Cmp仩Tool, &lt;幉巜掕&gt;</FORMAT>
+<SAMPLE>Cmp Tool, &amp;B011011</SAMPLE>
+<COMMENT>僣乕儖嵗昗宯偱偱儘儃僢僩傪廮傜偐偔偡傞幉傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Cmp Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Cmp仩Off</FORMAT>
+<SAMPLE>Cmp Off</SAMPLE>
+<COMMENT>儘儃僢僩傪廮傜偐偔偟偨忬懺傪夝彍偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CmpG</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>CmpG仩&lt;倃幉僎僀儞&gt;, , , , , , ,</FORMAT>
+<FORMAT>CmpG仩&lt;倃幉僎僀儞&gt;, &lt;倄幉僎僀儞&gt;, , , , , ,</FORMAT>
+<FORMAT>CmpG仩&lt;倃幉僎僀儞&gt;, &lt;倄幉僎僀儞&gt;, &lt;倅幉僎僀儞&gt;, , , , ,</FORMAT>
+<FORMAT>CmpG仩&lt;倃幉僎僀儞&gt;, &lt;倄幉僎僀儞&gt;, &lt;倅幉僎僀儞&gt;, &lt;俙幉僎僀儞&gt;, , , ,</FORMAT>
+<FORMAT>CmpG仩&lt;倃幉僎僀儞&gt;, &lt;倄幉僎僀儞&gt;, &lt;倅幉僎僀儞&gt;, &lt;俙幉僎僀儞&gt;, &lt;俛幉僎僀儞&gt;, , ,</FORMAT>
+<FORMAT>CmpG仩&lt;倃幉僎僀儞&gt;, &lt;倄幉僎僀儞&gt;, &lt;倅幉僎僀儞&gt;, &lt;俙幉僎僀儞&gt;, &lt;俛幉僎僀儞&gt;, &lt;俠幉僎僀儞&gt;, ,</FORMAT>
+<FORMAT>CmpG仩&lt;俰侾幉僎僀儞&gt;, , , , , , ,</FORMAT>
+<FORMAT>CmpG仩&lt;俰侾幉僎僀儞&gt;, &lt;俰俀幉僎僀儞&gt;, , , , , ,</FORMAT>
+<FORMAT>CmpG仩&lt;俰侾幉僎僀儞&gt;, &lt;俰俀幉僎僀儞&gt;, &lt;俰俁幉僎僀儞&gt;, , , , ,</FORMAT>
+<FORMAT>CmpG仩&lt;俰侾幉僎僀儞&gt;, &lt;俰俀幉僎僀儞&gt;, &lt;俰俁幉僎僀儞&gt;, &lt;俰係幉僎僀儞&gt;, , , ,</FORMAT>
+<FORMAT>CmpG仩&lt;俰侾幉僎僀儞&gt;, &lt;俰俀幉僎僀儞&gt;, &lt;俰俁幉僎僀儞&gt;, &lt;俰係幉僎僀儞&gt;,&lt;俰俆幉僎僀儞&gt;, , ,</FORMAT>
+<FORMAT>CmpG仩&lt;俰侾幉僎僀儞&gt;, &lt;俰俀幉僎僀儞&gt;, &lt;俰俁幉僎僀儞&gt;, &lt;俰係幉僎僀儞&gt;,&lt;俰俆幉僎僀儞&gt;, &lt;俰俇幉僎僀儞&gt;, ,</FORMAT>
+<SAMPLE>CmpG 0.5, , , , , , ,</SAMPLE>
+<SAMPLE>CmpG 0.5, 0.5, , , , , ,</SAMPLE>
+<SAMPLE>CmpG 0.5, 0.5, 0.5, , , , ,</SAMPLE>
+<SAMPLE>CmpG 0.5, 0.5, 0.5, 0.5, , , ,</SAMPLE>
+<SAMPLE>CmpG 0.5, 0.5, 0.5, 0.5, 0.5, , ,</SAMPLE>
+<SAMPLE>CmpG 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, ,</SAMPLE>
+<COMMENT>儘儃僢僩偺廮傜偐偝傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Cnt</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Cnt仩&lt;1/0&gt;</FORMAT>
+<FORMAT>Cnt仩&lt;1/0&gt;, &lt;悢抣侾&gt;</FORMAT>
+<FORMAT>Cnt仩&lt;1/0&gt;, &lt;悢抣侾&gt;, &lt;悢抣俀&gt;</FORMAT>
+<SAMPLE>Cnt 0</SAMPLE>
+<SAMPLE>Cnt 1, 300</SAMPLE>
+<SAMPLE>Cnt 1, 100, 200</SAMPLE>
+<COMMENT>曗娫摦嶌偲曗娫摦嶌偲偺楢懕摦嶌惂屼傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ColChk Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>ColChk仩On</FORMAT>
+<FORMAT>ColChk仩On, NOErr</FORMAT>
+<FORMAT>ColChk仩Off</FORMAT>
+<SAMPLE>ColChk Off</SAMPLE>
+<COMMENT>徴撍専抦婡擻傪桳岠偵偟丄NOERR偱僄儔乕旕敪惗儌乕僪傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ColChk On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>ColChk仩On</FORMAT>
+<FORMAT>ColChk仩On, NOErr</FORMAT>
+<FORMAT>ColChk仩Off</FORMAT>
+<SAMPLE>ColChk On</SAMPLE>
+<SAMPLE>ColChk On, NOErr</SAMPLE>
+<COMMENT>徴撍専抦婡擻傪桳岠偵偟丄NOERR偱僄儔乕旕敪惗儌乕僪傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ColLvl</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>ColLvl仩&lt;俰侾幉&gt;, , , , , , ,</FORMAT>
+<FORMAT>ColLvl仩&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, , , , , ,</FORMAT>
+<FORMAT>ColLvl仩&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;, , , , ,</FORMAT>
+<FORMAT>ColLvl仩&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;, &lt;俰係幉&gt;, , , ,</FORMAT>
+<FORMAT>ColLvl仩&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;, &lt;俰係幉&gt;, &lt;俰俆幉&gt;, , ,</FORMAT>
+<FORMAT>ColLvl仩&lt;俰侾幉&gt;, &lt;俰俀幉&gt;, &lt;俰俁幉&gt;, &lt;俰係幉&gt;, &lt;俰俆幉&gt;, &lt;俰俇幉&gt;, ,</FORMAT>
+<SAMPLE>ColLvl 50, , , , , , ,</SAMPLE>
+<SAMPLE>ColLvl 50, 50, , , , , ,</SAMPLE>
+<SAMPLE>ColLvl 50, 50, 50, , , , ,</SAMPLE>
+<SAMPLE>ColLvl 50, 50, 50, 50, , , ,</SAMPLE>
+<SAMPLE>ColLvl 50, 50, 50, 50, 50, , ,</SAMPLE>
+<SAMPLE>ColLvl 50, 50, 50, 50, 50, 50, ,</SAMPLE>
+<COMMENT>徴撍専抦婡擻偺嫋梕儗儀儖傪奺幉偛偲偵愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Com On</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Com仩On</FORMAT>
+<FORMAT>Com(&lt;僼傽僀儖斣崋&gt;)仩On</FORMAT>
+<SAMPLE>Com On</SAMPLE>
+<SAMPLE>Com(1) On</SAMPLE>
+<COMMENT>捠怣夞慄偐傜偺妱傝崬傒偺嫋壜傪愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Com Off</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Com仩Off</FORMAT>
+<FORMAT>Com(&lt;僼傽僀儖斣崋&gt;)仩Off</FORMAT>
+<SAMPLE>Com Off</SAMPLE>
+<SAMPLE>Com(1) Off</SAMPLE>
+<COMMENT>捠怣夞慄偐傜偺妱傝崬傒偺掆巭傪愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Com Stop</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Com仩Stop</FORMAT>
+<FORMAT>Com(&lt;僼傽僀儖斣崋&gt;)仩Stop</FORMAT>
+<SAMPLE>Com Stop</SAMPLE>
+<SAMPLE>Com(1) Stop</SAMPLE>
+<COMMENT>捠怣夞慄偐傜偺妱傝崬傒偺嬛巭傪愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Act</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Act仩&lt;桪愭斣崋&gt;, &lt;幃&gt;仩&lt;張棟&gt;</FORMAT>
+<FORMAT>Def仩Act仩&lt;桪愭斣崋&gt;, &lt;幃&gt;仩&lt;張棟&gt;, &lt;僞僀僾&gt;</FORMAT>
+<SAMPLE>Def Act 1, M_In(17)=1 GOSUB *LABEL</SAMPLE>
+<SAMPLE>Def Act 1, M_In(17)=1 GOSUB *LABEL, S</SAMPLE>
+<SAMPLE>Def Act 1, M_In(17)=1 GOSUB *LABEL, L</SAMPLE>
+<COMMENT>妱傝崬傒忦審偲妱傝崬傒敪惗帪偺張棟傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Arch</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Def仩Arch仩&lt;傾乕僠斣崋&gt;</FORMAT>
+<FORMAT>Def仩Arch仩&lt;傾乕僠斣崋&gt;, &lt;忋徃堏摦検&gt;</FORMAT>
+<FORMAT>Def仩Arch仩&lt;傾乕僠斣崋&gt;, &lt;忋徃堏摦検&gt;, &lt;壓崀堏摦検&gt;</FORMAT>
+<FORMAT>Def仩Arch仩&lt;傾乕僠斣崋&gt;, &lt;忋徃堏摦検&gt;, &lt;壓崀堏摦検&gt;, &lt;忋徃懸旔検&gt;</FORMAT>
+<FORMAT>Def仩Arch仩&lt;傾乕僠斣崋&gt;, &lt;忋徃堏摦検&gt;, &lt;壓崀堏摦検&gt;, &lt;忋徃懸旔検&gt;, &lt;壓崀懸旔検&gt;</FORMAT>
+<FORMAT>Def仩Arch仩&lt;傾乕僠斣崋&gt;, &lt;忋徃堏摦検&gt;, &lt;壓崀堏摦検&gt;, &lt;忋徃懸旔検&gt;, &lt;壓崀懸旔検&gt;, &lt;曗娫宍幃&gt;</FORMAT>
+<FORMAT>Def仩Arch仩&lt;傾乕僠斣崋&gt;, &lt;忋徃堏摦検&gt;, &lt;壓崀堏摦検&gt;, &lt;忋徃懸旔検&gt;, &lt;壓崀懸旔検&gt;, &lt;曗娫宍幃&gt;, &lt;曗娫僞僀僾侾&gt;</FORMAT>
+<FORMAT>Def仩Arch仩&lt;傾乕僠斣崋&gt;, &lt;忋徃堏摦検&gt;, &lt;壓崀堏摦検&gt;, &lt;忋徃懸旔検&gt;, &lt;壓崀懸旔検&gt;, &lt;曗娫宍幃&gt;, &lt;曗娫僞僀僾侾&gt;, &lt;曗娫僞僀僾俀&gt;</FORMAT>
+<SAMPLE>Def Arch 1</SAMPLE>
+<SAMPLE>Def Arch 1, 5</SAMPLE>
+<SAMPLE>Def Arch 1, 5, 5</SAMPLE>
+<SAMPLE>Def Arch 1, 5, 5, 20</SAMPLE>
+<SAMPLE>Def Arch 1, 5, 5, 20, 20</SAMPLE>
+<SAMPLE>Def Arch 1, 5, 5, 20, 20, 1</SAMPLE>
+<SAMPLE>Def Arch 1, 5, 5, 20, 20, 1, 0</SAMPLE>
+<SAMPLE>Def Arch 1, 5, 5, 20, 20, 1, 0, 0</SAMPLE>
+<COMMENT>傾乕僠宍忬偺愝掕傪峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Char</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Char仩&lt;暥帤楍曄悢柤&gt;</FORMAT>
+<FORMAT>Def仩Char仩&lt;暥帤楍曄悢柤&gt;, &lt;暥帤楍曄悢柤&gt;乧</FORMAT>
+<SAMPLE>Def Char MESSAGE</SAMPLE>
+<SAMPLE>Def Char MESSAGE, CMSG</SAMPLE>
+<COMMENT>暥帤楍曄悢傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def FN</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩FN &lt;幆暿暥帤&gt;&lt;柤慜&gt; = &lt;娭悢偺掕媊幃&gt;</FORMAT>
+<FORMAT>Def仩FN &lt;幆暿暥帤&gt;&lt;柤慜&gt;(&lt;壖堷悢&gt;) = &lt;娭悢偺掕媊幃&gt;</FORMAT>
+<FORMAT>Def仩FN &lt;幆暿暥帤&gt;&lt;柤慜&gt;(&lt;壖堷悢&gt;, &lt;壖堷悢&gt;) = &lt;娭悢偺掕媊幃&gt;</FORMAT>
+<SAMPLE>Def FNMRoute=Sqr(2)</SAMPLE>
+<SAMPLE>Def FNMDbl(MA)=MA + MA</SAMPLE>
+<SAMPLE>Def FNpAdd(PA, PB)=PA + PB</SAMPLE>
+<COMMENT>娭悢傪掕媊偟柤慜傪晅偗傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Gps</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Gps仩&lt;娔帇斣崋&gt;, &lt;擖椡斣崋&gt;, &lt;忦審&gt; [, &lt;儊僇斣崋&gt;]</FORMAT>
+<SAMPLE>Def Gps 1, 851, ON, 1</SAMPLE>
+<SAMPLE>GpsChk On,1</SAMPLE>
+<SAMPLE>Mov P1</SAMPLE>
+<SAMPLE>GpsChk Off,1</SAMPLE>
+<SAMPLE>P1 = P_Gps1(1)</SAMPLE>
+<COMMENT>GPS婡擻偺娔帇忦審傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Inte</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Inte仩&lt;悢抣曄悢柤&gt;</FORMAT>
+<FORMAT>Def仩Inte仩&lt;悢抣曄悢柤&gt;, &lt;悢抣曄悢柤&gt;乧</FORMAT>
+<SAMPLE>Def Inte WORK1</SAMPLE>
+<SAMPLE>Def Inte WORK1, WORK2</SAMPLE>
+<COMMENT>悢抣曄悢傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Float</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Float仩&lt;悢抣曄悢柤&gt;</FORMAT>
+<FORMAT>Def仩Float仩&lt;悢抣曄悢柤&gt;, &lt;悢抣曄悢柤&gt;乧</FORMAT>
+<SAMPLE>Def Float WORK1</SAMPLE>
+<SAMPLE>Def Float WORK1, WORK2</SAMPLE>
+<COMMENT>悢抣曄悢傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Double</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Double仩&lt;悢抣曄悢柤&gt;</FORMAT>
+<FORMAT>Def仩Double仩&lt;悢抣曄悢柤&gt;, &lt;悢抣曄悢柤&gt;乧</FORMAT>
+<SAMPLE>Def Double WORK1</SAMPLE>
+<SAMPLE>Def Double WORK1, WORK2</SAMPLE>
+<COMMENT>悢抣曄悢傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def IO</RSV_NAME>
+<CATEGORY>2</CATEGORY>
+<FORMAT>Def仩IO仩&lt;擖弌椡曄悢柤&gt; = &lt;宆巜掕&gt;, &lt;擖弌椡怣崋斣崋&gt;</FORMAT>
+<FORMAT>Def仩IO仩&lt;擖弌椡曄悢柤&gt; = &lt;宆巜掕&gt;, &lt;擖弌椡怣崋斣崋&gt;, &lt;儅僗僋忣曬&gt;</FORMAT>
+<SAMPLE>Def IO PORT1 = Bit, 6</SAMPLE>
+<SAMPLE>Def IO PORT2 = Byte, 5, &amp;H0F</SAMPLE>
+<COMMENT>擖弌椡曄悢傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Jnt</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Jnt仩&lt;娭愡曄悢柤&gt;</FORMAT>
+<FORMAT>Def仩Jnt仩&lt;娭愡曄悢柤&gt;, &lt;娭愡曄悢柤&gt;乧</FORMAT>
+<SAMPLE>Def Jnt SAFE</SAMPLE>
+<SAMPLE>Def Jnt SAFE, WRIST</SAMPLE>
+<COMMENT>娭愡宆埵抲曄悢傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Long</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Long仩&lt;悢抣曄悢柤&gt;</FORMAT>
+<FORMAT>Def仩Long仩&lt;悢抣曄悢柤&gt;, &lt;悢抣曄悢柤&gt;乧</FORMAT>
+<SAMPLE>Def Long WORK1</SAMPLE>
+<SAMPLE>Def Long WORK1, WORK2</SAMPLE>
+<COMMENT>悢抣曄悢傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Map</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Map仩&lt;娔帇斣崋&gt;, &lt;擖椡斣崋&gt;, &lt;忦審&gt; [, &lt;儊僇斣崋&gt;], &lt;嵟壓抜埵抲&gt;, &lt;嵟忋抜埵抲&gt;, &lt;抜悢&gt;, &lt;姶搙&gt;</FORMAT>
+<SAMPLE>Def Map 3, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,3</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,3</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map3(1)</SAMPLE>
+<COMMENT>GPS婡擻(儅僢僺儞僌婡擻)偺娔帇忦審傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def MoTrg</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩MoTrg仩&lt;僩儕僈乕斣崋&gt;, &lt;忦審&gt;</FORMAT>
+<SAMPLE>Def MoTrg 1, P_Fbc.Z&lt;100</SAMPLE>
+<SAMPLE>Def MoTrg 2, (P_Fbc.Z&lt;50) And (P_FsCurD.Z&gt;10)</SAMPLE>
+<COMMENT>Mo僩儕僈乕傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Plt</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Plt仩&lt;僷儗僢僩斣崋&gt;, &lt;巒揰&gt;, &lt;廔揰俙&gt;, &lt;廔揰俛&gt;, , &lt;屄悢俙&gt;, &lt;屄悢俛&gt;, &lt;僷儗僢僩僷僞乕儞&gt;</FORMAT>
+<FORMAT>Def仩Plt仩&lt;僷儗僢僩斣崋&gt;, &lt;巒揰&gt;, &lt;廔揰俙&gt;, &lt;廔揰俛&gt;, &lt;懳妏揰&gt;, &lt;屄悢俙&gt;, &lt;屄悢俛&gt;, &lt;僷儗僢僩僷僞乕儞&gt;</FORMAT>
+<SAMPLE>Def Plt 1, P1, P2, P3, , 3, 4, 1</SAMPLE>
+<SAMPLE>Def Plt 1, P1, P2, P3, P4, 3, 4, 1</SAMPLE>
+<COMMENT>僷儗僢僩傪掕媊偟傑偡丅乮俁揰僷儗僢僩乛係揰僷儗僢僩乯</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Def Pos</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Def仩Pos仩&lt;埵抲曄悢柤&gt;</FORMAT>
+<FORMAT>Def仩Pos仩&lt;埵抲曄悢柤&gt;, &lt;埵抲曄悢柤&gt;乧</FORMAT>
+<SAMPLE>Def Pos WORKSET</SAMPLE>
+<SAMPLE>Def Pos WORKSET1, WORKSET2</SAMPLE>
+<COMMENT>捈岎宆埵抲曄悢傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Dim</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Dim仩&lt;曄悢柤&gt;(&lt;梫慺悢&gt;)</FORMAT>
+<FORMAT>Dim仩&lt;曄悢柤&gt;(&lt;梫慺悢&gt;, &lt;梫慺悢&gt;)</FORMAT>
+<FORMAT>Dim仩&lt;曄悢柤&gt;(&lt;梫慺悢&gt;, &lt;梫慺悢&gt;, &lt;梫慺悢&gt;)</FORMAT>
+<FORMAT>Dim仩&lt;曄悢柤&gt;(&lt;梫慺悢&gt;), &lt;曄悢柤&gt;(&lt;梫慺悢&gt;)乧</FORMAT>
+<FORMAT>Dim仩&lt;曄悢柤&gt;(&lt;梫慺悢&gt;), &lt;曄悢柤&gt;(&lt;梫慺悢&gt;, &lt;梫慺悢&gt;)乧</FORMAT>
+<FORMAT>Dim仩&lt;曄悢柤&gt;(&lt;梫慺悢&gt;), &lt;曄悢柤&gt;(&lt;梫慺悢&gt;, &lt;梫慺悢&gt;, &lt;梫慺悢&gt;)乧</FORMAT>
+<SAMPLE>Dim PDATA(10)</SAMPLE>
+<SAMPLE>Dim MD6(2, 3)</SAMPLE>
+<SAMPLE>Dim MD24(2, 3, 4)</SAMPLE>
+<SAMPLE>Dim M1%(6), M2!(4)</SAMPLE>
+<SAMPLE>Dim M1%(6), PD1(5, 5)</SAMPLE>
+<SAMPLE>Dim M1%(6), PD2(5, 5, 5)</SAMPLE>
+<COMMENT>攝楍曄悢偺梫慺偺屄悢傪愰尵偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Dly</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Dly仩&lt;帪娫&gt;</FORMAT>
+<FORMAT>M_Out(1) = 1 Dly仩&lt;帪娫&gt;</FORMAT>
+<SAMPLE>Dly 30</SAMPLE>
+<SAMPLE>M_Out(17)=1 Dly 0.5</SAMPLE>
+<COMMENT>巜掕偝傟偨帪娫丄帪娫懸偪傪偟傑偡丅乛僷儖僗弌椡偺弌椡帪娫傪帵偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EBRead</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僞僌柤&gt;, &lt;曄悢柤&gt;</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僞僌柤&gt;, &lt;曄悢柤&gt;, &lt;僞僀儉傾僂僩&gt;</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僞僌柤&gt;, &lt;曄悢柤&gt;, &lt;曄悢柤&gt; 乧</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僞僌柤&gt;, &lt;曄悢柤&gt;, &lt;曄悢柤&gt; 乧 , &lt;僞僀儉傾僂僩&gt;</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &quot;&quot;, &lt;曄悢柤&gt;</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &quot;&quot;, &lt;曄悢柤&gt;, &lt;僞僀儉傾僂僩&gt;</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &quot;&quot;, &lt;曄悢柤&gt;, &lt;曄悢柤&gt; 乧</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &quot;&quot;, &lt;曄悢柤&gt;, &lt;曄悢柤&gt; 乧 , &lt;僞僀儉傾僂僩&gt;</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, , &lt;曄悢柤&gt;</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, , &lt;曄悢柤&gt;, &lt;僞僀儉傾僂僩&gt;</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, , &lt;曄悢柤&gt;, &lt;曄悢柤&gt; 乧</FORMAT>
+<FORMAT>EBRead仩#&lt;價僕儑儞僙儞僒斣崋&gt;, , &lt;曄悢柤&gt;, &lt;曄悢柤&gt; 乧 , &lt;僞僀儉傾僂僩&gt;</FORMAT>
+<SAMPLE>EBRead #1, &quot;Job.Robot.FormatString&quot;, M1</SAMPLE>
+<SAMPLE>EBRead #1, &quot;Job.Robot.FormatString&quot;, M1, 10</SAMPLE>
+<SAMPLE>EBRead #1, &quot;Job.Robot.FormatString&quot;, M1, C1$, P1</SAMPLE>
+<SAMPLE>EBRead #1, &quot;Job.Robot.FormatString&quot;, M1, C1$, P1, 10</SAMPLE>
+<SAMPLE>EBRead #1, &quot;&quot;, M1</SAMPLE>
+<SAMPLE>EBRead #1, &quot;&quot;, M1, 10</SAMPLE>
+<SAMPLE>EBRead #1, &quot;&quot;, M1, C1$, P1</SAMPLE>
+<SAMPLE>EBRead #1, &quot;&quot;, M1, C1$, P1, 10</SAMPLE>
+<SAMPLE>EBRead #1, , M1</SAMPLE>
+<SAMPLE>EBRead #1, , M1, 10</SAMPLE>
+<SAMPLE>EBRead #1, , M1, C1$, P1</SAMPLE>
+<SAMPLE>EBRead #1, , M1, C1$, P1, 10</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偺僞僌柤傪巜掕偟偰丄僨乕僞傪庴怣偟傑偡丅</COMMENT>
+<COMMENT>價僕儑儞僙儞僒偐傜庴怣偟偨僨乕僞偼丄巜掕偟偨曄悢偵奿擺偝傟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EBWrite</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>EBWrite仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僞僌柤&gt;, &lt;彂偒崬傒僨乕僞&gt;</FORMAT>
+<FORMAT>EBWrite仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僞僌柤&gt;, &lt;彂偒崬傒僨乕僞&gt;, &lt;僞僀儉傾僂僩&gt;</FORMAT>
+<FORMAT>EBWrite仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &quot;&quot;, &lt;彂偒崬傒僨乕僞&gt;</FORMAT>
+<FORMAT>EBWrite仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &quot;&quot;, &lt;彂偒崬傒僨乕僞&gt;, &lt;僞僀儉傾僂僩&gt;</FORMAT>
+<FORMAT>EBWrite仩#&lt;價僕儑儞僙儞僒斣崋&gt;, , &lt;彂偒崬傒僨乕僞&gt;</FORMAT>
+<FORMAT>EBWrite仩#&lt;價僕儑儞僙儞僒斣崋&gt;, , &lt;彂偒崬傒僨乕僞&gt;, &lt;僞僀儉傾僂僩&gt;</FORMAT>
+<SAMPLE>EBWrite #1, &quot;Sample.Int&quot;, 1</SAMPLE>
+<SAMPLE>EBWrite #1, &quot;Sample.Int&quot;, 1, 10</SAMPLE>
+<SAMPLE>EBWrite #1, &quot;Sample.Int&quot;, M1</SAMPLE>
+<SAMPLE>EBWrite #1, &quot;Sample.Int&quot;, M1, 10</SAMPLE>
+<SAMPLE>EBWrite #1, &quot;Sample.String&quot;, &quot;Sample&quot;</SAMPLE>
+<SAMPLE>EBWrite #1, &quot;Sample.String&quot;, &quot;Sample&quot;, 10</SAMPLE>
+<SAMPLE>EBWrite #1, &quot;Sample.String&quot;, C1$</SAMPLE>
+<SAMPLE>EBWrite #1, &quot;Sample.String&quot;, C1$, 10</SAMPLE>
+<SAMPLE>EBWrite #1, &quot;&quot;, 1</SAMPLE>
+<SAMPLE>EBWrite #1, &quot;&quot;, M1, 10</SAMPLE>
+<SAMPLE>EBWrite #1, , &quot;Sample&quot;</SAMPLE>
+<SAMPLE>EBWrite #1, , C1$, 10</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偺僞僌柤傪巜掕偟偰丄僨乕僞傪彂偒崬傒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EHOpen</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>EHOpen仩&lt;僴儞僪斣崋&gt;, &lt;懍搙&gt;, &lt;椡&gt;</FORMAT>
+<FORMAT>EHOpen仩&lt;僴儞僪斣崋&gt;, &lt;懍搙&gt;, &lt;椡&gt;, &lt;僝乕儞ON埵抲&gt;, &lt;僝乕儞OFF埵抲&gt;</FORMAT>
+<SAMPLE>EHOpen 1, 30, 30</SAMPLE>
+<SAMPLE>EHOpen 1, 30, 30, 1, 3</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺奐曻傪巜椷偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EHClose</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>EHClose仩&lt;僴儞僪斣崋&gt;, &lt;懍搙&gt;, &lt;椡&gt;</FORMAT>
+<FORMAT>EHClose仩&lt;僴儞僪斣崋&gt;, &lt;懍搙&gt;, &lt;椡&gt;, &lt;僝乕儞ON埵抲&gt;, &lt;僝乕儞OFF埵抲&gt;</FORMAT>
+<SAMPLE>EHOpen 1, 30, 30</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺暵嵔傪巜椷偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EHMov</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>EHMov仩&lt;僴儞僪斣崋&gt;, &lt;億僀儞僩斣崋&gt;, &lt;懍搙&gt;</FORMAT>
+<FORMAT>EHMov仩&lt;僴儞僪斣崋&gt;, &lt;億僀儞僩斣崋&gt;, &lt;懍搙&gt;, &lt;憡懳検&gt;</FORMAT>
+<SAMPLE>EHMov 1, 1, 30</SAMPLE>
+<SAMPLE>EHMov 1, 0, 30, 5</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪傪巜掕埵抲傊堏摦偝偣傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EHHold</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>EHHold仩&lt;僴儞僪斣崋&gt;, &lt;億僀儞僩斣崋&gt;, &lt;懍搙&gt;, &lt;椡&gt;</FORMAT>
+<SAMPLE>EHHold 1, 1, 30, 30</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺埵抲寛傔攃帩摦嶌傪幚巤偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EHOrg</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>EHOrg仩&lt;僴儞僪斣崋&gt;</FORMAT>
+<SAMPLE>EHOrg 1</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪偺尨揰暅婣傪幚巤偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EHStop</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>EHStop仩&lt;僴儞僪斣崋&gt;</FORMAT>
+<SAMPLE>EHStop 1</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪傪掆巭偝偣傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EHTbl</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>EHTbl仩&lt;僴儞僪斣崋&gt;, &lt;僥乕僽儖斣崋&gt;</FORMAT>
+<SAMPLE>EHTbl 1, 2</SAMPLE>
+<COMMENT>懡婡擻揹摦僴儞僪傪巜掕偝傟偨僥乕僽儖斣崋偺忦審偱摦嶌偝偣傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>End</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>End</FORMAT>
+<SAMPLE>End</SAMPLE>
+<COMMENT>僾儘僌儔儉偺幚峴傪廔椆偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Error</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Error仩&lt;僄儔乕斣崋&gt;</FORMAT>
+<SAMPLE>Error 9000</SAMPLE>
+<COMMENT>僄儔乕傪儐乕僓僾儘僌儔儉偱敪惗偝偣傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Fine</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Fine仩&lt;僷儖僗悢&gt;</FORMAT>
+<FORMAT>Fine仩&lt;僷儖僗悢&gt;, &lt;幉斣崋&gt;</FORMAT>
+<SAMPLE>Fine 300</SAMPLE>
+<SAMPLE>Fine 100, 2</SAMPLE>
+<COMMENT>墌妸摦嶌惂屼拞偱側偄曗娫拞偵偍偄偰丄埵抲寛傔姰椆忦審傪忦審傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>For</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>For仩&lt;僇僂儞僞&gt; = &lt;弶婜抣&gt;仩To仩&lt;廔椆抣&gt;</FORMAT>
+<FORMAT>For仩&lt;僇僂儞僞&gt; = &lt;弶婜抣&gt;仩To仩&lt;廔椆抣&gt;仩Step仩&lt;憹暘&gt;</FORMAT>
+<FORMAT>Next</FORMAT>
+<FORMAT>Next仩&lt;僇僂儞僞&gt;</FORMAT>
+<SAMPLE>For M1=1 To 10</SAMPLE>
+<SAMPLE>For M1=1 To 10 Step 1</SAMPLE>
+<SAMPLE>Next</SAMPLE>
+<SAMPLE>Next M1</SAMPLE>
+<COMMENT>俥俷俼暥偲俶俤倃俿暥偺娫偺僾儘僌儔儉傪丄廔椆忦審傪枮偨偡傑偱孞傝曉偟幚峴偟傑偡丅</COMMENT>
+<END_NAME>Next</END_NAME>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Fsc Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Fsc仩On, &lt;忦審斣崋A&gt;, &lt;忦審斣崋B&gt;, &lt;僆僼僙僢僩僉儍儞僙儖巜掕&gt;</FORMAT>
+<FORMAT>Fsc仩Off</FORMAT>
+<SAMPLE>Fsc Off</SAMPLE>
+<COMMENT>椡妎僙儞僒傪巊梡偟偨椡妎惂屼婡擻偺桳岠/柍岠傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Fsc On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Fsc仩On, &lt;忦審斣崋A&gt;, &lt;忦審斣崋B&gt;, &lt;僆僼僙僢僩僉儍儞僙儖巜掕&gt;</FORMAT>
+<FORMAT>Fsc仩Off</FORMAT>
+<SAMPLE>Fsc On, 0, 2, 1</SAMPLE>
+<COMMENT>椡妎僙儞僒傪巊梡偟偨椡妎惂屼婡擻偺桳岠/柍岠傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsCTrg</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsCTrg仩&lt;僩儕僈乕斣崋&gt;, &lt;愗傝懼偊帪娫&gt;, &lt;愗傝懼偊屻偺惂屼摿惈僌儖乕僾&gt;</FORMAT>
+<FORMAT>FsCTrg仩&lt;僩儕僈乕斣崋&gt;, &lt;愗傝懼偊帪娫&gt;, &lt;愗傝懼偊屻偺惂屼摿惈僌儖乕僾&gt;, &lt;僞僀儉傾僂僩&gt;, &lt;幚峴曽幃&gt;</FORMAT>
+<FORMAT>FsCTrg仩&lt;僩儕僈乕斣崋&gt;, &lt;愗傝懼偊帪娫&gt;, &lt;愗傝懼偊屻偺惂屼摿惈僌儖乕僾&gt;, &lt;僞僀儉傾僂僩&gt;, &lt;幚峴曽幃&gt;, &lt;僄儔乕巜掕&gt;</FORMAT>
+<SAMPLE>FsCTrg 3, 200, 1</SAMPLE>
+<SAMPLE>FsCTrg 1, 500, 5, 30, 1</SAMPLE>
+<SAMPLE>FsCTrg 2, 300, -1, 20, 0, 1</SAMPLE>
+<COMMENT>Mo僩儕僈乕偵傛傞椡妎惂屼偺惂屼摿惈偺愗傝懼偊傪愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsGChg</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsGChg仩&lt;愗傝懼偊奐巒埵抲&gt;, &lt;愗傝懼偊帪娫&gt;, &lt;愗傝懼偊屻偺忦審斣崋B&gt;</FORMAT>
+<SAMPLE>FsGChg 30, 200, 1</SAMPLE>
+<COMMENT>曗娫摦嶌拞偵椡妎惂屼僎僀儞傪曄峏偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsLog Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsLog仩On</FORMAT>
+<FORMAT>FsLog仩Off, &lt;儘僌僼傽僀儖斣崋&gt;</FORMAT>
+<SAMPLE>FsLog Off, 1</SAMPLE>
+<COMMENT>椡妎惂屼偺儘僊儞僌偺奐巒/廔椆傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsLog On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsLog仩On</FORMAT>
+<FORMAT>FsLog仩Off, &lt;儘僌僼傽僀儖斣崋&gt;</FORMAT>
+<SAMPLE>FsLog On</SAMPLE>
+<COMMENT>椡妎惂屼偺儘僊儞僌偺奐巒/廔椆傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsOutLog</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsOutLog仩&lt;儘僌僼傽僀儖斣崋&gt;</FORMAT>
+<SAMPLE>FsOutLog 1</SAMPLE>
+<COMMENT>FsLog柦椷偱嶌惉偟偨儘僌僼傽僀儖傪FTP偱撉傒弌偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsTAlgo</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsTAlgo仩&lt;傾儖僑儕僘儉斣崋&gt;</FORMAT>
+<FORMAT>FsTAlgo仩&lt;傾儖僑儕僘儉斣崋&gt;, &lt;懳徾幉&gt;</FORMAT>
+<SAMPLE>FsTAlgo 53</SAMPLE>
+<SAMPLE>FsTAlgo 53, 3</SAMPLE>
+<COMMENT>椡妎専嵏婡擻偱巊梡偡傞傾儖僑儕僘儉偲専嵏懳徾幉傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsTBat</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsTBat仩&lt;儘僌僼傽僀儖斣崋&gt;</FORMAT>
+<FORMAT>FsTBat仩&lt;儘僌僼傽僀儖斣崋&gt;, &lt;埵抲僨乕僞拝栚嵗昗幉&gt;, &lt;専嵏奐巒儘僌埵抲&gt;, &lt;専嵏廔椆儘僌埵抲&gt;</FORMAT>
+<FORMAT>FsTBat仩&lt;儘僌僼傽僀儖斣崋&gt;, &lt;埵抲僨乕僞拝栚嵗昗幉&gt;, &lt;専嵏奐巒儘僌埵抲&gt;, &lt;専嵏廔椆儘僌埵抲&gt;, &lt;嵟廔儘僌埵抲&gt;, &lt;嵟廔儘僌埵抲嫋梕斖埻&gt;</FORMAT>
+<FORMAT>FsTBat仩&lt;儘僌僼傽僀儖斣崋&gt;, &lt;埵抲僨乕僞拝栚嵗昗幉&gt;, &lt;専嵏奐巒儘僌埵抲&gt;, &lt;専嵏廔椆儘僌埵抲&gt;, &lt;嵟廔儘僌埵抲&gt;, &lt;嵟廔儘僌埵抲嫋梕斖埻&gt;, &lt;専嵏奐巒椡鑷抣&gt;, &lt;椡鑷抣曽岦&gt;, &lt;椡鑷抣忦審&gt;</FORMAT>
+<SAMPLE>FsTBat 1</SAMPLE>
+<SAMPLE>FsTBat 1, 3, 20, 80</SAMPLE>
+<SAMPLE>FsTBat 1, 3, 20, 80, 150, 1</SAMPLE>
+<SAMPLE>FsTBat 1, 3, 20, 80, 150, 1, 2, 0, 1</SAMPLE>
+<COMMENT>FsTest柦椷偱嵦庢偟偨儘僌僨乕僞傪巊偭偰丄僶僢僠張棟偵偰椡妎専嵏婡擻傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsTCond</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsTCond仩&lt;僨乕僞廃婜&gt;, &lt;NG帪偺嫇摦&gt;</FORMAT>
+<SAMPLE>FsTCond 0, 0</SAMPLE>
+<COMMENT>椡妎専嵏婡擻偺僨乕僞廃婜偲嫇摦傪愝掕偡傞丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsTest Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsTest仩On</FORMAT>
+<FORMAT>FsTest仩On, &lt;曗娫恑捇棪&gt;</FORMAT>
+<FORMAT>FsTest仩On, &lt;曗娫恑捇棪&gt;, &lt;椡鑷抣&gt;, &lt;椡偺曽岦&gt;, &lt;惉棫忦審&gt;</FORMAT>
+<FORMAT>FsTest仩Off</FORMAT>
+<FORMAT>FsTest仩Off, &lt;曗娫恑捇棪&gt;</FORMAT>
+<SAMPLE>FsTest Off</SAMPLE>
+<SAMPLE>FsTest Off, 80</SAMPLE>
+<COMMENT>椡妎専嵏婡擻偺奐巒/廔椆傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsTest On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsTest仩On</FORMAT>
+<FORMAT>FsTest仩On, &lt;曗娫恑捇棪&gt;</FORMAT>
+<FORMAT>FsTest仩On, &lt;曗娫恑捇棪&gt;, &lt;椡鑷抣&gt;, &lt;椡偺曽岦&gt;, &lt;惉棫忦審&gt;</FORMAT>
+<FORMAT>FsTest仩Off</FORMAT>
+<FORMAT>FsTest仩Off, &lt;曗娫恑捇棪&gt;</FORMAT>
+<SAMPLE>FsTest On</SAMPLE>
+<SAMPLE>FsTest On, 20</SAMPLE>
+<SAMPLE>FsTest On, 20, 3, 0, 1</SAMPLE>
+<COMMENT>椡妎専嵏婡擻偺奐巒/廔椆傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsHndEst Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsHndEst仩On丆&lt;惂屼儌乕僪&gt;</FORMAT>
+<FORMAT>FsHndEst仩Off</FORMAT>
+<SAMPLE>FsHndEst Off</SAMPLE>
+<COMMENT>椡妎僙儞僒梡庤愭晧壸悇掕偺奐巒/廔椆傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsHndEst On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsHndEst仩On丆&lt;惂屼儌乕僪&gt;</FORMAT>
+<FORMAT>FsHndEst仩Off</FORMAT>
+<SAMPLE>FsHndEst On,1</SAMPLE>
+<COMMENT>椡妎僙儞僒梡庤愭晧壸悇掕偺奐巒/廔椆傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FsGetDat</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FsGetDat仩&lt;僨乕僞斣崋&gt;</FORMAT>
+<SAMPLE>FsGetDat 3</SAMPLE>
+<COMMENT>椡妎僉儍儕僽儗乕僔儑儞偱巊梡偡傞僨乕僞傪庢摼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Next</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>For仩&lt;僇僂儞僞&gt; = &lt;弶婜抣&gt;仩To仩&lt;廔椆抣&gt;</FORMAT>
+<FORMAT>For仩&lt;僇僂儞僞&gt; = &lt;弶婜抣&gt;仩To仩&lt;廔椆抣&gt;仩Step仩&lt;憹暘&gt;</FORMAT>
+<FORMAT>Next仩</FORMAT>
+<FORMAT>Next仩&lt;僇僂儞僞&gt;</FORMAT>
+<SAMPLE>For M1=1 To 10</SAMPLE>
+<SAMPLE>For M1=1 To 10 Step 1</SAMPLE>
+<SAMPLE>Next</SAMPLE>
+<SAMPLE>Next M1</SAMPLE>
+<COMMENT>俥俷俼暥偲俶俤倃俿暥偺娫偺僾儘僌儔儉傪丄廔椆忦審傪枮偨偡傑偱孞傝曉偟幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Step</RSV_NAME>
+<CATEGORY>8</CATEGORY>
+<FORMAT>For仩&lt;僇僂儞僞&gt; = &lt;弶婜抣&gt;仩To仩&lt;廔椆抣&gt;</FORMAT>
+<FORMAT>For仩&lt;僇僂儞僞&gt; = &lt;弶婜抣&gt;仩To仩&lt;廔椆抣&gt;仩Step仩&lt;憹暘&gt;</FORMAT>
+<FORMAT>Next仩</FORMAT>
+<FORMAT>Next仩&lt;僇僂儞僞&gt;</FORMAT>
+<SAMPLE>For M1=1 To 10 Step 1</SAMPLE>
+<SAMPLE>For M1=10 To 1 Step -1</SAMPLE>
+<SAMPLE>Next</SAMPLE>
+<SAMPLE>Next M1</SAMPLE>
+<COMMENT>俥俷俼暥偲俶俤倃俿暥偺娫偺僾儘僌儔儉傪丄廔椆忦審傪枮偨偡傑偱孞傝曉偟幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FPrm</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>FPrm仩&lt;壖堷悢&gt;</FORMAT>
+<FORMAT>FPrm仩&lt;壖堷悢&gt;, &lt;壖堷悢&gt;</FORMAT>
+<SAMPLE>FPrm M1</SAMPLE>
+<SAMPLE>FPrm M1, P1</SAMPLE>
+<COMMENT>杮僾儘僌儔儉傪堷悢偁傝偺僒僽僾儘僌儔儉偲偟偰巊梡偡傞応崌偺丄堷悢偺弴斣丄宆丄屄悢傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>GetM</RSV_NAME>
+<CATEGORY>3</CATEGORY>
+<FORMAT>GetM仩&lt;儊僇斣崋&gt;</FORMAT>
+<SAMPLE>GetM 1</SAMPLE>
+<COMMENT>巜掕偝傟偨儊僇斣崋偱儊僇儕僜乕僗傪妉摼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>GoSub</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>GoSub仩&lt;屇傃弌偟愭&gt;</FORMAT>
+<SAMPLE>GoSub *SUB1</SAMPLE>
+<COMMENT>巜掕偝傟偨儔儀儖偺峴偺僒僽儖乕僠儞傪屇傃弌偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Goto</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Goto仩&lt;暘婒愭&gt;</FORMAT>
+<SAMPLE>Goto *LOOP</SAMPLE>
+<COMMENT>巜掕偝傟偨儔儀儖偺峴傊柍忦審偵暘婒偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>GpsChk Off</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>GpsChk仩&lt;ON / OFF&gt;, &lt;娔帇斣崋&gt;</FORMAT>
+<SAMPLE>Def Map 3, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,3</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,3</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map3(1)</SAMPLE>
+<COMMENT>GPS婡擻偺娔帇傪奐巒/廔椆偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>GpsChk On</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>GpsChk仩&lt;ON / OFF&gt;, &lt;娔帇斣崋&gt;</FORMAT>
+<SAMPLE>Def Map 3, 851, ON, 1, PC1, PC2, 20, 10</SAMPLE>
+<SAMPLE>Mov PM1</SAMPLE>
+<SAMPLE>GpsChk On,3</SAMPLE>
+<SAMPLE>Mov PM2</SAMPLE>
+<SAMPLE>GpsChk Off,3</SAMPLE>
+<SAMPLE>M_Out(6011) = M_Map3(1)</SAMPLE>
+<COMMENT>GPS婡擻偺娔帇傪奐巒/廔椆偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Hlt</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Hlt</FORMAT>
+<SAMPLE>HLt</SAMPLE>
+<COMMENT>僾儘僌儔儉偺幚峴偲儘儃僢僩偺摦嶌傪拞抐偟偰掆巭偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>HOpen</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>HOpen仩&lt;僴儞僪斣崋&gt;</FORMAT>
+<FORMAT>HOpen仩&lt;僴儞僪斣崋&gt;, &lt;婲摦攃帩椡&gt;, &lt;曐帩攃帩椡&gt;, &lt;婲摦攃帩椡宲懕帪娫&gt;</FORMAT>
+<SAMPLE>HOpen 1</SAMPLE>
+<SAMPLE>HOpen 1, 32, 20, 1</SAMPLE>
+<COMMENT>僴儞僪偺奐曻傪巜椷偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>HClose</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>HClose仩&lt;僴儞僪斣崋&gt;</FORMAT>
+<SAMPLE>HClose 1</SAMPLE>
+<COMMENT>僴儞僪偺暵嵔傪巜椷偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>If</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>If仩&lt;幃&gt;仩Then仩&lt;張棟&gt;仩</FORMAT>
+<FORMAT>If仩&lt;幃&gt;仩Then仩&lt;張棟&gt;仩Else仩&lt;張棟&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Else</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>EndIf</FORMAT>
+<SAMPLE>If M1&gt;10 Then</SAMPLE>
+<SAMPLE>Else</SAMPLE>
+<SAMPLE>EndIf</SAMPLE>
+<COMMENT>幃偺寢壥偵傛傝丄張棟傪慖戰偟幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Then</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>If仩&lt;幃&gt;仩Then仩&lt;張棟&gt;仩</FORMAT>
+<FORMAT>If仩&lt;幃&gt;仩Then仩&lt;張棟&gt;仩Else仩&lt;張棟&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Else</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>EndIf</FORMAT>
+<SAMPLE>If M1&gt;10 Then</SAMPLE>
+<SAMPLE>Else</SAMPLE>
+<SAMPLE>EndIf</SAMPLE>
+<COMMENT>幃偺寢壥偵傛傝丄張棟傪慖戰偟幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Else</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>If仩&lt;幃&gt;仩Then仩&lt;張棟&gt;仩</FORMAT>
+<FORMAT>If仩&lt;幃&gt;仩Then仩&lt;張棟&gt;仩Else仩&lt;張棟&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Else</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>EndIf</FORMAT>
+<SAMPLE>If M1&gt;10 Then</SAMPLE>
+<SAMPLE>Else</SAMPLE>
+<SAMPLE>EndIf</SAMPLE>
+<COMMENT>幃偺寢壥偵傛傝丄張棟傪慖戰偟幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EndIf</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>If仩&lt;幃&gt;仩Then仩&lt;張棟&gt;仩</FORMAT>
+<FORMAT>If仩&lt;幃&gt;仩Then仩&lt;張棟&gt;仩Else仩&lt;張棟&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Else</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>EndIf</FORMAT>
+<SAMPLE>If M1&gt;10 Then</SAMPLE>
+<SAMPLE>Else</SAMPLE>
+<SAMPLE>EndIf</SAMPLE>
+<COMMENT>幃偺寢壥偵傛傝丄張棟傪慖戰偟幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Input</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Input仩#&lt;僼傽僀儖斣崋&gt;, &lt;擖椡僨乕僞柤&gt;</FORMAT>
+<FORMAT>Input仩#&lt;僼傽僀儖斣崋&gt;, &lt;擖椡僨乕僞柤&gt;, &lt;擖椡僨乕僞柤&gt;乧</FORMAT>
+<SAMPLE>Input #1, M1</SAMPLE>
+<SAMPLE>Input #1, M1, CABC$</SAMPLE>
+<SAMPLE>Input #1, M1, P1</SAMPLE>
+<COMMENT>僼傽僀儖乮擖椡憰抲乯偐傜僨乕僞傪擖椡偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>JOvrd</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>JOvrd仩&lt;巜掕僆乕僶乕儔僀僪&gt;</FORMAT>
+<SAMPLE>JOvrd 50</SAMPLE>
+<COMMENT>儘儃僢僩偺娭愡堏摦帪偵偺傒桳岠側僆乕僶乕儔僀僪傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>JRC</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>JRC仩&lt;[+]1/-1/0&gt;</FORMAT>
+<FORMAT>JRC仩&lt;[+]1/-1/0&gt;, &lt;幉斣崋&gt;</FORMAT>
+<FORMAT>JRC仩&lt;[+]&lt;悢抣&gt;/-&lt;悢抣&gt;/0&gt;</FORMAT>
+<FORMAT>JRC仩&lt;[+]&lt;悢抣&gt;/-&lt;悢抣&gt;/0&gt;, &lt;幉斣崋&gt;</FORMAT>
+<SAMPLE>JRC 1</SAMPLE>
+<SAMPLE>JRC 1, 2</SAMPLE>
+<SAMPLE>JRC -2</SAMPLE>
+<SAMPLE>JRC -2, 1</SAMPLE>
+<COMMENT>巜掕幉偺尰嵼娭愡埵抲偵丄巜掕偟偨抣傪壛尭嶼偟偰丄尰嵼埵抲傪彂偒姺偊傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>LoadSet</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>LoadSet仩&lt;僴儞僪忦審斣崋&gt;, &lt;儚乕僋忦審斣崋&gt;</FORMAT>
+<SAMPLE>LoadSet 1, 2</SAMPLE>
+<COMMENT>嵟揔壛尭懍傪峴偆帪偺僴儞僪丒儚乕僋偺忦審傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mov</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Mov仩&lt;堏摦栚揑埵抲&gt;</FORMAT>
+<FORMAT>Mov仩&lt;堏摦栚揑埵抲&gt;, &lt;嬤愙嫍棧&gt;</FORMAT>
+<FORMAT>Mov仩&lt;堏摦栚揑埵抲&gt;, &lt;嬤愙嫍棧&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>Mov仩&lt;堏摦栚揑埵抲&gt;, &lt;嬤愙嫍棧&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>Mov J1</SAMPLE>
+<SAMPLE>Mov P1, 50.0</SAMPLE>
+<SAMPLE>Mov P1, 50.0 Type 1, 0</SAMPLE>
+<SAMPLE>Mov P4, 100.0 WTH M_Out(17)=1</SAMPLE>
+<COMMENT>尰嵼埵抲偐傜堏摦栚揑埵抲傑偱娭愡曗娫摦嶌傪峴側偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Type</RSV_NAME>
+<CATEGORY>8</CATEGORY>
+<FORMAT>Mov仩&lt;堏摦栚揑埵抲&gt;, &lt;嬤愙嫍棧&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>Mov仩&lt;堏摦栚揑埵抲&gt;, &lt;嬤愙嫍棧&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>Mov P1 Type 0, 0</SAMPLE>
+<SAMPLE>Mov P1 Type 1, 0</SAMPLE>
+<SAMPLE>Mov P1 Type 0, 1</SAMPLE>
+<SAMPLE>Mov P1 Type 1, 1</SAMPLE>
+<SAMPLE>Mov P1 Type 0, 2</SAMPLE>
+<COMMENT>尰嵼埵抲偐傜堏摦栚揑埵抲傑偱偺堏摦僞僀僾傪巜掕偟傑偡丅</COMMENT>
+<COMMENT>&lt;掕悢1&gt;:0/1 = 嬤夞傝/墦夞傝</COMMENT>
+<COMMENT>&lt;掕悢2&gt;:0/1/2 = 摍壙夞揮/嶰幉捈岎/摿堎揰捠夁</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mva</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Mva仩&lt;堏摦栚揑埵抲&gt;</FORMAT>
+<FORMAT>Mva仩&lt;堏摦栚揑埵抲&gt;, &lt;傾乕僠斣崋&gt;</FORMAT>
+<SAMPLE>Mva P2, 1</SAMPLE>
+<COMMENT>尰嵼埵抲偐傜栚揑埵抲傑偱傾乕僠儌乕僔儑儞摦嶌傪峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mvc</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Mvc仩&lt;巒揰&gt;, &lt;捠夁揰侾&gt;, &lt;捠夁揰俀&gt;</FORMAT>
+<FORMAT>Mvc仩&lt;巒揰&gt;, &lt;捠夁揰侾&gt;, &lt;捠夁揰俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>Mvc P1, P2, P3</SAMPLE>
+<SAMPLE>Mvc P1, P2, P3 Wth M_Out(17)=1</SAMPLE>
+<COMMENT>巒揰丄捠夁揰侾丄捠夁揰俀丄巒揰偺弴偱嶰師尦墌曗娫摦嶌傪峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mvr</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Mvr仩&lt;巒揰&gt;, &lt;捠夁揰&gt;, &lt;廔揰&gt;</FORMAT>
+<FORMAT>Mvr仩&lt;巒揰&gt;, &lt;捠夁揰&gt;, &lt;廔揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>Mvr仩&lt;巒揰&gt;, &lt;捠夁揰&gt;, &lt;廔揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>Mvr P1, P2, P3</SAMPLE>
+<SAMPLE>Mvr P1, P2, P3 Type 0, 1</SAMPLE>
+<SAMPLE>Mvr P1, P2, P3 Type 0, 1 Wth M_Out(17)=1</SAMPLE>
+<COMMENT>巒揰偐傜捠夁揰傪宱桼偟偰廔揰傑偱嶰師尦墌屖曗娫摦嶌傪峴側偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mvr2</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Mvr2仩&lt;巒揰&gt;, &lt;廔揰&gt;, &lt;嶲峫揰&gt;</FORMAT>
+<FORMAT>Mvr2仩&lt;巒揰&gt;, &lt;廔揰&gt;, &lt;嶲峫揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>Mvr2仩&lt;巒揰&gt;, &lt;廔揰&gt;, &lt;嶲峫揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>Mvr2 P1, P2, P3</SAMPLE>
+<SAMPLE>Mvr2 P1, P2, P3 Type 0, 1</SAMPLE>
+<SAMPLE>Mvr2 P1, P2, P3 Type 0, 1 Wth M_Out(17)=1</SAMPLE>
+<COMMENT>巒揰丄廔揰丄嶲峫揰偐傜峔惉偝傟傞墌屖忋傪丄巒揰偐傜廔揰傑偱嶰師尦墌屖曗娫摦嶌傪峴側偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mvr3</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Mvr3仩&lt;巒揰&gt;, &lt;廔揰&gt;, &lt;拞怱揰&gt;</FORMAT>
+<FORMAT>Mvr3仩&lt;巒揰&gt;, &lt;廔揰&gt;, &lt;拞怱揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>Mvr3仩&lt;巒揰&gt;, &lt;廔揰&gt;, &lt;拞怱揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>Mvr3 P1, P2, P3</SAMPLE>
+<SAMPLE>Mvr3 P1, P2, P3 Type 0, 1</SAMPLE>
+<SAMPLE>Mvr3 P1, P2, P3 Type 0, 1 Wth M_Out(17)=1</SAMPLE>
+<COMMENT>巒揰丄廔揰丄拞怱揰偐傜峔惉偝傟傞墌屖忋傪丄巒揰偐傜廔揰傑偱嶰師尦墌屖曗娫摦嶌傪峴側偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mvs</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Mvs仩&lt;堏摦栚揑抣&gt;</FORMAT>
+<FORMAT>Mvs仩&lt;堏摦栚揑抣&gt;, &lt;嬤愙嫍棧&gt;</FORMAT>
+<FORMAT>Mvs仩&lt;堏摦栚揑抣&gt;, &lt;嬤愙嫍棧&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>Mvs仩&lt;堏摦栚揑抣&gt;, &lt;嬤愙嫍棧&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<FORMAT>Mvs仩,&lt;棧扙嫍棧&gt;</FORMAT>
+<FORMAT>Mvs仩,&lt;棧扙嫍棧&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>Mvs仩,&lt;棧扙嫍棧&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>Mvs P1</SAMPLE>
+<SAMPLE>Mvs P1, 50.0</SAMPLE>
+<SAMPLE>Mvs P1, 50.0 Type 1, 0</SAMPLE>
+<SAMPLE>Mvs P1, 50.0 Type 1, 0 Wth M_Out(17)=1</SAMPLE>
+<SAMPLE>Mvs ,100</SAMPLE>
+<SAMPLE>Mvs ,100 Type 1, 0</SAMPLE>
+<SAMPLE>Mvs ,100 Type 1, 0 Wth M_Out(17)=1</SAMPLE>
+<COMMENT>尰嵼埵抲偐傜堏摦栚揑埵抲傑偱捈慄曗娫摦嶌傪峴側偆丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EMvs</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>EMvs仩&lt;Ex-T嵗昗斣崋&gt;, &lt;堏摦栚揑抣&gt;</FORMAT>
+<FORMAT>EMvs仩&lt;Ex-T嵗昗斣崋&gt;, &lt;堏摦栚揑抣&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>EMvs仩&lt;Ex-T嵗昗斣崋&gt;, &lt;堏摦栚揑抣&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>EMvs 1, P1</SAMPLE>
+<SAMPLE>EMvs 3, (Plt 1, 5)</SAMPLE>
+<SAMPLE>EMvs 2, P1 Wth M_Out(17)=1</SAMPLE>
+<SAMPLE>EMvs 1, P4 WthIf M_In(18)=1, M_Out(20)=1</SAMPLE>
+<COMMENT>尰嵼埵抲偐傜堏摦栚揑埵抲傑偱Ex-T偵増偭偨捈慄曗娫摦嶌傪峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EMvc</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>EMvc仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;捠夁揰侾&gt;, &lt;捠夁揰俀&gt;</FORMAT>
+<FORMAT>EMvc仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;捠夁揰侾&gt;, &lt;捠夁揰俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>EMvc 1, P1, P2, P3</SAMPLE>
+<SAMPLE>EMvc 2, P1, J2, P3</SAMPLE>
+<SAMPLE>EMvc 2, P1, P2, P3 Wth M_Out(17)=1</SAMPLE>
+<SAMPLE>EMvc 4, P3, (Plt 1,5), P4 WthIf M_In(20)=1, M_Out(21)=1</SAMPLE>
+<COMMENT>巒揰丄捠夁揰侾丄捠夁揰俀丄巒揰偺弴偵Ex-T偵増偭偨嶰師尦墌曗娫摦嶌傪峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EMvr</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>EMvr仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;捠夁揰&gt;, &lt;廔揰&gt;</FORMAT>
+<FORMAT>EMvr仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;捠夁揰&gt;, &lt;廔揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>EMvr仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;捠夁揰&gt;, &lt;廔揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>EMvr 1, P1, P2, P3</SAMPLE>
+<SAMPLE>EMvr 2, P1, J2, P3</SAMPLE>
+<SAMPLE>EMvr 2, P1, P2, P3 Wth M_Out(17)=1</SAMPLE>
+<SAMPLE>EMvr 4, P3, (Plt 1,5), P4 WthIf M_In(20)=1, M_Out(21)=1</SAMPLE>
+<COMMENT>巒揰偐傜捠夁揰傪宱桼偟偰廔揰傑偱Ex-T偵増偭偨嶰師尦墌屖曗娫摦嶌傪峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EMvr2</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>EMvr2仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;廔揰&gt;, &lt;嶲峫揰&gt;</FORMAT>
+<FORMAT>EMvr2仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;廔揰&gt;, &lt;嶲峫揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>EMvr2仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;廔揰&gt;, &lt;嶲峫揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>EMvr2 1, P1, P2, P3</SAMPLE>
+<SAMPLE>EMvr2 2, P1, J2, P3</SAMPLE>
+<SAMPLE>EMvr2 2, P1, P2, P3 Wth M_Out(17)=1</SAMPLE>
+<SAMPLE>EMvr2 4, P3, (Plt 1,5), P4 WthIf M_In(20)=1, M_Out(21)=1</SAMPLE>
+<COMMENT>巒揰丄廔揰丄嶲峫揰偐傜峔惉偝傟傞墌屖忋傪丄巒揰偐傜廔揰傑偱嶰師尦墌屖曗娫摦嶌傪峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EMvr3</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>EMvr3仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;廔揰&gt;, &lt;拞怱揰&gt;</FORMAT>
+<FORMAT>EMvr3仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;廔揰&gt;, &lt;拞怱揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;</FORMAT>
+<FORMAT>EMvr3仩&lt;Ex-T嵗昗斣崋&gt;, &lt;巒揰&gt;, &lt;廔揰&gt;, &lt;拞怱揰&gt;仩Type仩&lt;掕悢侾&gt;, &lt;掕悢俀&gt;仩&lt;晅悘忦審&gt;</FORMAT>
+<SAMPLE>EMvr3 1, P1, P2, P3</SAMPLE>
+<SAMPLE>EMvr3 2, P1, J2, P3</SAMPLE>
+<SAMPLE>EMvr3 2, P1, P2, P3 Wth M_Out(17)=1</SAMPLE>
+<SAMPLE>EMvr3 4, P3, (Plt 1,5), P4 WthIf M_In(20)=1, M_Out(21)=1</SAMPLE>
+<COMMENT>巒揰丄廔揰丄拞怱揰偐傜峔惉偝傟傞墌屖忋傪丄巒揰偐傜廔揰傑偱嶰師尦墌屖曗娫摦嶌傪峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MvSpl</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MvSpl仩&lt;僗僾儔僀儞斣崋&gt;, &lt;巜椷懍搙&gt;, &lt;壛尭懍嫍棧&gt;</FORMAT>
+<FORMAT>MvSpl仩&lt;僗僾儔僀儞斣崋&gt;, &lt;巜椷懍搙&gt;, &lt;壛尭懍嫍棧&gt;, &lt;僼儗乕儉曄姺&gt;</FORMAT>
+<FORMAT>MvSpl仩&lt;僗僾儔僀儞斣崋&gt;, &lt;巜椷懍搙&gt;, &lt;壛尭懍嫍棧&gt;, &lt;僼儗乕儉曄姺&gt;, &lt;巔惃曗娫僞僀僾&gt;</FORMAT>
+<FORMAT>MvSpl仩&lt;僗僾儔僀儞斣崋&gt;, &lt;巜椷懍搙&gt;, &lt;壛尭懍嫍棧&gt;, &lt;僼儗乕儉曄姺&gt;, &lt;巔惃曗娫僞僀僾&gt;, &lt;僼傿儖僞挿&gt;</FORMAT>
+<SAMPLE>MvSpl 1, 50, 30</SAMPLE>
+<SAMPLE>MvSpl 1, 50, 30, 0</SAMPLE>
+<SAMPLE>MvSpl 1, 50, 30, 1, 1</SAMPLE>
+<SAMPLE>MvSpl 1, 50, 30, 2, 0, 120</SAMPLE>
+<COMMENT>僗僾儔僀儞斣崋偱巜掕偟偨僗僾儔僀儞僼傽僀儖偵搊榐偝傟偰偄傞忣曬偵婎偯偒丄僗僾儔僀儞曗娫傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EMvSpl</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>EMvSpl仩&lt;Ex-T嵗昗斣崋&gt;, &lt;僗僾儔僀儞斣崋&gt;, &lt;巜椷懍搙&gt;, &lt;壛尭懍嫍棧&gt;</FORMAT>
+<FORMAT>EMvSpl仩&lt;Ex-T嵗昗斣崋&gt;, &lt;僗僾儔僀儞斣崋&gt;, &lt;巜椷懍搙&gt;, &lt;壛尭懍嫍棧&gt;, &lt;僼儗乕儉曄姺&gt;</FORMAT>
+<FORMAT>EMvSpl仩&lt;Ex-T嵗昗斣崋&gt;, &lt;僗僾儔僀儞斣崋&gt;, &lt;巜椷懍搙&gt;, &lt;壛尭懍嫍棧&gt;, &lt;僼儗乕儉曄姺&gt;, &lt;巔惃曗娫僞僀僾&gt;</FORMAT>
+<FORMAT>EMvSpl仩&lt;Ex-T嵗昗斣崋&gt;, &lt;僗僾儔僀儞斣崋&gt;, &lt;巜椷懍搙&gt;, &lt;壛尭懍嫍棧&gt;, &lt;僼儗乕儉曄姺&gt;, &lt;巔惃曗娫僞僀僾&gt;, &lt;僼傿儖僞挿&gt;</FORMAT>
+<SAMPLE>EMvSpl 1, 1, 50, 30</SAMPLE>
+<SAMPLE>EMvSpl 1, 1, 50, 30, 0</SAMPLE>
+<SAMPLE>EMvSpl 1, 1, 50, 30, 1, 1</SAMPLE>
+<SAMPLE>EMvSpl 1, 1, 50, 30, 2, 0, 120</SAMPLE>
+<COMMENT>僗僾儔僀儞斣崋偱巜掕偟偨僗僾儔僀儞僼傽僀儖偵搊榐偝傟偰偄傞忣曬偵婎偯偒丄Ex-T 嵗昗偵増偭偨僗僾儔僀儞曗娫傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MvTune</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MvTune仩&lt;摦嶌儌乕僪&gt;</FORMAT>
+<SAMPLE>MvTune 1</SAMPLE>
+<SAMPLE>MvTune 2</SAMPLE>
+<SAMPLE>MvTune 3</SAMPLE>
+<SAMPLE>MvTune 4</SAMPLE>
+<COMMENT>儘儃僢僩偺摦嶌摿惈傪慖戰偡傞偲丄儘儃僢僩偺摦嶌惈擻偑岦忋偟傑偡丅</COMMENT>
+<COMMENT>侾丗昗弨儌乕僪</COMMENT>
+<COMMENT>俀丗崅懍埵抲寛傔儌乕僪</COMMENT>
+<COMMENT>俁丗婳愓桪愭儌乕僪</COMMENT>
+<COMMENT>係丗怳摦梷惂儌乕僪</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Mxt</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Mxt仩&lt;捠怣愭斣崋&gt;, &lt;巜椷埵抲僨乕僞宆&gt;</FORMAT>
+<FORMAT>Mxt仩&lt;捠怣愭斣崋&gt;, &lt;巜椷埵抲僨乕僞宆&gt;, &lt;僼傿儖僞帪掕悢&gt;</FORMAT>
+<SAMPLE>Mxt 1,1</SAMPLE>
+<SAMPLE>Mxt 1,1,50</SAMPLE>
+<COMMENT>僐儞僩儘乕儔惂屼帪娫枅偵丄奜晹傛傝愨懳埵抲僨乕僞傪庢傝崬傫偱捈愙堏摦偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVClose</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVClose</FORMAT>
+<FORMAT>NVClose仩#&lt;價僕儑儞僙儞僒斣崋&gt;</FORMAT>
+<FORMAT>NVClose仩#&lt;價僕儑儞僙儞僒斣崋&gt;, [#&lt;價僕儑儞僙儞僒斣崋&gt;[,#&lt;價僕儑儞僙儞僒斣崋&gt;]]</FORMAT>
+<SAMPLE>NVClose</SAMPLE>
+<SAMPLE>NVClose #1</SAMPLE>
+<SAMPLE>NVClose #1,#3</SAMPLE>
+<COMMENT>巜掕偟偨價僕儑儞僙儞僒偲偺夞慄傪愗抐偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVIn</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVIn仩#&lt;價僕儑儞僙儞僒斣崋&gt;, [&lt;價僕儑儞僾儘僌儔儉柤&gt;], &lt;擣幆屄悢僙儖&gt;, &lt;奐巒僙儖&gt;, &lt;廔椆僙儖&gt;, &lt;僞僀僾&gt;, [&lt;僞僀儉傾僂僩&gt;]</FORMAT>
+<FORMAT>NVIn仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &quot;&quot;, &lt;擣幆屄悢僙儖&gt;, &lt;奐巒僙儖&gt;, &lt;廔椆僙儖&gt;, &lt;僞僀僾&gt;, [&lt;僞僀儉傾僂僩&gt;]</FORMAT>
+<FORMAT>NVIn仩#&lt;價僕儑儞僙儞僒斣崋&gt;, [&lt;價僕儑儞僾儘僌儔儉柤&gt;], &lt;擣幆屄悢僙儖&gt;, &lt;奐巒僙儖&gt;, &lt;廔椆僙儖&gt;, &lt;僞僀僾&gt;</FORMAT>
+<FORMAT>NVIn仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &quot;&quot;, &lt;擣幆屄悢僙儖&gt;, &lt;奐巒僙儖&gt;, &lt;廔椆僙儖&gt;, &lt;僞僀僾&gt;</FORMAT>
+<SAMPLE>NVIn #1,&quot;TEST&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0,10</SAMPLE>
+<SAMPLE>NVIn #1,&quot;&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0,10</SAMPLE>
+<SAMPLE>NVIn #1,&quot;TEST&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0</SAMPLE>
+<SAMPLE>NVIn #1,&quot;&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0</SAMPLE>
+<COMMENT>價僕儑儞僙儞僒偑擣幆偟偨寢壥傪庴怣偟傑偡丅</COMMENT>
+<COMMENT>價僕儑儞僙儞僒偐傜庴怣偟偨僨乕僞偼丄儘儃僢僩僐儞僩儘乕儔偺儘儃僢僩忬懺曄悢偵奿擺偝傟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVLoad</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVLoad仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;價僕儑儞僾儘僌儔儉柤&gt;</FORMAT>
+<SAMPLE>NVLoad #1,&quot;TEST&quot;</SAMPLE>
+<COMMENT>巜掕偟偨價僕儑儞僾儘僌儔儉傪價僕儑儞僙儞僒偵儘乕僪偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVOpen</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVOpen仩&quot;&lt;COM斣崋&gt;&quot;仩AS仩#&lt;價僕儑儞僙儞僒斣崋&gt;</FORMAT>
+<SAMPLE>NVOpen &quot;COM2:&quot; AS #1</SAMPLE>
+<COMMENT>巜掕偟偨價僕儑儞僙儞僒偲愙懕偟丄偦偺價僕儑儞僙儞僒偵儘僌僆儞偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVPst</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVPst仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;價僕儑儞僾儘僌儔儉柤&gt;, &lt;擣幆屄悢僙儖&gt;, &lt;奐巒僙儖&gt;, &lt;廔椆僙儖&gt;, &lt;僞僀僾&gt;, [&lt;僞僀儉傾僂僩&gt;]</FORMAT>
+<FORMAT>NVPst仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;價僕儑儞僾儘僌儔儉柤&gt;, &lt;擣幆屄悢僙儖&gt;, &lt;奐巒僙儖&gt;, &lt;廔椆僙儖&gt;, &lt;僞僀僾&gt;</FORMAT>
+<SAMPLE>NVPst #1,&quot;TEST&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0,10</SAMPLE>
+<SAMPLE>NVPst #1,&quot;TEST&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0</SAMPLE>
+<COMMENT>巜掕偟偨價僕儑儞僾儘僌儔儉傪婲摦偟丄偦偺寢壥傪庢摼偟傑偡丅</COMMENT>
+<COMMENT>價僕儑儞僙儞僒偐傜庴怣偟偨僨乕僞偼丄儘儃僢僩僐儞僩儘乕儔偺儘儃僢僩忬懺曄悢偵奿擺偝傟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVRun</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVRun仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;價僕儑儞僾儘僌儔儉柤&gt;</FORMAT>
+<SAMPLE>NVRun #1,&quot;TEST&quot;</SAMPLE>
+<COMMENT>巜掕偟偨價僕儑儞僾儘僌儔儉傪婲摦偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVTrg</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;抶墑帪娫&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;</FORMAT>
+<FORMAT>NVTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;抶墑帪娫&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;</FORMAT>
+<FORMAT>NVTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;抶墑帪娫&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;</FORMAT>
+<FORMAT>NVTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;抶墑帪娫&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;</FORMAT>
+<FORMAT>NVTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;抶墑帪娫&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;</FORMAT>
+<FORMAT>NVTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;抶墑帪娫&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;, &lt;僄儞僐乕僟6抣&gt;</FORMAT>
+<FORMAT>NVTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;抶墑帪娫&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;, &lt;僄儞僐乕僟6抣&gt;, &lt;僄儞僐乕僟7抣&gt;</FORMAT>
+<FORMAT>NVTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;抶墑帪娫&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;, &lt;僄儞僐乕僟6抣&gt;, &lt;僄儞僐乕僟7抣&gt;, &lt;僄儞僐乕僟8抣&gt;</FORMAT>
+<SAMPLE>NVTrg #1,0,ME1#</SAMPLE>
+<SAMPLE>NVTrg #1,0,ME1#,ME2#</SAMPLE>
+<SAMPLE>NVTrg #1,0,ME1#,ME2#,ME3#</SAMPLE>
+<SAMPLE>NVTrg #1,0,ME1#,ME2#,ME3#,ME4#</SAMPLE>
+<SAMPLE>NVTrg #1,0,ME1#,ME2#,ME3#,ME4#,ME5#</SAMPLE>
+<SAMPLE>NVTrg #1,0,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#</SAMPLE>
+<SAMPLE>NVTrg #1,0,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#</SAMPLE>
+<SAMPLE>NVTrg #1,0,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#,ME8#</SAMPLE>
+<COMMENT>巜掕偟偨價僕儑儞僾儘僌儔儉偵嶣憸傪梫媮偡傞偲偲傕偵奜晹僄儞僐乕僟偺抣傪撉傒弌偟傑偡</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Oadl Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Oadl仩&lt;On/Off&gt;</FORMAT>
+<SAMPLE>Oadl Off</SAMPLE>
+<COMMENT>儘儃僢僩僴儞僪偺晧壸忬懺偵墳偠偰丄嵟揔側壛尭懍搙偺愝掕傪帺摦揑偵峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Oadl On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Oadl仩&lt;On/Off&gt;</FORMAT>
+<SAMPLE>Oadl On</SAMPLE>
+<COMMENT>儘儃僢僩僴儞僪偺晧壸忬懺偵墳偠偰丄嵟揔側壛尭懍搙偺愝掕傪帺摦揑偵峴偄傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Off</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>&lt;柦椷&gt;仩Off</FORMAT>
+<SAMPLE>Off</SAMPLE>
+<COMMENT>婡擻傪柍岠偵偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>On</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>&lt;柦椷&gt;仩On</FORMAT>
+<SAMPLE>On</SAMPLE>
+<COMMENT>婡擻傪桳岠偵偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>On Com GoSub</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>On仩Com仩GoSub仩&lt;屇傃弌偟愭&gt;</FORMAT>
+<FORMAT>On仩Com(&lt;僼傽僀儖斣崋&gt;)仩GoSub仩&lt;屇傃弌偟愭&gt;</FORMAT>
+<SAMPLE>On Com GoSub *RECV</SAMPLE>
+<SAMPLE>On Com(1) GoSub *RECV</SAMPLE>
+<COMMENT>巜掕偝傟偨捠怣夞慄偐傜偺妱傝崬傒偑敪惗偟偨帪丄暘婒偡傞張棟儖乕僠儞偺奐巒峴傪掕媊偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>On GoSub</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>On仩&lt;幃&gt;仩GoSub仩&lt;屇傃弌偟愭&gt;</FORMAT>
+<FORMAT>On仩&lt;幃&gt;仩GoSub仩&lt;屇傃弌偟愭&gt;, &lt;屇傃弌偟愭&gt;乧</FORMAT>
+<SAMPLE>On M1 GoSub *SUB1</SAMPLE>
+<SAMPLE>On M1 GoSub *SUB1, *SUB2</SAMPLE>
+<COMMENT>巜掕偟偨抣偵懳墳偡傞儔儀儖偺僒僽儖乕僠儞傪屇傃弌偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>On Goto</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>On仩&lt;幃&gt;仩Goto仩&lt;暘婒愭&gt;</FORMAT>
+<FORMAT>On仩&lt;幃&gt;仩Goto仩&lt;暘婒愭&gt;, &lt;暘婒愭&gt;乧</FORMAT>
+<SAMPLE>On M1 Goto *SUB1</SAMPLE>
+<SAMPLE>On M1 Goto *SUB1, *SUB2</SAMPLE>
+<COMMENT>巜掕偟偨抣偵懳墳偡傞儔儀儖偺峴傊暘婒偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Open</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Open仩&quot;&lt;僼傽僀儖柤&gt;&quot;仩As仩[#]&lt;僼傽僀儖斣崋&gt;</FORMAT>
+<FORMAT>Open仩&quot;&lt;僼傽僀儖柤&gt;&quot;仩For仩&lt;儌乕僪&gt;仩As仩[#]&lt;僼傽僀儖斣崋&gt;</FORMAT>
+<SAMPLE>Open &quot;COM1:&quot; As #1</SAMPLE>
+<SAMPLE>Open &quot;temp.txt&quot; For Append As #1</SAMPLE>
+<SAMPLE>Open &quot;temp.txt&quot; For Input As #1</SAMPLE>
+<SAMPLE>Open &quot;temp.txt&quot; For Output As #1</SAMPLE>
+<COMMENT>僼傽僀儖丄傕偟偔偼捠怣夞慄傪僆乕僾儞偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Ovrd</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Ovrd仩&lt;僆乕僶乕儔僀僪&gt;</FORMAT>
+<SAMPLE>Ovrd 50</SAMPLE>
+<COMMENT>僾儘僌儔儉慡懱偵偐偐傞僆乕僶乕儔僀僪傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Plt</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Plt仩&lt;僷儗僢僩斣崋&gt;, &lt;奿巕揰斣崋&gt;</FORMAT>
+<SAMPLE>PLACE = Plt 1, M1</SAMPLE>
+<COMMENT>僷儗僢僩撪偺奿巕揰埵抲傪墘嶼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PIChng</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>PIChng仩&lt;僷儗僢僩No&gt;, &lt;愊晅偗忣曬No&gt;</FORMAT>
+<FORMAT>PIChng仩&lt;僷儗僢僩No&gt;, &lt;愊晅偗忣曬No&gt;, &lt;儚乕僋僒僀僘L&gt;, &lt;儚乕僋僒僀僘W&gt;, &lt;儚乕僋僒僀僘H&gt;</FORMAT>
+<FORMAT>PIChng仩&lt;僷儗僢僩No&gt;, &lt;愊晅偗忣曬No&gt;, &lt;儚乕僋僒僀僘L&gt;, &lt;儚乕僋僒僀僘W&gt;, &lt;儚乕僋僒僀僘H&gt;, &lt;僷儗僢僩僒僀僘L&gt;, &lt;僷儗僢僩僒僀僘W&gt;, &lt;僷儗僢僩僒僀僘H&gt;</FORMAT>
+<FORMAT>PIChng仩&lt;僷儗僢僩No&gt;, &lt;愊晅偗忣曬No&gt;, &lt;儚乕僋僒僀僘L&gt;, &lt;儚乕僋僒僀僘W&gt;, &lt;儚乕僋僒僀僘H&gt;, &lt;僷儗僢僩僒僀僘L&gt;, &lt;僷儗僢僩僒僀僘W&gt;, &lt;僷儗僢僩僒僀僘H&gt;, &lt;寗娫L&gt;, &lt;寗娫W&gt;</FORMAT>
+<SAMPLE>PIChng 1, 1</SAMPLE>
+<SAMPLE>PIChng 1, 1, 200, 300, 100</SAMPLE>
+<SAMPLE>PIChng 2, 10, 200, 300, 100, 1200, 800, 100</SAMPLE>
+<SAMPLE>PIChng 3, 50, 200, 300, 100, 1200, 800, 100, 3, 3</SAMPLE>
+<COMMENT>愊晅偗忣曬傪曄悢偵揥奐偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Prec Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Prec仩&lt;On/Off&gt;</FORMAT>
+<SAMPLE>Prec Off</SAMPLE>
+<COMMENT>摦嶌婳愓傪岦忋偝偣傞応崌偵巊梡偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Prec On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Prec仩&lt;On/Off&gt;</FORMAT>
+<SAMPLE>Prec On</SAMPLE>
+<COMMENT>摦嶌婳愓傪岦忋偝偣傞応崌偵巊梡偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Print</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Print 仩#&lt;僼傽僀儖斣崋&gt;仩, &lt;幃&gt;</FORMAT>
+<FORMAT>Print 仩#&lt;僼傽僀儖斣崋&gt;仩, &lt;幃&gt;, &lt;幃&gt;乧</FORMAT>
+<FORMAT>Print 仩#&lt;僼傽僀儖斣崋&gt;仩, &lt;幃&gt;; &lt;幃&gt;乧</FORMAT>
+<SAMPLE>Print #1, &quot;***Print TEST***&quot;</SAMPLE>
+<SAMPLE>Print #1, &quot;MDATA=&quot;, MDATA</SAMPLE>
+<SAMPLE>Print #1, &quot;***TEST &quot;; &quot;END***&quot;</SAMPLE>
+<COMMENT>僼傽僀儖乮弌椡憰抲乯偵僨乕僞傪弌椡偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Priority</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Priority仩&lt;幚峴峴悢&gt;</FORMAT>
+<FORMAT>Priority仩&lt;幚峴峴悢&gt;, &lt;僗儘僢僩斣崋&gt;</FORMAT>
+<SAMPLE>Priority 3</SAMPLE>
+<SAMPLE>Priority 4, 2</SAMPLE>
+<COMMENT>僾儘僌儔儉偺桪愭搙傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>RelM</RSV_NAME>
+<CATEGORY>3</CATEGORY>
+<FORMAT>RelM</FORMAT>
+<SAMPLE>RelM</SAMPLE>
+<COMMENT>儊僇儕僜乕僗傪奐曻偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Rem</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Rem仩</FORMAT>
+<FORMAT>Rem仩&lt;僐儊儞僩&gt;</FORMAT>
+<FORMAT>&apos;仩</FORMAT>
+<FORMAT>&apos;仩&lt;僐儊儞僩&gt;</FORMAT>
+<SAMPLE>Rem</SAMPLE>
+<SAMPLE>Rem ***MAIN PROGRAM***</SAMPLE>
+<SAMPLE>&apos;</SAMPLE>
+<SAMPLE>&apos; ***MAIN PROGRAM***</SAMPLE>
+<COMMENT>偦傟埲崀偺暥帤楍傪僐儊儞僩偲偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Reset Err</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Reset Err</FORMAT>
+<SAMPLE>If M_ERR=1 Then Reset Err</SAMPLE>
+<COMMENT>僄儔乕傪儕僙僢僩偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Return</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Return</FORMAT>
+<FORMAT>Return仩&lt;栠愭巜掕斣崋&gt;</FORMAT>
+<SAMPLE>Return</SAMPLE>
+<SAMPLE>Return 0</SAMPLE>
+<SAMPLE>Return 1</SAMPLE>
+<COMMENT>捠忢偺僒僽儖乕僠儞偐傜偺俼俤俿倀俼俶偺応崌丄俧俷俽倀俛偝傟偨師偺峴傊惂屼傪栠偟傑偡丅</COMMENT>
+<COMMENT>&lt;栠愭巜掕斣崋&gt;	妱傝崬傒張棟梡偺僒僽儖乕僠儞偐傜偺俼俤俿倀俼俶偺応崌丄妱崬傒偑敪惗偟偨峴傑偨偼師偺峴傊惂屼傪栠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Select</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Select仩&lt;忦審&gt;</FORMAT>
+<FORMAT>Case仩&lt;幃&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>乨</FORMAT>
+<FORMAT>Default</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>End仩Select</FORMAT>
+<SAMPLE>Select MCNT</SAMPLE>
+<SAMPLE>Case Is &lt;= 10</SAMPLE>
+<SAMPLE>Break</SAMPLE>
+<SAMPLE>Case 11</SAMPLE>
+<SAMPLE>Case 12 To 18</SAMPLE>
+<SAMPLE>Default</SAMPLE>
+<SAMPLE>End Select</SAMPLE>
+<COMMENT>忦審幃偺抣偵廬偭偰暋悢偺僗僥乕僩儊儞僩僽儘僢僋偺偄偢傟偐傪幚峴偟傑偡丅</COMMENT>
+<END_NAME>End Select</END_NAME>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Case</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Select仩&lt;忦審&gt;</FORMAT>
+<FORMAT>Case仩&lt;幃&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>乨</FORMAT>
+<FORMAT>Default</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>End仩Select</FORMAT>
+<SAMPLE>Select MCNT</SAMPLE>
+<SAMPLE>Case Is &lt;= 10</SAMPLE>
+<SAMPLE>Break</SAMPLE>
+<SAMPLE>Case 11</SAMPLE>
+<SAMPLE>Case 12 To 18</SAMPLE>
+<SAMPLE>Default</SAMPLE>
+<SAMPLE>End Select</SAMPLE>
+<COMMENT>忦審幃偺抣偵廬偭偰暋悢偺僗僥乕僩儊儞僩僽儘僢僋偺偄偢傟偐傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Is</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Select仩&lt;忦審&gt;</FORMAT>
+<FORMAT>Case仩&lt;幃&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>乨</FORMAT>
+<FORMAT>Default</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>End仩Select</FORMAT>
+<SAMPLE>Select MCNT</SAMPLE>
+<SAMPLE>Case Is &lt;= 10</SAMPLE>
+<SAMPLE>Break</SAMPLE>
+<SAMPLE>Case 11</SAMPLE>
+<SAMPLE>Case 12 To 18</SAMPLE>
+<SAMPLE>Default</SAMPLE>
+<SAMPLE>End Select</SAMPLE>
+<COMMENT>忦審幃偺抣偵廬偭偰暋悢偺僗僥乕僩儊儞僩僽儘僢僋偺偄偢傟偐傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SplWrt</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SplWrt &lt;僗僾儔僀儞斣崋&gt;, &lt;僼傽僀儖柤&gt;</FORMAT>
+<FORMAT>SplWrt &lt;僗僾儔僀儞斣崋&gt;, &lt;僼傽僀儖柤&gt;, &lt;摦嶌儌乕僪&gt;</FORMAT>
+<FORMAT>SplWrt &lt;僗僾儔僀儞斣崋&gt;, &lt;僼傽僀儖柤&gt;, &lt;摦嶌儌乕僪&gt;, &lt;僗僾儔僀儞僉儍儞僙儖妏搙&gt;</FORMAT>
+<FORMAT>SplWrt &lt;僗僾儔僀儞斣崋&gt;, &lt;僼傽僀儖柤&gt;, &lt;摦嶌儌乕僪&gt;, &lt;僗僾儔僀儞僉儍儞僙儖妏搙&gt;, &lt;僽儘僢僋挿斾棪&gt;</FORMAT>
+<FORMAT>SplWrt &lt;僗僾儔僀儞斣崋&gt;, &lt;僼傽僀儖柤&gt;, &lt;摦嶌儌乕僪&gt;, &lt;僗僾儔僀儞僉儍儞僙儖妏搙&gt;, &lt;僽儘僢僋挿斾棪&gt;, &lt;Ex-T嵗昗斣崋&gt;</FORMAT>
+<FORMAT>SplWrt &lt;僗僾儔僀儞斣崋&gt;, &lt;僼傽僀儖柤&gt;, &lt;摦嶌儌乕僪&gt;, &lt;僗僾儔僀儞僉儍儞僙儖妏搙&gt;, &lt;僽儘僢僋挿斾棪&gt;, &lt;Ex-T嵗昗斣崋&gt;, &lt;僼傽僀儖僶乕僕儑儞&gt;</FORMAT>
+<SAMPLE>SplWrt 1, &quot;01.csv&quot;</SAMPLE>
+<SAMPLE>SplWrt 2, &quot;02.csv&quot;, 1</SAMPLE>
+<SAMPLE>SplWrt 3, &quot;03.csv&quot;, 0, 100</SAMPLE>
+<SAMPLE>SplWrt 4, &quot;04.csv&quot;, 0, 120, 10</SAMPLE>
+<SAMPLE>SplWrt 5, &quot;05.csv&quot;, 0, 120, 8, 1</SAMPLE>
+<SAMPLE>SplWrt 6, &quot;06.csv&quot;, 0, 120, 8, 1, 2</SAMPLE>
+<COMMENT>巜掕偟偨僼傽僀儖偵搊榐偝傟偨宱楬揰忣曬偵婎偯偄偨僗僾儔僀儞僼傽僀儖傪嶌惉偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SplFWrt</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SplFWrt &lt;僗僾儔僀儞斣崋&gt;, &lt;埵抲1&gt;, &lt;埵抲2&gt;, &lt;埵抲3&gt;, &lt;埵抲4&gt;, &lt;埵抲5&gt;, &lt;埵抲6&gt;</FORMAT>
+<SAMPLE>SplWrt 3, 乬03.csv乭, 0, 100</SAMPLE>
+<COMMENT>巜掕偟偨僗僾儔僀儞僼傽僀儖偵僼儗乕儉曄姺嵗昗宯僨乕僞傪搊榐偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>To</RSV_NAME>
+<CATEGORY>8</CATEGORY>
+<FORMAT>Select仩&lt;忦審&gt;</FORMAT>
+<FORMAT>Case仩&lt;悢抣&gt;仩To仩&lt;悢抣&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>乨</FORMAT>
+<FORMAT>Default</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>End仩Select</FORMAT>
+<SAMPLE>Select MCNT</SAMPLE>
+<SAMPLE>Case Is &lt;= 10</SAMPLE>
+<SAMPLE>Break</SAMPLE>
+<SAMPLE>Case 11</SAMPLE>
+<SAMPLE>Case 12 To 18</SAMPLE>
+<SAMPLE>Default</SAMPLE>
+<SAMPLE>End Select</SAMPLE>
+<COMMENT>忦審幃偺抣偵廬偭偰暋悢偺僗僥乕僩儊儞僩僽儘僢僋偺偄偢傟偐傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Break</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Select仩&lt;忦審&gt;</FORMAT>
+<FORMAT>Case仩&lt;幃&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>乨</FORMAT>
+<FORMAT>Default</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>End仩Select</FORMAT>
+<SAMPLE>Select MCNT</SAMPLE>
+<SAMPLE>Case Is &lt;= 10</SAMPLE>
+<SAMPLE>Break</SAMPLE>
+<SAMPLE>Case 11</SAMPLE>
+<SAMPLE>Case 12 To 18</SAMPLE>
+<SAMPLE>Default</SAMPLE>
+<SAMPLE>End Select</SAMPLE>
+<COMMENT>忦審幃偺抣偵廬偭偰暋悢偺僗僥乕僩儊儞僩僽儘僢僋偺偄偢傟偐傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Default</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Select仩&lt;忦審&gt;</FORMAT>
+<FORMAT>Case仩&lt;幃&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>乨</FORMAT>
+<FORMAT>Default</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>End仩Select</FORMAT>
+<SAMPLE>Select MCNT</SAMPLE>
+<SAMPLE>Case Is &lt;= 10</SAMPLE>
+<SAMPLE>Break</SAMPLE>
+<SAMPLE>Case 11</SAMPLE>
+<SAMPLE>Case 12 To 18</SAMPLE>
+<SAMPLE>Default</SAMPLE>
+<SAMPLE>End Select</SAMPLE>
+<COMMENT>忦審幃偺抣偵廬偭偰暋悢偺僗僥乕僩儊儞僩僽儘僢僋偺偄偢傟偐傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>End Select</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Select仩&lt;忦審&gt;</FORMAT>
+<FORMAT>Case仩&lt;幃&gt;</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>乨</FORMAT>
+<FORMAT>Default</FORMAT>
+<FORMAT>[&lt;張棟&gt;]</FORMAT>
+<FORMAT>Break</FORMAT>
+<FORMAT>End仩Select</FORMAT>
+<SAMPLE>Select MCNT</SAMPLE>
+<SAMPLE>Case Is &lt;= 10</SAMPLE>
+<SAMPLE>Break</SAMPLE>
+<SAMPLE>Case 11</SAMPLE>
+<SAMPLE>Case 12 To 18</SAMPLE>
+<SAMPLE>Default</SAMPLE>
+<SAMPLE>End Select</SAMPLE>
+<COMMENT>忦審幃偺抣偵廬偭偰暋悢偺僗僥乕僩儊儞僩僽儘僢僋偺偄偢傟偐傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Servo On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Servo仩&lt;On/Off&gt;</FORMAT>
+<SAMPLE>Servo On</SAMPLE>
+<COMMENT>僒乕儃僆儞乛僆僼偺擖傝愗傝傪惂屼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Servo Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Servo仩&lt;On/Off&gt;</FORMAT>
+<SAMPLE>Servo Off</SAMPLE>
+<COMMENT>僒乕儃僆儞乛僆僼偺擖傝愗傝傪惂屼偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SetCalFrm</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>SetCalFrm仩&lt;埵抲侾&gt;, &lt;埵抲俀&gt;, &lt;埵抲俁&gt;, &lt;埵抲係&gt;, &lt;埵抲俆&gt;, &lt;埵抲俇&gt;</FORMAT>
+<SAMPLE>SetCalFrm P1, P2, P3, P4, P5, P6</SAMPLE>
+<COMMENT>僼儗乕儉曄姺偱巊梡偡傞婎弨嵗昗宯偲曗惓屻偺嵗昗宯傪愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SetMoTrg</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SetMoTrg仩&lt;僩儕僈乕斣崋&gt;</FORMAT>
+<SAMPLE>SetMoTrg 1</SAMPLE>
+<SAMPLE>SetMoTrg 0</SAMPLE>
+<COMMENT>Mo僩儕僈乕偺桳岠/柍岠傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Skip</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Skip</FORMAT>
+<SAMPLE>Mov P1 WthIf M_In(17)=1, Skip</SAMPLE>
+<COMMENT>僾儘僌儔儉偺惂屼傪師偺峴傊堏偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Spd</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Spd仩&lt;巜掕懍搙&gt;</FORMAT>
+<FORMAT>Spd仩M_NSpd</FORMAT>
+<SAMPLE>Spd 100</SAMPLE>
+<SAMPLE>Spd M_NSpd</SAMPLE>
+<COMMENT>儘儃僢僩偺捈慄堏摦丄墌屖堏摦帪偺懍搙傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SpdOpt Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>SpdOpt仩&lt;On/Off&gt;</FORMAT>
+<SAMPLE>SpdOpt Off</SAMPLE>
+<COMMENT>捈慄曗娫偺懍搙挷惍婡擻偺桳岠柍岠傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SpdOpt On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>SpdOpt仩&lt;On/Off&gt;</FORMAT>
+<SAMPLE>SpdOpt On</SAMPLE>
+<COMMENT>捈慄曗娫偺懍搙挷惍婡擻偺桳岠柍岠傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Title</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Title仩&lt;暥帤&gt;</FORMAT>
+<SAMPLE>Title &quot;ROBOT Loader Program&quot;</SAMPLE>
+<COMMENT>儘儃僢僩僾儘僌儔儉偺僞僀僩儖傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Tool</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Tool仩&lt;僣乕儖僨乕僞&gt;</FORMAT>
+<SAMPLE>Tool (100, 0, 100, 0, 0, 0)</SAMPLE>
+<COMMENT>僣乕儖曄姺傪峴偆偨傔偺僣乕儖斣崋傪愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Torq</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>Torq仩&lt;幉斣崋&gt;, &lt;僩儖僋惂尷棪&gt;</FORMAT>
+<SAMPLE>Torq 3, 10</SAMPLE>
+<COMMENT>奺幉偺僩儖僋儕儈僢僩傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrBase</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TrBase仩&lt;婎弨埵抲僨乕僞&gt;</FORMAT>
+<FORMAT>TrBase仩&lt;婎弨埵抲僨乕僞&gt;, &lt;僄儞僐乕僟斣崋&gt;</FORMAT>
+<SAMPLE>TrBase P0</SAMPLE>
+<SAMPLE>TrBase P0,MENC#</SAMPLE>
+<COMMENT>僩儔僢僉儞僌嵗昗尨揰偲側傞埵抲偲僩儔僢僉儞僌摦嶌偵巊梡偡傞奜晹僄儞僐乕僟偺榑棟斣崋傪巜掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrClr</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TrClr</FORMAT>
+<FORMAT>TrClr仩[&lt;僶僢僼傽斣崋&gt;]</FORMAT>
+<SAMPLE>TrClr</SAMPLE>
+<SAMPLE>TrClr 1</SAMPLE>
+<COMMENT>僩儔僢僉儞僌僨乕僞僶僢僼傽傪僋儕傾偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Trk Off</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Trk仩On, &lt;寁應埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;</FORMAT>
+<FORMAT>Trk仩On, &lt;寁應埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;婎弨埵抲僨乕僞&gt;</FORMAT>
+<FORMAT>Trk仩On, &lt;寁應埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;婎弨埵抲僨乕僞&gt;, &lt;僄儞僐乕僟榑棟斣崋&gt;</FORMAT>
+<FORMAT>Trk仩Off</FORMAT>
+<SAMPLE>Trk Off</SAMPLE>
+<COMMENT>僐儞儀傾偺摦嶌偵捛廬偟側偑傜儘儃僢僩偑摦嶌偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Trk On</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Trk仩On, &lt;寁應埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;</FORMAT>
+<FORMAT>Trk仩On, &lt;寁應埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;婎弨埵抲僨乕僞&gt;</FORMAT>
+<FORMAT>Trk仩On, &lt;寁應埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;婎弨埵抲僨乕僞&gt;, &lt;僄儞僐乕僟榑棟斣崋&gt;</FORMAT>
+<FORMAT>Trk仩Off</FORMAT>
+<SAMPLE>Trk On,P1,MENC#</SAMPLE>
+<SAMPLE>Trk On,P1,MENC#,P0</SAMPLE>
+<SAMPLE>Trk On,P1,MENC#,P0,MENCNO%</SAMPLE>
+<COMMENT>僐儞儀傾偺摦嶌偵捛廬偟側偑傜儘儃僢僩偑摦嶌偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrkArc</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>TrkArc仩&lt;忦審斣崋&gt;, &lt;僄儞僐乕僟斣崋&gt;, &lt;墌屖埵抲1&gt;, &lt;墌屖埵抲2&gt;, &lt;墌屖埵抲3&gt;</FORMAT>
+<SAMPLE>TrkArc 1, 1, P_107(1), P_108(1), P_109(1)</SAMPLE>
+<COMMENT>墌屖僩儔僢僉儞僌梡偺僐儞儀傾忣曬傪愝掕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrkChk</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>TrkChk仩&lt;忦審斣崋&gt; , &lt;戅旔埵抲&gt; , &lt;懸婡埵抲&gt; , &lt;暘婒愭&gt;</FORMAT>
+<FORMAT>TrkChk仩&lt;忦審斣崋&gt; , &lt;戅旔埵抲&gt; , , &lt;暘婒愭&gt;</FORMAT>
+<SAMPLE>TrkChk 1, P1, PWAIT, *LTRST</SAMPLE>
+<SAMPLE>TrkChk 1, P1, , *LTRST</SAMPLE>
+<COMMENT>巜掕偟偨&lt;忦審斣崋&gt;偵奩摉偡傞儚乕僋偺忬懺偵墳偠偨張棟傪幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrkMv Off</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>TrkMv仩On, &lt;儚乕僋偺忋嬻埵抲&gt; [, &lt;妱傝崬傒斣崋&gt;, &lt;暘婒愭&gt;]</FORMAT>
+<FORMAT>TrkMv仩On, &lt;儚乕僋偺忋嬻埵抲&gt;</FORMAT>
+<FORMAT>TrkMv仩Off</FORMAT>
+<SAMPLE>TrkMv Off</SAMPLE>
+<COMMENT>巜掕偟偨妱傝崬傒傪桳岠仺僩儔僢僉儞僌奐巒仺儚乕僋偺忋嬻傊娭愡曗娫傪弴斣偵幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrkMv On</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>TrkMv仩On, &lt;儚乕僋偺忋嬻埵抲&gt; [, &lt;妱傝崬傒斣崋&gt;, &lt;暘婒愭&gt;]</FORMAT>
+<FORMAT>TrkMv仩On, &lt;儚乕僋偺忋嬻埵抲&gt;</FORMAT>
+<FORMAT>TrkMv仩Off</FORMAT>
+<SAMPLE>TrkMv On, PGTUP, 1, *S91STOP</SAMPLE>
+<SAMPLE>TrkMv On, PGTUP</SAMPLE>
+<COMMENT>巜掕偟偨妱傝崬傒傪桳岠仺僩儔僢僉儞僌奐巒仺儚乕僋偺忋嬻傊娭愡曗娫傪弴斣偵幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrkWait</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TrkWait仩[&lt;暘婒愭&gt;]</FORMAT>
+<FORMAT>TrkWait</FORMAT>
+<SAMPLE>TrkWait *LBFCHK</SAMPLE>
+<SAMPLE>TrkWait</SAMPLE>
+<COMMENT>巜掕偟偨&lt;忦審斣崋&gt;偵奩摉偡傞儚乕僋偑僩儔僢僉儞僌僄儕傾偵擖傞偺傪懸偪傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrkFine Off</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TrkFine仩On</FORMAT>
+<FORMAT>TrkFine仩Off</FORMAT>
+<SAMPLE>TrkFine Off</SAMPLE>
+<COMMENT>僩儔僢僉儞僌婡擻偺惛搙偑岦忋偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrkFine On</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TrkFine仩On</FORMAT>
+<FORMAT>TrkFine仩Off</FORMAT>
+<SAMPLE>TrkFine On</SAMPLE>
+<COMMENT>僩儔僢僉儞僌婡擻偺惛搙偑岦忋偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrkTrg</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TrkTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;SKIP擖椡斣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;</FORMAT>
+<FORMAT>TrkTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;SKIP擖椡斣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;</FORMAT>
+<FORMAT>TrkTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;SKIP擖椡斣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;</FORMAT>
+<FORMAT>TrkTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;SKIP擖椡斣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;</FORMAT>
+<FORMAT>TrkTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;SKIP擖椡斣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;</FORMAT>
+<FORMAT>TrkTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;SKIP擖椡斣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;, &lt;僄儞僐乕僟6抣&gt;</FORMAT>
+<FORMAT>TrkTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;SKIP擖椡斣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;, &lt;僄儞僐乕僟6抣&gt;, &lt;僄儞僐乕僟7抣&gt;</FORMAT>
+<FORMAT>TrkTrg仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;SKIP擖椡斣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;, &lt;僄儞僐乕僟6抣&gt;, &lt;僄儞僐乕僟7抣&gt;, &lt;僄儞僐乕僟8抣&gt;</FORMAT>
+<SAMPLE>TrkTrg #1,2,ME1#</SAMPLE>
+<SAMPLE>TrkTrg #1,2,ME1#,ME2#</SAMPLE>
+<SAMPLE>TrkTrg #1,2,ME1#,ME2#,ME3#</SAMPLE>
+<SAMPLE>TrkTrg #1,2,ME1#,ME2#,ME3#,ME4#</SAMPLE>
+<SAMPLE>TrkTrg #1,2,ME1#,ME2#,ME3#,ME4#,ME5#</SAMPLE>
+<SAMPLE>TrkTrg #1,2,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#</SAMPLE>
+<SAMPLE>TrkTrg #1,2,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#</SAMPLE>
+<SAMPLE>TrkTrg #1,2,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#,ME8#</SAMPLE>
+<COMMENT>巜掕偟偨價僕儑儞僾儘僌儔儉偵嶣憸傪梫媮偡傞偲偲傕偵奜晹僄儞僐乕僟偺抣傪撉傒弌偟傑偡</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrOut</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TrOut仩&lt;弌椡怣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;</FORMAT>
+<FORMAT>TrOut仩&lt;弌椡怣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;</FORMAT>
+<FORMAT>TrOut仩&lt;弌椡怣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;</FORMAT>
+<FORMAT>TrOut仩&lt;弌椡怣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;</FORMAT>
+<FORMAT>TrOut仩&lt;弌椡怣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;</FORMAT>
+<FORMAT>TrOut仩&lt;弌椡怣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;, &lt;僄儞僐乕僟6抣&gt;</FORMAT>
+<FORMAT>TrOut仩&lt;弌椡怣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;, &lt;僄儞僐乕僟6抣&gt;, &lt;僄儞僐乕僟7抣&gt;</FORMAT>
+<FORMAT>TrOut仩&lt;弌椡怣崋&gt;, &lt;僄儞僐乕僟1抣撉弌曄悢&gt;, &lt;僄儞僐乕僟2抣&gt;, &lt;僄儞僐乕僟3抣&gt;, &lt;僄儞僐乕僟4抣&gt;, &lt;僄儞僐乕僟5抣&gt;, &lt;僄儞僐乕僟6抣&gt;, &lt;僄儞僐乕僟7抣&gt;, &lt;僄儞僐乕僟8抣&gt;</FORMAT>
+<SAMPLE>TrOut 11,ME1#</SAMPLE>
+<SAMPLE>TrOut 20,ME1#,ME2#</SAMPLE>
+<SAMPLE>TrOut 25,ME1#,ME2#,ME3#</SAMPLE>
+<SAMPLE>TrOut 6000,ME1#,ME2#,ME3#,ME4#</SAMPLE>
+<SAMPLE>TrOut 8,ME1#,ME2#,ME3#,ME4#,ME5#</SAMPLE>
+<SAMPLE>TrOut 15,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#</SAMPLE>
+<SAMPLE>TrOut 23,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#</SAMPLE>
+<SAMPLE>TrOut 31,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#,ME8#</SAMPLE>
+<COMMENT>巜掕偟偨斈梡弌椡怣崋傪ON 偡傞偲偲傕偵奜晹僄儞僐乕僟偺抣傪撉傒弌偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrRd</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TrRd仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;</FORMAT>
+<FORMAT>TrRd仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;昳庬斣崋&gt;</FORMAT>
+<FORMAT>TrRd仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;昳庬斣崋&gt;, &lt;僶僢僼傽斣崋&gt;</FORMAT>
+<FORMAT>TrRd仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;昳庬斣崋&gt;, &lt;僶僢僼傽斣崋&gt;, &lt;僄儞僐乕僟斣崋&gt;</FORMAT>
+<FORMAT>TrRd仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;昳庬斣崋&gt;, &lt;僶僢僼傽斣崋&gt;, &lt;僄儞僐乕僟斣崋&gt;, &lt;僺僋僙儖埵抲&gt;</FORMAT>
+<SAMPLE>TrRd P1,MENC#</SAMPLE>
+<SAMPLE>TrRd P1,MENC#,MK%</SAMPLE>
+<SAMPLE>TrRd P1,MENC#,MK%,1</SAMPLE>
+<SAMPLE>TrRd P1,MENC#,MK%,1,MENCNO%</SAMPLE>
+<SAMPLE>TrRd P1,MENC#,MK%,1,MENCNO%, Pixel</SAMPLE>
+<COMMENT>巜掕偟偨僶僢僼傽偐傜丄僩儔僢僉儞僌摦嶌梡埵抲僨乕僞丄僄儞僐乕僟僨乕僞丄昳庬斣崋丄僄儞僐乕僟斣崋丄僺僋僙儖埵抲傪撉傒弌偡丅</COMMENT>
+<COMMENT>偦偟偰丄巜掕偟偨曄悢偵偦偺抣傪彂偒崬傒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TrWrt</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TrWrt仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;</FORMAT>
+<FORMAT>TrWrt仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;昳庬斣崋&gt;</FORMAT>
+<FORMAT>TrWrt仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;昳庬斣崋&gt;, &lt;僶僢僼傽斣崋&gt;</FORMAT>
+<FORMAT>TrWrt仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;昳庬斣崋&gt;, &lt;僶僢僼傽斣崋&gt;, &lt;僄儞僐乕僟斣崋&gt;</FORMAT>
+<FORMAT>TrWrt仩&lt;埵抲僨乕僞&gt;, &lt;僄儞僐乕僟僨乕僞&gt;, &lt;昳庬斣崋&gt;, &lt;僶僢僼傽斣崋&gt;, &lt;僄儞僐乕僟斣崋&gt;, &lt;僺僋僙儖埵抲&gt;</FORMAT>
+<SAMPLE>TrWrt P1,MENC#</SAMPLE>
+<SAMPLE>TrWrt P1,MENC#,MK%</SAMPLE>
+<SAMPLE>TrWrt P1,MENC#,MK%,1</SAMPLE>
+<SAMPLE>TrWrt P1,MENC#,MK%,1,MENCNO%</SAMPLE>
+<SAMPLE>TrWrt P1,MENC#,MK%,1,MENCNO%, Pixel</SAMPLE>
+<COMMENT>僩儔僢僉儞僌摦嶌梡埵抲僨乕僞丄僄儞僐乕僟僨乕僞丄昳庬斣崋丄僄儞僐乕僟斣崋丄僺僋僙儖埵抲傪巜掕偟偨僶僢僼傽偵彂崬傒傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>V3Calc</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>V3Calc仩#&lt;價僕儑儞僙儞僒斣崋&gt;</FORMAT>
+<FORMAT>V3Calc仩#&lt;價僕儑儞僙儞僒斣崋&gt; [, &lt;奿擺愭斣崋&gt;]</FORMAT>
+<SAMPLE>V3Calc #1</SAMPLE>
+<SAMPLE>V3Calc #1,5</SAMPLE>
+<COMMENT>僉儍儕僽儗乕僔儑儞寁應傪幚峴偡傞傛偆偵梫媮偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>V3Calib</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>V3Calib仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;巔惃ID&gt;</FORMAT>
+<FORMAT>V3Calib仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;巔惃ID&gt;, &lt;奿擺愭斣崋&gt;</FORMAT>
+<FORMAT>V3Calib仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;巔惃ID&gt;, &lt;奿擺愭斣崋&gt;, &lt;儊僇僯僇儖僀儞僞僼僃乕僗嵗昗&gt;</FORMAT>
+<SAMPLE>V3Calib #1,3</SAMPLE>
+<SAMPLE>V3Calib #1,6 ,2</SAMPLE>
+<SAMPLE>V3Calib #1,2 ,7 ,PMif</SAMPLE>
+<COMMENT>僉儍儕僽儗乕僔儑儞梡偺忣曬傪憲怣偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>V3Close</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>V3Close</FORMAT>
+<FORMAT>V3Close仩#&lt;價僕儑儞僙儞僒斣崋&gt;</FORMAT>
+<FORMAT>V3Close仩#&lt;價僕儑儞僙儞僒斣崋&gt;, #&lt;價僕儑儞僙儞僒斣崋&gt;[,#&lt;價僕儑儞僙儞僒斣崋&gt;]</FORMAT>
+<SAMPLE>V3Close</SAMPLE>
+<SAMPLE>V3Close #1</SAMPLE>
+<SAMPLE>V3Close #1,#3</SAMPLE>
+<COMMENT>巜掕偟偨MELFA-3D Vision偲偺夞慄傪愗抐偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>V3Open</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>V3Open仩&quot;&lt;COM斣崋&gt;&quot;仩AS仩#&lt;價僕儑儞僙儞僒斣崋&gt;</FORMAT>
+<SAMPLE>V3Open &quot;COM2:&quot; AS #1</SAMPLE>
+<COMMENT>巜掕偟偨MELFA-3D Vision偲愙懕偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>V3Run</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>V3Run仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僕儑僽柤&gt;, &lt;嶌嬈椞堟ID&gt;, &lt;寁應幚峴僼儔僌&gt;, &lt;擣幆幚峴僼儔僌&gt;</FORMAT>
+<FORMAT>V3Run仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僕儑僽柤&gt;, &lt;嶌嬈椞堟ID&gt;, &lt;寁應幚峴僼儔僌&gt;, &lt;擣幆幚峴僼儔僌&gt;, &lt;擣幆懳徾斣崋&gt;</FORMAT>
+<FORMAT>V3Run仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僕儑僽柤&gt;, &lt;嶌嬈椞堟ID&gt;, &lt;寁應幚峴僼儔僌&gt;, &lt;擣幆幚峴僼儔僌&gt;, &lt;擣幆懳徾斣崋&gt;, &lt;奿擺愭斣崋&gt;</FORMAT>
+<FORMAT>V3Run仩#&lt;價僕儑儞僙儞僒斣崋&gt;, &lt;僕儑僽柤&gt;, &lt;嶌嬈椞堟ID&gt;, &lt;寁應幚峴僼儔僌&gt;, &lt;擣幆幚峴僼儔僌&gt;, &lt;擣幆懳徾斣崋&gt;, &lt;奿擺愭斣崋&gt;, &lt;儊僇僯僇儖僀儞僞僼僃乕僗嵗昗&gt;</FORMAT>
+<SAMPLE>V3Run #1,&quot;TEST&quot;,1,1,0</SAMPLE>
+<SAMPLE>V3Run #1,&quot;TEST&quot;,2,1,1,2</SAMPLE>
+<SAMPLE>V3Run #1,&quot;TEST&quot;,3,1,1,3,9</SAMPLE>
+<SAMPLE>V3Run #1,&quot;TEST&quot;,3,1,1,3,9,PMif</SAMPLE>
+<COMMENT>MELFA-3D Vision偵巜掕偟偨僕儑僽偺幚峴傪梫媮偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Wait</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Wait仩&lt;悢抣曄悢&gt; = &lt;悢抣掕悢&gt;</FORMAT>
+<SAMPLE>Wait M_In(1)=1</SAMPLE>
+<COMMENT>曄悢偑巜掕偺抣偵側傞傑偱懸婡偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>While</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>While仩&lt;儖乕僾忦審&gt;</FORMAT>
+<FORMAT>乨</FORMAT>
+<FORMAT>WEnd</FORMAT>
+<SAMPLE>While M1&gt;=-5</SAMPLE>
+<SAMPLE>  M1=-(M1+1)</SAMPLE>
+<SAMPLE>WEnd</SAMPLE>
+<COMMENT>倂倛倝倢倕暥偲倂俤値倓暥偺娫偺僾儘僌儔儉傪丄儖乕僾忦審傪枮偨偟偰偄傞娫丄孞傝曉偟幚峴偟傑偡丅</COMMENT>
+<END_NAME>WEnd</END_NAME>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>WEnd</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>While仩&lt;儖乕僾忦審&gt;</FORMAT>
+<FORMAT>乨</FORMAT>
+<FORMAT>WEnd</FORMAT>
+<SAMPLE>While M1&gt;=-5</SAMPLE>
+<SAMPLE>  M1=-(M1+1)</SAMPLE>
+<SAMPLE>WEnd</SAMPLE>
+<COMMENT>倂倛倝倢倕暥偲倂俤値倓暥偺娫偺僾儘僌儔儉傪丄儖乕僾忦審傪枮偨偟偰偄傞娫丄孞傝曉偟幚峴偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>Wth</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>Wth仩&lt;張棟&gt;</FORMAT>
+<SAMPLE>Mov P1 Wth M_Out(17)=1 Dly 2</SAMPLE>
+<COMMENT>曗娫摦嶌偵張棟傪晅壛偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>WthIf</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>WthIf仩&lt;晅壛忦審&gt;, &lt;張棟&gt;</FORMAT>
+<SAMPLE>Mov P1 WthIf M_In(17)=1, Hlt</SAMPLE>
+<COMMENT>曗娫摦嶌柦椷偵忦審晅偱張棟傪晅壛偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XClr</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XClr仩&lt;僗儘僢僩斣崋&gt;</FORMAT>
+<SAMPLE>XClr 2</SAMPLE>
+<COMMENT>巜掕偟偨僗儘僢僩偺僾儘僌儔儉傪慖戰夝彍偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XLoad</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XLoad仩&lt;僗儘僢僩斣崋&gt;, &lt;僾儘僌儔儉柤&gt;</FORMAT>
+<SAMPLE>XLoad 2, &quot;10&quot;</SAMPLE>
+<COMMENT>巜掕僗儘僢僩偵巜掕僾儘僌儔儉傪慖戰偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XRst</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XRst仩&lt;僗儘僢僩斣崋&gt;</FORMAT>
+<SAMPLE>XRst 2</SAMPLE>
+<COMMENT>巜掕偟偨僗儘僢僩偺僾儘僌儔儉偺幚峴峴傪愭摢峴偵栠偟傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XRun</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XRun仩&lt;僗儘僢僩斣崋&gt;</FORMAT>
+<FORMAT>XRun仩&lt;僗儘僢僩斣崋&gt;, &quot;&lt;僾儘僌儔儉柤&gt;&quot;</FORMAT>
+<FORMAT>XRun仩&lt;僗儘僢僩斣崋&gt;, &quot;&lt;僾儘僌儔儉柤&gt;&quot;, &lt;塣揮儌乕僪&gt;</FORMAT>
+<SAMPLE>XRun 2</SAMPLE>
+<SAMPLE>XRun 2, &quot;1&quot;</SAMPLE>
+<SAMPLE>XRun 3, &quot;2&quot;, 1</SAMPLE>
+<COMMENT>巜掕偟偨僾儘僌儔儉傪暲楍幚峴偝偣傑偡丅</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XStp</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XStp仩&lt;僗儘僢僩斣崋&gt;</FORMAT>
+<SAMPLE>XStp 2</SAMPLE>
+<COMMENT>巜掕偟偨僗儘僢僩偺僾儘僌儔儉塣揮傪拞抐偟傑偡丅</COMMENT>
+</TEMPLATE>
+</COMMAND>

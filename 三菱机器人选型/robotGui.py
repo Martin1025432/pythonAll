@@ -42,10 +42,16 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
    
         #---主界面按钮
         #数据复位，保存 ，操作面板     
-        self.bChoose.clicked.connect(self.bChooseClick)
-        self.bCalc.clicked.connect(self.bCalcClick)     
-        self.bUpdate.clicked.connect(self.bUpdateClick)      
-                        
+        tool=[self.bChoose,self.bCalc,self.tResult,self.bCalc2]
+        func=[self.bChooseClick,self.bCalcClick,self.bUpdateClick,self.bCalc2Click]
+#        self.bChoose.clicked.connect(self.bChooseClick)
+#        self.bCalc.clicked.connect(self.bCalcClick)     
+#        self.tResult.clicked.connect(self.bUpdateClick)      
+#        self.bCalc2.clicked.connect(self.bCalc2Click)     
+        for i in range(len(tool)) :
+            tool[i].clicked.connect(func[i])
+        
+  
 
 #        #视学调试，表格标题
 #        self.tableWidgetPs.setHorizontalHeaderLabels(['机器人X','机器人Y','相机X','相机Y']) 
@@ -75,15 +81,67 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         
 #---主界面按钮事件 
     #---自动运行
+    def bCalc2Click(self):
+        self.sqlChoose(1)
+        pass
     def bChooseClick(self):
-        self.sqlChoose()
+        global sqlChoose
+        self.sqlChoose(0)
         pass
 
     def bCalcClick(self):  
+        global I3
+        tRectangle=self.tRectangle.currentText()
+        tRectangle1=self.tRectangle1.currentText()
+        if tRectangle=="方形":
+            tM=float(self.tM.toPlainText())            
+            tA=float(self.tA.toPlainText())/1000            
+            tB=float(self.tB.toPlainText())/1000
+            tL1=float(self.tL1.toPlainText())/1000
+            I1=tM*(tA**2+tB**2)/12+tM*tL1**2
+           
+            print(tM,tA,tB,tL1,I1) 
+        if tRectangle=="圆形":
+            tM=float(self.tM.toPlainText())
+            tR10=float(self.tR10.toPlainText())/1000
+            tL1=float(self.tL1.toPlainText())/1000
+            I1=tM*tR10**2/2+tM*tL1**2
+           
+            print(tM,tR10,tL1)
+        if tRectangle1=="方形":
+            tM1=float(self.tM1.toPlainText())            
+            tA1=float(self.tA1.toPlainText())/1000            
+            tB1=float(self.tB1.toPlainText())/1000
+            tL2=float(self.tL2.toPlainText())/1000
+            I2=tM1*(tA1**2+tB1**2)/12+tM1*tL2**2            
+            print(tM1,tA1,tB1,tL2) 
+        if tRectangle1=="圆形":
+            tM1=float(self.tM1.toPlainText())
+            tR11=float(self.tR11.toPlainText())/1000
+            tL2=float(self.tL2.toPlainText())/1000
+            I2=tM1*tR11**2/2+tM1*tL2**2
+            
+            print(tM1,tR11,tL2)
+        I3=I1+I2
+        I3=round(I3,3)
+        self.tI.setText(str(I3))
+        print(I3)
+
         pass
 
     def bUpdateClick(self):  
         global value,result
+        
+        for i in range(0,17) :   
+            newItem=QTableWidgetItem("")
+            self.tDetail1.setItem(i,1,newItem)
+        for i in range(16,34) :   
+            newItem=QTableWidgetItem("")
+            self.tDetail2.setItem(i-16,1,newItem)
+        for i in range(34,38) :   
+            newItem=QTableWidgetItem("")
+            self.tDetail3.setItem(i-34,1,newItem)
+            
         row=self.tResult.currentRow()
         currentResult=result[row-1]
         cursor.execute("select * from para where 型号=?",(currentResult,))
@@ -91,15 +149,39 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         detailResult=detailResult[0]
         detailResult=[str(a) for a in detailResult]
         print(detailResult)
+        if detailResult[1]=="RH-12FRH70XX/M/C" or"RH-12FRH85XX/M/C"or"RH-12FRH55XX/M/C"or"RH-20FRH100XX/M/C"or"RH-20FRH85XX/M/C":
+            print(0)
+        if detailResult[1]=="RH3FRHR3515W" or"RH3FRHR3515"or"RH3FRHR3512C":
+            print(0)
+        if detailResult[1]=="RH-6FRH55XX/M/C" or"RH-6FRH45XX/M/C"or"RH-6FRH35XX/M/C":
+            print(0)
+        if detailResult[1]=="RH-3FRH4515" or"RH-3FRH3515"or"RH-3FRH5515":
+            print(0)
+        if detailResult[1]=="RV-20FR":
+            print(0)
+        if detailResult[1]=="RV-13FRL"or"RV-13FR":
+            print(0)
+        if detailResult[1]=="RV-7FRL"or"RV-7FR":
+            print(0)
+        if detailResult[1]=="RV-7FRLL":
+            print(0)
+        if detailResult[1]=="RV-4FRL"or"RV-4FR":
+            print(0)
+        if detailResult[1]=="RV-2FRL"or"RV-2FR":
+            print(0)
+            
 
-
-        for i in range(0,16) :   
+        for i in range(0,17) :   
             newItem=QTableWidgetItem(detailResult[i+1])
             self.tDetail1.setItem(i,1,newItem) 
+           
             
-        for i in range(16,33) :   
+        for i in range(16,34) :   
             newItem=QTableWidgetItem(detailResult[i+2])
-            self.tDetail2.setItem(i-16,1,newItem)         
+            self.tDetail2.setItem(i-16,1,newItem)   
+        for i in range(34,38) :   
+            newItem=QTableWidgetItem(detailResult[i+2])
+            self.tDetail3.setItem(i-34,1,newItem)      
         pass   
 
 
@@ -136,20 +218,25 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         pass
     
 #---F选型功能
-    def sqlChoose(self):
+    def sqlChoose(self,num):
         global  cursor, p ,conn  ,value,result
-        for i in range(18) :   
+        for i in range(20) :   
             newItem=QTableWidgetItem("")
             self.tResult.setItem(i,1,newItem)               
         load=int(self.tLoad.toPlainText())
         mod=self.tMod.currentText()
         r=int(self.tR.toPlainText())
         print(mod,load,type(mod))
-        cursor.execute("select * from para where 机器人类型=? AND 最大负载>=? AND 最大动作半径>=? ",(mod,load,r,))
+        if num==0:
+            cursor.execute("select * from para where 机器人类型=? AND 最大负载>=? AND 最大动作半径>=? ",(mod,load,r,))
+        if num==1:
+            float(I3)
+            cursor.execute("select * from para where 机器人类型=? AND 最大负载>=? AND 最大动作半径>=? AND 最大惯量>=?",(mod,load,r,I3))
+            print(I3)
         value = cursor.fetchall()          
 #        print(value)
         countValue=len(value)
-        if countValue>0:
+        if countValue>=0:
             result=[va[1] for va in value]        
             print(result)
             

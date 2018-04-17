@@ -11,7 +11,7 @@ import pandas
 import collections  
 import cv2
 import math
-
+import PLC
 import threading
 from socket import socket, AF_INET , SOCK_STREAM,SOL_SOCKET,SO_SNDBUF
 #import cv2
@@ -27,11 +27,11 @@ import time
 qtCreatorFile = "window.ui" # Enter file here.导入文件
 Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)#给两个变量赋值
 class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
-
+    global flag
 #---初始化
     def __init__(self):
-        global  cursor,conn ,dictPara               #初始化
-
+        global  cursor,conn ,dictPara ,flag              #初始化
+        
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)        
         self.setupUi(self)
@@ -60,6 +60,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         #---视觉调试界面按钮                                
       
         #实时，触发
+        
         self.bLUtrig.clicked.connect(self.bLUtrigClick)  
         self.bLDtrig.clicked.connect(self.bLDtrigClick) 
         self.bRUtrig.clicked.connect(self.bRUtrigClick) 
@@ -74,7 +75,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         self.bRposition0.clicked.connect(self.bRposition0Click)
         self.bRposition1.clicked.connect(self.bRposition1Click)
         self.bRposition2.clicked.connect(self.bRposition2Click)        
-              
+        self.bAxiSave.clicked.connect(self.bAxiSaveClick)        
        
                 
                
@@ -122,7 +123,12 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         # 轴参数设置
         self.tSpeed.setText(dictPara['tSpeed'])
         self.tPosion1.setText(dictPara['tPosion1'])
-        self.tPosion2.setText(dictPara['tPosion2'])        
+        self.tPosion2.setText(dictPara['tPosion2'])   
+        
+        PLC.write("101",hex(int(dictPara['tSpeed']))[2:len(hex(int(dictPara['tSpeed'])))])
+        PLC.write("102",hex(int(dictPara['tPosion1']))[2:len(hex(int(dictPara['tPosion1'])))])
+        PLC.write("103",hex(int(dictPara['tPosion2']))[2:len(hex(int(dictPara['tPosion2'])))])
+        
         #视觉判定参数
         #   正极过渡片
         self.tStandardH.setText(dictPara['tStandardH'])
@@ -132,10 +138,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
       
         
         #---全局变量初始化
- 
+        flag=0
 
         #---启动子程序
-
+#        PLC.openSerial()
 
 
 #---事件     
@@ -151,32 +157,57 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
 #---主界面按钮事件 
     #---自动运行
     def bAutoClick(self):  
-        calcFlag=0
-        try:
-            nSoc.send(bytes('200,0,0,0' ,'utf8'))
-        except:
-            pass
-        try:
-            pSoc.send(bytes('200,0,0,0' ,'utf8'))
-        except:
-            pass
+       
+        pass
+
     #---暂停    
     def bStopClick(self):  
         pass
     #---复位
-    def bResetClick(self):  
+#    def bResetClick(self):  
+#        PLC.on("100",8)
+#        time.sleep(0.1)
+#        PLC.off("100",8)
         pass 
     #---红灯
-    def bRedClick(self):  
+    def bRedClick(self): 
+        global flag
+        flag=1
+        PLC.on("100",9)
+        time.sleep(0.1)
+        PLC.off("100",9) 
+        flag=0
         pass  
+ 
     #---绿灯
     def bGreenClick(self):  
+        global flag
+        flag=1
+        PLC.on("100",10)
+        time.sleep(0.1)
+        PLC.off("100",10) 
+        flag=0
+        pass          
         pass     
     #---黄灯
-    def bYellowClick(self):  
+    def bYellowClick(self): 
+        global flag
+        flag=1
+        PLC.on("100",11)
+        time.sleep(0.1)
+        PLC.off("100",11) 
+        flag=0
+        pass          
         pass    
     #---蜂鸣器
-    def bBuzzClick(self):  
+    def bBuzzClick(self):
+        global flag
+        flag=1
+        PLC.on("100",12)
+        time.sleep(0.1)
+        PLC.off("100",12) 
+        flag=0
+        pass          
         pass      
         
     #---重置数据
@@ -269,32 +300,85 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
     #---机台手动按钮
     
     def bCyUpClick(self):
-        pass  
+        global flag
+        flag=1
+        PLC.on("100",6)
+        time.sleep(0.1)
+        PLC.off("100",7) 
+        flag=0
+        pass          
     
     def bCyDownClick(self):
+        global flag
+        flag=1
+        PLC.on("100",7)
+        time.sleep(0.1)
+        PLC.off("100",6)       
+        flag=0
         pass      
     
     def bLposition0Click(self):
+        global flag
+        flag=1
+        PLC.on("100",0)
+        time.sleep(0.1)
+        PLC.off("100",0)
+        flag=0
         pass   
     
     def bLposition1Click(self):
+        global flag
+        flag=1
+        PLC.on("100",1)
+        time.sleep(0.1)
+        PLC.off("100",1)
+        flag=0
         pass     
     def bLposition2Click(self):
+        global flag
+        flag=1
+        PLC.on("100",2)
+        time.sleep(0.1)
+        PLC.off("100",2)     
+        flag=0
         pass  
-
      
     def bRposition0Click(self):
+        global flag
+        flag=1
+        PLC.on("100",3)
+        time.sleep(0.1)
+        PLC.off("100",3)   
+        flag=0
         pass   
     
     def bRposition1Click(self):
+        global flag
+        flag=1
+        PLC.on("100",4)
+        time.sleep(0.1)
+        PLC.off("100",4)      
+        flag=0
         pass     
     def bRposition2Click(self):
+        global flag
+        flag=1
+        PLC.on("100",5)
+        time.sleep(0.1)
+        PLC.off("100",5)
+        flag=0
         pass   
 
 #---历史数据界面，按钮事件    
     def bExportClick(self):
-        pass     
-
+        pass    
+    
+#---历史数据界面，按钮事件    
+    def bAxiSaveClick(self):
+        PLC.write("101",hex(int(dictPara['tSpeed']))[2:len(hex(int(dictPara['tSpeed'])))])
+        PLC.write("102",hex(int(dictPara['tPosion1']))[2:len(hex(int(dictPara['tPosion1'])))])
+        PLC.write("103",hex(int(dictPara['tPosion2']))[2:len(hex(int(dictPara['tPosion2'])))])
+        pass  
 
       
 #---F关闭线程功能           
@@ -346,7 +430,21 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         return pixImg
                           
 #---F QT界面刷新程序         
-    def GUIfresh(self):                                
+    def GUIfresh(self):  
+        global flag
+        con=[self.bLposition0,self.bLposition1,self.bLposition2,\
+             self.bRposition0,self.bRposition1,self.bRposition2,\
+             self.bCyUp,self.bCyDown,self.bRed,self.bGreen,self.bYellow,self.bBuzz]
+        if flag==0:            
+            state=PLC.readState()
+            for i in range(len(con)):
+                if state[i]== True:
+                    con[i].setStyleSheet("background-color: rgb(0, 255, 0);")
+                else:
+                    con[i].setStyleSheet("background-color: rgb(255, 0, 0);")
+     
+            
+                      
         self.bDataSaveClick()
         
                         

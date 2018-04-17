@@ -82,7 +82,7 @@
        </font>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
@@ -390,6 +390,12 @@
           <height>221</height>
          </rect>
         </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
         <property name="readOnly">
          <bool>true</bool>
         </property>
@@ -590,7 +596,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>气缸顶升</string>
+         <string>气缸顶升100.6</string>
         </property>
        </widget>
        <widget class="QPushButton" name="bCyDown">
@@ -603,20 +609,20 @@
          </rect>
         </property>
         <property name="text">
-         <string>气缸下降</string>
+         <string>气缸下降100.7</string>
         </property>
        </widget>
        <widget class="QPushButton" name="bLposition0">
         <property name="geometry">
          <rect>
-          <x>90</x>
+          <x>80</x>
           <y>610</y>
-          <width>71</width>
+          <width>81</width>
           <height>61</height>
          </rect>
         </property>
         <property name="text">
-         <string>原点</string>
+         <string>原点100.0</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_67">
@@ -635,14 +641,14 @@
        <widget class="QPushButton" name="bLposition1">
         <property name="geometry">
          <rect>
-          <x>180</x>
+          <x>170</x>
           <y>610</y>
-          <width>71</width>
+          <width>81</width>
           <height>61</height>
          </rect>
         </property>
         <property name="text">
-         <string>起点</string>
+         <string>起点100.1</string>
         </property>
        </widget>
        <widget class="QPushButton" name="bLposition2">
@@ -650,12 +656,12 @@
          <rect>
           <x>270</x>
           <y>610</y>
-          <width>71</width>
+          <width>81</width>
           <height>61</height>
          </rect>
         </property>
         <property name="text">
-         <string>终点</string>
+         <string>终点100.2</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_71">
@@ -676,38 +682,38 @@
          <rect>
           <x>270</x>
           <y>710</y>
-          <width>71</width>
+          <width>81</width>
           <height>61</height>
          </rect>
         </property>
         <property name="text">
-         <string>终点</string>
+         <string>终点100.5</string>
         </property>
        </widget>
        <widget class="QPushButton" name="bRposition1">
         <property name="geometry">
          <rect>
-          <x>180</x>
+          <x>170</x>
           <y>710</y>
-          <width>71</width>
+          <width>81</width>
           <height>61</height>
          </rect>
         </property>
         <property name="text">
-         <string>起点</string>
+         <string>起点100.4</string>
         </property>
        </widget>
        <widget class="QPushButton" name="bRposition0">
         <property name="geometry">
          <rect>
-          <x>90</x>
+          <x>80</x>
           <y>710</y>
-          <width>71</width>
+          <width>81</width>
           <height>61</height>
          </rect>
         </property>
         <property name="text">
-         <string>原点</string>
+         <string>原点100.3</string>
         </property>
        </widget>
       </widget>
