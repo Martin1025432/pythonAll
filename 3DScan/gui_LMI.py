@@ -30,7 +30,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
     global flag
 #---初始化
     def __init__(self):
-        global  cursor,conn ,dictPara ,flag              #初始化
+        global  cursor,conn ,dictPara ,flag,bf,rf,gf,yf              #初始化
         
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)        
@@ -139,7 +139,10 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         
         #---全局变量初始化
         flag=0
-
+        rf=0
+        gf=0
+        yf=0
+        bf=0
         #---启动子程序
 #        PLC.openSerial()
 
@@ -164,48 +167,73 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
     def bStopClick(self):  
         pass
     #---复位
-#    def bResetClick(self):  
+    def bResetClick(self):  
 #        PLC.on("100",8)
 #        time.sleep(0.1)
 #        PLC.off("100",8)
         pass 
     #---红灯
     def bRedClick(self): 
-        global flag
+        global flag,rf
+        
         flag=1
-        PLC.on("100",9)
-        time.sleep(0.1)
-        PLC.off("100",9) 
+        if rf==0:
+            PLC.on("100",9)
+            rf=1
+            flag=0
+            return 0
+        if rf==1:
+            PLC.off("100",9) 
+            rf=0
         flag=0
         pass  
  
     #---绿灯
     def bGreenClick(self):  
-        global flag
+        global flag,gf
         flag=1
-        PLC.on("100",10)
+        
+        if gf==0:
+            PLC.on("100",10)
+            gf=1
+            flag=0
+            return 0
         time.sleep(0.1)
-        PLC.off("100",10) 
+        if gf==1:
+            PLC.off("100",10) 
+            gf==0
         flag=0
         pass          
         pass     
     #---黄灯
     def bYellowClick(self): 
-        global flag
+        global flag,yf
         flag=1
-        PLC.on("100",11)
-        time.sleep(0.1)
-        PLC.off("100",11) 
+        if yf==0:
+            PLC.on("100",11)
+            yf=1
+            flag=0
+            return 0
+        if yf==1:
+            
+
+            PLC.off("100",11) 
+            yf=0
         flag=0
         pass          
         pass    
     #---蜂鸣器
     def bBuzzClick(self):
-        global flag
+        global flag,bf
         flag=1
-        PLC.on("100",12)
-        time.sleep(0.1)
-        PLC.off("100",12) 
+        if bf==0:
+            PLC.on("100",12)
+            bf=1
+            flag=0
+            return 0
+        if bf==1:
+            PLC.off("100",12) 
+            bf=0
         flag=0
         pass          
         pass      
@@ -465,7 +493,7 @@ class MyThread(QThread):
         while self.times > 0 and self.identity:
             # 发射信号
             self.sinOut.emit(self.identity+"==>"+str(self.times))
-            time.sleep(2)
+            time.sleep(1)
             
 
   

@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\spyder\app\mainwindow.py", line 3011, in main
+    mainwindow = run_spyder(app, options, args)
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\spyder\app\mainwindow.py", line 2913, in run_spyder
+    main.setup()
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\spyder\app\mainwindow.py", line 860, in setup
+    from spyder.plugins.externalconsole import ExternalConsole
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\spyder\plugins\externalconsole.py", line 39, in <module>
+    from spyder.widgets.externalshell.pythonshell import ExternalPythonShell
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\spyder\widgets\externalshell\pythonshell.py", line 34, in <module>
+    from spyder.widgets.variableexplorer.namespacebrowser import NamespaceBrowser
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\spyder\widgets\variableexplorer\namespacebrowser.py", line 26, in <module>
+    import ipykernel.pickleutil
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\ipykernel\__init__.py", line 2, in <module>
+    from .connect import *
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\ipykernel\connect.py", line 13, in <module>
+    from IPython.core.profiledir import ProfileDir
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\IPython\__init__.py", line 49, in <module>
+    from .terminal.embed import embed
+  File "C:\Users\Administrator\Anaconda\lib\site-packages\IPython\terminal\embed.py", line 17, in <module>
+    from IPython.core.interactiveshell import DummyMod, InteractiveShell
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 764, in get_code
+  File "<frozen importlib._bootstrap_external>", line 833, in get_data
+MemoryError
