@@ -721,16 +721,6 @@
        <attribute name="title">
         <string>历史数据</string>
        </attribute>
-       <widget class="QTableView" name="tableView">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>50</y>
-          <width>361</width>
-          <height>621</height>
-         </rect>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_12">
         <property name="geometry">
          <rect>
@@ -768,6 +758,50 @@
         <property name="text">
          <string>导出</string>
         </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>361</width>
+          <height>561</height>
+         </rect>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>70</number>
+        </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>35</number>
+        </attribute>
+        <attribute name="verticalHeaderMinimumSectionSize">
+         <number>32</number>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>日期</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>二维码</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>凸点高度</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>孔径</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>焊接片位置</string>
+         </property>
+        </column>
        </widget>
       </widget>
      </widget>
@@ -1351,7 +1385,7 @@
         <x>10</x>
         <y>250</y>
         <width>711</width>
-        <height>201</height>
+        <height>251</height>
        </rect>
       </property>
       <property name="title">
@@ -1418,14 +1452,40 @@
       <widget class="QPushButton" name="bIPsave">
        <property name="geometry">
         <rect>
-         <x>520</x>
-         <y>130</y>
+         <x>570</x>
+         <y>180</y>
          <width>101</width>
          <height>61</height>
         </rect>
        </property>
        <property name="text">
         <string>保存数据</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_56">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>130</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>相机端口号2003,2004</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_57">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>130</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>相机端口号2005,2006</string>
        </property>
       </widget>
      </widget>

@@ -11,7 +11,7 @@ import pandas
 import collections  
 import cv2
 import math
-import PLC
+
 import threading
 from socket import socket, AF_INET , SOCK_STREAM,SOL_SOCKET,SO_SNDBUF
 #import cv2
@@ -20,6 +20,7 @@ import win32api,win32con
 import os, sys
 import System
 import System.Drawing
+import socketClient
 #import time
 #from PyQt5 import *
 #import datetime
@@ -31,7 +32,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
 #---初始化
     def __init__(self):
         global  cursor,conn ,dictPara ,flag,bf,rf,gf,yf              #初始化
-        
+        global sockPs,sockPr,sockNs,sockNr
         QtWidgets.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)        
         self.setupUi(self)
@@ -124,10 +125,14 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         self.tSpeed.setText(dictPara['tSpeed'])
         self.tPosion1.setText(dictPara['tPosion1'])
         self.tPosion2.setText(dictPara['tPosion2'])   
-        
-        PLC.write("101",hex(int(dictPara['tSpeed']))[2:len(hex(int(dictPara['tSpeed'])))])
-        PLC.write("102",hex(int(dictPara['tPosion1']))[2:len(hex(int(dictPara['tPosion1'])))])
-        PLC.write("103",hex(int(dictPara['tPosion2']))[2:len(hex(int(dictPara['tPosion2'])))])
+        try:
+            import PLC
+            PLC.write("101",hex(int(dictPara['tSpeed']))[2:len(hex(int(dictPara['tSpeed'])))])
+            PLC.write("102",hex(int(dictPara['tPosion1']))[2:len(hex(int(dictPara['tPosion1'])))])
+            PLC.write("103",hex(int(dictPara['tPosion2']))[2:len(hex(int(dictPara['tPosion2'])))])
+        except Exception as e:
+            print(str(e))
+            
         
         #视觉判定参数
         #   正极过渡片
@@ -144,6 +149,15 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         yf=0
         bf=0
         #---启动子程序
+        try:
+            sockPs=socketClient.connect(dictPara['tC1ip'],2003)
+            sockPr=socketClient.connect(dictPara['tC1ip'],2004)
+        
+            sockNs=socketClient.connect(dictPara['tC2ip'],2005)
+            sockNr=socketClient.connect(dictPara['tC2ip'],2006)   
+        except Exception as e:
+            print(str(e))            
+
 #        PLC.openSerial()
 
 
@@ -320,9 +334,20 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
         pass  
     
     def bC1trigClick(self):
+        global sockPs,sockPr,sockNs,sockNr
+        socketClient.sent(sockPs,"TRG")
+        msg=socketClient.rev(sockPr,1024)   
+        print("msg:",msg)
+        self.tCode1.setText(str(msg))
+
         pass      
     
     def bC2trigClick(self):
+        global sockPs,sockPr,sockNs,sockNr
+        socketClient.sent(sockNs,"TRG")
+        msg=socketClient.rev(sockNr,1024)   
+        print("msg:",msg)
+        self.tCode2.setText(str(msg))        
         pass   
  
     #---机台手动按钮
@@ -401,7 +426,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):             #定义一个类
     def bExportClick(self):
         pass    
     
-#---历史数据界面，按钮事件    
+#---写入PLC数据界面，按钮事件    
     def bAxiSaveClick(self):
         PLC.write("101",hex(int(dictPara['tSpeed']))[2:len(hex(int(dictPara['tSpeed'])))])
         PLC.write("102",hex(int(dictPara['tPosion1']))[2:len(hex(int(dictPara['tPosion1'])))])
